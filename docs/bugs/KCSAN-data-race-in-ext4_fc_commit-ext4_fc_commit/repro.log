@@ -1,0 +1,12 @@
+extracting prog: 32.816122246s
+minimizing prog: 12m47.483038291s
+simplifying prog options: 1m47.173795934s
+extracting C: 38.23822265s
+simplifying C: 0s
+opts: {Threaded:true Collide:true Repeat:true RepeatTimes:0 Procs:2 Slowdown:1 Sandbox:none Fault:false FaultCall:-1 FaultNth:0 Leak:false NetInjection:true NetDevices:true NetReset:true Cgroups:true BinfmtMisc:true CloseFDs:true KCSAN:false DevlinkPCI:true USB:true VhciInjection:true Wifi:true IEEE802154:true Sysctl:true UseTmpDir:true HandleSegv:true Repro:false Trace:false} crepro: false
+
+ioctl$EXT4_IOC_GROUP_EXTEND(0xffffffffffffffff, 0x40086607, &(0x7f0000000040)=0x1)
+fdatasync(0xffffffffffffffff)
+ioctl$CAPI_NCCI_GETUNIT(0xffffffffffffffff, 0x80044327, &(0x7f0000000840))
+fdatasync(0xffffffffffffffff)
+

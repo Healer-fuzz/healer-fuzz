@@ -1,0 +1,213 @@
+executing program 0 (fault-call:1 fault-nth:80):
+r0 = syz_open_dev$tty20(0xc, 0x4, 0x1)
+ioctl$TIOCSETD(r0, 0x5423, &(0x7f0000000080)=0x15)
+ioctl$TIOCVHANGUP(r0, 0x5437, 0x0)
+
+executing program 0 (fault-call:1 fault-nth:81):
+r0 = syz_open_dev$tty20(0xc, 0x4, 0x1)
+ioctl$TIOCSETD(r0, 0x5423, &(0x7f0000000080)=0x15)
+ioctl$TIOCVHANGUP(r0, 0x5437, 0x0)
+
+[   40.502796][ T8050] FAULT_INJECTION: forcing a failure.
+[   40.502796][ T8050] name failslab, interval 1, probability 0, space 0, times 1
+[   40.504920][ T8050] CPU: 0 PID: 8050 Comm: syz-executor Not tainted 5.12.0-rc5+ #7
+[   40.505636][ T8050] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.13.0-1ubuntu1.1 04/01/2014
+[   40.506590][ T8050] Call Trace:
+[   40.506991][ T8050]  dump_stack+0xfa/0x151
+[   40.507815][ T8050]  should_fail.cold+0x5/0xa
+[   40.508528][ T8050]  should_failslab+0x5/0x10
+[   40.508927][ T8050]  __kmalloc+0x7e/0x3b0
+[   40.509640][ T8050]  ? kobj_map+0x72/0x440
+[   40.510093][ T8050]  ? emergency_thaw_all+0x1a0/0x1a0
+[   40.510657][ T8050]  kobj_map+0x72/0x440
+[   40.510991][ T8050]  ? cdev_get+0xb0/0xb0
+[   40.511316][ T8050]  ? cdev_alloc+0x3d/0xd0
+[   40.511651][ T8050]  cdev_add+0x9f/0x130
+[   40.511968][ T8050]  tty_cdev_add.isra.0+0x177/0x290
+[   40.512363][ T8050]  tty_register_device_attr+0x428/0x6f0
+[   40.512936][ T8050]  ? lockdep_init_map_type+0x2c3/0x7a0
+[   40.513362][ T8050]  ? hung_up_tty_compat_ioctl+0x40/0x40
+[   40.513789][ T8050]  ? __raw_spin_lock_init+0x36/0x110
+[   40.514192][ T8050]  ? tty_port_init+0x152/0x1b0
+[   40.514590][ T8050]  ? __sanitizer_cov_trace_pc+0x1a/0x40
+[   40.515028][ T8050]  ? gsm_dlci_alloc+0x339/0x400
+[   40.515422][ T8050]  gsmld_open+0x58b/0x820
+[   40.515771][ T8050]  ? gsm_mux_rx_netchar+0x2d0/0x2d0
+[   40.516180][ T8050]  tty_ldisc_open.isra.0+0x9b/0x110
+[   40.516598][ T8050]  tty_set_ldisc+0x2e8/0x670
+[   40.516973][ T8050]  tty_ioctl+0x641/0x14f0
+[   40.517325][ T8050]  ? send_break+0x3b0/0x3b0
+[   40.517686][ T8050]  ? __sanitizer_cov_trace_switch+0x50/0x90
+[   40.518173][ T8050]  ? __sanitizer_cov_trace_pc+0x1a/0x40
+[   40.518630][ T8050]  ? do_vfs_ioctl+0x27d/0x1090
+[   40.519014][ T8050]  ? ioctl_file_clone+0x180/0x180
+[   40.519431][ T8050]  ? lock_downgrade+0x680/0x680
+[   40.519810][ T8050]  ? rcu_read_lock_sched_held+0xd0/0xd0
+[   40.520236][ T8050]  ? __fget_files+0x289/0x3c0
+[   40.520597][ T8050]  ? __sanitizer_cov_trace_pc+0x1a/0x40
+[   40.521021][ T8050]  ? __sanitizer_cov_trace_pc+0x1a/0x40
+[   40.521450][ T8050]  ? send_break+0x3b0/0x3b0
+[   40.521811][ T8050]  __x64_sys_ioctl+0x193/0x200
+[   40.522138][ T8050]  do_syscall_64+0x2d/0x70
+[   40.522420][ T8050]  entry_SYSCALL_64_after_hwframe+0x44/0xae
+[   40.522841][ T8050] RIP: 0033:0x47338d
+[   40.523092][ T8050] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 bc ff ff ff f7 d8 64 89 01 48
+[   40.524556][ T8050] RSP: 002b:00007ff4d8e04c58 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[   40.525226][ T8050] RAX: ffffffffffffffda RBX: 000000000059c080 RCX: 000000000047338d
+[   40.525833][ T8050] RDX: 0000000020000080 RSI: 0000000000005423 RDI: 0000000000000003
+[   40.526426][ T8050] RBP: 00007ff4d8e04c90 R08: 0000000000000000 R09: 0000000000000000
+[   40.527057][ T8050] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000051
+[   40.527671][ T8050] R13: 00007fff86f0a5ef R14: 00007fff86f0a790 R15: 00007ff4d8e04dc0
+[   40.600569][ T8066] ==================================================================
+[   40.601343][ T8066] BUG: KASAN: use-after-free in cdev_del+0x8b/0x90
+[   40.602159][ T8066] Read of size 4 at addr ffff888011e20864 by task syz-executor/8066
+[   40.603721][ T8066] 
+[   40.604178][ T8066] CPU: 1 PID: 8066 Comm: syz-executor Not tainted 5.12.0-rc5+ #7
+[   40.605622][ T8066] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.13.0-1ubuntu1.1 04/01/2014
+[   40.607594][ T8066] Call Trace:
+[   40.608108][ T8066]  dump_stack+0xfa/0x151
+[   40.608903][ T8066]  ? cdev_del+0x8b/0x90
+[   40.609687][ T8066]  print_address_description.constprop.0.cold+0x82/0x32c
+[   40.611041][ T8066]  ? cdev_del+0x8b/0x90
+[   40.611857][ T8066]  ? cdev_del+0x8b/0x90
+[   40.612670][ T8066]  kasan_report.cold+0x7c/0xd8
+[   40.613584][ T8066]  ? cdev_del+0x8b/0x90
+[   40.614363][ T8066]  cdev_del+0x8b/0x90
+[   40.615116][ T8066]  tty_unregister_device+0x112/0x1b0
+[   40.615988][ T8066]  gsmld_close+0xb3/0x1f0
+[   40.616359][ T8066]  ? gsmld_ioctl+0xf00/0xf00
+[   40.616699][ T8066]  tty_ldisc_close.isra.0+0x110/0x190
+[   40.617177][ T8066]  tty_ldisc_kill+0x94/0x150
+[   40.617526][ T8066]  tty_ldisc_hangup+0x2d0/0x630
+[   40.617883][ T8066]  __tty_hangup.part.0+0x2f0/0x700
+[   40.618258][ T8066]  ? file_tty_write.isra.0+0x8a0/0x8a0
+[   40.619304][ T8066]  tty_ioctl+0x992/0x14f0
+[   40.620006][ T8066]  ? send_break+0x3b0/0x3b0
+[   40.620759][ T8066]  ? __sanitizer_cov_trace_switch+0x50/0x90
+[   40.621839][ T8066]  ? __sanitizer_cov_trace_pc+0x1a/0x40
+[   40.622917][ T8066]  ? do_vfs_ioctl+0x27d/0x1090
+[   40.623833][ T8066]  ? ioctl_file_clone+0x180/0x180
+[   40.624560][ T8066]  ? lock_downgrade+0x680/0x680
+[   40.624927][ T8066]  ? rcu_read_lock_sched_held+0xd0/0xd0
+[   40.625337][ T8066]  ? __fget_files+0x289/0x3c0
+[   40.625682][ T8066]  ? __sanitizer_cov_trace_pc+0x1a/0x40
+[   40.626082][ T8066]  ? __sanitizer_cov_trace_pc+0x1a/0x40
+[   40.626605][ T8066]  ? send_break+0x3b0/0x3b0
+[   40.627322][ T8066]  __x64_sys_ioctl+0x193/0x200
+[   40.628221][ T8066]  do_syscall_64+0x2d/0x70
+[   40.629017][ T8066]  entry_SYSCALL_64_after_hwframe+0x44/0xae
+[   40.630051][ T8066] RIP: 0033:0x47338d
+[   40.630749][ T8066] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 bc ff ff ff f7 d8 64 89 01 48
+[   40.632709][ T8066] RSP: 002b:00007ff4d8de3c58 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[   40.633327][ T8066] RAX: ffffffffffffffda RBX: 000000000059c128 RCX: 000000000047338d
+[   40.633910][ T8066] RDX: 0000000000000000 RSI: 0000000000005437 RDI: 0000000000000003
+[   40.634492][ T8066] RBP: 00000000004e8e5d R08: 0000000000000000 R09: 0000000000000000
+[   40.635130][ T8066] R10: 0000000000000000 R11: 0000000000000246 R12: 000000000059c128
+[   40.636118][ T8066] R13: 00007fff86f0a5ef R14: 00007fff86f0a790 R15: 00007ff4d8de3dc0
+[   40.636690][ T8066] 
+[   40.636862][ T8066] Allocated by task 8050:
+[   40.637177][ T8066]  kasan_save_stack+0x1b/0x40
+[   40.637526][ T8066]  __kasan_kmalloc+0x7a/0x90
+[   40.637864][ T8066]  kmem_cache_alloc_trace+0x19f/0x350
+[   40.638263][ T8066]  cdev_alloc+0x3d/0xd0
+[   40.638584][ T8066]  tty_cdev_add.isra.0+0x49/0x290
+[   40.639029][ T8066]  tty_register_device_attr+0x428/0x6f0
+[   40.639744][ T8066]  gsmld_open+0x58b/0x820
+[   40.640463][ T8066]  tty_ldisc_open.isra.0+0x9b/0x110
+[   40.641181][ T8066]  tty_set_ldisc+0x2e8/0x670
+[   40.641519][ T8066]  tty_ioctl+0x641/0x14f0
+[   40.641839][ T8066]  __x64_sys_ioctl+0x193/0x200
+[   40.642193][ T8066]  do_syscall_64+0x2d/0x70
+[   40.642535][ T8066]  entry_SYSCALL_64_after_hwframe+0x44/0xae
+[   40.642965][ T8066] 
+[   40.643140][ T8066] Freed by task 8050:
+[   40.643424][ T8066]  kasan_save_stack+0x1b/0x40
+[   40.644147][ T8066]  kasan_set_track+0x1c/0x30
+[   40.644729][ T8066]  kasan_set_free_info+0x20/0x30
+[   40.645359][ T8066]  __kasan_slab_free+0xdb/0x110
+[   40.645806][ T8066]  kfree+0xf8/0x430
+[   40.646128][ T8066]  cdev_dynamic_release+0x3a/0x50
+[   40.646505][ T8066]  kobject_put+0x1c8/0x530
+[   40.646841][ T8066]  tty_cdev_add.isra.0+0x1e6/0x290
+[   40.647220][ T8066]  tty_register_device_attr+0x428/0x6f0
+[   40.647627][ T8066]  gsmld_open+0x58b/0x820
+[   40.647958][ T8066]  tty_ldisc_open.isra.0+0x9b/0x110
+[   40.648344][ T8066]  tty_set_ldisc+0x2e8/0x670
+[   40.648689][ T8066]  tty_ioctl+0x641/0x14f0
+[   40.649016][ T8066]  __x64_sys_ioctl+0x193/0x200
+[   40.649376][ T8066]  do_syscall_64+0x2d/0x70
+[   40.649700][ T8066]  entry_SYSCALL_64_after_hwframe+0x44/0xae
+[   40.650130][ T8066] 
+[   40.650314][ T8066] The buggy address belongs to the object at ffff888011e20800
+[   40.650314][ T8066]  which belongs to the cache kmalloc-128 of size 128
+[   40.651322][ T8066] The buggy address is located 100 bytes inside of
+[   40.651322][ T8066]  128-byte region [ffff888011e20800, ffff888011e20880)
+[   40.652255][ T8066] The buggy address belongs to the page:
+[   40.652656][ T8066] page:00000000db1a2789 refcount:1 mapcount:0 mapping:0000000000000000 index:0x0 pfn:0x11e20
+[   40.653378][ T8066] flags: 0xfff00000000200(slab)
+[   40.653739][ T8066] raw: 00fff00000000200 ffffea00006e5b00 0000000500000005 ffff88800fc418c0
+[   40.654344][ T8066] raw: 0000000000000000 0000000000100010 00000001ffffffff 0000000000000000
+[   40.654950][ T8066] page dumped because: kasan: bad access detected
+[   40.655413][ T8066] 
+[   40.655588][ T8066] Memory state around the buggy address:
+[   40.655983][ T8066]  ffff888011e20700: 00 00 00 00 00 00 00 00 00 00 00 00 00 fc fc fc
+[   40.656541][ T8066]  ffff888011e20780: fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc
+[   40.657114][ T8066] >ffff888011e20800: fa fb fb fb fb fb fb fb fb fb fb fb fb fb fb fb
+[   40.657675][ T8066]                                                        ^
+[   40.658204][ T8066]  ffff888011e20880: fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc
+[   40.658806][ T8066]  ffff888011e20900: fa fb fb fb fb fb fb fb fb fb fb fb fb fb fb fb
+[   40.659459][ T8066] ==================================================================
+[   40.660202][ T8066] Disabling lock debugging due to kernel taint
+[[0;32m  OK  [0m] Started Daily apt upgrade and clean activities.
+[   40.733835][   T30] Bluetooth: hci0: command 0x0409 tx timeout
+[   40.925690][ T8066] Kernel panic - not syncing: panic_on_warn set ...
+[   40.925702][ T8066] CPU: 0 PID: 8066 Comm: syz-executor Tainted: G    B             5.12.0-rc5+ #7
+[   40.925718][ T8066] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.13.0-1ubuntu1.1 04/01/2014
+[   40.925726][ T8066] Call Trace:
+[   40.925731][ T8066]  dump_stack+0xfa/0x151
+[   40.925750][ T8066]  panic+0x306/0x73d
+[   40.925766][ T8066]  ? print_oops_end_marker.cold+0x15/0x15
+[   40.925785][ T8066]  ? preempt_schedule_common+0x5e/0xc0
+[   40.925801][ T8066]  ? cdev_del+0x8b/0x90
+[   40.925815][ T8066]  ? cdev_del+0x8b/0x90
+[   40.925828][ T8066]  ? preempt_schedule_thunk+0x16/0x18
+[   40.925845][ T8066]  ? cdev_del+0x8b/0x90
+[   40.925858][ T8066]  ? cdev_del+0x8b/0x90
+[   40.925871][ T8066]  end_report.cold+0x5a/0x5a
+[   40.925886][ T8066]  kasan_report.cold+0x6a/0xd8
+[   40.925902][ T8066]  ? cdev_del+0x8b/0x90
+[   40.925916][ T8066]  cdev_del+0x8b/0x90
+[   40.925932][ T8066]  tty_unregister_device+0x112/0x1b0
+[   40.925948][ T8066]  gsmld_close+0xb3/0x1f0
+[   40.925963][ T8066]  ? gsmld_ioctl+0xf00/0xf00
+[   40.925978][ T8066]  tty_ldisc_close.isra.0+0x110/0x190
+[   40.925995][ T8066]  tty_ldisc_kill+0x94/0x150
+[   40.926012][ T8066]  tty_ldisc_hangup+0x2d0/0x630
+[   40.926029][ T8066]  __tty_hangup.part.0+0x2f0/0x700
+[   40.926043][ T8066]  ? file_tty_write.isra.0+0x8a0/0x8a0
+[   40.926059][ T8066]  tty_ioctl+0x992/0x14f0
+[   40.926074][ T8066]  ? send_break+0x3b0/0x3b0
+[   40.926087][ T8066]  ? __sanitizer_cov_trace_switch+0x50/0x90
+[   40.926104][ T8066]  ? __sanitizer_cov_trace_pc+0x1a/0x40
+[   40.926118][ T8066]  ? do_vfs_ioctl+0x27d/0x1090
+[   40.926134][ T8066]  ? ioctl_file_clone+0x180/0x180
+[   40.926148][ T8066]  ? lock_downgrade+0x680/0x680
+[   40.926167][ T8066]  ? rcu_read_lock_sched_held+0xd0/0xd0
+[   40.926186][ T8066]  ? __fget_files+0x289/0x3c0
+[   40.926202][ T8066]  ? __sanitizer_cov_trace_pc+0x1a/0x40
+[   40.926216][ T8066]  ? __sanitizer_cov_trace_pc+0x1a/0x40
+[   40.926231][ T8066]  ? send_break+0x3b0/0x3b0
+[   40.926245][ T8066]  __x64_sys_ioctl+0x193/0x200
+[   40.926261][ T8066]  do_syscall_64+0x2d/0x70
+[   40.926275][ T8066]  entry_SYSCALL_64_after_hwframe+0x44/0xae
+[   40.926294][ T8066] RIP: 0033:0x47338d
+[   40.926305][ T8066] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 bc ff ff ff f7 d8 64 89 01 48
+[   40.926319][ T8066] RSP: 002b:00007ff4d8de3c58 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[   40.926334][ T8066] RAX: ffffffffffffffda RBX: 000000000059c128 RCX: 000000000047338d
+[   40.926344][ T8066] RDX: 0000000000000000 RSI: 0000000000005437 RDI: 0000000000000003
+[   40.926353][ T8066] RBP: 00000000004e8e5d R08: 0000000000000000 R09: 0000000000000000
+[   40.926362][ T8066] R10: 0000000000000000 R11: 0000000000000246 R12: 000000000059c128
+[   40.926371][ T8066] R13: 00007fff86f0a5ef R14: 00007fff86f0a790 R15: 00007ff4d8de3dc0
+[   40.926449][ T8066] Dumping ftrace buffer:
+[   40.926459][ T8066]    (ftrace buffer empty)
+[   40.926464][ T8066] Kernel Offset: disabled

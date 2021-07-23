@@ -1,0 +1,3 @@
+TITLE: BUG: unable to handle kernel NULL pointer dereference in io_uring_cancel_task_requests
+MAINTAINERS (TO): ["axboe@kernel.dk", "io-uring@vger.kernel.org"]
+MAINTAINERS (CC): ["asml.silence@gmail.com", "linux-kernel@vger.kernel.org"]

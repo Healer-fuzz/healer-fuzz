@@ -1,0 +1,6 @@
+r0 = add_key$keyring(&(0x7f0000000000)='keyring\xff\x00', &(0x7f0000000040)={'syz',0x2,0x0}, 0x0, 0x0, 0xfffffffffffffffd)
+ioctl$TIOCEXCL(r0, 0x540c)
+clock_settime(0x0, &(0x7f0000000080)={r0,r0})
+clock_settime(0x0, &(0x7f00000000c0)={r0,0x0})
+pause()
+keyctl$restrict_keyring(0x1d, r0, &(0x7f0000000100)='dns_resolver\xff\x00', &(0x7f0000000140)='\xa2\x00')

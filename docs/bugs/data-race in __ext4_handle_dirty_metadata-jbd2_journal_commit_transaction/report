@@ -1,0 +1,6 @@
+BUG: KCSAN: data-race in __ext4_handle_dirty_metadata / jbd2_journal_commit_transaction
+read-write to 0xffff88800e142800 of 8 bytes by task 4823 on cpu 0:
+ jbd2_journal_commit_transaction+0x222/0x3200 fs/jbd2/commit.c:443
+ kjournald2+0x253/0x470 fs/jbd2/journal.c:213
+ kthread+0x1f0/0x220 kernel/kthread.c:292
+ ret_from_fork+0x1f/0x30 arch/x86/entry/entry_64.S:294

@@ -1,0 +1,50 @@
+BUG: kernel NULL pointer dereference, address: 0000000000000000
+#PF: supervisor instruction fetch in kernel mode
+#PF: error_code(0x0010) - not-present page
+PGD f250067 P4D f250067 PUD 143c2067 PMD 0 
+Oops: 0010 [#1] PREEMPT SMP
+CPU: 0 PID: 3941 Comm: kworker/0:3 Not tainted 5.12.0-rc6+ #7
+Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+Workqueue: events l2cap_chan_timeout
+RIP: 0010:0x0
+Code: Unable to access opcode bytes at RIP 0xffffffffffffffd6.
+RSP: 0018:ffffc90008f17cb0 EFLAGS: 00010246
+RAX: ffff88800b904b88 RBX: 0000000000000005 RCX: 0000000000000915
+RDX: 0001888014391aa0 RSI: ffffffff86eeaf90 RDI: ffff888014391800
+RBP: ffff888012fae020 R08: 0000000000000000 R09: 0001888014391aa7
+R10: 0001ffffffffffff R11: ffff88800b9040c0 R12: 0000000000000000
+R13: ffff888012fae000 R14: 000000000000006f R15: ffff888014391800
+FS:  0000000000000000(0000) GS:ffff88803ec00000(0000) knlGS:0000000000000000
+CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+CR2: ffffffffffffffd6 CR3: 000000000daa7000 CR4: 0000000000750ef0
+DR0: 0000000000000000 DR1: 0000000000000000 DR2: 0000000000000000
+DR3: 0000000000000000 DR6: 00000000fffe0ff0 DR7: 0000000000000400
+PKRU: 55555554
+Call Trace:
+ l2cap_sock_teardown_cb+0x2f0/0x320 net/bluetooth/l2cap_sock.c:1545
+ l2cap_chan_del+0x68/0x4a0 net/bluetooth/l2cap_core.c:618
+ l2cap_chan_close+0x47c/0x4d0 net/bluetooth/l2cap_core.c:741
+ l2cap_chan_timeout+0xce/0x120 net/bluetooth/l2cap_core.c:436
+ process_one_work+0x3e1/0x940 kernel/workqueue.c:2275
+ worker_thread+0x64a/0xaa0 kernel/workqueue.c:2421
+ kthread+0x1f0/0x220 kernel/kthread.c:292
+ ret_from_fork+0x1f/0x30 arch/x86/entry/entry_64.S:294
+Modules linked in:
+Dumping ftrace buffer:
+   (ftrace buffer empty)
+CR2: 0000000000000000
+---[ end trace 47915c53c63d14c6 ]---
+RIP: 0010:0x0
+Code: Unable to access opcode bytes at RIP 0xffffffffffffffd6.
+RSP: 0018:ffffc90008f17cb0 EFLAGS: 00010246
+RAX: ffff88800b904b88 RBX: 0000000000000005 RCX: 0000000000000915
+RDX: 0001888014391aa0 RSI: ffffffff86eeaf90 RDI: ffff888014391800
+RBP: ffff888012fae020 R08: 0000000000000000 R09: 0001888014391aa7
+R10: 0001ffffffffffff R11: ffff88800b9040c0 R12: 0000000000000000
+R13: ffff888012fae000 R14: 000000000000006f R15: ffff888014391800
+FS:  0000000000000000(0000) GS:ffff88803ec00000(0000) knlGS:0000000000000000
+CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+CR2: ffffffffffffffd6 CR3: 000000000daa7000 CR4: 0000000000750ef0
+DR0: 0000000000000000 DR1: 0000000000000000 DR2: 0000000000000000
+DR3: 0000000000000000 DR6: 00000000fffe0ff0 DR7: 0000000000000400
+PKRU: 55555554

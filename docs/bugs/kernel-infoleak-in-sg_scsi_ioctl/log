@@ -1,0 +1,96 @@
+[ 1111.813993] =====================================================
+[ 1111.815216] BUG: KMSAN: kernel-infoleak in kmsan_copy_to_user+0x9c/0xb0
+[ 1111.816490] CPU: 2 PID: 23939 Comm: executor Not tainted 5.12.0-rc6+ #1
+[ 1111.817833] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.13.0-1ubuntu1.1 04/01/2014
+[ 1111.819587] Call Trace:
+[ 1111.820084]  dump_stack+0x1ff/0x275
+[ 1111.820795]  kmsan_report+0xfb/0x1e0
+[ 1111.821519]  kmsan_internal_check_memory+0x48c/0x520
+[ 1111.822708]  kmsan_copy_to_user+0x9c/0xb0
+[ 1111.823487]  _copy_to_user+0x112/0x1d0
+[ 1111.824223]  sg_scsi_ioctl+0xfa9/0x1180
+[ 1111.824988]  sg_ioctl_common+0x2713/0x4930
+[ 1111.825899]  ? kmsan_get_metadata+0x11d/0x180
+[ 1111.826397]  sg_ioctl+0x166/0x2d0
+[ 1111.826646]  ? sg_poll+0x760/0x760
+[ 1111.826899]  __se_sys_ioctl+0x2c2/0x400
+[ 1111.827208]  ? kmsan_get_metadata+0x4f/0x180
+[ 1111.827522]  __x64_sys_ioctl+0x4a/0x70
+[ 1111.827801]  do_syscall_64+0xa2/0x120
+[ 1111.828137]  entry_SYSCALL_64_after_hwframe+0x44/0xae
+[ 1111.828568] RIP: 0033:0x47338d
+[ 1111.828834] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 bc ff ff ff f7 d8 64 89 01 48
+[ 1111.830352] RSP: 002b:00007fe31ab90c58 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[ 1111.830952] RAX: ffffffffffffffda RBX: 000000000059c128 RCX: 000000000047338d
+[ 1111.831506] RDX: 0000000020000040 RSI: 0000000000000001 RDI: 0000000000000003
+[ 1111.832072] RBP: 00000000004e8e5d R08: 0000000000000000 R09: 0000000000000000
+[ 1111.832714] R10: 0000000000000000 R11: 0000000000000246 R12: 000000000059c128
+[ 1111.833231] R13: 00007ffe2284af2f R14: 00007ffe2284b0d0 R15: 00007fe31ab90dc0
+[ 1111.833824]
+[ 1111.833979] Uninit was stored to memory at:
+[ 1111.834274]  kmsan_internal_chain_origin+0xad/0x130
+[ 1111.834655]  kmsan_memcpy_memmove_metadata+0x25b/0x290
+[ 1111.835032]  kmsan_memcpy_metadata+0xb/0x10
+[ 1111.835698]  __msan_memcpy+0x46/0x60
+[ 1111.835965]  bio_copy_kern_endio_read+0x3ee/0x560
+[ 1111.836307]  bio_endio+0xa1a/0xcc0
+[ 1111.836561]  blk_update_request+0xd4f/0x2190
+[ 1111.836868]  scsi_end_request+0x111/0xc50
+[ 1111.837170]  scsi_io_completion+0x276/0x2840
+[ 1111.837488]  scsi_finish_command+0x6fc/0x720
+[ 1111.837801]  scsi_softirq_done+0x205/0xa40
+[ 1111.838105]  blk_done_softirq+0x133/0x1e0
+[ 1111.838399]  __do_softirq+0x271/0x782
+[ 1111.838671]
+[ 1111.838788] Uninit was created at:
+[ 1111.839031]  kmsan_save_stack_with_flags+0x3c/0x90
+[ 1111.839379]  kmsan_alloc_page+0xc4/0x1b0
+[ 1111.839665]  __alloc_pages_nodemask+0xdb0/0x54a0
+[ 1111.839999]  alloc_pages_current+0x671/0x990
+[ 1111.840314]  blk_rq_map_kern+0xb8e/0x1310
+[ 1111.840617]  sg_scsi_ioctl+0xc94/0x1180
+[ 1111.840908]  sg_ioctl_common+0x2713/0x4930
+[ 1111.841221]  sg_ioctl+0x166/0x2d0
+[ 1111.841476]  __se_sys_ioctl+0x2c2/0x400
+[ 1111.842204]  __x64_sys_ioctl+0x4a/0x70
+[ 1111.842750]  do_syscall_64+0xa2/0x120
+[ 1111.843212]  entry_SYSCALL_64_after_hwframe+0x44/0xae
+[ 1111.843601]
+[ 1111.843734] Byte 0 of 1 is uninitialized
+[ 1111.844052] Memory access of size 1 starts at ffff99e033fb9360
+[ 1111.844497] Data copied to user address 0000000020000048
+[ 1111.844896] =====================================================
+[ 1111.845729] Disabling lock debugging due to kernel taint
+[ 1111.846228] Kernel panic - not syncing: panic_on_warn set ...
+[ 1111.846818] CPU: 2 PID: 23939 Comm: executor Tainted: G    B             5.12.0-rc6+ #1
+[ 1111.847489] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.13.0-1ubuntu1.1 04/01/2014
+[ 1111.850258] Call Trace:
+[ 1111.850605]  dump_stack+0x1ff/0x275
+[ 1111.851176]  panic+0x3c0/0xbf5
+[ 1111.851478]  ? __msan_metadata_ptr_for_store_1+0x13/0x20
+[ 1111.851865]  kmsan_report+0x1de/0x1e0
+[ 1111.852420]  kmsan_internal_check_memory+0x48c/0x520
+[ 1111.853397]  kmsan_copy_to_user+0x9c/0xb0
+[ 1111.853822]  _copy_to_user+0x112/0x1d0
+[ 1111.854351]  sg_scsi_ioctl+0xfa9/0x1180
+[ 1111.854823]  sg_ioctl_common+0x2713/0x4930
+[ 1111.855298]  ? kmsan_get_metadata+0x11d/0x180
+[ 1111.855751]  sg_ioctl+0x166/0x2d0
+[ 1111.856052]  ? sg_poll+0x760/0x760
+[ 1111.856307]  __se_sys_ioctl+0x2c2/0x400
+[ 1111.856769]  ? kmsan_get_metadata+0x4f/0x180
+[ 1111.857410]  __x64_sys_ioctl+0x4a/0x70
+[ 1111.857867]  do_syscall_64+0xa2/0x120
+[ 1111.858306]  entry_SYSCALL_64_after_hwframe+0x44/0xae
+[ 1111.859014] RIP: 0033:0x47338d
+[ 1111.859242] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 bc ff ff ff f7 d8 64 89 01 48
+[ 1111.861375] RSP: 002b:00007fe31ab90c58 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[ 1111.861914] RAX: ffffffffffffffda RBX: 000000000059c128 RCX: 000000000047338d
+[ 1111.862406] RDX: 0000000020000040 RSI: 0000000000000001 RDI: 0000000000000003
+[ 1111.862958] RBP: 00000000004e8e5d R08: 0000000000000000 R09: 0000000000000000
+[ 1111.865260] R10: 0000000000000000 R11: 0000000000000246 R12: 000000000059c128
+[ 1111.866627] R13: 00007ffe2284af2f R14: 00007ffe2284b0d0 R15: 00007fe31ab90dc0
+[ 1111.868140] Dumping ftrace buffer:
+[ 1111.868721]    (ftrace buffer empty)
+[ 1111.869264] Kernel Offset: 0x1de00000 from 0xffffffff81000000 (relocation range: 0xffffffff80000000-0xffffffffbfffffff)
+[ 1111.870283] Rebooting in 1 seconds..

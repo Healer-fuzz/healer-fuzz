@@ -1,0 +1,4 @@
+r0 = creat(&(0x7f0000000000)='./\xa3:m\xc5\xa1\x96U\xe4\xdd\xad\xbe\xe9\xffu1w\x00', 0x82)
+fsetxattr$trusted_overlay_upper(r0, &(0x7f0000000100)='trusted.overlay.upper\xff\x00', &(0x7f0000000140)={0x0,0xfb,0x35,0x2,0x32bd9c68a138c6e3,"0000000000000000bcb9e9ff3908b6ba7851da5452129bc0","01000000000000000100000000000000288ab4f17779ec65"}, 0x35, 0x1)
+ioctl$F2FS_IOC_FLUSH_DEVICE(r0, 0x4008f50a, &(0x7f0000000040)={0x435ebaec2450ee5e,0xba30c984e977361a})
+fsetxattr$security_evm(r0, &(0x7f0000000080)='security.evm\xff\x00', &(0x7f00000000c0)=@v2={0x0,0x1,0xe,0xfb911fe50f972406,0x18,"01000000000000000000000000000000694ad4f44f8ff4cd"}, 0x21, 0x1)

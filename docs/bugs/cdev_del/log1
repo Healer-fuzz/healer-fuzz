@@ -1,0 +1,205 @@
+[[0;32m  OK  [0m] Started Daily apt download activities.
+[   39.640398][ T8021] FAULT_INJECTION: forcing a failure.
+[   39.640398][ T8021] name failslab, interval 1, probability 0, space 0, times 0
+[   39.641258][ T8021] CPU: 0 PID: 8021 Comm: syz-executor Not tainted 5.12.0-rc5+ #7
+[   39.641684][ T8021] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.13.0-1ubuntu1.1 04/01/2014
+[   39.642226][ T8021] Call Trace:
+[   39.642475][ T8021]  dump_stack+0xfa/0x151
+[   39.642802][ T8021]  should_fail.cold+0x5/0xa
+[   39.643098][ T8021]  should_failslab+0x5/0x10
+[   39.643345][ T8021]  __kmalloc+0x7e/0x3b0
+[   39.643608][ T8021]  ? kobj_map+0x72/0x440
+[   39.643905][ T8021]  ? emergency_thaw_all+0x1a0/0x1a0
+[   39.644347][ T8021]  kobj_map+0x72/0x440
+[   39.644704][ T8021]  ? cdev_get+0xb0/0xb0
+[   39.645076][ T8021]  ? cdev_alloc+0x3d/0xd0
+[   39.645462][ T8021]  cdev_add+0x9f/0x130
+[   39.646010][ T8021]  tty_cdev_add.isra.0+0x177/0x290
+[   39.646406][ T8021]  tty_register_device_attr+0x428/0x6f0
+[   39.646847][ T8021]  ? lockdep_init_map_type+0x2c3/0x7a0
+[   39.647335][ T8021]  ? hung_up_tty_compat_ioctl+0x40/0x40
+[   39.647779][ T8021]  ? __raw_spin_lock_init+0x36/0x110
+[   39.648313][ T8021]  ? tty_port_init+0x152/0x1b0
+[   39.648852][ T8021]  ? __sanitizer_cov_trace_pc+0x1a/0x40
+[   39.649258][ T8021]  ? gsm_dlci_alloc+0x339/0x400
+[   39.649701][ T8021]  gsmld_open+0x58b/0x820
+[   39.650026][ T8021]  ? gsm_mux_rx_netchar+0x2d0/0x2d0
+[   39.650455][ T8021]  tty_ldisc_open.isra.0+0x9b/0x110
+[   39.650849][ T8021]  tty_set_ldisc+0x2e8/0x670
+[   39.651224][ T8021]  tty_ioctl+0x641/0x14f0
+[   39.651559][ T8021]  ? send_break+0x3b0/0x3b0
+[   39.651897][ T8021]  ? __sanitizer_cov_trace_switch+0x50/0x90
+[   39.652361][ T8021]  ? __sanitizer_cov_trace_pc+0x1a/0x40
+[   39.652796][ T8021]  ? do_vfs_ioctl+0x27d/0x1090
+[   39.653399][ T8021]  ? ioctl_file_clone+0x180/0x180
+[   39.653786][ T8021]  ? lock_downgrade+0x680/0x680
+[   39.654165][ T8021]  ? rcu_read_lock_sched_held+0xd0/0xd0
+[   39.654571][ T8021]  ? __fget_files+0x289/0x3c0
+[   39.654920][ T8021]  ? __sanitizer_cov_trace_pc+0x1a/0x40
+[   39.655321][ T8021]  ? __sanitizer_cov_trace_pc+0x1a/0x40
+[   39.655727][ T8021]  ? send_break+0x3b0/0x3b0
+[   39.656064][ T8021]  __x64_sys_ioctl+0x193/0x200
+[   39.656409][ T8021]  do_syscall_64+0x2d/0x70
+[   39.656741][ T8021]  entry_SYSCALL_64_after_hwframe+0x44/0xae
+[   39.657205][ T8021] RIP: 0033:0x47338d
+[   39.657503][ T8021] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 bc ff ff ff f7 d8 64 89 01 48
+[   39.658902][ T8021] RSP: 002b:00007fbff552fc58 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[   39.659547][ T8021] RAX: ffffffffffffffda RBX: 000000000059c080 RCX: 000000000047338d
+[   39.660257][ T8021] RDX: 0000000020000540 RSI: 0000000000005423 RDI: 0000000000000003
+[   39.660280][ T8021] RBP: 00007fbff552fc90 R08: 0000000000000000 R09: 0000000000000000
+[   39.660291][ T8021] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000037
+[   39.660301][ T8021] R13: 00007ffe326d3eef R14: 00007ffe326d4090 R15: 00007fbff552fdc0
+         Starting Daily apt upgrade and clean activities...
+[   39.903686][ T8028] ==================================================================
+[   39.904465][ T8028] BUG: KASAN: use-after-free in cdev_del+0x8b/0x90
+[   39.904939][ T8028] Read of size 4 at addr ffff888011d36f64 by task syz-executor/8028
+[   39.905496][ T8028] 
+[   39.905679][ T8028] CPU: 1 PID: 8028 Comm: syz-executor Not tainted 5.12.0-rc5+ #7
+[   39.906238][ T8028] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.13.0-1ubuntu1.1 04/01/2014
+[   39.906907][ T8028] Call Trace:
+[   39.907545][ T8028]  dump_stack+0xfa/0x151
+[   39.908020][ T8028]  ? cdev_del+0x8b/0x90
+[   39.908469][ T8028]  print_address_description.constprop.0.cold+0x82/0x32c
+[   39.909057][ T8028]  ? cdev_del+0x8b/0x90
+[   39.909420][ T8028]  ? cdev_del+0x8b/0x90
+[   39.909720][ T8028]  kasan_report.cold+0x7c/0xd8
+[   39.910068][ T8028]  ? cdev_del+0x8b/0x90
+[   39.910350][ T8028]  cdev_del+0x8b/0x90
+[   39.910673][ T8028]  tty_unregister_device+0x112/0x1b0
+[   39.911037][ T8028]  gsmld_close+0xb3/0x1f0
+[   39.911356][ T8028]  ? gsmld_ioctl+0xf00/0xf00
+[   39.911710][ T8028]  tty_ldisc_close.isra.0+0x110/0x190
+[   39.912112][ T8028]  tty_ldisc_kill+0x94/0x150
+[   39.912446][ T8028]  tty_ldisc_hangup+0x2d0/0x630
+[   39.912819][ T8028]  __tty_hangup.part.0+0x2f0/0x700
+[   39.913235][ T8028]  ? file_tty_write.isra.0+0x8a0/0x8a0
+[   39.913707][ T8028]  tty_ioctl+0x992/0x14f0
+[   39.914073][ T8028]  ? send_break+0x3b0/0x3b0
+[   39.914437][ T8028]  ? __sanitizer_cov_trace_switch+0x50/0x90
+[   39.914927][ T8028]  ? __sanitizer_cov_trace_pc+0x1a/0x40
+[   39.915241][ T8028]  ? do_vfs_ioctl+0x27d/0x1090
+[   39.915607][ T8028]  ? ioctl_file_clone+0x180/0x180
+[   39.915968][ T8028]  ? lock_downgrade+0x680/0x680
+[   39.916318][ T8028]  ? rcu_read_lock_sched_held+0xd0/0xd0
+[   39.916723][ T8028]  ? __fget_files+0x289/0x3c0
+[   39.917147][ T8028]  ? __sanitizer_cov_trace_pc+0x1a/0x40
+[   39.917542][ T8028]  ? __sanitizer_cov_trace_pc+0x1a/0x40
+[   39.918104][ T8028]  ? send_break+0x3b0/0x3b0
+[   39.918453][ T8028]  __x64_sys_ioctl+0x193/0x200
+[   39.918806][ T8028]  do_syscall_64+0x2d/0x70
+[   39.919133][ T8028]  entry_SYSCALL_64_after_hwframe+0x44/0xae
+[   39.919550][ T8028] RIP: 0033:0x47338d
+[   39.919777][ T8028] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 bc ff ff ff f7 d8 64 89 01 48
+[   39.920805][ T8028] RSP: 002b:00007fbff550ec58 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[   39.921404][ T8028] RAX: ffffffffffffffda RBX: 000000000059c128 RCX: 000000000047338d
+[   39.921857][ T8028] RDX: 0000000000000000 RSI: 0000000000005437 RDI: 0000000000000003
+[   39.922256][ T8028] RBP: 00000000004e8e5d R08: 0000000000000000 R09: 0000000000000000
+[   39.922656][ T8028] R10: 0000000000000000 R11: 0000000000000246 R12: 000000000059c128
+[   39.923068][ T8028] R13: 00007ffe326d3eef R14: 00007ffe326d4090 R15: 00007fbff550edc0
+[   39.923476][ T8028] 
+[   39.923605][ T8028] Allocated by task 8021:
+[   39.923834][ T8028]  kasan_save_stack+0x1b/0x40
+[   39.924095][ T8028]  __kasan_kmalloc+0x7a/0x90
+[   39.924343][ T8028]  kmem_cache_alloc_trace+0x19f/0x350
+[   39.924754][ T8028]  cdev_alloc+0x3d/0xd0
+[   39.925100][ T8028]  tty_cdev_add.isra.0+0x49/0x290
+[   39.925477][ T8028]  tty_register_device_attr+0x428/0x6f0
+[   39.925892][ T8028]  gsmld_open+0x58b/0x820
+[   39.926169][ T8028]  tty_ldisc_open.isra.0+0x9b/0x110
+[   39.926521][ T8028]  tty_set_ldisc+0x2e8/0x670
+[   39.926849][ T8028]  tty_ioctl+0x641/0x14f0
+[   39.927172][ T8028]  __x64_sys_ioctl+0x193/0x200
+[   39.927505][ T8028]  do_syscall_64+0x2d/0x70
+[   39.927867][ T8028]  entry_SYSCALL_64_after_hwframe+0x44/0xae
+[   39.928300][ T8028] 
+[   39.928500][ T8028] Freed by task 8021:
+[   39.928845][ T8028]  kasan_save_stack+0x1b/0x40
+[   39.929247][ T8028]  kasan_set_track+0x1c/0x30
+[   39.929599][ T8028]  kasan_set_free_info+0x20/0x30
+[   39.930048][ T8028]  __kasan_slab_free+0xdb/0x110
+[   39.930446][ T8028]  kfree+0xf8/0x430
+[   39.930763][ T8028]  cdev_dynamic_release+0x3a/0x50
+[   39.931145][ T8028]  kobject_put+0x1c8/0x530
+[   39.931485][ T8028]  tty_cdev_add.isra.0+0x1e6/0x290
+[   39.931858][ T8028]  tty_register_device_attr+0x428/0x6f0
+[   39.932223][ T8028]  gsmld_open+0x58b/0x820
+[   39.932533][ T8028]  tty_ldisc_open.isra.0+0x9b/0x110
+[   39.932899][ T8028]  tty_set_ldisc+0x2e8/0x670
+[   39.933241][ T8028]  tty_ioctl+0x641/0x14f0
+[   39.933547][ T8028]  __x64_sys_ioctl+0x193/0x200
+[   39.933837][ T8028]  do_syscall_64+0x2d/0x70
+[   39.934108][ T8028]  entry_SYSCALL_64_after_hwframe+0x44/0xae
+[   39.934506][ T8028] 
+[   39.934663][ T8028] The buggy address belongs to the object at ffff888011d36f00
+[   39.934663][ T8028]  which belongs to the cache kmalloc-128 of size 128
+[   39.935379][ T8028] The buggy address is located 100 bytes inside of
+[   39.935379][ T8028]  128-byte region [ffff888011d36f00, ffff888011d36f80)
+[   39.936146][ T8028] The buggy address belongs to the page:
+[   39.936536][ T8028] page:00000000b65aed25 refcount:1 mapcount:0 mapping:0000000000000000 index:0x0 pfn:0x11d36
+[   39.937169][ T8028] flags: 0xfff00000000200(slab)
+[   39.937517][ T8028] raw: 00fff00000000200 ffffea00004e9e40 0000000800000008 ffff88800fc418c0
+[   39.937973][ T8028] raw: 0000000000000000 0000000000100010 00000001ffffffff 0000000000000000
+[   39.938510][ T8028] page dumped because: kasan: bad access detected
+[   39.938847][ T8028] 
+[   39.938983][ T8028] Memory state around the buggy address:
+[   39.939312][ T8028]  ffff888011d36e00: fa fb fb fb fb fb fb fb fb fb fb fb fb fb fb fb
+[   39.939787][ T8028]  ffff888011d36e80: fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc
+[   39.940455][ T8028] >ffff888011d36f00: fa fb fb fb fb fb fb fb fb fb fb fb fb fb fb fb
+[   39.941017][ T8028]                                                        ^
+[   39.941509][ T8028]  ffff888011d36f80: fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc
+[   39.942049][ T8028]  ffff888011d37000: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+[   39.942601][ T8028] ==================================================================
+[   39.943153][ T8028] Disabling lock debugging due to kernel taint
+[   39.988364][ T2974] Bluetooth: hci0: command 0x0409 tx timeout
+[   40.032007][ T8028] Kernel panic - not syncing: panic_on_warn set ...
+[   40.032379][ T8028] CPU: 1 PID: 8028 Comm: syz-executor Tainted: G    B             5.12.0-rc5+ #7
+[   40.033060][ T8028] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.13.0-1ubuntu1.1 04/01/2014
+[   40.033913][ T8028] Call Trace:
+[   40.034266][ T8028]  dump_stack+0xfa/0x151
+[   40.034577][ T8028]  panic+0x306/0x73d
+[   40.034870][ T8028]  ? print_oops_end_marker.cold+0x15/0x15
+[   40.035316][ T8028]  ? preempt_schedule_common+0x5e/0xc0
+[   40.035722][ T8028]  ? cdev_del+0x8b/0x90
+[   40.036041][ T8028]  ? cdev_del+0x8b/0x90
+[   40.036324][ T8028]  ? preempt_schedule_thunk+0x16/0x18
+[   40.036822][ T8028]  ? cdev_del+0x8b/0x90
+[   40.037351][ T8028]  ? cdev_del+0x8b/0x90
+[   40.037932][ T8028]  end_report.cold+0x5a/0x5a
+[   40.038383][ T8028]  kasan_report.cold+0x6a/0xd8
+[   40.038771][ T8028]  ? cdev_del+0x8b/0x90
+[   40.039077][ T8028]  cdev_del+0x8b/0x90
+[   40.039376][ T8028]  tty_unregister_device+0x112/0x1b0
+[   40.039735][ T8028]  gsmld_close+0xb3/0x1f0
+[   40.040018][ T8028]  ? gsmld_ioctl+0xf00/0xf00
+[   40.040384][ T8028]  tty_ldisc_close.isra.0+0x110/0x190
+[   40.040997][ T8028]  tty_ldisc_kill+0x94/0x150
+[   40.041666][ T8028]  tty_ldisc_hangup+0x2d0/0x630
+[   40.042442][ T8028]  __tty_hangup.part.0+0x2f0/0x700
+[   40.043124][ T8028]  ? file_tty_write.isra.0+0x8a0/0x8a0
+[   40.044104][ T8028]  tty_ioctl+0x992/0x14f0
+[   40.044701][ T8028]  ? send_break+0x3b0/0x3b0
+[   40.044976][ T8028]  ? __sanitizer_cov_trace_switch+0x50/0x90
+[   40.045386][ T8028]  ? __sanitizer_cov_trace_pc+0x1a/0x40
+[   40.045785][ T8028]  ? do_vfs_ioctl+0x27d/0x1090
+[   40.046090][ T8028]  ? ioctl_file_clone+0x180/0x180
+[   40.046395][ T8028]  ? lock_downgrade+0x680/0x680
+[   40.046687][ T8028]  ? rcu_read_lock_sched_held+0xd0/0xd0
+[   40.046980][ T8028]  ? __fget_files+0x289/0x3c0
+[   40.047221][ T8028]  ? __sanitizer_cov_trace_pc+0x1a/0x40
+[   40.047515][ T8028]  ? __sanitizer_cov_trace_pc+0x1a/0x40
+[   40.047838][ T8028]  ? send_break+0x3b0/0x3b0
+[   40.048125][ T8028]  __x64_sys_ioctl+0x193/0x200
+[   40.048461][ T8028]  do_syscall_64+0x2d/0x70
+[   40.048771][ T8028]  entry_SYSCALL_64_after_hwframe+0x44/0xae
+[   40.049195][ T8028] RIP: 0033:0x47338d
+[   40.049477][ T8028] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 bc ff ff ff f7 d8 64 89 01 48
+[   40.050560][ T8028] RSP: 002b:00007fbff550ec58 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[   40.051011][ T8028] RAX: ffffffffffffffda RBX: 000000000059c128 RCX: 000000000047338d
+[   40.051550][ T8028] RDX: 0000000000000000 RSI: 0000000000005437 RDI: 0000000000000003
+[   40.052093][ T8028] RBP: 00000000004e8e5d R08: 0000000000000000 R09: 0000000000000000
+[   40.052566][ T8028] R10: 0000000000000000 R11: 0000000000000246 R12: 000000000059c128
+[   40.053104][ T8028] R13: 00007ffe326d3eef R14: 00007ffe326d4090 R15: 00007fbff550edc0
+[   40.053762][ T8028] Dumping ftrace buffer:
+[   40.054103][ T8028]    (ftrace buffer empty)
+[   40.054425][ T8028] Kernel Offset: disabled
+[   40.054755][ T8028] Rebooting in 1 seconds..

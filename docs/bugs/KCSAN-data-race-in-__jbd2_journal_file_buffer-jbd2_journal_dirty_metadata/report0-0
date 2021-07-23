@@ -1,0 +1,9 @@
+==================================================================
+BUG: KCSAN: data-race in __jbd2_journal_file_buffer / jbd2_journal_dirty_metadata
+write to 0xffff88800af6da38 of 8 bytes by task 4822 on cpu 1:
+ __jbd2_journal_file_buffer+0x18d/0x370 linux/fs/jbd2/transaction.c:2518
+ __jbd2_journal_refile_buffer+0x155/0x230 linux/fs/jbd2/transaction.c:2612
+ jbd2_journal_commit_transaction+0x24c6/0x3200 linux/fs/jbd2/commit.c:1084
+ kjournald2+0x253/0x470 linux/fs/jbd2/journal.c:213
+ kthread+0x1f0/0x220 linux/kernel/kthread.c:292
+ ret_from_fork+0x1f/0x30 linux/arch/x86/entry/entry_64.S:294

@@ -1,0 +1,28 @@
+[  122.088197][ T7925] ==================================================================
+[  122.089969][ T7925] BUG: KCSAN: data-race in __ext4_handle_dirty_metadata / jbd2_journal_commit_transaction
+[  122.091808][ T7925]
+[  122.092240][ T7925] read-write to 0xffff88800e142800 of 8 bytes by task 4823 on cpu 0:
+[  122.095638][ T7925]  jbd2_journal_commit_transaction+0x222/0x3200
+[  122.096926][ T7925]  kjournald2+0x253/0x470
+[  122.097831][ T7925]  kthread+0x1f0/0x220
+[  122.098664][ T7925]  ret_from_fork+0x1f/0x30
+[  122.099657][ T7925]
+[  122.100071][ T7925] read to 0xffff88800e142800 of 8 bytes by task 7925 on cpu 1:
+[  122.101504][ T7925]  __ext4_handle_dirty_metadata+0x11a/0x590
+[  122.102494][ T7925]  ext4_mark_iloc_dirty+0x12dd/0x16e0
+[  122.103394][ T7925]  __ext4_mark_inode_dirty+0x4d2/0x5d0
+[  122.106957][ T7925]  ext4_dirty_inode+0x86/0xa0
+[  122.107804][ T7925]  __mark_inode_dirty+0x70/0x6b0
+[  122.108732][ T7925]  file_update_time+0x3ab/0x3f0
+[  122.110412][ T7925]  file_modified+0x62/0x80
+[  122.111295][ T7925]  ext4_buffered_write_iter+0x1f9/0x3d0
+[  122.112381][ T7925]  ext4_file_write_iter+0x45e/0x10d0
+[  122.122982][ T7925]  vfs_write+0x6db/0x7c0
+[  122.123860][ T7925]  ksys_write+0xce/0x180
+[  122.124734][ T7925]  __x64_sys_write+0x3e/0x50
+[  122.125606][ T7925]  do_syscall_64+0x39/0x80
+[  122.130978][ T7925]  entry_SYSCALL_64_after_hwframe+0x44/0xae
+[  122.132122][ T7925]
+[  122.132598][ T7925] Reported by Kernel Concurrency Sanitizer on:
+[  122.133839][ T7925] CPU: 1 PID: 7925 Comm: rs:main Q:Reg Not tainted 5.11.0+ #5
+[  122.135267][ T7925] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014

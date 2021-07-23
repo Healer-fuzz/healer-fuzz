@@ -1,0 +1,78 @@
+[ 1536.399304][T14944] ==================================================================
+[ 1536.399841][T14944] BUG: KCSAN: data-race in __fput / ep_remove
+[ 1536.400234][T14944] 
+[ 1536.400393][T14944] write to 0xffff888041f062d0 of 8 bytes by task 14940 on cpu 0:
+[ 1536.400889][T14944]  ep_remove+0x2f0/0x340
+[ 1536.401176][T14944]  ep_free+0x18b/0x210
+[ 1536.401444][T14944]  ep_eventpoll_release+0x2e/0x40
+[ 1536.401776][T14944]  __fput+0x260/0x4e0
+[ 1536.402039][T14944]  ____fput+0x11/0x20
+[ 1536.402299][T14944]  task_work_run+0x8e/0x110
+[ 1536.402588][T14944]  get_signal+0x1430/0x1470
+[ 1536.402881][T14944]  arch_do_signal_or_restart+0x2a/0x260
+[ 1536.403225][T14944]  exit_to_user_mode_prepare+0x109/0x1a0
+[ 1536.403589][T14944]  syscall_exit_to_user_mode+0x20/0x40
+[ 1536.409228][T14944]  do_syscall_64+0x45/0x80
+[ 1536.409523][T14944]  entry_SYSCALL_64_after_hwframe+0x44/0xae
+[ 1536.409910][T14944] 
+[ 1536.410065][T14944] read to 0xffff888041f062d0 of 8 bytes by task 14944 on cpu 1:
+[ 1536.410557][T14944]  __fput+0x1db/0x4e0
+[ 1536.410826][T14944]  ____fput+0x11/0x20
+[ 1536.411098][T14944]  task_work_run+0x8e/0x110
+[ 1536.411400][T14944]  get_signal+0x1430/0x1470
+[ 1536.413782][T14944]  arch_do_signal_or_restart+0x2a/0x260
+[ 1536.414137][T14944]  exit_to_user_mode_prepare+0x109/0x1a0
+[ 1536.414497][T14944]  syscall_exit_to_user_mode+0x20/0x40
+[ 1536.414850][T14944]  do_syscall_64+0x45/0x80
+[ 1536.415148][T14944]  entry_SYSCALL_64_after_hwframe+0x44/0xae
+[ 1536.415546][T14944] 
+[ 1536.415704][T14944] Reported by Kernel Concurrency Sanitizer on:
+[ 1536.416091][T14944] CPU: 1 PID: 14944 Comm: executor Not tainted 5.11.0+ #5
+[ 1536.416583][T14944] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.13.0-1ubuntu1.1 04/01/2014
+[ 1536.417678][T14944] ==================================================================
+[ 1536.418209][T14944] Kernel panic - not syncing: panic_on_warn set ...
+[ 1536.418642][T14944] CPU: 1 PID: 14944 Comm: executor Not tainted 5.11.0+ #5
+[ 1536.419132][T14944] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.13.0-1ubuntu1.1 04/01/2014
+[ 1536.419775][T14944] Call Trace:
+[ 1536.419989][T14944]  dump_stack+0x137/0x194
+[ 1536.420268][T14944]  panic+0x1e8/0x5f5
+[ 1536.420524][T14944]  ? vprintk_emit+0x2fa/0x3e0
+[ 1536.420836][T14944]  kcsan_report+0x687/0x6a0
+[ 1536.421145][T14944]  ? kcsan_setup_watchpoint+0x423/0x490
+[ 1536.421525][T14944]  ? __fput+0x1db/0x4e0
+[ 1536.421801][T14944]  ? ____fput+0x11/0x20
+[ 1536.422070][T14944]  ? task_work_run+0x8e/0x110
+[ 1536.422375][T14944]  ? get_signal+0x1430/0x1470
+[ 1536.422682][T14944]  ? arch_do_signal_or_restart+0x2a/0x260
+[ 1536.423059][T14944]  ? exit_to_user_mode_prepare+0x109/0x1a0
+[ 1536.423438][T14944]  ? syscall_exit_to_user_mode+0x20/0x40
+[ 1536.424405][T14944]  ? do_syscall_64+0x45/0x80
+[ 1536.424710][T14944]  ? entry_SYSCALL_64_after_hwframe+0x44/0xae
+[ 1536.425113][T14944]  ? fsnotify+0x1167/0x1190
+[ 1536.425418][T14944]  kcsan_setup_watchpoint+0x423/0x490
+[ 1536.425783][T14944]  __fput+0x1db/0x4e0
+[ 1536.426058][T14944]  ____fput+0x11/0x20
+[ 1536.426314][T14944]  task_work_run+0x8e/0x110
+[ 1536.426622][T14944]  get_signal+0x1430/0x1470
+[ 1536.426917][T14944]  ? __x32_compat_sys_ppoll_time64+0x70/0x70
+[ 1536.427315][T14944]  ? should_fail+0x2a/0x250
+[ 1536.427623][T14944]  ? _copy_to_user+0x77/0x90
+[ 1536.427921][T14944]  ? put_timespec64+0x61/0x90
+[ 1536.428231][T14944]  arch_do_signal_or_restart+0x2a/0x260
+[ 1536.428589][T14944]  ? __se_sys_ppoll+0x17d/0x1b0
+[ 1536.428908][T14944]  exit_to_user_mode_prepare+0x109/0x1a0
+[ 1536.429271][T14944]  syscall_exit_to_user_mode+0x20/0x40
+[ 1536.429637][T14944]  do_syscall_64+0x45/0x80
+[ 1536.429970][T14944]  entry_SYSCALL_64_after_hwframe+0x44/0xae
+[ 1536.430380][T14944] RIP: 0033:0x47338d
+[ 1536.430654][T14944] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 bc ff ff ff f7 d8 64 89 01 48
+[ 1536.431946][T14944] RSP: 002b:00007fbd11cc2c58 EFLAGS: 00000246 ORIG_RAX: 000000000000010f
+[ 1536.432504][T14944] RAX: 0000000000000004 RBX: 000000000059c1d0 RCX: 000000000047338d
+[ 1536.433002][T14944] RDX: 0000000020000380 RSI: 0000000000000004 RDI: 0000000020000340
+[ 1536.433527][T14944] RBP: 00000000004e8e5d R08: 0000000000000008 R09: 0000000000000000
+[ 1536.434024][T14944] R10: 00000000200003c0 R11: 0000000000000246 R12: 000000000059c1d0
+[ 1536.434525][T14944] R13: 00007ffe9c23a41f R14: 00007ffe9c23a5c0 R15: 00007fbd11cc2dc0
+[ 1536.435103][T14944] Dumping ftrace buffer:
+[ 1536.435373][T14944]    (ftrace buffer empty)
+[ 1536.435651][T14944] Kernel Offset: disabled
+[ 1536.435916][T14944] Rebooting in 1 seconds..

@@ -1,0 +1,24 @@
+[   90.329949][ T8418] ==================================================================
+[   90.331727][ T8418] BUG: KCSAN: data-race in ext4_mark_iloc_dirty / jbd2_journal_commit_transaction
+[   90.333531][ T8418]
+[   90.333975][ T8418] read-write to 0xffff88804451d800 of 8 bytes by task 4821 on cpu 1:
+[   90.335587][ T8418]  jbd2_journal_commit_transaction+0x222/0x3200
+[   90.336919][ T8418]  kjournald2+0x253/0x470
+[   90.337793][ T8418]  kthread+0x1f0/0x220
+[   90.338618][ T8418]  ret_from_fork+0x1f/0x30
+[   90.339589][ T8418]
+[   90.340013][ T8418] read to 0xffff88804451d800 of 8 bytes by task 8418 on cpu 0:
+[   90.341442][ T8418]  ext4_mark_iloc_dirty+0x14ec/0x16e0
+[   90.344201][ T8418]  __ext4_mark_inode_dirty+0x4d2/0x5d0
+[   90.345361][ T8418]  ext4_evict_inode+0xb9f/0xed0
+[   90.346319][ T8418]  evict+0x1a6/0x410
+[   90.347088][ T8418]  iput+0x3fc/0x510
+[   90.347833][ T8418]  do_unlinkat+0x2c9/0x4d0
+[   90.348719][ T8418]  __x64_sys_unlink+0x2c/0x30
+[   90.353541][ T8418]  do_syscall_64+0x39/0x80
+[   90.354450][ T8418]  entry_SYSCALL_64_after_hwframe+0x44/0xae
+[   90.355710][ T8418]
+[   90.356148][ T8418] Reported by Kernel Concurrency Sanitizer on:
+[   90.357309][ T8418] CPU: 0 PID: 8418 Comm: syz-executor Not tainted 5.11.0+ #5
+[   90.358757][ T8418] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+[   90.364639][ T8418] ==================================================================

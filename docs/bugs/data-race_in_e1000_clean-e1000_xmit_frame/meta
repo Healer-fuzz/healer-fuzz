@@ -1,0 +1,3 @@
+TITLE: KCSAN: data-race in e1000_clean / e1000_xmit_frame
+MAINTAINERS (TO): ["anthony.l.nguyen@intel.com", "davem@davemloft.net", "intel-wired-lan@lists.osuosl.org", "jesse.brandeburg@intel.com", "kuba@kernel.org", "netdev@vger.kernel.org"]
+MAINTAINERS (CC): ["linux-kernel@vger.kernel.org"]

@@ -1,0 +1,45 @@
+BUG: KCSAN: data-race in e1000_clean / e1000_xmit_frame
+write to 0xffffc90000c81592 of 2 bytes by task 8373 on cpu 1:
+ e1000_tx_csum drivers/net/ethernet/intel/e1000/e1000_main.c:2807 [inline]
+ e1000_xmit_frame+0x1270/0x2900 drivers/net/ethernet/intel/e1000/e1000_main.c:3234
+ __netdev_start_xmit include/linux/netdevice.h:4793 [inline]
+ netdev_start_xmit include/linux/netdevice.h:4807 [inline]
+ xmit_one+0xf9/0x2e0 net/core/dev.c:3593
+ dev_hard_start_xmit+0x60/0x100 net/core/dev.c:3609
+ sch_direct_xmit+0x170/0x730 net/sched/sch_generic.c:313
+ qdisc_restart net/sched/sch_generic.c:376 [inline]
+ __qdisc_run+0x119/0x180 net/sched/sch_generic.c:384
+ qdisc_run include/net/pkt_sched.h:136 [inline]
+ __dev_xmit_skb net/core/dev.c:3795 [inline]
+ __dev_queue_xmit+0xa55/0x1520 net/core/dev.c:4150
+ dev_queue_xmit+0x13/0x20 net/core/dev.c:4215
+ neigh_hh_output include/net/neighbour.h:499 [inline]
+ neigh_output include/net/neighbour.h:508 [inline]
+ ip_finish_output2+0xb09/0xba0 net/ipv4/ip_output.c:230
+ __ip_finish_output+0x2ce/0x430 net/ipv4/ip_output.c:252
+ ip_finish_output+0x39/0x160 net/ipv4/ip_output.c:318
+ NF_HOOK_COND include/linux/netfilter.h:290 [inline]
+ ip_output+0xf6/0x1a0 net/ipv4/ip_output.c:432
+ dst_output include/net/dst.h:448 [inline]
+ ip_local_out net/ipv4/ip_output.c:126 [inline]
+ __ip_queue_xmit+0x9ca/0x9f0 net/ipv4/ip_output.c:533
+ ip_queue_xmit+0x34/0x40 net/ipv4/ip_output.c:547
+ __tcp_transmit_skb+0x12b6/0x18f0 net/ipv4/tcp_output.c:1405
+ __tcp_send_ack+0x1e9/0x2e0 net/ipv4/tcp_output.c:3974
+ tcp_send_ack+0x23/0x30 net/ipv4/tcp_output.c:3980
+ tcp_cleanup_rbuf+0x1c4/0x310 net/ipv4/tcp.c:1597
+ tcp_recvmsg_locked+0x1119/0x16f0 net/ipv4/tcp.c:2519
+ tcp_recvmsg+0x145/0x430 net/ipv4/tcp.c:2549
+ inet_recvmsg+0xa3/0x210 net/ipv4/af_inet.c:852
+ sock_recvmsg_nosec net/socket.c:886 [inline]
+ sock_recvmsg net/socket.c:904 [inline]
+ sock_read_iter+0x19e/0x1e0 net/socket.c:977
+ call_read_iter include/linux/fs.h:1895 [inline]
+ new_sync_read fs/read_write.c:415 [inline]
+ vfs_read+0x552/0x5c0 fs/read_write.c:496
+ ksys_read+0xce/0x180 fs/read_write.c:634
+ __do_sys_read fs/read_write.c:644 [inline]
+ __se_sys_read fs/read_write.c:642 [inline]
+ __x64_sys_read+0x3e/0x50 fs/read_write.c:642
+ do_syscall_64+0x39/0x80 arch/x86/entry/common.c:46
+ entry_SYSCALL_64_after_hwframe+0x44/0xae

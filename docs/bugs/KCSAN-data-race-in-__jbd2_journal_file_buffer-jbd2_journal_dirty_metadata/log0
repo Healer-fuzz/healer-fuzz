@@ -1,0 +1,99 @@
+[   30.969727][ T9573] udc-core: couldn't find an available UDC or it's busy
+[   30.970109][ T9573] misc raw-gadget: fail, usb_gadget_probe_driver returned -19
+[   31.394614][ T1955] ==================================================================
+[   31.395131][ T1955] BUG: KCSAN: data-race in __jbd2_journal_file_buffer / jbd2_journal_dirty_metadata
+[   31.395751][ T1955] 
+[   31.395906][ T1955] write to 0xffff88800af6da38 of 8 bytes by task 4822 on cpu 1:
+[   31.396435][ T1955]  __jbd2_journal_file_buffer+0x18d/0x370
+[   31.396816][ T1955]  __jbd2_journal_refile_buffer+0x155/0x230
+[   31.397192][ T1955]  jbd2_journal_commit_transaction+0x24c6/0x3200
+[   31.397585][ T1955]  kjournald2+0x253/0x470
+[   31.397855][ T1955]  kthread+0x1f0/0x220
+[   31.398118][ T1955]  ret_from_fork+0x1f/0x30
+[   31.398397][ T1955] 
+[   31.398531][ T1955] read to 0xffff88800af6da38 of 8 bytes by task 1955 on cpu 0:
+[   31.398960][ T1955]  jbd2_journal_dirty_metadata+0x17f/0x670
+[   31.399287][ T1955]  __ext4_handle_dirty_metadata+0xc6/0x590
+[   31.399618][ T1955]  ext4_mark_iloc_dirty+0x12dd/0x16e0
+[   31.399947][ T1955]  __ext4_mark_inode_dirty+0x4d2/0x5d0
+[   31.400319][ T1955]  ext4_writepages+0x1262/0x1e50
+[   31.400662][ T1955]  do_writepages+0x7b/0x150
+[   31.400977][ T1955]  __writeback_single_inode+0x84/0x4e0
+[   31.401355][ T1955]  writeback_sb_inodes+0x69f/0x1020
+[   31.401717][ T1955]  __writeback_inodes_wb+0xb0/0x2a0
+[   31.402050][ T1955]  wb_writeback+0x290/0x650
+[   31.402311][ T1955]  wb_do_writeback+0x582/0x5d0
+[   31.402578][ T1955]  wb_workfn+0xb8/0x410
+[   31.402820][ T1955]  process_one_work+0x3e1/0x940
+[   31.403089][ T1955]  worker_thread+0x64a/0xaa0
+[   31.403389][ T1955]  kthread+0x1f0/0x220
+[   31.403616][ T1955]  ret_from_fork+0x1f/0x30
+[   31.403918][ T1955] 
+[   31.404071][ T1955] Reported by Kernel Concurrency Sanitizer on:
+[   31.404486][ T1955] CPU: 0 PID: 1955 Comm: kworker/u5:2 Not tainted 5.11.0+ #5
+[   31.404979][ T1955] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.13.0-1ubuntu1.1 04/01/2014
+[   31.405626][ T1955] Workqueue: writeback wb_workfn (flush-8:0)
+[   31.406026][ T1955] ==================================================================
+[   31.406534][ T1955] Kernel panic - not syncing: panic_on_warn set ...
+[   31.406943][ T1955] CPU: 0 PID: 1955 Comm: kworker/u5:2 Not tainted 5.11.0+ #5
+[   31.407413][ T1955] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.13.0-1ubuntu1.1 04/01/2014
+[   31.408054][ T1955] Workqueue: writeback wb_workfn (flush-8:0)
+[   31.408456][ T1955] Call Trace:
+[   31.408673][ T1955]  dump_stack+0x137/0x194
+[   31.408975][ T1955]  panic+0x1e8/0x5f5
+[   31.409238][ T1955]  ? vprintk_emit+0x2fa/0x3e0
+[   31.409547][ T1955]  kcsan_report+0x687/0x6a0
+[   31.409852][ T1955]  ? kcsan_setup_watchpoint+0x423/0x490
+[   31.410211][ T1955]  ? jbd2_journal_dirty_metadata+0x17f/0x670
+[   31.410631][ T1955]  ? __ext4_handle_dirty_metadata+0xc6/0x590
+[   31.411035][ T1955]  ? ext4_mark_iloc_dirty+0x12dd/0x16e0
+[   31.411413][ T1955]  ? __ext4_mark_inode_dirty+0x4d2/0x5d0
+[   31.411804][ T1955]  ? ext4_writepages+0x1262/0x1e50
+[   31.412162][ T1955]  ? do_writepages+0x7b/0x150
+[   31.412515][ T1955]  ? __writeback_single_inode+0x84/0x4e0
+[   31.412891][ T1955]  ? writeback_sb_inodes+0x69f/0x1020
+[   31.413245][ T1955]  ? __writeback_inodes_wb+0xb0/0x2a0
+[   31.413595][ T1955]  ? wb_writeback+0x290/0x650
+[   31.413910][ T1955]  ? wb_do_writeback+0x582/0x5d0
+[   31.414230][ T1955]  ? wb_workfn+0xb8/0x410
+[   31.414515][ T1955]  ? process_one_work+0x3e1/0x940
+[   31.414837][ T1955]  ? worker_thread+0x64a/0xaa0
+[   31.415145][ T1955]  ? kthread+0x1f0/0x220
+[   31.415367][ T1955]  ? ret_from_fork+0x1f/0x30
+[   31.415620][ T1955]  ? kmem_cache_free+0x59/0x100
+[   31.415950][ T1955]  ? ext4_es_free_extent+0x27c/0x2a0
+[   31.416301][ T1955]  ? crc32c_pcl_intel_update+0x164/0x180
+[   31.416677][ T1955]  kcsan_setup_watchpoint+0x423/0x490
+[   31.417028][ T1955]  jbd2_journal_dirty_metadata+0x17f/0x670
+[   31.417398][ T1955]  __ext4_handle_dirty_metadata+0xc6/0x590
+[   31.417789][ T1955]  ? ext4_inode_csum+0x3a6/0x430
+[   31.418106][ T1955]  ext4_mark_iloc_dirty+0x12dd/0x16e0
+[   31.418452][ T1955]  __ext4_mark_inode_dirty+0x4d2/0x5d0
+[   31.418814][ T1955]  ? ext4_bio_write_page+0xcf6/0xe40
+[   31.419187][ T1955]  ext4_writepages+0x1262/0x1e50
+[   31.419535][ T1955]  ? ext4_readpage+0x180/0x180
+[   31.419847][ T1955]  do_writepages+0x7b/0x150
+[   31.420142][ T1955]  __writeback_single_inode+0x84/0x4e0
+[   31.420528][ T1955]  writeback_sb_inodes+0x69f/0x1020
+[   31.420878][ T1955]  ? move_expired_inodes+0x462/0x490
+[   31.421254][ T1955]  ? down_read_trylock+0x5b/0x70
+[   31.421619][ T1955]  __writeback_inodes_wb+0xb0/0x2a0
+[   31.421993][ T1955]  wb_writeback+0x290/0x650
+[   31.422306][ T1955]  wb_do_writeback+0x582/0x5d0
+[   31.422557][ T1955]  wb_workfn+0xb8/0x410
+[   31.422804][ T1955]  ? sched_clock+0xf/0x20
+[   31.423068][ T1955]  ? sched_clock_cpu+0x11/0x1a0
+[   31.423354][ T1955]  ? update_pasid+0x10/0x290
+[   31.423621][ T1955]  ? strscpy+0x138/0x170
+[   31.423856][ T1955]  process_one_work+0x3e1/0x940
+[   31.424131][ T1955]  worker_thread+0x64a/0xaa0
+[   31.424403][ T1955]  ? finish_task_switch+0xc0/0x2a0
+[   31.424715][ T1955]  ? process_one_work+0x940/0x940
+[   31.425051][ T1955]  kthread+0x1f0/0x220
+[   31.425355][ T1955]  ? process_one_work+0x940/0x940
+[   31.425728][ T1955]  ? kthread_blkcg+0x80/0x80
+[   31.426071][ T1955]  ret_from_fork+0x1f/0x30
+[   31.426546][ T1955] Dumping ftrace buffer:
+[   31.426874][ T1955]    (ftrace buffer empty)
+[   31.427213][ T1955] Kernel Offset: disabled
+[   31.427546][ T1955] Rebooting in 1 seconds..
