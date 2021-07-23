@@ -1,0 +1,2 @@
+r0 = add_key$fscrypt_v1(&(0x7f00000000c0)='logon\x00', &(0x7f0000000100)={'fscrypt:', @desc1='0000111122223333'}, &(0x7f0000000140)={0x0, "87bb95347df52088545ce651766b778efa9b3bb628fc3bbfbd9d3dfd6c9d7aff285271718b2c414dbe83a3cd662f10c3c2331ec3e73bae2ad07828eae0bdc0f7"}, 0x48, 0xffffffffffffffff)
+keyctl$KEYCTL_MOVE(0x2, r0, 0x0, 0x0, 0x0)

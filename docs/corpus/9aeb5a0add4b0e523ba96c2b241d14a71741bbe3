@@ -1,0 +1,8 @@
+mmap(&(0x7f0000000000/0xb36000)=nil, 0xb36000, 0x1000007, 0x10, 0xffffffffffffffff, 0x0)
+r0 = openat$ptmx(0xffffffffffffff9c, &(0x7f00000001c0)='/dev/ptmx\x00', 0x6, 0x0)
+write$binfmt_aout(r0, &(0x7f0000000080)=ANY=[@ANYBLOB="07007af70200001283cc0e1a0007b6f16d547fcaa7a2a54cb177914ae113"], 0x41)
+ioctl$TCSETS(r0, 0x40045431, &(0x7f0000000000)={0x0, 0x0, 0x0, 0x0, 0x0, "850e32db99baeb0600"})
+read(r0, &(0x7f0000001c40)=""/242, 0xf2)
+r1 = syz_open_pts(r0, 0x0)
+r2 = dup2(r1, r0)
+ioctl$TCXONC(r2, 0x540a, 0x3)

@@ -1,0 +1,2 @@
+capset(&(0x7f0000000800)={0x20080522}, &(0x7f0000000840))
+syz_open_procfs(0x0, &(0x7f00000004c0)='setgroups\x00')

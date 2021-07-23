@@ -1,0 +1,2 @@
+r0 = openat$vicodec1(0xffffffffffffff9c, &(0x7f0000000040)='/dev/video37\x00', 0x2, 0x0)
+ioctl$VIDIOC_G_PARM(r0, 0xc0d05640, &(0x7f0000000080)={0xd})

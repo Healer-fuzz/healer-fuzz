@@ -1,0 +1,5 @@
+syz_mount_image$fuse(0x0, &(0x7f0000002180)='./file0\x00', 0x0, 0x0, 0x0, 0x0, 0x0)
+r0 = openat$fuse(0xffffffffffffff9c, &(0x7f0000002080)='/dev/fuse\x00', 0x42, 0x0)
+mount$fuse(0x0, &(0x7f00000042c0)='./file0\x00', &(0x7f0000002100)='fuse\x00', 0x0, &(0x7f0000004300)=ANY=[@ANYBLOB='fd=', @ANYRESHEX=r0, @ANYBLOB=',rootmode=00000000000000000040000,user_id=', @ANYRESDEC=0x0, @ANYBLOB=',group_id=', @ANYRESDEC=0x0])
+syz_mount_image$fuse(&(0x7f0000002140)='fuse\x00', &(0x7f0000002180)='./file0\x00', 0x0, 0x0, 0x0, 0x21, &(0x7f0000000640)=ANY=[])
+mount$fuse(0x0, &(0x7f0000000200)='./file0\x00', &(0x7f00000002c0)='fuse\x00', 0xa021, 0x0)

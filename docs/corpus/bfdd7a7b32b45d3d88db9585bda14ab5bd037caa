@@ -1,0 +1,5 @@
+r0 = creat(&(0x7f00000001c0)='./bus\x00', 0x0)
+write$binfmt_elf64(r0, &(0x7f0000000140)=ANY=[], 0xfffffd28)
+unlink(&(0x7f0000000000)='./bus\x00')
+mount(&(0x7f00000000c0)=@filename='./bus\x00', &(0x7f0000000200)='./bus\x00', 0x0, 0x1000, 0x0)
+mount(0x0, &(0x7f0000000080)='./bus\x00', &(0x7f0000000100)='securityfs\x00', 0x0, 0x0)

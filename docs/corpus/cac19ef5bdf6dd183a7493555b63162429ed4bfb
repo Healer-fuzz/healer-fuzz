@@ -1,0 +1,3 @@
+r0 = creat(&(0x7f00000002c0)='./file0\x00', 0x0)
+fsetxattr$system_posix_acl(r0, &(0x7f0000000300)='system.posix_acl_access\x00', &(0x7f00000001c0)={{}, {}, [{0x2, 0x0, 0xee01}, {}, {}, {}, {}, {}, {}], {}, [{}]}, 0x64, 0x0)
+fgetxattr(r0, &(0x7f0000000480)=@known='system.posix_acl_access\x00', &(0x7f00000004c0)=""/93, 0x5d)

@@ -1,0 +1,3 @@
+r0 = syz_open_procfs(0xffffffffffffffff, &(0x7f0000000240)='attr\x00')
+prctl$PR_SET_SECCOMP(0x16, 0x1, 0x0)
+getdents64(r0, 0x0, 0x0)

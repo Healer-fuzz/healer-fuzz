@@ -1,0 +1,8 @@
+r0 = socket$inet_udplite(0x2, 0x2, 0x88)
+ioctl(r0, 0x1000008912, &(0x7f0000000000)="0adc1f123c123f319bd070")
+bpf$BPF_MAP_LOOKUP_AND_DELETE_ELEM(0x15, &(0x7f00000001c0)={0xffffffffffffffff, &(0x7f0000000140), 0x0}, 0x18)
+syz_execute_func(&(0x7f0000000240)="f2af91cd800f0124eda133fa20430fbafce842f66188d0c4ab5bf9e2f9e6c74e4ee4c653fb0fc4e94cb63a3af4a95bf9c44149f2168f4808eebce00000802000c863fa43adc4e17a6fe60f186746f340aee47c41730fc4223997d48f0f14e7e7018f2980dfe7df660fe7af5cc34a510804f4c441a5609c8ba800000099")
+r1 = socket$inet6(0xa, 0x2, 0x0)
+connect$inet6(r1, &(0x7f0000000000)={0xa, 0x0, 0x0, @mcast2, 0x6}, 0x1c)
+sendmmsg(r1, &(0x7f00000092c0), 0x4ff, 0x0)
+openat$cgroup_subtree(0xffffffffffffffff, 0x0, 0x2, 0x0)

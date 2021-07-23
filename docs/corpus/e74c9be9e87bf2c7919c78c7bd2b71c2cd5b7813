@@ -1,0 +1,1 @@
+syz_emit_ethernet(0x92, &(0x7f0000000040)={@multicast, @dev, @void, {@ipv6={0x86dd, @gre_packet={0x0, 0x6, "e96820", 0x5c, 0x3c, 0x0, @private0, @local, {[@dstopts={0x0, 0x1, [], [@pad1, @ra, @enc_lim]}]}}}}}, 0x0)

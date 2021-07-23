@@ -1,0 +1,2 @@
+r0 = add_key(&(0x7f0000000000)='user\x00', &(0x7f0000003500)={'syz', 0x1}, &(0x7f0000003540)='d', 0x1, 0xfffffffffffffffc)
+keyctl$unlink(0xb, r0, 0xfffffffffffffffb)

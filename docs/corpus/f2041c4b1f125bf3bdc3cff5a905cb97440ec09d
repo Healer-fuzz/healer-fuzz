@@ -1,0 +1,6 @@
+r0 = openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
+mmap(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x1800003, 0x12, r0, 0x0)
+preadv(r0, &(0x7f0000000280), 0x18, 0xd9f, 0x0)
+r1 = socket$inet6_tcp(0xa, 0x1, 0x0)
+setsockopt$inet6_tcp_TCP_MD5SIG(r1, 0x6, 0xe, &(0x7f0000000100)={@in6={{0xa, 0x0, 0x0, @ipv4={[], [], @multicast2}}}, 0x0, 0x0, 0x13, 0x0, "537d6b6a75dfe5f5e55f52173e8a1799c846b393fd580aebd3e5caea9083704a2bf970b1daa8b7bc5610565c2257de2eeed9cf28d2f705a91667460f457cd919a72e56f1150da413c52145df44ba1cf0"}, 0xd8)
+setsockopt$inet6_tcp_TCP_MD5SIG(r1, 0x6, 0xe, &(0x7f0000000200)={@in6={{0xa, 0x0, 0x0, @ipv4={[], [], @multicast2}}}, 0x0, 0x0, 0x0, 0x0, "e93376ccf866d422e0472d1790c7e79c763fb43d7a595f6a194dcbff8403cf9a1616e8c2164fa25a77fb109c328079f00a423c96fe71bd12afdb8a74b3d0eb30f383d8ec2464ff592bded69becb36eda"}, 0xd8)

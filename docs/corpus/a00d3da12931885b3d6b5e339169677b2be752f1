@@ -1,0 +1,5 @@
+r0 = openat$khugepaged_scan(0xffffffffffffff9c, &(0x7f00000000c0)='/sys/kernel/mm/transparent_hugepage/khugepaged/scan_sleep_millisecs\x00', 0x1, 0x0)
+r1 = openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
+mmap(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x3800002, 0x12, r1, 0x0)
+preadv(r1, &(0x7f0000000280), 0x18, 0xd9f, 0x0)
+write$khugepaged_scan(r0, &(0x7f0000000080)='1000000\x00', 0x8)

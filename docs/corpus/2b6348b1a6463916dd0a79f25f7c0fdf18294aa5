@@ -1,0 +1,2 @@
+r0 = openat$nvram(0xffffffffffffff9c, &(0x7f0000000080)='/dev/nvram\x00', 0x0, 0x0)
+fremovexattr(r0, &(0x7f00000000c0)=@known='system.posix_acl_default\x00')

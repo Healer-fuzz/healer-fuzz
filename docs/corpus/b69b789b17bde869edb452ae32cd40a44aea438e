@@ -1,0 +1,2 @@
+r0 = openat$nvram(0xffffffffffffff9c, &(0x7f0000000000)='/dev/nvram\x00', 0x80002, 0x0)
+write$fb(r0, 0x0, 0x0)

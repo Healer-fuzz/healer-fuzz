@@ -1,0 +1,8 @@
+clone(0x100, 0x0, 0xfffffffffffffffe, 0x0, 0xffffffffffffffff)
+add_key$user(&(0x7f00000001c0)='user\x00', 0x0, 0x0, 0x0, 0xfffffffffffffffd)
+keyctl$set_reqkey_keyring(0xe, 0x5)
+r0 = add_key(&(0x7f0000000000)='user\x00', &(0x7f0000000080)={'syz', 0x3}, &(0x7f0000000100)="ff", 0x1, 0xfffffffffffffffb)
+keyctl$set_reqkey_keyring(0xe, 0x6)
+keyctl$unlink(0x9, r0, 0xfffffffffffffffb)
+add_key$keyring(0x0, 0x0, 0x0, 0x0, r0)
+request_key(&(0x7f0000000080)='user\x00', &(0x7f00000000c0)={'syz'}, &(0x7f0000000000)='\x7f\x00\x9d\x98\x06\x00\x8a\xe3\x7fs\x00\x00\xa0\xf4\xdb\xae\x00\x00\xed\x00\x00\x00\x00\x00\x91e2', 0x0)

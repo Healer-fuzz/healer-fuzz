@@ -1,0 +1,4 @@
+io_setup(0x1, &(0x7f0000000100)=<r0=>0x0)
+clock_gettime(0x0, &(0x7f0000000240))
+io_getevents(r0, 0x4, 0x4, &(0x7f0000000180)=[{}, {}, {}, {}], 0x0)
+io_destroy(r0)

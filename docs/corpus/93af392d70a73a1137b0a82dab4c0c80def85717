@@ -1,0 +1,4 @@
+r0 = socket$netlink(0x10, 0x3, 0x80000000006)
+accept$ipx(r0, &(0x7f0000000040), &(0x7f0000000080)=0x10)
+mkdirat$cgroup_root(0xffffffffffffff9c, &(0x7f0000000000)='./cgroup.net/syz1\x00', 0x1ff)
+write(r0, &(0x7f000058bfe4)="29000000140003b7ff000000040860eb0100100006a40e07fff00fd57f25ffffff0100002a00f3ff09", 0x29)

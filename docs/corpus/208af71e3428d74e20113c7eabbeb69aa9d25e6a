@@ -1,0 +1,2 @@
+r0 = getpid()
+prctl$PR_SET_PTRACER(0x17, r0)

@@ -1,0 +1,2 @@
+r0 = openat$6lowpan_enable(0xffffffffffffff9c, &(0x7f0000000500)='/sys/kernel/debug/bluetooth/6lowpan_enable\x00', 0x2, 0x0)
+prctl$PR_SET_MM_EXE_FILE(0x23, 0xd, r0)

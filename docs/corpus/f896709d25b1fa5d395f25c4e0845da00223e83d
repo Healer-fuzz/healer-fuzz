@@ -1,0 +1,6 @@
+clone(0x20002004ffc, 0x0, 0xfffffffffffffffe, 0x0, 0xffffffffffffffff)
+r0 = getpid()
+rt_tgsigqueueinfo(r0, r0, 0x13, &(0x7f0000000100))
+ptrace(0x10, r0)
+sendmsg$nl_xfrm(0xffffffffffffffff, &(0x7f0000000100)={0x0, 0x0, &(0x7f0000000000)={&(0x7f0000000180)=@flushpolicy={0xf8, 0x5e, 0x0, 0x0, 0x0, "", [@migrate={0xe8, 0x11, [{@in=@local, @in6=@dev, @in=@initdev={0xac, 0x1e, 0x0, 0x0}, @in=@loopback}, {@in6=@mcast2, @in=@loopback, @in=@private, @in=@local}, {@in=@multicast2, @in=@remote, @in6=@remote, @in6=@dev}]}]}, 0xf8}}, 0x0)
+ptrace$getregset(0x4205, r0, 0x202, &(0x7f0000000080)={&(0x7f0000000040)=""/61, 0xffffff78})

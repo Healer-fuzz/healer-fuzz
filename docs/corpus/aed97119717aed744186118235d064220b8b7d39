@@ -1,0 +1,2 @@
+r0 = syz_open_dev$binderN(&(0x7f0000000000)='/dev/binder#\x00', 0x0, 0x800)
+ioctl$BINDER_WRITE_READ(r0, 0xc0306201, &(0x7f0000000240)={0x68, 0x0, &(0x7f0000000100)=[@request_death, @register_looper, @transaction_sg={0x40486311, {0x3, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x50, 0x0, 0x0, 0x0}}, @release], 0x50, 0x0, &(0x7f00000001c0)="ed7e827cc74bbd9410130541bb92eec06489005946b4c40411fe4f2cba12aa133ce81d7b41826780cd0bc72d21c59e4fe0da2c6b3446abc187f01b5af3333644354621078be24a3634600c0390d62aef"})

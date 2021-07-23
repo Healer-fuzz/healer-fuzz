@@ -1,0 +1,5 @@
+socketpair$unix(0x1, 0x1, 0x0, &(0x7f0000000000)={<r0=>0xffffffffffffffff})
+r1 = dup(r0)
+sendmsg$nl_route(0xffffffffffffffff, &(0x7f0000000140)={0x0, 0x0, &(0x7f0000000200)={&(0x7f0000000240)=ANY=[@ANYBLOB="280000001e00010800f9ea000101000007000000", @ANYRES32=r1, @ANYBLOB="000002000a0002"], 0x28}}, 0x0)
+r2 = socket(0x10, 0x80002, 0x0)
+sendmmsg$alg(r2, &(0x7f0000000140), 0xd3, 0x0)

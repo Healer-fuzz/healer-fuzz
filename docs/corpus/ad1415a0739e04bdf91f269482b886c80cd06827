@@ -1,0 +1,4 @@
+r0 = syz_open_dev$sg(&(0x7f0000000040)='/dev/sg#\x00', 0x0, 0x0)
+ioctl$SG_SCSI_RESET(r0, 0x2286, 0x816d000)
+r1 = add_key$keyring(&(0x7f0000000300)='keyring\x00', &(0x7f0000000340)={'syz', 0x3}, 0x0, 0x0, 0xfffffffffffffffc)
+add_key(&(0x7f00000002c0)='user\x00', &(0x7f0000001000), &(0x7f0000001000)='.', 0x1, r1)

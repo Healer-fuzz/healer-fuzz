@@ -1,0 +1,6 @@
+r0 = fork()
+fork()
+setpgid(r0, 0x0)
+ptrace(0x10, r0)
+r1 = getpgid(r0)
+ptrace(0x4208, r1)

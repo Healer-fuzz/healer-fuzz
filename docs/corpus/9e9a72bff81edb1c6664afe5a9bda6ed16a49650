@@ -1,0 +1,5 @@
+r0 = socket$inet_smc(0x2b, 0x1, 0x0)
+setsockopt$inet_tcp_TCP_REPAIR(r0, 0x6, 0x13, &(0x7f0000000000)=0x1, 0x4)
+connect$inet(r0, &(0x7f00000001c0)={0x2, 0x0, @local}, 0x10)
+setsockopt$inet_tcp_TCP_ULP(r0, 0x6, 0x1f, &(0x7f0000000140)='tls\x00', 0x4)
+setsockopt$inet_tcp_TLS_TX(r0, 0x11a, 0x1, &(0x7f0000000080)=@gcm_128={{}, "c19527b507f1a6bb", "42ce7b01000000000000005456214fc0", '\x00', "5146b5775eb21aea"}, 0x3)

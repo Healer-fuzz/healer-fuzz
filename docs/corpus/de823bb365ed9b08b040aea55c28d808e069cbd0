@@ -1,0 +1,2 @@
+r0 = openat$cachefiles(0xffffffffffffff9c, &(0x7f0000000040)='/dev/cachefiles\x00', 0x8002, 0x0)
+write$char_raw(r0, &(0x7f0000000200)={'h'}, 0xffffffffffffffd4)

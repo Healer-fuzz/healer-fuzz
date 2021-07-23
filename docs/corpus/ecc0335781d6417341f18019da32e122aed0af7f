@@ -1,0 +1,5 @@
+r0 = memfd_create(&(0x7f0000001040)='b\n\x002\x85\xa4\xf58\x12\xd9\x80\x80)\xdd\xdb3\xb41\xbb\r\xb0ke\x19\"\xf3\x14% \xef\xe6\xb5U`m\\', 0x4)
+ftruncate(r0, 0x200000)
+r1 = openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
+mmap(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x1800003, 0x12, r1, 0x0)
+read(r0, &(0x7f0000000040)=""/4096, 0x20001040)

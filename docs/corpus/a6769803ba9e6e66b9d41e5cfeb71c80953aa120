@@ -1,0 +1,4 @@
+r0 = shmget$private(0x0, 0x4000, 0x0, &(0x7f0000ffc000/0x4000)=nil)
+r1 = shmat(r0, &(0x7f0000ffe000/0x1000)=nil, 0xc000)
+shmdt(r1)
+shmctl$SHM_STAT_ANY(r0, 0xf, &(0x7f0000000000)=""/146)

@@ -1,0 +1,6 @@
+r0 = syz_open_dev$sg(&(0x7f0000000180)='/dev/sg#\x00', 0x0, 0x5)
+ioctl$SG_IO(r0, 0x2285, 0x0)
+r1 = dup2(r0, r0)
+r2 = socket$alg(0x26, 0x5, 0x0)
+r3 = fcntl$dupfd(r1, 0x0, r2)
+writev(r3, &(0x7f0000000100)=[{&(0x7f00000002c0)="ae88bff8240200005a90f57f07703a07000000bbee07ca0daa90922d9639962c22772e11b44e69d90cf4b0dfd59b007c", 0x30}, {&(0x7f00000019c0)="c9e2da38f4694d2921d398cf515a090df5b671e9b64667c0056ff8e7e6eed9a64c0c6324cad25b2e4a39", 0x2a}], 0x2)

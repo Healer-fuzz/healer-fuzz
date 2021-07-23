@@ -1,0 +1,8 @@
+mkdir(&(0x7f0000000080)='./file0\x00', 0x0)
+mount(0x0, &(0x7f00000000c0)='./file0\x00', &(0x7f00000002c0)='configfs\x00', 0x0, 0x0)
+chdir(&(0x7f0000000300)='./file0\x00')
+r0 = memfd_create(&(0x7f0000000140)='-B\xd5NI\xc5j\xbappp\xf0\b\x84\xa2m\x00:)\x00\xbb\x8d\xac\xacva}knh#\xcb)\x0f\xc8\xc0:\x9cc\x10d\xee\xa9\x8bCc\xad\x89\x9ck\xde\xc5\xe96\xddU\xa9=\xcdJx\xaa\x8f~\xb90\x8b\x19\xea\xef\xe3\xab\xb6\xa5$4\xd6\xfe7\x0f\xe7\xd9$\xce \xabN\xae\xc9\xbd\xd3g@\xe1\'s\x0e\x90\xf2\xcdr\xb8(\x00'/118, 0x0)
+write(r0, &(0x7f00000004c0)='1', 0x1)
+mmap(&(0x7f0000000000/0x2000)=nil, 0x2000, 0x4, 0x11, r0, 0x0)
+sendfile(r0, r0, &(0x7f0000000240), 0x463)
+creat(&(0x7f0000000000)='./file0\x00', 0x0)

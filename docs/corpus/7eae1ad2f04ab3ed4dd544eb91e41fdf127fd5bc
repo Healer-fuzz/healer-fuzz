@@ -1,0 +1,2 @@
+r0 = openat$ubi_ctrl(0xffffffffffffff9c, &(0x7f0000000a80)='/dev/ubi_ctrl\x00', 0x0, 0x0)
+ioctl$SIOCPNDELRESOURCE(r0, 0x40186f40, 0x0)

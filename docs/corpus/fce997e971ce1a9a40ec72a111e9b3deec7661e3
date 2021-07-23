@@ -1,0 +1,2 @@
+r0 = openat$userio(0xffffffffffffff9c, &(0x7f0000000040)='/dev/userio\x00', 0x42980, 0x0)
+readv(r0, &(0x7f0000001340)=[{&(0x7f0000000140)=""/4096, 0x1000}], 0x1)

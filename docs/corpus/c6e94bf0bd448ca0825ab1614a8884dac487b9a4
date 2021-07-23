@@ -1,0 +1,2 @@
+r0 = socket$nl_generic(0x10, 0x3, 0x10)
+ioctl$sock_SIOCETHTOOL(r0, 0x8946, &(0x7f00000000c0)={'vlan1\x00', &(0x7f0000000100)=@ethtool_rxnfc={0x25, 0x0, 0x0, {0x0, @ah_ip4_spec={@broadcast, @private}, {0x0, @dev}, @ah_ip6_spec={@local, @mcast2}, {0x0, @local}}}})

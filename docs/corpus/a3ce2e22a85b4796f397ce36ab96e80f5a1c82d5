@@ -1,0 +1,5 @@
+accept$unix(0xffffffffffffffff, 0x0, 0x0)
+r0 = getgid()
+fchownat(0xffffffffffffffff, 0x0, 0xffffffffffffffff, r0, 0x800)
+syz_mount_image$gfs2(&(0x7f00000002c0)='gfs2\x00', &(0x7f0000000300)='./file0\x00', 0x0, 0x2, &(0x7f0000001780)=[{&(0x7f0000000440)}, {&(0x7f00000004c0)="a939e124e24ae99ff4d80577332f6fb20c03abf498ead6e888968c429267", 0x1e, 0xc246}], 0x0, &(0x7f0000001840)={[{@quota='quota'}, {@quota_off='quota=off'}, {@noloccookie='noloccookie'}, {@nobarrier='nobarrier'}, {@statfs_quantum={'statfs_quantum', 0x3d, 0x3db}}, {@ignore_local_fs='ignore_local_fs'}, {@commit={'commit', 0x3d, 0x6}}, {@lockproto_nolock='lockproto=lock_nolock'}]})
+syz_init_net_socket$llc(0x1a, 0x0, 0x0)

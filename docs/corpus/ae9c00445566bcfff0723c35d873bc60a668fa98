@@ -1,0 +1,5 @@
+openat$zero(0xffffffffffffff9c, 0x0, 0x88600, 0x0)
+r0 = openat$procfs(0xffffffffffffff9c, &(0x7f0000000080)='/proc/asound/seq/clients\x00', 0x0, 0x0)
+read$FUSE(r0, &(0x7f0000002540)={0x2020}, 0x6ad)
+syz_open_dev$vcsa(&(0x7f0000000040)='/dev/vcsa#\x00', 0x10000, 0x81)
+prctl$PR_SET_MM_EXE_FILE(0x23, 0xd, 0xffffffffffffffff)

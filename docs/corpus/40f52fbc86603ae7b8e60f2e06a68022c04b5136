@@ -1,0 +1,3 @@
+request_key(&(0x7f0000000080)='big_key\x00', &(0x7f00000000c0)={'syz', 0x1}, &(0x7f0000000240)='$^-}:{[*\\\x00', 0xffffffffffffffff)
+r0 = openat$procfs(0xffffffffffffff9c, &(0x7f00000045c0)='/proc/keys\x00', 0x0, 0x0)
+read$FUSE(r0, &(0x7f0000004780)={0x2020}, 0x2020)

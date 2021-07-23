@@ -1,0 +1,7 @@
+socketpair$unix(0x1, 0x1, 0x0, &(0x7f0000000080)={<r0=>0xffffffffffffffff, <r1=>0xffffffffffffffff})
+r2 = memfd_create(&(0x7f0000000180)='+\x8b\x8a\x16^\x84\xa7\x85\x0e\xe5W\f\x00\x00\x00\x00\x00\x00\x00\x00\xe5\xd4\xc4\xd9\x17\xf6\x95\xf2\xc2\x88L\xa4\xb0y\xd8fu\xa5\x1d~\xb6V\xeb\xfd\x89o\xbf\x85\xa0\xaf\x17]\x12\x89\x01\x8fP\x1e\xa0|Zp\xfa', 0x3)
+write$binfmt_misc(r2, &(0x7f0000000c40)=ANY=[], 0xff67)
+sendfile(r1, r2, &(0x7f0000000000), 0xffff)
+fcntl$addseals(r2, 0x409, 0x8)
+pwritev(r2, &(0x7f0000001480)=[{&(0x7f00000001c0)="f3", 0x1}], 0x1, 0x0, 0x0)
+dup2(r1, r0)

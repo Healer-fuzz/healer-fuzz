@@ -1,0 +1,5 @@
+syz_open_dev$midi(&(0x7f0000000040)='/dev/midi#\x00', 0x2, 0x0)
+write$midi(0xffffffffffffffff, 0x0, 0x0)
+write$RDMA_USER_CM_CMD_JOIN_IP_MCAST(0xffffffffffffffff, 0x0, 0x0)
+ioctl$ifreq_SIOCGIFINDEX_batadv_hard(0xffffffffffffffff, 0x8933, 0x0)
+ioctl$SNDRV_RAWMIDI_IOCTL_DROP(0xffffffffffffffff, 0x40045730, 0x0)

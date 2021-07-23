@@ -1,0 +1,3 @@
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000040)='cpuacct.usage_percpu_sys\x00', 0x26e1, 0x0)
+write$cgroup_int(r0, &(0x7f0000000200), 0x2d25da)
+ioctl$FS_IOC_FSSETXATTR(r0, 0x401c5820, &(0x7f0000000000))

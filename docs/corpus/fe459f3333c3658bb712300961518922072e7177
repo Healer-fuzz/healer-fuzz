@@ -1,0 +1,4 @@
+mkdir(&(0x7f0000000080)='./control\x00', 0x0)
+r0 = inotify_init1(0x0)
+inotify_add_watch(r0, &(0x7f0000000000)='./control\x00', 0x20000005)
+inotify_add_watch(r0, &(0x7f0000000040)='./control\x00', 0x80000000)

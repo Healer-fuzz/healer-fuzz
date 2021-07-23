@@ -1,0 +1,5 @@
+setreuid(0x0, 0xee00)
+r0 = geteuid()
+r1 = geteuid()
+setreuid(r1, 0xee00)
+setresuid(0xffffffffffffffff, r0, 0x0)

@@ -1,0 +1,3 @@
+r0 = openat$mice(0xffffffffffffff9c, &(0x7f0000000100)='/dev/input/mice\x00', 0x2)
+read$snapshot(r0, 0x0, 0x39)
+write$snapshot(r0, &(0x7f0000000040)="c4", 0x1)

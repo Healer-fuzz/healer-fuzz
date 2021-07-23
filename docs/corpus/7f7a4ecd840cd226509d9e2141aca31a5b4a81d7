@@ -1,0 +1,6 @@
+r0 = socket$inet(0x2, 0x4000000000000001, 0x0)
+bind$inet(r0, &(0x7f0000000440)={0x2, 0x4e23, @broadcast}, 0x10)
+setsockopt$inet_tcp_TCP_CONGESTION(r0, 0x6, 0xd, &(0x7f0000000000)='bbr\x00', 0x4)
+sendto$inet(r0, 0x0, 0x0, 0x200007fd, &(0x7f0000e68000)={0x2, 0x4e23, @local}, 0x10)
+r1 = socket$inet6(0x10, 0x3, 0x4)
+sendto$inet6(r1, &(0x7f00000001c0)="4c00000012001f15b9409b849ac00a00a57840030000000000f0030038c88cc055c5ac27a6c5b068d0bf46d323456536005ad94a461cdbfee9bdb9423523598451d1ec0cffc8792cd8000000", 0x4c, 0x0, 0x0, 0x0)

@@ -1,0 +1,4 @@
+r0 = add_key$user(&(0x7f0000000000)='user\x00', &(0x7f0000000040)={'syz', 0x1}, &(0x7f0000000080)="10277da028f4fe174ba6d5f5a035a2f86af18742646a", 0x16, 0xfffffffffffffffe)
+r1 = add_key$user(&(0x7f00000000c0)='user\x00', &(0x7f0000000140)={'syz', 0x2}, &(0x7f0000000180)='n', 0x1, 0xfffffffffffffffb)
+r2 = add_key$user(&(0x7f00000001c0)='user\x00', &(0x7f0000000200)={'syz', 0x3}, &(0x7f0000000240)="b0a132869d8246300ec5b4ccaffb949a36441957a671b6", 0x17, 0xfffffffffffffffe)
+keyctl$dh_compute(0x17, &(0x7f0000000100)={r1, r0, r2}, 0x0, 0x0, 0x0)

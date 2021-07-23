@@ -1,0 +1,5 @@
+openat$autofs(0xffffff9c, &(0x7f0000000500)='/dev/autofs\x00', 0x0, 0x0)
+r0 = openat$kvm(0xffffff9c, &(0x7f00000000c0)='/dev/kvm\x00', 0x0, 0x0)
+r1 = ioctl$KVM_CREATE_VM(r0, 0xae00, 0x0)
+fcntl$dupfd(r0, 0x0, r1)
+ioctl$KVM_X86_GET_MCE_CAP_SUPPORTED(r1, 0xc008ae09, &(0x7f0000000500)=""/187)

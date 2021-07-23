@@ -1,0 +1,4 @@
+r0 = syz_init_net_socket$nfc_llcp(0x27, 0x3, 0x1)
+bind$nfc_llcp(r0, &(0x7f0000000140)={0x27, 0x0, 0x0, 0x0, 0x0, 0x0, "ef5a9db7ae822a99aa0c9882d5e2eea191ab2bdfa180f2d9b699c6deab89e04eb2e27a355feeed16594a8cbf27b9afb59d8f85d47cefbb6d00"}, 0x60)
+r1 = syz_open_dev$usbfs(&(0x7f0000000840)='/dev/bus/usb/00#/00#\x00', 0x908, 0x0)
+dup3(r1, r0, 0x0)

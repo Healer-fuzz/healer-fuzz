@@ -1,0 +1,3 @@
+r0 = open(&(0x7f0000000100)='./file1\x00', 0x143042, 0x0)
+ftruncate(r0, 0x200004)
+sendfile(r0, r0, 0x0, 0x80001d00c0d3)

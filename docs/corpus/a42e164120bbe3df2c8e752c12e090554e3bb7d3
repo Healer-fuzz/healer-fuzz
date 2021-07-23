@@ -1,0 +1,4 @@
+unshare(0x8000400)
+r0 = mq_open(&(0x7f0000000000)='m$\x00', 0x6e93ebbbcc0884ee, 0x0, 0x0)
+mq_notify(r0, &(0x7f00000004c0))
+mq_notify(r0, &(0x7f0000000680))

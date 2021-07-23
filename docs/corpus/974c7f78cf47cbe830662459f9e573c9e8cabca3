@@ -1,0 +1,3 @@
+r0 = syz_open_dev$vbi(&(0x7f0000000000)='/dev/vbi#\x00', 0x3, 0x2)
+ioctl$VIDIOC_REQBUFS(r0, 0xc0145608, &(0x7f0000000040)={0x3, 0x5, 0x2})
+write$binfmt_script(r0, &(0x7f0000000340)={'#! ', './file0'}, 0xb)

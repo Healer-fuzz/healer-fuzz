@@ -1,0 +1,7 @@
+pipe(&(0x7f00000001c0)={<r0=>0xffffffffffffffff, <r1=>0xffffffffffffffff})
+r2 = socket$inet_udp(0x2, 0x2, 0x0)
+close(r2)
+socket$nl_route(0x10, 0x3, 0x0)
+sendmsg$nl_route(0xffffffffffffffff, &(0x7f00000000c0)={0x0, 0x0, &(0x7f0000000200)={&(0x7f0000000000)=ANY=[@ANYBLOB="4800000010005fff000005000000000000000000", @ANYRES32, @ANYBLOB="01f8ffff00000000280012800a00010076786c616e"], 0x3}}, 0x0)
+write$binfmt_misc(r1, &(0x7f0000000000)=ANY=[], 0xfffffecc)
+splice(r0, 0x0, r2, 0x0, 0x4ffe2, 0x0)

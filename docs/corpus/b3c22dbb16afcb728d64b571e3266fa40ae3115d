@@ -1,0 +1,2 @@
+mknod$loop(&(0x7f0000000080)='./file0\x00', 0x0, 0xffffffffffffffff)
+mount$binder(0x0, &(0x7f0000000040)='./file0\x00', &(0x7f00000008c0)='binder\x00', 0x0, 0x0)

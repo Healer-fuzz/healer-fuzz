@@ -1,0 +1,2 @@
+r0 = getpgid(0x0)
+ioprio_set$pid(0x2, r0, 0x2004)

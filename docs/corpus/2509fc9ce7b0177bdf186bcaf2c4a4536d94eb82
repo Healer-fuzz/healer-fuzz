@@ -1,0 +1,8 @@
+socket$inet_udplite(0x2, 0x2, 0x88)
+socket$packet(0x11, 0x400000000000002, 0x300)
+socket$inet_udplite(0x2, 0x2, 0x88)
+socket$inet6_udp(0xa, 0x2, 0x0)
+syz_open_dev$media(&(0x7f0000000100)='/dev/media#\x00', 0x0, 0x0)
+openat$mixer(0xffffffffffffff9c, &(0x7f0000000080)='/dev/mixer\x00', 0x0, 0x0)
+socket$l2tp(0x18, 0x1, 0x1)
+syz_execute_func(&(0x7f0000000300)="b13691cd806969ef69dc00d9d0d0c44139fd5bf91cc1c7c7e4c653fb0fc4014c5868f4a95ff9c44149f2168f4808eebce00000802000c421fc51c1ea01efc48192558dc3c366450f186746f3400faee47c7c730f5726400f0d18c401fe5ff6e3df646736676666430fefb3000000000804f4f30f1a1254111d54111d00")

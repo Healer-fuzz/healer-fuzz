@@ -1,0 +1,1 @@
+syz_emit_ethernet(0x2a, &(0x7f00000000c0)={@random="0d86d320eb9c", @remote, @val, {@ipv4}}, 0x0)

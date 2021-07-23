@@ -1,0 +1,6 @@
+r0 = openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
+mmap(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x1800003, 0x12, r0, 0x0)
+r1 = openat(0xffffffffffffff9c, &(0x7f0000000040)='/proc/self/exe\x00', 0x0, 0x0)
+preadv(r1, &(0x7f0000000280), 0x18, 0xd9f, 0x0)
+syz_mount_image$tmpfs(&(0x7f0000000080)='tmpfs\x00', &(0x7f00000000c0)='./file1\x00', 0x0, 0x0, 0x0, 0x400, &(0x7f0000000400)={[{@nr_blocks={'nr_blocks'}}, {@huge_advise='huge=advise'}, {@huge_always='huge=always'}], [{@pcr={'pcr', 0x3d, 0x17}}, {@euid_eq={'euid', 0x3d, 0xee00}}]})
+syz_mount_image$vfat(&(0x7f0000000000)='vfat\x00', &(0x7f0000000100)='./file1\x00', 0x0, 0x2, &(0x7f0000000200)=[{&(0x7f00000002c0)="eb3c906d6b66732e66617400020101000240040000f801", 0xfffffffffffffe37}, {0x0}], 0x0, &(0x7f0000000140)={[{@numtail='nonumtail=0'}, {@utf8no='utf8=0'}, {@fat=@fmask={'fmask'}}]})

@@ -1,0 +1,2 @@
+r0 = socket$inet_sctp(0x2, 0x5, 0x84)
+ioctl$sock_ifreq(r0, 0x89a3, &(0x7f0000000000)={'vlan1\x00', @ifru_addrs=@xdp})

@@ -1,0 +1,7 @@
+r0 = syz_open_dev$binderN(&(0x7f0000000100)='/dev/binder#\x00', 0x0, 0x0)
+ioctl$BINDER_SET_CONTEXT_MGR(r0, 0x40046207, 0x0)
+r1 = syz_open_dev$binderN(&(0x7f0000000040)='/dev/binder#\x00', 0x0, 0x0)
+ioctl$BINDER_WRITE_READ(r1, 0xc0306201, &(0x7f0000000200)={0x44, 0x0, &(0x7f00000004c0)=[@transaction={0x40046305, {0x0, 0x400c630e, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}}], 0x0, 0x0, 0x0})
+r2 = dup2(r1, r0)
+r3 = dup3(r2, r1, 0x0)
+ioctl$BINDER_WRITE_READ(r3, 0xc0306201, &(0x7f0000000180)={0x10, 0x0, &(0x7f0000000000)=[@clear_death={0x400c630f, 0x1}], 0x91, 0x0, &(0x7f0000000240)="c8a181e6921607e5d9fff46399143436ff45d93892da9610c9095fd1e32a30250cb3b525d742108b69a03e5ebf59683a75fddf45f1d5cc12628edf241b518973fb6424b34f11cb57d7057a4dc76a7256a80e6d82193a247bbc884724081ff1efd6ad0341b2ae5e3cdb0a8d78ac0543803ad0838320f348a980069f4d83021b8a8a7ddad3a91a765e8a291417ba3a6ad2b4"})

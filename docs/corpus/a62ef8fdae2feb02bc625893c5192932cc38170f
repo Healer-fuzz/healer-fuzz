@@ -1,0 +1,2 @@
+r0 = syz_open_dev$ndb(&(0x7f0000000000)='/dev/nbd#\x00', 0x0, 0x0)
+ioctl$NBD_SET_SIZE_BLOCKS(r0, 0x40081271, 0x400000)

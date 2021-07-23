@@ -1,0 +1,2 @@
+r0 = syz_init_net_socket$802154_raw(0x24, 0x3, 0x0)
+bind$802154_raw(r0, 0x0, 0x0)

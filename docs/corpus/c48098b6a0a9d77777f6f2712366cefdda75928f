@@ -1,0 +1,5 @@
+r0 = creat(&(0x7f0000000100)='./bus\x00', 0x0)
+r1 = creat(&(0x7f00000001c0)='./bus\x00', 0x0)
+lseek(r1, 0xfffffc, 0x0)
+write$binfmt_elf64(r1, &(0x7f0000000500)=ANY=[], 0x1a0)
+dup3(r1, r0, 0x0)

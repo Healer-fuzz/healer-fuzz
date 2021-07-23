@@ -1,0 +1,2 @@
+r0 = socket$inet6_icmp_raw(0xa, 0x3, 0x3a)
+ioctl$sock_SIOCETHTOOL(r0, 0x8946, &(0x7f00000001c0)={'batadv_slave_0\x00', &(0x7f0000000140)=@ethtool_gstrings})

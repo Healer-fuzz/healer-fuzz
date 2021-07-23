@@ -1,0 +1,2 @@
+r0 = syz_open_procfs(0xffffffffffffffff, &(0x7f0000000200)='net/rpc\x00')
+renameat(0xffffffffffffff9c, &(0x7f0000000040)='./file0\x00', r0, &(0x7f0000000100)='./file0\x00')

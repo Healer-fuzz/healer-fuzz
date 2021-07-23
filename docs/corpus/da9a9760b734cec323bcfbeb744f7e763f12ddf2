@@ -1,0 +1,2 @@
+r0 = socket$inet6_sctp(0xa, 0x5, 0x84)
+setsockopt$inet6_IPV6_XFRM_POLICY(r0, 0x29, 0x2a, &(0x7f0000002800)={{{@in, @in6=@local}}, {{@in=@multicast1}, 0x0, @in6=@empty}}, 0xe8)

@@ -1,0 +1,6 @@
+mkdir(&(0x7f0000000400)='./file0\x00', 0x0)
+r0 = openat$fuse(0xffffffffffffff9c, &(0x7f0000002080)='/dev/fuse\x00', 0x42, 0x0)
+mount$fuse(0x0, &(0x7f00000042c0)='./file0\x00', &(0x7f0000002000)='fuse\x00', 0x0, &(0x7f0000002440)=ANY=[@ANYBLOB='fd=', @ANYRESHEX=r0, @ANYBLOB=',rootmode=00000000000000000040000,user_id=', @ANYRESDEC=0x0, @ANYBLOB=',group_id=', @ANYRESDEC=0x0])
+r1 = open(&(0x7f0000000280)='.\x00', 0x0, 0x0)
+mkdirat(r1, &(0x7f0000000200)='\x13\x13w\xc5\xfc5\xd4\x14T\xd5\xd4\x1d)\xad\x1a`)Y\x81F\xe6\xbe\x16nA\xad\r\xbd@T\x03<\x9f3\xbb\xda\x82$\xa2\xf3\xd7r\xe7cnH\xb3<\xbfp\x83r\xe8\xf1\xb9\x93>\xc5\x12wC\xbe\"\x06 \x9e\xf0-\xf9\xcb\xf2\xf6\xe8\x80\xd38/\x00', 0x0)
+renameat2(r1, &(0x7f00000004c0)='\x13\x13w\xc5\xfc5\xd4\x14T\xd5\xd4\x1d)\xad\x1a`)Y\x81F\xe6\xbe\x16nA\xad\r\xbd@T\x03<\x9f3\xbb\xda\x82$\xa2\xf3\xd7r\xe7cnH\xb3<\xbfp\x83r\xe8\xf1\xb9\x93>\xc5\x12wC\xbe\"\x06 \x9e\xf0-\xf9\xcb\xf2\xf6\xe8\x80\xd38/\x00', 0xffffffffffffff9c, &(0x7f0000000000)='./file0\x00', 0x2)

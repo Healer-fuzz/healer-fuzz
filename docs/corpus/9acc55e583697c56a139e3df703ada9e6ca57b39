@@ -1,0 +1,2 @@
+r0 = socket$nl_generic(0x10, 0x3, 0x10)
+ioctl$sock_SIOCGIFCONF(r0, 0x8912, &(0x7f0000000880)=@req={0x28, &(0x7f0000000840)={'veth1_to_team\x00', @ifru_flags}})

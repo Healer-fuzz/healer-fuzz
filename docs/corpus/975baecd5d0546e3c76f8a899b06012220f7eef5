@@ -1,0 +1,6 @@
+r0 = epoll_create1(0x0)
+r1 = eventfd(0x1)
+epoll_ctl$EPOLL_CTL_ADD(r0, 0x1, r1, &(0x7f0000000280)={0x20000013})
+read$eventfd(r1, &(0x7f0000000040), 0x8)
+r2 = epoll_create(0x7fff)
+epoll_ctl$EPOLL_CTL_ADD(r2, 0x1, r0, &(0x7f0000000000))

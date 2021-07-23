@@ -1,0 +1,2 @@
+ioctl$BINDER_SET_CONTEXT_MGR(0xffffffffffffffff, 0x40046207, 0x0)
+syz_genetlink_get_family_id$team(&(0x7f00000000c0)='team\x00', 0xffffffffffffffff)

@@ -1,0 +1,5 @@
+mprotect(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x6)
+unshare(0x20000000)
+clone(0x0, 0x0, 0xfffffffffffffffe, 0x0, 0xffffffffffffffff)
+r0 = syz_open_procfs$namespace(0xffffffffffffffff, &(0x7f0000000100)='ns/pid_for_children\x00')
+ioctl$NS_GET_PARENT(r0, 0xb702, 0x0)

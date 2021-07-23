@@ -1,0 +1,8 @@
+r0 = socket$inet6_tcp(0xa, 0x1, 0x0)
+setsockopt$inet6_tcp_int(r0, 0x6, 0x13, &(0x7f0000000000)=0x100000001, 0x4)
+setsockopt$inet6_tcp_TCP_MD5SIG(r0, 0x6, 0xe, &(0x7f0000000100)={@in6={{0xa, 0x0, 0x0, @private1}}, 0x0, 0x0, 0x4b, 0x0, "d5ee2a6751af19e66e29b185481479fae74083f42da9c60489fecf2f1b24f5dff9d23c3cd22c6b6b908ed4638bdef26addae33d7263a34638cd13dc28ae9c09093c878ef669a92497b858aaff2c2ad7a"}, 0xd8)
+connect$inet6(r0, &(0x7f0000000040), 0x1c)
+setsockopt$inet6_tcp_TCP_ULP(r0, 0x6, 0x1f, &(0x7f0000000540)='tls\x00', 0x4)
+setsockopt$inet6_tcp_TLS_TX(r0, 0x11a, 0x1, &(0x7f00000000c0)=@gcm_256={{0x304}, "accffcffffffef1d", "f3f4c9f2262c2e1532b2383c26b0c1e668113c384dd48c9904245bebf99cd757", "00000300", "28e694ad17ad6ba9"}, 0x38)
+sendto$inet6(r0, &(0x7f00000005c0), 0xffffffffffffff7f, 0x0, 0x0, 0x0)
+setsockopt$inet6_tcp_int(r0, 0x6, 0x19, &(0x7f0000000080), 0x4)

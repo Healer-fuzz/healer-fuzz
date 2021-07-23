@@ -1,0 +1,2 @@
+syz_mount_image$udf(0x0, &(0x7f0000000040)='./file0\x00', 0x0, 0x0, 0x0, 0x0, 0x0)
+mount$9p_rdma(&(0x7f0000001400)='127.0.0.1\x00', &(0x7f0000001440)='./file0\x00', &(0x7f0000001480)='9p\x00', 0x0, &(0x7f0000001580)={'trans=rdma,', {'port'}, 0x2c, {[{@rq={'rq'}}, {@sq={'sq'}}, {@timeout={'timeout'}}, {@common=@privport='privport'}]}})

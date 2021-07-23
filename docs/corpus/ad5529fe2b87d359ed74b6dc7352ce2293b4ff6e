@@ -1,0 +1,4 @@
+r0 = syz_mount_image$vfat(&(0x7f0000000080)='vfat\x00', &(0x7f0000000040)='./file0\x00', 0x7ffffffc, 0x1, &(0x7f0000000280)=[{&(0x7f0000000000)="eb3c906d6b66732e66617400028001000240000004f801", 0x17}], 0x0, &(0x7f00000009c0)=ANY=[])
+mkdirat(r0, &(0x7f0000000980)='./file3\x00', 0x0)
+syz_mount_image$fuse(&(0x7f0000000180)='fuse\x00', &(0x7f00000001c0)='./file0\x00', 0x0, 0x0, 0x0, 0x30, &(0x7f0000000340)={{'fd'}, 0x2c, {'rootmode'}, 0x2c, {'user_id', 0x3d, 0xffffffffffffffff}, 0x2c, {'group_id'}})
+renameat(r0, &(0x7f0000000100)='./file3\x00', r0, &(0x7f0000000200)='./file0\x00')

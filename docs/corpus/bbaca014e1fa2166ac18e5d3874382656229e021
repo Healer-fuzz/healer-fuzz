@@ -1,0 +1,6 @@
+r0 = openat$ppp(0xffffffffffffff9c, &(0x7f0000000080)='/dev/ppp\x00', 0x0, 0x0)
+ioctl$PPPIOCNEWUNIT(r0, 0xc004743e, &(0x7f0000000100))
+r1 = openat$ppp(0xffffffffffffff9c, &(0x7f00000000c0)='/dev/ppp\x00', 0x0, 0x0)
+ioctl$PPPIOCNEWUNIT(r1, 0xc004743e, &(0x7f0000000080)=0x40000400)
+r2 = socket$inet(0x10, 0x80002, 0x0)
+dup3(r2, r1, 0x0)

@@ -1,0 +1,8 @@
+r0 = syz_open_procfs(0x0, &(0x7f0000000080)='net/dev_snmp6\x00')
+r1 = openat$ptmx(0xffffffffffffff9c, &(0x7f0000000040)='/dev/ptmx\x00', 0x0, 0x0)
+ioctl$TCSETS(r1, 0x40045431, &(0x7f00000000c0)={0x0, 0x0, 0x0, 0x0, 0x0, "e700010060a1f61f00008bee00000d00030004"})
+r2 = syz_open_pts(r1, 0x4000000000000002)
+r3 = dup3(r2, r0, 0x0)
+write$P9_RATTACH(r0, &(0x7f00000001c0)={0x14}, 0xffffffde)
+fcntl$setstatus(r0, 0x4, 0x40800)
+write$binfmt_elf64(r3, 0x0, 0x0)

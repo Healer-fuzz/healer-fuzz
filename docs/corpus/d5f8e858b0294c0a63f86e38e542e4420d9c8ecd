@@ -1,0 +1,5 @@
+r0 = socket$inet6_sctp(0xa, 0x10000000005, 0x84)
+setsockopt$inet6_opts(r0, 0x29, 0x37, &(0x7f0000000240)=@routing, 0x8)
+setsockopt$inet_sctp6_SCTP_SOCKOPT_CONNECTX(r0, 0x84, 0x6e, &(0x7f0000961fe4)=[@in={0x2, 0x0, @dev}], 0x10)
+getsockopt$inet_sctp6_SCTP_GET_ASSOC_ID_LIST(r0, 0x84, 0x1d, &(0x7f00000001c0)=ANY=[@ANYBLOB="a54e5842", @ANYRES32=<r1=>0x0], &(0x7f00000000c0)=0xfe10)
+getsockopt$inet_sctp6_SCTP_SOCKOPT_PEELOFF(r0, 0x84, 0x66, &(0x7f0000000040)={r1}, &(0x7f0000000140)=0x8)

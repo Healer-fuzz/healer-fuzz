@@ -1,0 +1,4 @@
+r0 = socket$inet6(0xa, 0x2, 0x0)
+bind$inet6(r0, &(0x7f0000000000)={0xa, 0xe22, 0x0, @mcast2, 0xb}, 0x1c)
+connect$inet6(r0, &(0x7f0000000380)={0xa, 0x0, 0x0, @remote}, 0x1c)
+syz_emit_ethernet(0x3e, &(0x7f0000000240)=ANY=[@ANYBLOB="aaaaaaaaaaaa0160c000000086dd6126f52600081100fe8000000000000000000000000000bbff02000000000000000000000000000100000e22"], 0x0)

@@ -1,0 +1,3 @@
+r0 = socket$inet_sctp(0x2, 0x5, 0x84)
+getsockopt$inet_sctp_SCTP_DELAYED_SACK(r0, 0x84, 0xc, &(0x7f0000000100)=@sack_info={<r1=>0x0}, &(0x7f0000000040)=0xc)
+setsockopt$inet_sctp_SCTP_DEFAULT_PRINFO(r0, 0x84, 0x72, &(0x7f0000000000)={r1}, 0xc)

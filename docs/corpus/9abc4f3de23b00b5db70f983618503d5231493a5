@@ -1,0 +1,5 @@
+mkdir(&(0x7f00000000c0)='./file0\x00', 0x0)
+mount(0x0, &(0x7f0000000000)='./file0\x00', &(0x7f0000000040)='cgroup2\x00', 0x0, 0x0)
+r0 = open(&(0x7f0000000200)='./file0\x00', 0x0, 0x0)
+r1 = openat$cgroup_procs(r0, &(0x7f0000000180)='cgroup.threads\x00', 0x2, 0x0)
+open_by_handle_at(r1, &(0x7f0000000080)=@ceph_nfs_confh={0x10, 0x2, {0x9}}, 0x22000)

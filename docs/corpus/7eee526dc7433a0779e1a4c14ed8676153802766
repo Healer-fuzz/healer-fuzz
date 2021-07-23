@@ -1,0 +1,6 @@
+r0 = socket$alg(0x26, 0x5, 0x0)
+bind$alg(r0, &(0x7f00000000c0)={0x26, 'skcipher\x00', 0x0, 0x0, 'ecb-twofish-avx\x00'}, 0x58)
+r1 = accept4(r0, 0x0, 0x0, 0x0)
+setsockopt$ALG_SET_KEY(r0, 0x117, 0x1, &(0x7f0000c18000)="ad56b6b6820fae9d6dcd3292ea54c7beef915d564c90c200", 0x18)
+sendmsg$alg(r1, &(0x7f0000000340)={0x0, 0x0, &(0x7f00000008c0)=[{&(0x7f0000000000)="c0af66187c76ca3f341c3d5e03a8cf08", 0x10}, {&(0x7f0000000180)="cbacaab0d86536904deeff74dbf6a3bdd379c0c5d10066c63ea8d780cb0cd2ec3e9bfb747dea0a7f60ab27a2f7a8b2f6bbeabcd589c8ace5c0919a0347470c1d", 0x40}], 0x2}, 0x0)
+recvmsg$can_j1939(r1, &(0x7f0000000040)={0x0, 0x0, &(0x7f0000000680)=[{&(0x7f00000006c0)=""/177, 0xb1}], 0x1}, 0x0)

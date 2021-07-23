@@ -1,0 +1,3 @@
+unshare(0x2a000400)
+r0 = fork()
+tkill(r0, 0x2b)

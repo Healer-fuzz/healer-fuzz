@@ -1,0 +1,4 @@
+close_range(0xffffffffffffffff, 0xffffffffffffffff, 0x2)
+r0 = openat$zero(0xffffffffffffff9c, &(0x7f0000000000)='/dev/zero\x00', 0x0, 0x0)
+r1 = dup2(r0, r0)
+fsetxattr$system_posix_acl(r1, &(0x7f00000000c0)='system.posix_acl_access\x00', &(0x7f0000000200)={{}, {}, [{0x2, 0x0, 0xee01}], {}, [{}]}, 0x34, 0x0)

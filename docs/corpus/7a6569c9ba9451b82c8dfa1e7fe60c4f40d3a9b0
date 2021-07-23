@@ -1,0 +1,2 @@
+r0 = eventfd2(0x0, 0x0)
+fsetxattr$security_smack_transmute(r0, &(0x7f0000000100)='security.SMACK64TRANSMUTE\x00', 0x0, 0x0, 0x0)

@@ -1,0 +1,4 @@
+r0 = syz_open_procfs(0xffffffffffffffff, &(0x7f0000000300)='oom_score_adj\x00')
+r1 = dup(r0)
+exit(0x0)
+write$cgroup_int(r1, &(0x7f0000000000), 0x12)

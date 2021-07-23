@@ -1,0 +1,2 @@
+r0 = epoll_create(0x8000)
+fchmod(r0, 0x66f9e869f62b481d)

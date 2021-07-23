@@ -1,0 +1,4 @@
+mkdir(&(0x7f0000000400)='./file0\x00', 0x0)
+r0 = openat$fuse(0xffffffffffffff9c, &(0x7f0000002080)='/dev/fuse\x00', 0x42, 0x0)
+mount$fuse(0x0, &(0x7f00000042c0)='./file0\x00', &(0x7f0000002000)='fuse\x00', 0x0, &(0x7f0000000080)={{'fd', 0x3d, r0}, 0x2c, {'rootmode', 0x3d, 0x4000}, 0x2c, {'user_id'}, 0x2c, {'group_id'}, 0x2c, {[{@allow_other='allow_other'}]}})
+newfstatat(0xffffffffffffff9c, &(0x7f0000002940)='./file0\x00', &(0x7f0000002980), 0x4000)

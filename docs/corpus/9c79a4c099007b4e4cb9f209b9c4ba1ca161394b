@@ -1,0 +1,8 @@
+r0 = openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
+r1 = socket$inet6_tcp(0xa, 0x1, 0x0)
+setsockopt$inet6_tcp_int(r1, 0x6, 0x13, &(0x7f0000000100)=0x100000001, 0x4)
+connect$inet6(r1, &(0x7f0000000080)={0xa, 0x0, 0x0, @empty}, 0x1c)
+setsockopt$inet6_tcp_TCP_ULP(r1, 0x6, 0x1f, &(0x7f0000000040)='tls\x00', 0x4)
+setsockopt$inet6_tcp_TLS_TX(r1, 0x11a, 0x1, &(0x7f00000001c0)=@gcm_256={{0x304}, "504ee3646dd1e033", "2da1d6a642d81f88547482d0ae40f6492a401e67b69e108a2cfe35fa48ce692b", "e56936ba", "3e2a652e4ba4d039"}, 0x38)
+sendfile(r1, r0, 0x0, 0x20000401ffc000)
+setsockopt$inet6_tcp_TLS_TX(r1, 0x6, 0x1, &(0x7f0000000140)=@gcm_128={{}, "7b7843b9f0f06552", "b30ac33b985125c7bb3f21b0ea3d1d7b", "e525907c", "763f5e2644ed9f56"}, 0x28)

@@ -1,0 +1,6 @@
+r0 = syz_open_procfs$namespace(0xffffffffffffffff, &(0x7f0000000000)='ns/cgroup\x00')
+socketpair$unix(0x1, 0x5, 0x0, &(0x7f0000000500)={<r1=>0xffffffffffffffff})
+r2 = dup(r1)
+ioctl$PERF_EVENT_IOC_ENABLE(r2, 0x8912, 0x400200)
+r3 = dup(r0)
+syz_kvm_setup_cpu$x86(r3, 0xffffffffffffffff, &(0x7f0000fe8000/0x18000)=nil, &(0x7f00000000c0)=[@text32={0x20, 0x0}], 0x1, 0x0, 0x0, 0x0)

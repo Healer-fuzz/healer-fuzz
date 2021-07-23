@@ -1,0 +1,2 @@
+r0 = gettid()
+kcmp(r0, r0, 0x6d56f57234b31e5d, 0xffffffffffffffff, 0xffffffffffffffff)

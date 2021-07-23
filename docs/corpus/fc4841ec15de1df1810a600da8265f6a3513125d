@@ -1,0 +1,4 @@
+r0 = syz_open_dev$loop(&(0x7f0000000040)='/dev/loop#\x00', 0x406f, 0x0)
+r1 = openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x4000, 0x0)
+ioctl$LOOP_CHANGE_FD(r0, 0x4c00, r1)
+ioctl$LOOP_SET_STATUS(r0, 0x4c02, &(0x7f0000000080)={0x0, {}, 0x0, {}, 0x7fff, 0x0, 0x0, 0x0, "a889d8e4dddbc093e0c38664ba7d9aa7157368864fbdabbc78c03ff574c21217de2f4fe9e51feb11c1f364b4bd6ffe4db75d80124625d46842e3311f7bae6fbf", "1d2b04e511e76380339bf9ba7e528c1cd99caba67d563cac36fd8a57e30697aa"})

@@ -1,0 +1,5 @@
+write$binfmt_script(0xffffffffffffffff, &(0x7f0000000240)=ANY=[@ANYBLOB="2321202e2f66696c653020677265746170300020200ad57d79"], 0xd3)
+r0 = syz_init_net_socket$bt_l2cap(0x1f, 0x5, 0x0)
+shutdown(r0, 0x0)
+recvmmsg(r0, &(0x7f0000000080), 0x72a, 0x0, 0x0)
+write(r0, 0x0, 0x0)

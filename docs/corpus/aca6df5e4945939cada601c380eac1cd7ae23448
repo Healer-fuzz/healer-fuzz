@@ -1,0 +1,2 @@
+r0 = syz_io_uring_setup(0x55af, &(0x7f0000000f40), &(0x7f0000ffb000/0x4000)=nil, &(0x7f0000ffb000/0x1000)=nil, &(0x7f0000000fc0), &(0x7f0000001000))
+io_uring_register$IORING_REGISTER_EVENTFD(r0, 0x4, &(0x7f0000001040), 0x1)

@@ -1,0 +1,7 @@
+mkdir(&(0x7f00000002c0)='./file0\x00', 0x0)
+clone(0x20002004ffc, 0x0, 0xfffffffffffffffe, 0x0, 0xffffffffffffffff)
+exit_group(0x0)
+mount(0x0, &(0x7f0000000240)='./file0\x00', &(0x7f0000000200)='cgroup2\x00', 0x0, 0x0)
+r0 = open(&(0x7f0000000380)='./file0\x00', 0x0, 0x0)
+r1 = openat$cgroup_subtree(r0, &(0x7f0000000080)='cgroup.subtree_control\x00', 0x2, 0x0)
+write$cgroup_subtree(r1, &(0x7f0000000300)={[{0x2b, 'pids'}]}, 0x3)

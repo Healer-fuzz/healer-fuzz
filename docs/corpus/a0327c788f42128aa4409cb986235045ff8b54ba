@@ -1,0 +1,2 @@
+add_key$fscrypt_v1(&(0x7f0000000000)='logon\x00', &(0x7f0000000080)={'fscrypt:', @desc4='85baa174f0cb1142'}, &(0x7f00000000c0)={0x0, "fd59732d118752a263e3367dd3174bff979aa000f0f31d79dae39d7cc3edfce18f426359025f9a2f513b6bb5ca8ee07210a3539ee4f8ad6536ef3d292f015b50"}, 0x48, 0xfffffffffffffffd)
+keyctl$clear(0x7, 0xfffffffffffffffd)

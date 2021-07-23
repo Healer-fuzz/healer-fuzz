@@ -1,0 +1,6 @@
+r0 = openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
+mmap(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x1800003, 0x12, r0, 0x0)
+preadv(r0, &(0x7f0000000280), 0x18, 0xd9f, 0x0)
+r1 = memfd_create(&(0x7f0000000000)='\x9d#\x00\xe6Z\x00\xafq%\xa5\x83\xa6#\r\x83y\xf3\xb2\xe6b\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\xff\x7f\x17?$^\xe1Ob\xe1Y\xd6\xeb\x91\x83;\xeb\xf1\xd0\xce\xe5\x19THP\xf4O\xe2\x9f\xd9\xae\xcf>/\x05\x00\x00\x00\x00\x00\x00\x00\xa1\xa2\xe0g\x98', 0x4)
+fallocate(r1, 0x0, 0x0, 0x400005)
+fallocate(r1, 0x3, 0x0, 0xffffffff)

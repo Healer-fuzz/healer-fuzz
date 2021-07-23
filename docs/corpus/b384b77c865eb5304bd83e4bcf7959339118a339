@@ -1,0 +1,6 @@
+r0 = syz_open_dev$dri(&(0x7f0000000000)='/dev/dri/card#\x00', 0x0, 0x0)
+r1 = openat$ion(0xffffffffffffff9c, &(0x7f0000000000)='/dev/ion\x00', 0x0, 0x0)
+ioctl$ION_IOC_ALLOC(r1, 0xc0184900, &(0x7f0000000080)={0xa925, 0x1d, 0x0, <r2=>0xffffffffffffffff})
+r3 = dup(r2)
+ioctl$DRM_IOCTL_PRIME_FD_TO_HANDLE(r0, 0xc00c642e, &(0x7f00000000c0)={0x0, 0x0, r3})
+ioctl$DMA_BUF_IOCTL_SYNC(r3, 0x40086200, &(0x7f0000000000)=0x5)

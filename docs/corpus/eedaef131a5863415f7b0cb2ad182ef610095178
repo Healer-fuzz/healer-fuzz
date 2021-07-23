@@ -1,0 +1,6 @@
+r0 = epoll_create1(0x0)
+r1 = epoll_create1(0x0)
+flock(r1, 0xfffffffffffffffe)
+r2 = syz_open_procfs(0x0, &(0x7f0000000240)='fdinfo/4\x00')
+flock(r0, 0x2)
+readv(r2, &(0x7f00000001c0)=[{&(0x7f0000949000)=""/101, 0x65}], 0x1)

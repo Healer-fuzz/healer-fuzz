@@ -1,0 +1,8 @@
+r0 = openat$ion(0xffffffffffffff9c, &(0x7f0000000100)='/dev/ion\x00', 0x0, 0x0)
+r1 = openat$ion(0xffffffffffffff9c, &(0x7f0000000180)='/dev/ion\x00', 0x0, 0x0)
+ioctl$ION_IOC_ALLOC(r1, 0xc0184900, &(0x7f0000000040)={0x810002, 0x20000000235, 0x0, <r2=>0xffffffffffffffff})
+r3 = dup2(r1, r2)
+ioctl$ION_IOC_ALLOC(r3, 0xc0184900, &(0x7f0000000000)={0x280248, 0x2000000020d, 0x1, <r4=>0xffffffffffffffff})
+r5 = dup2(r0, r4)
+r6 = dup2(r4, r5)
+ioctl$ION_IOC_ALLOC(r6, 0xc0184900, &(0x7f00000000c0)={0x10000000000801, 0x2000000022b, 0x0, 0xffffffffffffffff, 0x300})

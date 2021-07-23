@@ -1,0 +1,4 @@
+r0 = syz_usb_connect(0x0, 0x24, &(0x7f0000000140)=ANY=[@ANYBLOB="1201000019acd7401e04414009a7000000010902120001800000000904"], 0x0)
+syz_usb_control_io$hid(r0, 0x0, &(0x7f0000001400)={0x2c, &(0x7f0000000740)=ANY=[], 0x0, 0x0, 0x0, 0x0})
+syz_usb_control_io$printer(r0, 0x0, 0x0)
+syz_usb_control_io$hid(r0, 0x0, 0x0)

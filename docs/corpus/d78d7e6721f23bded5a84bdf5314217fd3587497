@@ -1,0 +1,3 @@
+r0 = openat$vnet(0xffffffffffffff9c, &(0x7f00000000c0)='/dev/vhost-net\x00', 0x2, 0x0)
+ioctl$int_in(r0, 0x40000000af01, 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0x4008af12, &(0x7f0000000200))

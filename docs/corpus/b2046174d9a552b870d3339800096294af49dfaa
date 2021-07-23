@@ -1,0 +1,1 @@
+syz_emit_vhci(&(0x7f0000001280)=@HCI_VENDOR_PKT={0x0}, 0x2)

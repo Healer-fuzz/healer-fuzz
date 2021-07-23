@@ -1,0 +1,2 @@
+r0 = openat$ipvs(0xffffffffffffff9c, &(0x7f0000001740)='/proc/sys/net/ipv4/vs/drop_entry\x00', 0x2, 0x0)
+write$6lowpan_enable(r0, &(0x7f0000000040)='1', 0x1)

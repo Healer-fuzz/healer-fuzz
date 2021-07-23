@@ -1,0 +1,2 @@
+pipe(&(0x7f0000000100)={<r0=>0xffffffffffffffff})
+vmsplice(r0, &(0x7f0000000080)=[{&(0x7f0000000140)="11", 0x1}], 0x1, 0x2)

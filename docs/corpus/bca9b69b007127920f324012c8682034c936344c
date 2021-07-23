@@ -1,0 +1,2 @@
+keyctl$KEYCTL_PKEY_DECRYPT(0x1a, 0x0, &(0x7f0000000240)={'enc=', 'pkcs1', ' hash=', {'crc32c-intel\x00'}}, 0x0, 0x0)
+keyctl$KEYCTL_PKEY_QUERY(0x18, 0x0, 0x0, &(0x7f0000000240)=' hash=', 0x0)

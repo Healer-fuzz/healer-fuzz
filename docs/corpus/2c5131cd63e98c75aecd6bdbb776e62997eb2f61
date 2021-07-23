@@ -1,0 +1,5 @@
+getsockopt$ARPT_SO_GET_REVISION_TARGET(0xffffffffffffffff, 0x0, 0x63, &(0x7f00000001c0)={'NETMAP\x00'}, &(0x7f0000000280)=0x1e)
+r0 = openat$sndseq(0xffffffffffffff9c, &(0x7f0000000000)='/dev/snd/seq\x00', 0x2)
+ioctl$SNDRV_SEQ_IOCTL_CREATE_QUEUE(r0, 0xc08c5332, &(0x7f0000000100)={0x0, 0x0, 0x0, 'queue1\x00'})
+write$sndseq(r0, &(0x7f00000000c0)=[{0x0, 0x0, 0x0, 0x0, @time, {}, {}, @raw8={"a357b6b140cbb6215dd33459"}}], 0xfffffee4)
+ioctl$SNDRV_SEQ_IOCTL_GET_QUEUE_STATUS(r0, 0xc05c5340, &(0x7f0000000200)={0x0, 0x0, 0x0, {0x0, 0xac0}})

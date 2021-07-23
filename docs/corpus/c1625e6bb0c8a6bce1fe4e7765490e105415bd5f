@@ -1,0 +1,8 @@
+unshare(0x22000600)
+r0 = socket$nl_generic(0x10, 0x3, 0x10)
+unshare(0x40000000)
+getpeername(r0, 0x0, &(0x7f0000000180))
+r1 = socket$inet6_udp(0xa, 0x2, 0x0)
+ioctl$sock_ipv6_tunnel_SIOCADDTUNNEL(r1, 0x89f1, &(0x7f0000000100)={'ip6_vti0\x00', &(0x7f0000000080)={'ip6tnl0\x00', <r2=>0x0, 0x93e4f8b1acb52c7d, 0x5, 0x3d, 0x9, 0xa, @dev={0xfe, 0x80, [], 0x2e}, @private2, 0x20, 0x80, 0xf09f, 0x1}})
+ioctl$sock_ipv6_tunnel_SIOCGET6RD(r0, 0x89f8, &(0x7f0000000140)={'syztnl1\x00', &(0x7f00000001c0)={'ip6gre0\x00', <r3=>0x0, 0x2f, 0x8, 0x1, 0x1000, 0x2, @empty, @mcast2, 0x20, 0x700, 0x0, 0x7fffffff}})
+sendmsg$BATADV_CMD_SET_VLAN(r0, &(0x7f00000002c0)={&(0x7f0000000000)={0x10, 0x0, 0x0, 0x800000}, 0xc, &(0x7f0000000280)={&(0x7f0000000300)=ANY=[@ANYBLOB="3c8000005d6176600966627fb5a545555ad1ced87b758e0831087b4d6003eb0f6847a3f7a62e060963d4fc69e90ba279e2844f75bd91ec061ae5f07b6f5b8800"/80, @ANYRES16=0x0, @ANYBLOB="00022bbd7000fcdbdf2512000000050035007f00000008003c000100000008000600", @ANYRES32=r2, @ANYBLOB="08003900ff07000008000600", @ANYRES32=r3, @ANYBLOB], 0x3c}, 0x1, 0x0, 0x0, 0x1}, 0x20000000)

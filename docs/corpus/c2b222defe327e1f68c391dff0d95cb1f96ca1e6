@@ -1,0 +1,3 @@
+r0 = syz_open_dev$sndpcmc(&(0x7f0000000200)='/dev/snd/pcmC#D#c\x00', 0x0, 0x0)
+ioctl$SNDRV_PCM_IOCTL_SYNC_PTR(r0, 0xc0884123, &(0x7f0000000340)={0x0, "c21590c23f609d8ddcd2cd9ac92d6cb428658cdbb1a1f24995d87e2cb354d3c1c19c30327374eab388f5c6ee8699fe2a5d235dd47593f4df3712fa6e657f0389", {0x10000}})
+ppoll(&(0x7f0000000080)=[{r0}], 0x1, 0x0, 0x0, 0x0)

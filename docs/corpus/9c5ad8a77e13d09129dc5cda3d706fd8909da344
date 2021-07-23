@@ -1,0 +1,6 @@
+r0 = openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
+mmap(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x1800003, 0x12, r0, 0x0)
+r1 = syz_open_dev$tty1(0xc, 0x4, 0x1)
+r2 = openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
+preadv(r2, &(0x7f0000000280), 0x18, 0xd9f, 0x0)
+write$binfmt_elf64(r1, &(0x7f0000001640)=ANY=[@ANYBLOB="7cdcfbe4a01b5b070731003100000000000000000000003b00000000005d"], 0x78)

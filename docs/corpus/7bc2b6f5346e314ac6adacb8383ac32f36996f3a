@@ -1,0 +1,5 @@
+r0 = syz_usb_connect$hid(0x0, 0x36, &(0x7f00000000c0)=ANY=[@ANYBLOB="12010000000000408c0d220040000000000109022400010000000009040000010304000009210000000122010009058103"], 0x0)
+syz_usb_control_io(r0, 0x0, 0x0)
+syz_usb_control_io$hid(r0, &(0x7f00000006c0)={0x24, 0x0, 0x0, &(0x7f0000000640)={0x0, 0x22, 0x1, {[@main]}}, 0x0}, 0x0)
+r1 = syz_open_dev$hiddev(&(0x7f00000000c0)='/dev/usb/hiddev#\x00', 0x0, 0x0)
+ioctl$HIDIOCGSTRING(r1, 0x80044801, 0x0)

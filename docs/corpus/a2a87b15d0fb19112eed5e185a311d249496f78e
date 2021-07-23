@@ -1,0 +1,2 @@
+pipe2(&(0x7f0000000000)={0xffffffffffffffff, <r0=>0xffffffffffffffff}, 0x4000)
+write$P9_RLOCK(r0, &(0x7f0000000080)={0x8}, 0x8)

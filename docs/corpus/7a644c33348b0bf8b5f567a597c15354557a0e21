@@ -1,0 +1,4 @@
+bpf$MAP_UPDATE_BATCH(0x1a, &(0x7f0000000000)={0x0, 0x0, &(0x7f0000000280)="e6fea42204cb612c4a94b331bad06a5572", 0x0, 0x0, 0x1}, 0x38)
+r0 = openat$tun(0xffffffffffffff9c, &(0x7f0000000240)='/dev/net/tun\x00', 0x0, 0x0)
+ioctl$TUNSETIFF(r0, 0x400454ca, &(0x7f0000000280)={'nr0\x00'})
+ioctl$TUNSETVNETHDRSZ(r0, 0x400454d8, &(0x7f0000000080))

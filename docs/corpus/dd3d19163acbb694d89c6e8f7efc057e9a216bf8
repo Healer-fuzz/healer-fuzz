@@ -1,0 +1,8 @@
+pipe(&(0x7f0000000040)={<r0=>0xffffffffffffffff, <r1=>0xffffffffffffffff})
+ioctl$int_in(r1, 0x5421, &(0x7f0000000240)=0x2)
+openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000300)='memory.events\x00', 0x26e1, 0x0)
+pipe(&(0x7f0000000580)={0xffffffffffffffff, <r2=>0xffffffffffffffff})
+r3 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000140)='memory.events\x00', 0x7a05, 0x1700)
+splice(r0, 0x0, r3, 0x0, 0x100000800ff04, 0x0)
+write$binfmt_misc(r1, &(0x7f0000000740)=ANY=[], 0xfffffc8f)
+splice(r0, 0x0, r2, 0x0, 0x4df3, 0xa)

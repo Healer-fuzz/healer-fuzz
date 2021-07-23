@@ -1,0 +1,5 @@
+clone(0x20002100, 0x0, 0xfffffffffffffffe, 0x0, 0xffffffffffffffff)
+r0 = syz_genetlink_get_family_id$nl80211(&(0x7f00000001c0)='nl80211\x00', 0xffffffffffffffff)
+r1 = socket$nl_generic(0x10, 0x3, 0x10)
+sendmsg$NL80211_CMD_REQ_SET_REG(r1, &(0x7f00000005c0)={0x0, 0x0, &(0x7f0000000580)={&(0x7f0000001680)=ANY=[@ANYBLOB='$\x00\x00\x00', @ANYRES16=r0, @ANYBLOB="010000000000000000001b0000000700210030"], 0x24}}, 0x0)
+exit(0x0)

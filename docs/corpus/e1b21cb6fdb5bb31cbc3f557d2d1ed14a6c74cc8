@@ -1,0 +1,2 @@
+mkdir(&(0x7f0000000000)='./file0\x00', 0x0)
+mount$binder(0x0, &(0x7f0000000080)='./file0\x00', &(0x7f00000000c0)='binder\x00', 0x0, &(0x7f0000000440)={[{@max={'max'}}, {@stats='stats=global'}, {@max={'max', 0x3d, 0xfffffffffffffffe}}]})

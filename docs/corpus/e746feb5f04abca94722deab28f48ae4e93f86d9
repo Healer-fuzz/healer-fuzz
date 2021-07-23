@@ -1,0 +1,3 @@
+r0 = socket$inet6_udplite(0xa, 0x2, 0x88)
+r1 = dup2(r0, r0)
+ioctl$sock_ipv6_tunnel_SIOCDELPRL(r1, 0x89f6, &(0x7f0000000300)={'syztnl0\x00', &(0x7f0000000280)={'syztnl0\x00', 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, @dev, @rand_addr=' \x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01'}})

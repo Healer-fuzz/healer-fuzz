@@ -1,0 +1,7 @@
+syz_mount_image$msdos(&(0x7f0000000040)='msdos\x00', &(0x7f00000003c0)='./file1\x00', 0xffffffff, 0x1, &(0x7f0000000080)=[{&(0x7f00000000c0)="0400050900000000666174000404090a0200027400f801", 0x17}], 0x0, &(0x7f00000004c0)=ANY=[])
+chdir(&(0x7f0000000000)='./file1\x00')
+perf_event_open(0x0, 0x0, 0x0, 0xffffffffffffffff, 0x0)
+mount$fuseblk(&(0x7f00000005c0)='/dev/loop0\x00', 0x0, 0x0, 0x0, &(0x7f00000006c0)={{'fd'}, 0x2c, {'rootmode'}, 0x2c, {'user_id', 0x3d, 0xffffffffffffffff}, 0x2c, {'group_id'}, 0x2c, {[{@default_permissions='default_permissions'}], [{@smackfsdef={'smackfsdef', 0x3d, '+,^'}}, {@smackfsroot={'smackfsroot', 0x3d, 'msdos\x00'}}]}})
+r0 = open(&(0x7f0000000180)='.\x00', 0x0, 0x0)
+getdents(r0, 0x0, 0x0)
+ioctl$FITRIM(r0, 0x82307201, &(0x7f0000000280))

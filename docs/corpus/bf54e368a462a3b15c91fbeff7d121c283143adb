@@ -1,0 +1,8 @@
+r0 = syz_genetlink_get_family_id$ieee802154(&(0x7f0000000140)='802.15.4 MAC\x00', 0xffffffffffffffff)
+sendmsg$IEEE802154_LLSEC_DEL_SECLEVEL(0xffffffffffffffff, &(0x7f0000000240)={&(0x7f0000000100)={0x10, 0x0, 0x0, 0x40000}, 0xc, &(0x7f0000000200)={&(0x7f0000000180)={0x44, r0, 0x2, 0x70bd2b, 0x25dfdbff, {}, [@IEEE802154_ATTR_DEV_NAME={0xa, 0x1, 'wpan1\x00'}, @IEEE802154_ATTR_LLSEC_SECLEVELS={0x5, 0x35, 0x5}, @IEEE802154_ATTR_LLSEC_DEV_OVERRIDE={0x5, 0x36, 0x1}, @IEEE802154_ATTR_DEV_NAME={0xa, 0x1, 'wpan0\x00'}, @IEEE802154_ATTR_LLSEC_FRAME_TYPE={0x5, 0x33, 0x5}]}, 0x44}, 0x1, 0x0, 0x0, 0x4}, 0x24000000)
+r1 = openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
+mmap(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x1800003, 0x12, r1, 0x0)
+preadv(r1, &(0x7f0000000280), 0x18, 0xd9f, 0x0)
+add_key$fscrypt_v1(&(0x7f0000000000)='logon\x00', &(0x7f0000000040)={'fscrypt:'}, &(0x7f0000000080)={0x0, "ef0a35313316d883cde9b44b3b0eccf6107a710be042d85420e6733223f791501932fc8925e4c69877ff813045422ff665bedd6d2c5c1d7e7aba5456d9087eb5"}, 0xfffffffffffffdcd, 0xffffffffffffffff)
+r2 = add_key$keyring(&(0x7f0000000100)='keyring\x00', &(0x7f00000000c0)={'syz', 0x1}, 0x0, 0x0, 0xffffffffffffffff)
+request_key(&(0x7f0000000280)='id_legacy\x00', &(0x7f0000000480)={'syz', 0x2}, &(0x7f0000000500)='\x00', r2)

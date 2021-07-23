@@ -1,0 +1,6 @@
+mkdir(&(0x7f0000000280)='./file0\x00', 0x0)
+mount(0x0, &(0x7f0000000000)='./file0\x00', &(0x7f0000000140)='cpuset\x00', 0x0, 0x0)
+r0 = open(&(0x7f0000000080)='./file0\x00', 0x0, 0x0)
+r1 = openat$cgroup_int(r0, &(0x7f00000002c0)='cpuset.mem_exclusive\x00', 0x2, 0x0)
+dup3(r1, r0, 0x0)
+writev(r0, &(0x7f0000000300)=[{&(0x7f0000000280)='0', 0x1}], 0x1)

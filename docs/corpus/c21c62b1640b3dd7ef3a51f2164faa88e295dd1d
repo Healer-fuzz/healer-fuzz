@@ -1,0 +1,2 @@
+r0 = socket$phonet(0x23, 0x2, 0x1)
+ioctl$SIOCPNDELRESOURCE(r0, 0x89ef, 0xfffffffffffffffc)

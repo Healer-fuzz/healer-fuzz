@@ -1,0 +1,2 @@
+syz_mount_image$tmpfs(0x0, &(0x7f0000000040)='./file0\x00', 0x0, 0x0, 0x0, 0x0, 0x0)
+setxattr$trusted_overlay_upper(&(0x7f0000000080)='./file0\x00', &(0x7f0000000140)='trusted.overlay.upper\x00', &(0x7f0000000180)={0x0, 0xfb, 0x39, 0x0, 0x0, "1271bc6235d29ad352f3207c2860146c", "dfcce00936a097e59a8622d20c88fdd7f2bb4b4cb4717ee2eb7a1bd16cbdc0eae2c04143"}, 0x39, 0x0)

@@ -1,0 +1,1 @@
+syz_btf_id_by_name$bpf_lsm(&(0x7f00000000c0)='bpf_lsm_mmap_file\x00')

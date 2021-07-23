@@ -1,0 +1,5 @@
+r0 = open$dir(&(0x7f0000000000)='./file0\x00', 0x2040, 0x0)
+pipe2$9p(&(0x7f00000000c0)={<r1=>0xffffffffffffffff, <r2=>0xffffffffffffffff}, 0x0)
+write$P9_RLERRORu(r2, &(0x7f0000000080)=ANY=[@ANYBLOB="1c00000007ffff", @ANYRES16=r0, @ANYRES16], 0x52)
+r3 = socket$nl_route(0x10, 0x3, 0x0)
+mount$9p_fd(0x0, &(0x7f0000000040)='./file0\x00', &(0x7f0000000140)='9p\x00', 0x0, &(0x7f0000000400)={'trans=fd,', {'rfdno', 0x3d, r1}, 0x2c, {'wfdno', 0x3d, r3}, 0x2c, {[{@noextend='noextend'}]}})

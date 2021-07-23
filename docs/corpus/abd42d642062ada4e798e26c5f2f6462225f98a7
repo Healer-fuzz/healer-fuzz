@@ -1,0 +1,4 @@
+r0 = openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
+mmap(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x1800003, 0x12, r0, 0x0)
+r1 = syz_usb_connect(0x0, 0x24, &(0x7f0000000140)=ANY=[@ANYBLOB="1201000034fa1d0809122323e9e20102030109021200010000020009"], 0x0)
+syz_usb_control_io$hid(r1, 0x0, 0x0)

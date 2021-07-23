@@ -1,0 +1,2 @@
+r0 = openat$audio(0xffffffffffffff9c, &(0x7f0000000000)='/dev/audio\x00', 0xca302, 0x0)
+ioctl$SOUND_OLD_MIXER_INFO(r0, 0x80304d65, &(0x7f00000000c0))

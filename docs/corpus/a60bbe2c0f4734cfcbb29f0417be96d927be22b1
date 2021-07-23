@@ -1,0 +1,2 @@
+r0 = syz_open_procfs(0x0, &(0x7f0000000200)='net/vlan/config\x00')
+preadv(r0, &(0x7f0000000540)=[{&(0x7f0000000000)=""/190, 0xbe}], 0x1, 0x6d, 0x0)

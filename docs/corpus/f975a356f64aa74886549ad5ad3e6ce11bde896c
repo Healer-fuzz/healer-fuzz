@@ -1,0 +1,2 @@
+r0 = openat$selinux_attr(0xffffffffffffff9c, &(0x7f0000000140)='/proc/thread-self/attr/keycreate\x00', 0x2, 0x0)
+write$binfmt_script(r0, &(0x7f00000001c0)={'#! ', './file1'}, 0xb)

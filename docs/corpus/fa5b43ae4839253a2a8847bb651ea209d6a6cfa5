@@ -1,0 +1,1 @@
+syz_emit_ethernet(0x14, &(0x7f0000000000)={@link_local, @link_local, @val={@void}, {@generic={0x88f5, "885e"}}}, 0x0)

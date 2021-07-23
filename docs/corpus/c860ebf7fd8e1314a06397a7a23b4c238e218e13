@@ -1,0 +1,2 @@
+r0 = syz_open_dev$usbfs(&(0x7f0000000080)='/dev/bus/usb/00#/00#\x00', 0x200000077, 0x1)
+ioctl$USBDEVFS_IOCTL(r0, 0xc0185500, &(0x7f0000000380)=@usbdevfs_disconnect={0x123})

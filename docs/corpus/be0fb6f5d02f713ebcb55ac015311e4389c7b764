@@ -1,0 +1,2 @@
+r0 = syz_open_dev$video(&(0x7f0000000580)='/dev/video#\x00', 0x3, 0x0)
+ioctl$VIDIOC_QUERY_DV_TIMINGS(r0, 0x80845663, 0x0)

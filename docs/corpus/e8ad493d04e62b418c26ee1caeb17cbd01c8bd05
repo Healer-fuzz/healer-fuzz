@@ -1,0 +1,2 @@
+r0 = openat$ipvs(0xffffffffffffff9c, &(0x7f0000000680)='/proc/sys/net/ipv4/vs/pmtu_disc\x00', 0x2, 0x0)
+write$cgroup_pid(r0, &(0x7f0000000080)=0xffffffffffffffff, 0x12)

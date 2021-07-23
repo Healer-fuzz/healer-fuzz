@@ -1,0 +1,1 @@
+syz_mount_image$exfat(&(0x7f0000000040)='exfat\x00', &(0x7f0000000080)='./file0\x00', 0x0, 0x0, &(0x7f0000000400), 0x0, &(0x7f0000000140)={[{@iocharset={'iocharset', 0x3d, 'cp850'}}, {@dmask={'dmask'}}, {@iocharset={'iocharset', 0x3d, 'cp936'}}], [{@uid_lt={'uid<'}}]})

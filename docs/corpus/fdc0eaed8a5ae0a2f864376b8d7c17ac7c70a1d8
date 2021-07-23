@@ -1,0 +1,6 @@
+r0 = socket$alg(0x26, 0x5, 0x0)
+bind$alg(r0, &(0x7f0000000080)={0x26, 'skcipher\x00', 0x0, 0x0, 'xts(aes)\x00'}, 0x58)
+setsockopt$ALG_SET_KEY(r0, 0x117, 0x1, &(0x7f0000000000)="3c627a1a5c794614303c12c2c821363198e1b17a11f06a00b434dab60e0e00d9", 0x20)
+r1 = accept(r0, 0x0, 0x0)
+recvfrom(r1, &(0x7f0000000ac0)=""/4096, 0x1000, 0x0, 0x0, 0x0)
+write$binfmt_script(r1, &(0x7f0000000140)={'#! ', './file0'}, 0xb)

@@ -1,0 +1,2 @@
+r0 = openat$dlm_control(0xffffffffffffff9c, &(0x7f00000001c0)='/dev/dlm-control\x00', 0x0, 0x0)
+read$snddsp(r0, &(0x7f0000000340)=""/12, 0xc)

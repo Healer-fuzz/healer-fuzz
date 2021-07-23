@@ -1,0 +1,7 @@
+r0 = gettid()
+r1 = openat$sndseq(0xffffffffffffff9c, &(0x7f0000000000)='/dev/snd/seq\x00', 0x0)
+read(r1, &(0x7f0000000080)=""/241, 0xf1)
+ioctl$SNDRV_SEQ_IOCTL_REMOVE_EVENTS(r1, 0x4040534e, &(0x7f0000000040)={0x305, @time})
+ioctl$SNDRV_SEQ_IOCTL_GET_SUBSCRIPTION(r1, 0xc0505350, &(0x7f0000000200))
+ioctl$SNDRV_SEQ_IOCTL_QUERY_NEXT_CLIENT(r1, 0xc0bc5351, &(0x7f0000002480)={0x0, 0x0, 'client1\x00', 0x0, "8ee15cc651f5f987", "1d954f03e85df5cbbca8f954bd1db9f988ef67fb4c1b9a19829895ce4b5f086a"})
+tkill(r0, 0x7)

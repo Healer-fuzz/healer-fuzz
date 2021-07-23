@@ -1,0 +1,5 @@
+fcntl$setlease(0xffffffffffffffff, 0x400, 0x0)
+r0 = epoll_create(0x9)
+r1 = openat$adsp1(0xffffffffffffff9c, &(0x7f0000000000)='/dev/adsp1\x00', 0xf8d819aed988bd0d, 0x0)
+epoll_ctl$EPOLL_CTL_ADD(r0, 0x1, r1, &(0x7f0000000000)={0x20000005})
+socket(0x2, 0x0, 0x0)

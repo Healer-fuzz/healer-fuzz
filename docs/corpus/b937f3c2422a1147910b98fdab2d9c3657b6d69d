@@ -1,0 +1,7 @@
+r0 = openat$uhid(0xffffffffffffff9c, &(0x7f0000000080)='/dev/uhid\x00', 0x2, 0x0)
+write$UHID_CREATE(r0, &(0x7f00000003c0)={0x0, {'syz1\x00', 'syz1\x00', 'syz1\x00', &(0x7f00000000c0)=""/15, 0xf}}, 0x120)
+r1 = dup(r0)
+write$UHID_DESTROY(r1, &(0x7f0000000040), 0x4)
+write$UHID_CREATE2(r1, &(0x7f0000000500)={0xb, {'syz1\x00', 'syz1\x00', 'syz1\x00', 0x1, 0x0, 0x0, 0x0, 0x0, 0x0, '4'}}, 0x119)
+write$UHID_DESTROY(r1, &(0x7f0000000000)={0xc}, 0x4)
+write$UHID_DESTROY(r0, &(0x7f0000000100), 0x4)

@@ -1,0 +1,8 @@
+mkdir(&(0x7f0000000240)='./file1\x00', 0x0)
+mkdir(&(0x7f0000000200)='./file0\x00', 0x0)
+mkdir(&(0x7f00000000c0)='./bus\x00', 0x0)
+r0 = openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
+r1 = openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
+mmap(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x1800003, 0x12, r1, 0x0)
+preadv(r0, &(0x7f0000000280), 0x18, 0xd9f, 0x0)
+mount$overlay(0x400002, &(0x7f0000000080)='./file0\x00', &(0x7f0000000100)='overlay\x00', 0x0, &(0x7f0000000280)={[{@lowerdir={'lowerdir', 0x3d, './file1'}}, {@workdir={'workdir', 0x3d, './file0'}}, {@upperdir={'upperdir', 0x3d, './bus'}}, {@default_permissions='default_permissions'}]})

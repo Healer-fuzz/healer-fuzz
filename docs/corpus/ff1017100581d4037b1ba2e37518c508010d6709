@@ -1,0 +1,5 @@
+r0 = openat$sndseq(0xffffffffffffff9c, &(0x7f0000000080)='/dev/snd/seq\x00', 0x2)
+ioctl$SNDRV_SEQ_IOCTL_CREATE_QUEUE(r0, 0xc08c5332, &(0x7f0000000100)={0x0, 0x0, 0x0, 'queue1\x00'})
+write$sndseq(r0, &(0x7f00000000c0)=[{0x0, 0x0, 0x0, 0x0, @time, {}, {}, @raw8={"a357b6b140cbb6215dd33459"}}], 0xfffffee4)
+ioctl$SNDRV_SEQ_IOCTL_SET_QUEUE_CLIENT(r0, 0x404c534a, &(0x7f00000001c0))
+ioctl$SECCOMP_IOCTL_NOTIF_RECV(0xffffffffffffffff, 0xc0502100, 0x0)

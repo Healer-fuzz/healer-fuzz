@@ -1,0 +1,3 @@
+sendmsg(0xffffffffffffffff, &(0x7f0000000040)={0x0, 0x0, &(0x7f0000000000)=[{0x0}, {&(0x7f0000000240)="cb6a2548fde179753894accef60c9fae9395608f5b09c18ff1", 0x19}], 0x2}, 0x0)
+r0 = socket$nl_sock_diag(0x10, 0x3, 0x4)
+ioctl$sock_SIOCGIFINDEX_80211(r0, 0x8b19, &(0x7f0000000000)={'wlan0\x00'})

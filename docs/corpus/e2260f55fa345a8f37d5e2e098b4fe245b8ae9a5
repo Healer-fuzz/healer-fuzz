@@ -1,0 +1,7 @@
+r0 = inotify_init()
+r1 = inotify_init1(0x0)
+inotify_add_watch(r1, &(0x7f0000000140)='.\x00', 0x1000000)
+inotify_add_watch(r0, &(0x7f0000000080)='.\x00', 0x400017e)
+r2 = open(&(0x7f0000000300)='./file0\x00', 0x200c2, 0x0)
+dup3(r2, r0, 0x0)
+creat(&(0x7f0000000040)='./file0\x00', 0x0)

@@ -1,0 +1,2 @@
+r0 = openat$apparmor_thread_exec(0xffffffffffffff9c, &(0x7f0000000040)='/proc/thread-self/attr/exec\x00', 0x2, 0x0)
+writev(r0, &(0x7f00000005c0)=[{&(0x7f00000000c0)="43157741a10e2f44ada067e9693e5c88c611f9d75ec5a25c0e75f1144836477d3548f5e0adfd954befcb8673cf17bec0ad2f2b43cb3ad362e5e56be974c65306fb5f7cddfe01770a36b99b2ef1ac291dd63b2d7f53a5638615f1eb35de4d6e05db94c97e5442d4cb177b5420bc", 0x6d}], 0x1)

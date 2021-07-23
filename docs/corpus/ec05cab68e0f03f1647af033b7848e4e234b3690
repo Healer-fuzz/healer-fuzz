@@ -1,0 +1,4 @@
+syz_usb_ep_write$ath9k_ep2(0xffffffffffffffff, 0x83, 0x0, 0x0)
+r0 = syz_open_procfs(0x0, &(0x7f0000000000)='smaps\x00')
+read$FUSE(r0, &(0x7f0000000040)={0x2020}, 0x2020)
+read$FUSE(r0, &(0x7f0000006e00)={0x2020}, 0x2020)

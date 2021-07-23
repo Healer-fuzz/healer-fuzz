@@ -1,0 +1,7 @@
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000440)='cpuacct.usage_percpu\x00', 0x26e1, 0x0)
+r1 = fork()
+tkill(r1, 0x22)
+r2 = fork()
+waitid(0x0, 0x0, 0x0, 0x2, 0x0)
+tkill(r2, 0x16)
+ioctl$PERF_EVENT_IOC_PERIOD(r0, 0xc0185879, &(0x7f0000000080))

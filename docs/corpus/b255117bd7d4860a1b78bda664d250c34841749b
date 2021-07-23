@@ -1,0 +1,5 @@
+openat(0xffffffffffffff9c, &(0x7f00000001c0)='./file0\x00', 0x40, 0x0)
+r0 = openat$fuse(0xffffffffffffff9c, &(0x7f0000002080)='/dev/fuse\x00', 0x42, 0x0)
+mount$fuse(0x0, &(0x7f00000020c0)='./file0\x00', &(0x7f0000002100)='fuse\x00', 0x0, &(0x7f0000002140)=ANY=[@ANYBLOB='fd=', @ANYRESHEX=r0, @ANYBLOB=',rootmode=00000000000000000100000,user_id=', @ANYRESDEC=0x0, @ANYBLOB=',group_id=', @ANYRESDEC=0x0])
+r1 = syz_open_procfs(0x0, &(0x7f0000000000)='mounts\x00')
+readv(r1, &(0x7f00000012c0)=[{&(0x7f0000001400)=""/4110, 0x100e}], 0x1)

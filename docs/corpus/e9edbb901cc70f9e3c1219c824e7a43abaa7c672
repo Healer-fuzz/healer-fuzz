@@ -1,0 +1,1 @@
+syz_mount_image$qnx6(&(0x7f0000000200)='qnx6\x00', &(0x7f0000000240)='./file0\x00', 0x0, 0x0, &(0x7f00000002c0), 0x0, &(0x7f0000000300)={[], [{@func={'func', 0x3d, 'KEXEC_INITRAMFS_CHECK'}}]})

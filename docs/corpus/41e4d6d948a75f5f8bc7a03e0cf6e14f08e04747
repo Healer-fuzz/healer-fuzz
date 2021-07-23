@@ -1,0 +1,2 @@
+r0 = syz_open_dev$ndb(&(0x7f0000000000)='/dev/nbd#\x00', 0x0, 0x2041)
+ioctl$BLKZEROOUT(r0, 0x127f, &(0x7f0000000080)={0x0, 0x1ff})

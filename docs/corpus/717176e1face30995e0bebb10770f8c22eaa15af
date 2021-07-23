@@ -1,0 +1,4 @@
+sendmsg(0xffffffffffffffff, &(0x7f0000000000)={0x0, 0xf0ffff, &(0x7f0000000040)=[{&(0x7f00000001c0)="5500000018007f0505931d10a4a280930a060001fe8000081400000039000900350050001d00000019000540029b84136ef75afb83de441100ae20ca3ab8220000060cec4fab91d471cd341300000000dd941e7931", 0x55}], 0x1}, 0x0)
+socketpair$nbd(0x1, 0x1, 0x0, &(0x7f0000000100)={<r0=>0xffffffffffffffff})
+getsockname(r0, &(0x7f0000000000)=@pppol2tpv3in6={0x18, 0x1, {0x0, <r1=>0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, {0xa, 0x0, 0x0, @initdev}}}, &(0x7f00000000c0)=0x80)
+ioctl$sock_ipv4_tunnel_SIOCDELTUNNEL(r1, 0x401054d6, 0x0)

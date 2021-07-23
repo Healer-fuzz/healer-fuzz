@@ -1,0 +1,1 @@
+prctl$PR_GET_SPECULATION_CTRL(0x25, 0xf04a00, 0x0)

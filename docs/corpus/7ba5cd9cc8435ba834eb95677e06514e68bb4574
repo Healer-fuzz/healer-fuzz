@@ -1,0 +1,2 @@
+r0 = syz_open_dev$radio(&(0x7f0000000600)='/dev/radio#\x00', 0x2, 0x2)
+ioctl$VIDIOC_S_CTRL(r0, 0xc008561c, &(0x7f0000000640)={0x98f904})

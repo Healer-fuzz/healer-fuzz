@@ -1,0 +1,5 @@
+r0 = epoll_create(0x6a)
+r1 = socket$inet6_udplite(0xa, 0x2, 0x88)
+r2 = socket$inet6_udplite(0xa, 0x2, 0x88)
+epoll_ctl$EPOLL_CTL_ADD(r0, 0x1, r2, &(0x7f0000000000)={0x20000008})
+epoll_ctl$EPOLL_CTL_ADD(r0, 0x1, r1, &(0x7f0000001980)={0xa0002000})

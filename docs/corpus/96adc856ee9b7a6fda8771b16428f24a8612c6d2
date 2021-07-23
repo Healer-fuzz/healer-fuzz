@@ -1,0 +1,3 @@
+r0 = syz_open_dev$hidraw(0xfffffffffffffffc, 0x0, 0x84762)
+read$hidraw(r0, &(0x7f00000004c0)=""/191, 0xbf)
+ioctl$HIDIOCGRAWNAME(r0, 0x6611, 0x0)

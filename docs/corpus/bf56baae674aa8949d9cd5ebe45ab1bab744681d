@@ -1,0 +1,2 @@
+r0 = openat$apparmor_thread_current(0xffffffffffffff9c, &(0x7f0000000000)='/proc/thread-self/attr/current\x00', 0x2, 0x0)
+writev(r0, &(0x7f0000001480)=[{&(0x7f0000000100)="7c4220ee", 0x4}], 0x1)

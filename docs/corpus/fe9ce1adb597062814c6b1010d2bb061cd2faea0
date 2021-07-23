@@ -1,0 +1,2 @@
+setreuid(0xee00, 0xee01)
+request_key(&(0x7f0000000200)='logon\x00', &(0x7f0000000240)={'syz', 0x2}, &(0x7f0000000280)='syz', 0x0)

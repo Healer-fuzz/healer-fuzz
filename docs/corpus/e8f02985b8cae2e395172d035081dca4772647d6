@@ -1,0 +1,1 @@
+prctl$PR_SET_TSC(0x1a, 0x1)

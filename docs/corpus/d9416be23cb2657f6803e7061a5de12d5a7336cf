@@ -1,0 +1,8 @@
+r0 = socket$l2tp6(0xa, 0x2, 0x73)
+getpeername(r0, 0x0, 0x0)
+openat$cgroup_root(0xffffffffffffff9c, &(0x7f00000000c0)='./cgroup/syz1\x00', 0x200002, 0x0)
+openat$ppp(0xffffffffffffff9c, &(0x7f0000000100)='/dev/ppp\x00', 0x0, 0x0)
+ioctl$sock_bt_hidp_HIDPCONNADD(0xffffffffffffffff, 0x400448c8, 0x0)
+bind$pptp(0xffffffffffffffff, 0x0, 0x0)
+pipe2(&(0x7f0000000ac0), 0x0)
+syz_genetlink_get_family_id$wireguard(&(0x7f0000000b40)='wireguard\x00', 0xffffffffffffffff)

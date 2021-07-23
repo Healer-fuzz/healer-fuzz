@@ -1,0 +1,1 @@
+syz_emit_ethernet(0x6e, &(0x7f0000000140)={@broadcast, @empty, @void, {@ipv6={0x86dd, @icmpv6={0x0, 0x6, "d64d4d", 0x38, 0x3a, 0x0, @rand_addr=' \x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01', @mcast2, {[], @dest_unreach={0x2, 0x0, 0x0, 0x0, [], {0x0, 0x6, '$\x00@', 0x0, 0x3a, 0x0, @loopback, @mcast2, [], "80ffffff00740000"}}}}}}}, 0x0)

@@ -1,0 +1,2 @@
+r0 = socket(0x22, 0x2, 0x4)
+ioctl$IMGETVERSION(r0, 0x80044942, &(0x7f0000000000))

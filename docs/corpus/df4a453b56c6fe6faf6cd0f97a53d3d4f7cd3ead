@@ -1,0 +1,2 @@
+r0 = socket$l2tp(0x2, 0x2, 0x73)
+bind(r0, &(0x7f0000000000)=@caif=@rfm={0x25, 0x0, "cbd7ac88ce1f2a7452d33ad9cbf79d10"}, 0x80)

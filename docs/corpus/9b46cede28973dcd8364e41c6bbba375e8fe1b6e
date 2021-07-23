@@ -1,0 +1,6 @@
+mkdirat(0xffffffffffffff9c, &(0x7f0000000080)='./file0\x00', 0x0)
+mkdirat$cgroup_root(0xffffffffffffff9c, &(0x7f0000000000)='./cgroup/syz1\x00', 0x1ff)
+mount$fuse(0x20000000, &(0x7f00000004c0)='./file0\x00', 0x0, 0x7a04, 0x0)
+chdir(&(0x7f0000000240)='./file0\x00')
+mkdir(&(0x7f0000000140)='./control\x00', 0x0)
+rmdir(&(0x7f0000000100)='./control\x00')

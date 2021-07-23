@@ -1,0 +1,1 @@
+syz_mount_image$hfsplus(&(0x7f0000004080)='hfsplus\x00', &(0x7f00000040c0)='./file0\x00', 0x0, 0x0, &(0x7f00000041c0), 0x0, &(0x7f0000004340)={[{@session={'session'}}, {@barrier='barrier'}, {@nls={'nls', 0x3d, 'macromanian'}}]})

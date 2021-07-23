@@ -1,0 +1,2 @@
+r0 = syz_open_dev$video4linux(&(0x7f0000000140)='/dev/v4l-subdev#\x00', 0x5, 0x0)
+ioctl$VIDIOC_QUERY_EXT_CTRL(r0, 0xc038563c, &(0x7f0000000000)={0x0, 0x0, "53045b3682bd8db7182ededdef5df8687a13f3acc15a85e95e15454687c666e2"})

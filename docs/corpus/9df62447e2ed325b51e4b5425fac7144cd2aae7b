@@ -1,0 +1,2 @@
+mknod$loop(&(0x7f0000000300)='./file0\x00', 0x0, 0x0)
+mount(0x0, &(0x7f0000000280)='./file0\x00', &(0x7f00000002c0)='hugetlbfs\x00', 0x0, &(0x7f0000000340)='=static')

@@ -1,0 +1,2 @@
+add_key$keyring(&(0x7f0000000100)='keyring\x00', 0x0, 0x0, 0x0, 0xfffffffffffffffe)
+keyctl$restrict_keyring(0x1d, 0xfffffffffffffffe, &(0x7f0000000080)='.request_key_auth\x00', &(0x7f00000000c0)='#!#%!+-n\x00')

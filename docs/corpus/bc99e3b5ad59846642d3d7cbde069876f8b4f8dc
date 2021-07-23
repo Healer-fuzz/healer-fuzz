@@ -1,0 +1,4 @@
+r0 = add_key$fscrypt_v1(&(0x7f0000000000)='logon\x00', &(0x7f0000000040)={'fscrypt:', @desc3='e8dab99234bb312e'}, &(0x7f0000000080)={0x0, "80afcebfdcd32a69da34e3285fae595286b46d8c2c2fbce0683ec261487bd02d028a0a57a3e01313877fd5545e0ae6cae552524161c68c5c5af58e1c19dd38cd"}, 0x48, 0xfffffffffffffffb)
+keyctl$set_timeout(0xf, r0, 0x0)
+add_key$fscrypt_v1(&(0x7f0000000000)='logon\x00', &(0x7f0000000040)={'fscrypt:', @desc3='e8dab99234bb312e'}, &(0x7f0000000080)={0x0, "80afcebfdcd32a69da34e3285fae595286b46d8c2c2fbce0683ec261487bd02d028a0a57a3e01313877fd5545e0ae6cae552664161c68c5c5af58e1c19dd38cd"}, 0x48, 0xffffffffffffffff)
+keyctl$describe(0x6, r0, &(0x7f0000000200)=""/97, 0x61)

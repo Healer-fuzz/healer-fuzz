@@ -1,0 +1,2 @@
+r0 = add_key(&(0x7f0000001180)='user\x00', &(0x7f00000011c0)={'syz', 0x1}, &(0x7f0000001200)="d9", 0x1, 0xfffffffffffffffd)
+keyctl$read(0xb, r0, &(0x7f0000000180)=""/90, 0x5a)

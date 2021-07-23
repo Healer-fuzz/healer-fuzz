@@ -1,0 +1,4 @@
+r0 = openat$vicodec0(0xffffffffffffff9c, &(0x7f0000000000)='/dev/video36\x00', 0x2, 0x0)
+r1 = epoll_create(0x3f)
+epoll_ctl$EPOLL_CTL_ADD(r1, 0x1, r0, &(0x7f00000000c0)={0x8000000e})
+epoll_ctl$EPOLL_CTL_MOD(r1, 0x3, r0, &(0x7f0000000040)={0x4000000e})

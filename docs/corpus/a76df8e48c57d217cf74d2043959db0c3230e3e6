@@ -1,0 +1,2 @@
+r0 = syz_open_dev$sndmidi(&(0x7f0000000000)='/dev/snd/midiC#D#\x00', 0x20, 0x0)
+ioctl$SNDRV_RAWMIDI_IOCTL_STATUS64(r0, 0xc0385720, &(0x7f0000000040)={0x1})

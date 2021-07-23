@@ -1,0 +1,2 @@
+r0 = openat$dlm_plock(0xffffffffffffff9c, &(0x7f0000000180)='/dev/dlm_plock\x00', 0x0, 0x0)
+lseek(r0, 0x0, 0x0)

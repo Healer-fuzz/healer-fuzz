@@ -1,0 +1,4 @@
+r0 = openat$ppp(0xffffffffffffff9c, &(0x7f00000001c0)='/dev/ppp\x00', 0x0, 0x0)
+ioctl$PPPIOCNEWUNIT(r0, 0xc004743e, &(0x7f0000000200))
+r1 = openat$ppp(0xffffffffffffff9c, &(0x7f0000000580)='/dev/ppp\x00', 0x0, 0x0)
+ioctl$PPPIOCATTACH(r1, 0x4004743d, &(0x7f00000005c0))

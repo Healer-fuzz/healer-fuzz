@@ -1,0 +1,2 @@
+r0 = syz_init_net_socket$x25(0x9, 0x5, 0x0)
+ioctl$SIOCX25SDTEFACILITIES(r0, 0x89eb, &(0x7f0000000080)={0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, "4fe577700cb0fee0f26a3f3e1b5c277fc2d775cc", "982a0b3ab0362d8749374947319d36912a45ca0d"})

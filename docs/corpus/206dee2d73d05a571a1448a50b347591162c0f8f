@@ -1,0 +1,3 @@
+r0 = creat(&(0x7f0000001180)='./file0\x00', 0x0)
+write$ppp(r0, &(0x7f0000000080)='\"', 0xfffffecf)
+chmod(&(0x7f00000014c0)='./file0\x00', 0x108)

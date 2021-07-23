@@ -1,0 +1,5 @@
+pipe(&(0x7f0000000080)={<r0=>0xffffffffffffffff, <r1=>0xffffffffffffffff})
+write$binfmt_misc(r1, &(0x7f0000000000)=ANY=[], 0xfffffecc)
+pipe(&(0x7f0000000cc0)={0xffffffffffffffff, <r2=>0xffffffffffffffff})
+vmsplice(r2, &(0x7f0000000540)=[{&(0x7f0000000200)='3', 0x1}], 0x1, 0x0)
+splice(r0, 0x0, r2, 0x0, 0x800200000000622b, 0x0)

@@ -1,0 +1,7 @@
+r0 = socket$inet_smc(0x2b, 0x1, 0x0)
+setsockopt$inet_tcp_TCP_REPAIR(r0, 0x6, 0x13, &(0x7f0000000000)=0x1, 0x4)
+connect$inet(r0, &(0x7f00000000c0)={0x2, 0x0, @local}, 0x10)
+setsockopt$inet_tcp_TCP_ULP(r0, 0x6, 0x1f, &(0x7f0000000140)='tls\x00', 0x4)
+setsockopt$inet_tcp_TLS_TX(r0, 0x11a, 0x1, &(0x7f0000000040)=@gcm_256={{0x304, 0x36}, "eeb18b014090761e", "c8abee46a530752fe83b9a1848055d8b56dded1712a509dac23352bce5a4f85d", "6c4da567", "ffffffffffffffff"}, 0x38)
+write$binfmt_script(r0, 0x0, 0x7d)
+close(r0)

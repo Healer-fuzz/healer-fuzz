@@ -1,0 +1,8 @@
+open(&(0x7f0000000200)='./file0\x00', 0x4008040, 0x0)
+socket$nl_generic(0x10, 0x3, 0x10)
+clone(0x100, 0x0, 0xfffffffffffffffe, 0x0, 0xffffffffffffffff)
+pipe2$9p(&(0x7f0000000080)={<r0=>0xffffffffffffffff}, 0x0)
+close(r0)
+syz_open_dev$sndpcmp(&(0x7f0000000040)='/dev/snd/pcmC#D#p\x00', 0x0, 0x0)
+r1 = epoll_create1(0x0)
+mount$9p_fd(0x0, &(0x7f0000000100)='./file0\x00', &(0x7f00000000c0)='9p\x00', 0x0, &(0x7f0000000240)=ANY=[@ANYBLOB='trans=fd,rfdno=', @ANYRESHEX=r0, @ANYBLOB=',wfdno=', @ANYRESHEX=r1])

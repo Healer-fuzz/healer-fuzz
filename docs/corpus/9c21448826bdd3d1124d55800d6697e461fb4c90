@@ -1,0 +1,8 @@
+r0 = socket$netlink(0x10, 0x3, 0x4)
+r1 = openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
+mmap(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x1800003, 0x12, r1, 0x0)
+preadv(r1, &(0x7f0000000280), 0x18, 0xd9f, 0x0)
+r2 = socket$netlink(0x10, 0x3, 0x0)
+setsockopt$netlink_NETLINK_NO_ENOBUFS(r2, 0x10e, 0x5, &(0x7f0000000280)=0x9, 0x4)
+sendmsg$nl_route(r2, &(0x7f00000007c0)={0x0, 0x0, &(0x7f0000000140)={0x0}}, 0x0)
+writev(r0, &(0x7f0000000100)=[{&(0x7f0000000000)="580000001400192340834b80043f679a10ff3d425f9cc3f4ff7f4e32f61bcdf1e422000000000100804824cabecc4b381eaadc28f23457e792945f64009400050028925aaa000000c600000000000000feff2c707f8f00ff", 0x58}], 0x1)

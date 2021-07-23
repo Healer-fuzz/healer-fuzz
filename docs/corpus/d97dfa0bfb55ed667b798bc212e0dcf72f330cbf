@@ -1,0 +1,1 @@
+syz_mount_image$hfs(&(0x7f0000000000)='hfs\x00', &(0x7f0000000040)='./file0\x00', 0x0, 0x0, &(0x7f0000001480), 0x0, &(0x7f0000001540)={[{@session={'session'}}, {@type={'type', 0x3d, "13a4e5c5"}}, {@uid={'uid', 0x3d, 0xffffffffffffffff}}]})

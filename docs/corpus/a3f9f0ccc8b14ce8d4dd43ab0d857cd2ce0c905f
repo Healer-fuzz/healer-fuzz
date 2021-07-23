@@ -1,0 +1,1 @@
+readlinkat(0xffffffffffffffff, 0x0, &(0x7f0000000400)=""/4096, 0x1000)

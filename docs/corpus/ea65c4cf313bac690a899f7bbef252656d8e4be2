@@ -1,0 +1,4 @@
+r0 = openat$adsp1(0xffffffffffffff9c, &(0x7f00000000c0)='/dev/adsp1\x00', 0xc2002, 0x0)
+write$dsp(r0, &(0x7f0000000080)='!', 0xffffffd9)
+ioctl$SNDCTL_DSP_SETTRIGGER(r0, 0x40045010, &(0x7f0000000000))
+ioctl$KVM_GET_PIT2(0xffffffffffffffff, 0x8070ae9f, 0x0)

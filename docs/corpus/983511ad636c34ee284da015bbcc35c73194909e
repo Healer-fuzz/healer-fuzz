@@ -1,0 +1,8 @@
+socket$inet_udplite(0x2, 0x2, 0x88)
+openat$cgroup_root(0xffffffffffffff9c, &(0x7f0000000100)='./cgroup.cpu\x00', 0x200002, 0x0)
+socket$inet_udplite(0x2, 0x2, 0x88)
+socket$inet_udplite(0x2, 0x2, 0x88)
+syz_init_net_socket$x25(0x9, 0x5, 0x0)
+r0 = syz_open_dev$evdev(&(0x7f00000003c0)='/dev/input/event#\x00', 0x0, 0x0)
+fcntl$dupfd(r0, 0x0, r0)
+syz_execute_func(&(0x7f0000000080)="b13691cd806969ef69dc00d9d0d0c44139fd5bf91cc1c7c7e4c653fb0fc4014c581212f4a95ff9c44149f2168f4808eebce00000802000c421fc51c1ea01efc48192558dc3c366450f186746f3400faee47aae7c7c0f5726400f0d18c401fe5ff6e3df646736676666430fefb3000000000804f4f30f1a1254111d54111d00")

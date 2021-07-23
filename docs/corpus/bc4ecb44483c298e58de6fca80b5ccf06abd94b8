@@ -1,0 +1,2 @@
+r0 = add_key$keyring(&(0x7f00000033c0)='keyring\x00', &(0x7f0000003400)={'syz', 0x1}, 0x0, 0x0, 0xfffffffffffffffc)
+add_key(&(0x7f00000002c0)='rxrpc\x00', 0x0, &(0x7f0000000280)="069e4100ec70b1b5cfef8fefbfb3d90cfb9b6935a5fd68e1ba19efdd8a14c5f403dd4474f498d26c", 0x28, r0)

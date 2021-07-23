@@ -1,0 +1,4 @@
+write(0xffffffffffffffff, &(0x7f0000000000)="220000002000070700be0000090007010200000000000000002000000500138001", 0x21)
+sendto$inet6(0xffffffffffffffff, &(0x7f0000000000)='\'\x00\x00\x00!', 0x5, 0x0, 0x0, 0x0)
+r0 = socket$inet6(0x10, 0x3, 0x0)
+sendto$inet6(r0, &(0x7f0000000000)='E', 0x10a70, 0x4004800, 0x0, 0xffffff7c)

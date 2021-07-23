@@ -1,0 +1,2 @@
+r0 = openat$proc_mixer(0xffffffffffffff9c, &(0x7f0000000000)='/proc/asound/card1/oss_mixer\x00', 0x40201, 0x0)
+writev(r0, &(0x7f0000004580)=[{&(0x7f0000003180)="0bee088af1c6af6b19f0", 0xa}, {0x0, 0xa}], 0x2)

@@ -1,0 +1,2 @@
+r0 = fsopen(&(0x7f0000000040)='binfmt_misc\x00', 0x0)
+fsconfig$FSCONFIG_SET_BINARY(r0, 0x2, &(0x7f0000000100)='source', &(0x7f0000000200)='\f', 0x1)

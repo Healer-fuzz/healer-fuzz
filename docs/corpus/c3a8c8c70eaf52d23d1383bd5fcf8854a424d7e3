@@ -1,0 +1,7 @@
+r0 = openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
+mmap(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x1800003, 0x12, r0, 0x0)
+r1 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000000)='devices.list\x00', 0x275a, 0x0)
+write$binfmt_script(r1, &(0x7f0000000100)=ANY=[], 0x208e24b)
+fdatasync(r1)
+ioctl$LOOP_CHANGE_FD(0xffffffffffffffff, 0x4c06, 0xffffffffffffffff)
+madvise(&(0x7f0000000000/0x600000)=nil, 0x600003, 0x15)

@@ -1,0 +1,4 @@
+pipe2(&(0x7f0000000040)={0xffffffffffffffff, <r0=>0xffffffffffffffff}, 0x0)
+r1 = fcntl$dupfd(r0, 0x4, 0xffffffffffffff9c)
+close_range(r1, 0xffffffffffffffff, 0x0)
+close_range(0xffffffffffffffff, 0xffffffffffffffff, 0x2)

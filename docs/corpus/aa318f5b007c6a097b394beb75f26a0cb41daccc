@@ -1,0 +1,2 @@
+r0 = socket(0xa, 0x3, 0x2)
+ioctl$sock_kcm_SIOCKCMUNATTACH(r0, 0x89e1, &(0x7f0000000040))

@@ -1,0 +1,1 @@
+bpf$BPF_PROG_DETACH(0x9, &(0x7f0000000040)={@map}, 0x10)

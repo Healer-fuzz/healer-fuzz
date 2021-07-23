@@ -1,0 +1,2 @@
+r0 = openat$zero(0xffffffffffffff9c, &(0x7f00000002c0)='/dev/zero\x00', 0x0, 0x0)
+fsetxattr(r0, &(0x7f0000000200)=@known='user.incfs.id\x00', 0x0, 0x0, 0x0)

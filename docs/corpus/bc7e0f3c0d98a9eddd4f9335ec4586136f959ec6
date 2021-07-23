@@ -1,0 +1,2 @@
+r0 = openat$zero(0xffffffffffffff9c, &(0x7f0000000000)='/dev/zero\x00', 0x0, 0x0)
+name_to_handle_at(r0, &(0x7f0000000040)='\x00', &(0x7f00000001c0), &(0x7f0000000080), 0x1000)

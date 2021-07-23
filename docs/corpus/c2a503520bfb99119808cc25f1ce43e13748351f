@@ -1,0 +1,8 @@
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000100)='cgroup.controllers\x00', 0x275a, 0x0)
+r1 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000100)='cgroup.controllers\x00', 0x275a, 0x0)
+r2 = openat$adsp1(0xffffffffffffff9c, &(0x7f00000000c0)='/dev/adsp1\x00', 0x2, 0x0)
+ioctl$SNDCTL_DSP_SETFMT(r2, 0xc0045005, &(0x7f0000000040)=0x40000)
+r3 = dup2(r2, r1)
+ioctl$SNDCTL_DSP_SETFRAGMENT(r3, 0xc004500a, &(0x7f0000000000))
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x0, 0x10012, r0, 0x0)
+write$dsp(r1, &(0x7f0000000140)="6e3800d1a521ed5f3cd1fcb7e44c58f0ce8e5f6308d2fe269e98a1f2279286584b7ff9918337562e97ef389b4340e81d075d275f4829242ff725f220c54baa0ea34e", 0x42)

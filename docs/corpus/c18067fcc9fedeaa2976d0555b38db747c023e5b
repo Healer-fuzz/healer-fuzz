@@ -1,0 +1,4 @@
+r0 = syz_mount_image$tmpfs(&(0x7f0000000040)='tmpfs\x00', &(0x7f0000000080)='./file0\x00', 0x0, 0x0, 0x0, 0x0, &(0x7f0000000280)=ANY=[])
+mknodat(r0, &(0x7f0000000000)='./file0\x00', 0x0, 0x0)
+getdents(r0, &(0x7f00000014c0)=""/59, 0x3b)
+renameat2(r0, &(0x7f0000000100)='./file0\x00', r0, &(0x7f00000001c0)='./file1\x00', 0x2)

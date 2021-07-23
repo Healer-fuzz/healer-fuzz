@@ -1,0 +1,2 @@
+r0 = add_key$fscrypt_v1(&(0x7f00000001c0)='logon\x00', &(0x7f0000000200)={'fscrypt:', @desc2='e355a76a11a1be18'}, &(0x7f0000000240)={0x0, "62c5ff49ae2819c2439e9afafc6618e3d3f7e1cd474cc9b557498be1df75f8736460c71432c636d852154faf8e46ea721989e2ec2439d37b97c9a01d3a202c79", 0x14}, 0x48, 0xfffffffffffffffe)
+request_key(&(0x7f0000000000)='asymmetric\x00', &(0x7f0000000140)={'syz', 0x3}, &(0x7f0000000180)='\x00', r0)

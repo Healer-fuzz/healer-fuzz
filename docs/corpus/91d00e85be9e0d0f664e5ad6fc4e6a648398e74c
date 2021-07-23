@@ -1,0 +1,1 @@
+openat$proc_capi20ncci(0xffffffffffffff9c, &(0x7f0000000f80)='/proc/capi/capi20ncci\x00', 0x2e00, 0x0)

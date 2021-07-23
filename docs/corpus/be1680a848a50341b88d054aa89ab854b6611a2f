@@ -1,0 +1,6 @@
+r0 = socket$kcm(0x10, 0x2, 0x4)
+r1 = socket$inet6_tcp(0xa, 0x1, 0x0)
+setsockopt$inet6_tcp_int(r1, 0x6, 0x13, &(0x7f0000000000)=0x100000001, 0x4)
+connect$inet6(r1, &(0x7f0000000200), 0x1c)
+setsockopt$inet6_tcp_TCP_ULP(r1, 0x6, 0x1f, &(0x7f0000000540)='tls\x00', 0x4)
+sendmsg$kcm(r0, &(0x7f0000000140)={0x0, 0x0, &(0x7f0000000000)=[{&(0x7f0000000600)="4c000000120081ae08060c0f006b7f03e3f7000e0000000000ca1b4e0906a6bd7c493872f750375ed08a56331dbf242ab0f8381ad6e74703c48f939a5a7378bc7a581eb886a5e54e8ff51700", 0x4c}], 0x1}, 0x0)

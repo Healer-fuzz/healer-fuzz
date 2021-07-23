@@ -1,0 +1,4 @@
+syz_open_dev$audion(&(0x7f0000000440)='/dev/audio#\x00', 0x1, 0x0)
+r0 = syz_open_procfs(0x0, &(0x7f00000000c0)='fd/3\x00')
+r1 = syz_open_procfs(0xffffffffffffffff, &(0x7f0000000140)='mounts\x00')
+mount$9p_fd(0x0, &(0x7f0000000300)='.\x00', &(0x7f0000000080)='9p\x00', 0x0, &(0x7f0000001e80)={'trans=fd,', {'rfdno', 0x3d, r0}, 0x2c, {'wfdno', 0x3d, r1}})

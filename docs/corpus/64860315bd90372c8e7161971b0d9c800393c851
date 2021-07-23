@@ -1,0 +1,3 @@
+clone(0x3102002dfe, 0x0, 0xfffffffffffffffe, 0x0, 0xffffffffffffffff)
+r0 = fsopen(&(0x7f0000000040)='afs\x00', 0x0)
+fsconfig$FSCONFIG_SET_STRING(r0, 0x1, &(0x7f0000000140)='source', &(0x7f0000000180)='source', 0x0)

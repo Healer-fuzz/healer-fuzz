@@ -1,0 +1,6 @@
+r0 = syz_mount_image$vfat(&(0x7f0000000080)='vfat\x00', &(0x7f0000000040)='./file0\x00', 0x407fffffff, 0x1, &(0x7f0000000280)=[{&(0x7f0000000000)="eb3c906d6b66732e66617400028001000240000004f801", 0x17}], 0x0, &(0x7f0000000340)=ANY=[])
+r1 = openat(0xffffffffffffffff, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
+mmap(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x1800003, 0x12, r1, 0x0)
+statfs(&(0x7f00000000c0)='./file0\x00', 0x0)
+preadv(r1, &(0x7f0000000280), 0x18, 0xd9f, 0x0)
+mkdirat(r0, &(0x7f0000000980)='./file3\x00', 0x0)

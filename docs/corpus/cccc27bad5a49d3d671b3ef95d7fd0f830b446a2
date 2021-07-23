@@ -1,0 +1,1 @@
+syz_emit_ethernet(0x12, &(0x7f0000000000)={@multicast, @dev, @val={@void}, {@generic={0x8906}}}, 0x0)

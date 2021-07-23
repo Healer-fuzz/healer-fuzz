@@ -1,0 +1,7 @@
+clone(0x3106000ffd, 0x0, 0xfffffffffffffffe, 0x0, 0xffffffffffffffff)
+wait4(0x0, 0x0, 0x40000000, 0x0)
+r0 = syz_open_procfs$namespace(0x0, &(0x7f0000000200)='ns/cgroup\x00')
+r1 = gettid()
+tkill(r1, 0x3c)
+pipe(&(0x7f0000000140)={0xffffffffffffffff, <r2=>0xffffffffffffffff})
+dup2(r2, r0)

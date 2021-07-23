@@ -1,0 +1,8 @@
+openat$udambuf(0xffffffffffffff9c, &(0x7f0000000000)='/dev/udmabuf\x00', 0x2)
+memfd_create(&(0x7f0000000240)='.^\x00', 0x0)
+openat$nvme_fabrics(0xffffffffffffff9c, &(0x7f0000000100)='/dev/nvme-fabrics\x00', 0x0, 0x0)
+openat$ocfs2_control(0xffffffffffffff9c, &(0x7f0000001280)='/dev/ocfs2_control\x00', 0x0, 0x0)
+openat$smack_thread_current(0xffffffffffffff9c, &(0x7f0000000280)='/proc/thread-self/attr/current\x00', 0x2, 0x0)
+r0 = openat$cuse(0xffffffffffffff9c, &(0x7f00000000c0)='/dev/cuse\x00', 0x2, 0x0)
+read$FUSE(r0, &(0x7f0000000240), 0x2305e2b7)
+select(0x40, &(0x7f00000015c0), &(0x7f0000001600)={0x1ff}, 0x0, 0x0)

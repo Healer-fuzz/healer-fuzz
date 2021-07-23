@@ -1,0 +1,6 @@
+ioctl$VHOST_SET_VRING_ADDR(0xffffffffffffffff, 0x4028af11, 0x0)
+ioctl$KVM_SET_USER_MEMORY_REGION(0xffffffffffffffff, 0x4020ae46, 0x0)
+ioctl$KVM_RUN(0xffffffffffffffff, 0xae80, 0x0)
+r0 = socket$inet_udplite(0x2, 0x2, 0x88)
+ioctl(r0, 0x80001000008912, &(0x7f0000000000)="0adc1f123c123f319bd070")
+syz_execute_func(&(0x7f0000000240)="af91930f0124eda133fa20430fbafce842f66188f5d0d4430fc7f314c1ab5be2f9660f3a0fae5e090000ba44d8d1b63ac4817d73d74ec482310d46f449f216c863fa43c4416816f21bdbae95c4e1a05d6b06aa420f383c02c401405c6bfd4997fefbab6464660f38323c8f26dbc1e737c4efa59c0f01c4288ba6452e001d5c")

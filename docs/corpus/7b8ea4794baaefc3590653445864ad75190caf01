@@ -1,0 +1,6 @@
+mkdir(&(0x7f00000000c0)='./file0\x00', 0x0)
+r0 = syz_open_procfs(0x0, &(0x7f0000000040)='mountinfo\x00')
+mkdirat$cgroup_root(0xffffffffffffff9c, &(0x7f0000000000)='./cgroup/syz0\x00', 0x1ff)
+mount$fuse(0x20000000, &(0x7f0000000080)='./file0\x00', 0x0, 0x1000, 0x0)
+unshare(0x2a000400)
+read$FUSE(r0, &(0x7f0000000640)={0x2020}, 0x2020)

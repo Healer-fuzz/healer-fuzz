@@ -1,0 +1,6 @@
+r0 = open(&(0x7f0000000040)='./file0\x00', 0x2fc, 0x0)
+r1 = open(&(0x7f0000000100)='./file0\x00', 0x0, 0x0)
+flock(r1, 0x8fd394a9186e3965)
+r2 = open(&(0x7f0000000100)='./file0\x00', 0x0, 0x0)
+flock(r2, 0x2)
+flock(r0, 0x8fd394a9186e3967)

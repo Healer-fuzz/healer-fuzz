@@ -1,0 +1,2 @@
+r0 = openat$rfkill(0xffffffffffffff9c, &(0x7f0000000040)='/dev/rfkill\x00', 0x40501, 0x0)
+writev(r0, &(0x7f0000000000)=[{&(0x7f0000000300)="02000000020219", 0x7}, {&(0x7f0000001480)="a349b1e15b38cc", 0x7}], 0x2)

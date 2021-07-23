@@ -1,0 +1,5 @@
+clone(0x41be, 0x0, 0xfffffffffffffffe, 0x0, 0xffffffffffffffff)
+r0 = getpid()
+rt_tgsigqueueinfo(r0, r0, 0x13, &(0x7f0000000640))
+ptrace(0x4206, r0)
+ptrace$PTRACE_SECCOMP_GET_FILTER(0x420c, r0, 0x0, 0x0)

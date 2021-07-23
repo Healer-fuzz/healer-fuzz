@@ -1,0 +1,2 @@
+r0 = add_key$fscrypt_v1(&(0x7f0000000440)='logon\x00', &(0x7f0000000480)={'fscrypt:'}, &(0x7f00000004c0)={0x0, "56857da508eac60858dc7703b55b87af59d3b4d2382eff00f52218ae9249e12e4a36d6eb383f8e98cbcb2734acccd36018790d00"}, 0x48, 0xffffffffffffffff)
+keyctl$restrict_keyring(0x1d, r0, 0x0, 0x0)

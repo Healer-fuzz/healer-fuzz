@@ -1,0 +1,2 @@
+r0 = openat$smack_thread_current(0xffffffffffffff9c, &(0x7f0000000040)='/proc/thread-self/attr/current\x00', 0x2, 0x0)
+writev(r0, &(0x7f00000001c0)=[{&(0x7f0000000080)="ec1d0f1d01499ebd67aab841216d1bde2fd0cad9f6766a3bf0f0b7bff67e61027d5e62c2b65e4c1db3d97d6cee1011edc0229a9ebe5fa6f8a1d1212502ed913e745f3ec7ebf531252043", 0x4a}], 0x1)

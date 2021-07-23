@@ -1,0 +1,5 @@
+r0 = openat$dlm_control(0xffffffffffffff9c, &(0x7f0000000000)='/dev/dlm-control\x00', 0x3e, 0x0)
+r1 = socket$inet_udplite(0x2, 0x2, 0x88)
+getsockopt$sock_cred(r1, 0x1, 0x11, &(0x7f0000000240)={0x0, <r2=>0x0}, &(0x7f0000000280)=0x5)
+setuid(r2)
+write$nbd(r0, &(0x7f0000000580)={0x6000000, 0x0, 0x0, 0x0, 0x4, "a309ff0f00005f56d3adff7f9d5e9a099cbab35a2fdbede5fbd0978b01ba590e94bb02f6b7807e5dadca47306a5bc6c5e7be7805000000000000001500000700000000000000000023d70b463b42ec0893c5b323c67936e5"}, 0x68)

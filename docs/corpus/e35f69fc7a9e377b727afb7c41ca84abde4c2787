@@ -1,0 +1,7 @@
+r0 = socket$netlink(0x10, 0x3, 0x0)
+writev(r0, &(0x7f0000000180)=[{&(0x7f0000000100)="390000001300034700bb65e1c3e4ffff06000000010000004500000025000000190004000400ad000200000000000006040000000000000000", 0x39}], 0x1)
+r1 = socket$inet_tcp(0x2, 0x1, 0x0)
+setsockopt$inet_mreqn(r1, 0x0, 0x27, &(0x7f00000001c0)={@multicast2, @loopback}, 0xc)
+socketpair(0x1, 0x20000000000001, 0x0, &(0x7f0000000100)={0xffffffffffffffff, <r2=>0xffffffffffffffff})
+ioctl$PERF_EVENT_IOC_SET_FILTER(r2, 0x8914, &(0x7f0000000040)='lo\x00\x96o\xd6Q\xb9Y\xa9\xc8J,\x00\xd2\x97\x04\x03\xdc\r')
+setsockopt$inet_msfilter(r1, 0x0, 0x29, &(0x7f00000000c0)={@multicast2, @remote, 0x0, 0x1, [@local]}, 0x14)

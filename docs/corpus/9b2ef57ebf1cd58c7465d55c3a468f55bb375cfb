@@ -1,0 +1,3 @@
+r0 = socket$inet6_icmp_raw(0xa, 0x3, 0x3a)
+bind$inet6(r0, &(0x7f0000000040)={0xa, 0x0, 0x0, @mcast1, 0x3}, 0x1c)
+syz_emit_ethernet(0x66, &(0x7f0000000080)=ANY=[@ANYBLOB="bbbbbb5c9f565caaaaaaaa0086dd6000000000303a00fe8000000000000000001eb8033900bbff020000000000000000000000000001"], 0x0)

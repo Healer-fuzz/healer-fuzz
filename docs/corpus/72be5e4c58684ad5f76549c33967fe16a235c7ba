@@ -1,0 +1,4 @@
+r0 = socket$inet6_tcp(0xa, 0x1, 0x0)
+setsockopt$inet6_tcp_TCP_MD5SIG(r0, 0x6, 0xe, &(0x7f0000000000)={@in6={{0xa, 0x0, 0x0, @local}}, 0x0, 0x0, 0x9, 0x0, "e85d297de2bb5abb6c2b60de7a1a2c6974f8b5fc2f70db9e77fae25e1696f6c0de65d762cdb5795b46849c12f5e3dc537f02531b64e85227967a5ed54c15b2eff965dce82459467e5f50fdf11c301da2"}, 0xd8)
+setsockopt$inet6_tcp_TCP_MD5SIG(r0, 0x6, 0xe, &(0x7f0000000180)={@in6={{0xa, 0x0, 0x0, @remote}}, 0x0, 0x0, 0x32, 0x0, "328498973f58dd090870ca21667c63628ff0a2cc20e5623b17bd502f081670c4fd73bc50748585f731f235747ad612aabbdf64888c1d6b70adf05c8376f3f1abefb4c43061af7e7e2abab87bc9b3006a"}, 0xd8)
+close(r0)

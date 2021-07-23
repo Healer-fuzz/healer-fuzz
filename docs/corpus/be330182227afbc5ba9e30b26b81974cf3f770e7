@@ -1,0 +1,7 @@
+getpid()
+sched_setattr(0x0, 0x0, 0x0)
+r0 = openat$uhid(0xffffffffffffff9c, &(0x7f0000000080)='/dev/uhid\x00', 0x2, 0x0)
+write$UHID_CREATE(r0, &(0x7f0000000340)={0x0, {'syz0\x00', 'syz1\x00', 'syz1\x00', &(0x7f0000000140)=""/9, 0x9}}, 0x120)
+readv(0xffffffffffffffff, &(0x7f0000000000), 0x0)
+readv(r0, &(0x7f0000002680)=[{&(0x7f0000001540)=""/4096, 0x1000}, {&(0x7f00000000c0)=""/96, 0x60}], 0x2)
+write$UHID_DESTROY(r0, &(0x7f00000001c0), 0x4)

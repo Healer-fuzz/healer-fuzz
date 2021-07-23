@@ -1,0 +1,2 @@
+r0 = epoll_create(0x480000)
+fcntl$setownex(r0, 0x409, &(0x7f0000000500))

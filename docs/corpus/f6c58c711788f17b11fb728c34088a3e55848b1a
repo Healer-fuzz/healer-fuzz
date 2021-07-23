@@ -1,0 +1,3 @@
+r0 = memfd_create(&(0x7f0000000240)='.^\xc5', 0x0)
+r1 = socket$inet6_tcp(0xa, 0x1, 0x0)
+fcntl$dupfd(r1, 0x406, r0)

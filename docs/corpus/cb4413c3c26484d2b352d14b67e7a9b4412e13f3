@@ -1,0 +1,4 @@
+r0 = add_key$keyring(&(0x7f0000000140)='keyring\x00', &(0x7f0000000080)={'syz', 0x3}, 0x0, 0x0, 0xfffffffffffffffd)
+add_key$user(&(0x7f0000000000)='user\x00', &(0x7f0000000340)={'syz', 0x1}, &(0x7f0000000180)='D', 0x1, r0)
+add_key$fscrypt_v1(&(0x7f0000000100)='logon\x00', &(0x7f0000000200)={'fscrypt:', @desc3='e8dab99234bb312e'}, &(0x7f0000000240)={0x0, "c3d9efd80330bb05e7670bcf58d38c7c7fc6d4178114ec8e96d7f9ec01ecdee6d2f33adc33b6a00f44d6aaacf805ee310a31548c132aa7c2ed2379bf97bdbca0"}, 0x48, r0)
+keyctl$read(0xb, r0, &(0x7f00000000c0)=""/4, 0x4)

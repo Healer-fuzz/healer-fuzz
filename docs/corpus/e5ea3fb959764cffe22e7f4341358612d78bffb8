@@ -1,0 +1,3 @@
+r0 = open$dir(&(0x7f0000000040)='./file0\x00', 0x28841, 0x0)
+unshare(0x400)
+fdatasync(r0)

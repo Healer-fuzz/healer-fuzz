@@ -1,0 +1,3 @@
+r0 = syz_open_dev$sg(&(0x7f0000000080)='/dev/sg#\x00', 0x0, 0x0)
+fork()
+ioctl$SG_GET_NUM_WAITING(r0, 0x227f, &(0x7f0000000000))

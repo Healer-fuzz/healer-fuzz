@@ -1,0 +1,5 @@
+r0 = openat$tun(0xffffffffffffff9c, &(0x7f00000005c0)='/dev/net/tun\x00', 0x0, 0x0)
+ioctl$BTRFS_IOC_SNAP_DESTROY_V2(0xffffffffffffffff, 0x5000943f, &(0x7f00000020c0)={{}, 0x0, 0x0, @inherit={0x0, 0x0}, @subvolid=0x2})
+r1 = syz_open_procfs(0xffffffffffffffff, &(0x7f0000000000)='fdinfo/3\x00')
+close(r0)
+preadv(r1, &(0x7f00000017c0), 0x10000000000001d8, 0x48, 0x0)

@@ -1,0 +1,6 @@
+r0 = socket$inet_udplite(0x2, 0x2, 0x88)
+ioctl(r0, 0x80001000008912, &(0x7f0000000000)="0adc1f123c123f319bd070")
+sendmsg$key(0xffffffffffffffff, 0x0, 0x0)
+fcntl$getownex(0xffffffffffffffff, 0x10, 0x0)
+write$apparmor_current(0xffffffffffffffff, &(0x7f0000000100)=@hat={'permhat '}, 0x1b)
+syz_execute_func(&(0x7f0000000180)="40ddb80000000091930f0124eda133fa20430fbafce842f66188d0d4430fc7f314c1ab5bf9e2f9660f3a0fae5e090000ba023c1fb63ac4817d73d74ec4b80d46e449f216c863fa438036a900fbabe5afb0aaaa420f4ff63c06061d405c6bfdbf26d7d7d768f833fefbab26dbc1a1fe5ff6f6df0804f4c4ef94660f14ed8ba6452e000054c4431d5cc100")

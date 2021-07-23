@@ -1,0 +1,6 @@
+mkdir(&(0x7f0000000300)='./file0\x00', 0x0)
+r0 = creat(&(0x7f00000001c0)='./file0/bus\x00', 0x0)
+fcntl$lock(r0, 0x7, &(0x7f0000027000)={0x1})
+r1 = open(&(0x7f0000021000)='./file0\x00', 0x0, 0x0)
+fchdir(r1)
+link(&(0x7f0000000380)='./bus\x00', &(0x7f00000003c0)='./file1\x00')

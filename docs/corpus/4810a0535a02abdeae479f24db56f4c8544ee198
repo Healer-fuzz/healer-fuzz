@@ -1,0 +1,6 @@
+syz_genetlink_get_family_id$ethtool(&(0x7f0000000040)='ethtool\x00', 0xffffffffffffffff)
+bpf$BPF_MAP_GET_NEXT_ID(0xc, 0x0, 0x0)
+bpf$BPF_MAP_GET_NEXT_ID(0xc, 0x0, 0x0)
+syz_init_net_socket$nl_generic(0x10, 0x3, 0x10)
+r0 = openat$procfs(0xffffffffffffff9c, &(0x7f0000001e80)='/proc/stat\x00', 0x0, 0x0)
+ioctl$IMGETDEVINFO(r0, 0x80044944, 0x0)

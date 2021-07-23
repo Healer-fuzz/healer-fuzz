@@ -1,0 +1,2 @@
+keyctl$unlink(0x9, 0x0, 0xfffffffffffffffd)
+add_key(&(0x7f0000000000)='big_key\x00', &(0x7f0000000040)={'syz', 0x2}, &(0x7f00000001c0)='8', 0x1, 0xfffffffffffffffd)

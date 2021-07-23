@@ -1,0 +1,4 @@
+r0 = syz_open_dev$radio(&(0x7f0000000480)='/dev/radio#\x00', 0x2, 0x2)
+readv(r0, &(0x7f0000000140)=[{&(0x7f0000000040)=""/182, 0xb6}], 0x1)
+r1 = syz_open_dev$radio(&(0x7f0000000480)='/dev/radio#\x00', 0x2, 0x2)
+readv(r1, &(0x7f0000000140)=[{&(0x7f0000000040)=""/182, 0xb6}], 0x1)

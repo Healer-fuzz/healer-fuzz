@@ -1,0 +1,4 @@
+prctl$PR_SET_SECUREBITS(0x1c, 0x26)
+r0 = open$dir(&(0x7f0000000a00)='.\x00', 0x0, 0x0)
+mknod(&(0x7f0000000000)='./file0\x00', 0x0, 0x0)
+faccessat(r0, &(0x7f0000000040)='./file0\x00', 0x0)

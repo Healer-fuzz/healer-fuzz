@@ -1,0 +1,2 @@
+r0 = openat$fb0(0xffffffffffffff9c, &(0x7f0000000040)='/dev/fb0\x00', 0x0, 0x0)
+ioctl$BTRFS_IOC_DEFRAG_RANGE(r0, 0x40309410, 0x0)

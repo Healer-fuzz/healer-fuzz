@@ -1,0 +1,3 @@
+r0 = socket$nl_generic(0x10, 0x3, 0x10)
+r1 = syz_genetlink_get_family_id$batadv(&(0x7f00000001c0)='batadv\x00', 0xffffffffffffffff)
+sendmsg$BATADV_CMD_GET_GATEWAYS(r0, &(0x7f00000002c0)={0xffffffffffffffff, 0x0, &(0x7f0000000280)={&(0x7f0000000080)={0x1c, r1, 0x2d6381cfd1328737, 0x0, 0x0, {0x6}, [@BATADV_ATTR_MESH_IFINDEX={0x8}]}, 0x1c}}, 0x0)

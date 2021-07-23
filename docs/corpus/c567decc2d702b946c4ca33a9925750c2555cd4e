@@ -1,0 +1,4 @@
+r0 = syz_open_procfs(0xffffffffffffffff, &(0x7f0000000000)='maps\x00')
+read$char_usb(r0, &(0x7f0000000080)=""/255, 0xff)
+seccomp$SECCOMP_SET_MODE_STRICT(0x0, 0x0, 0x0)
+read$char_usb(r0, &(0x7f0000000280)=""/142, 0x8e)

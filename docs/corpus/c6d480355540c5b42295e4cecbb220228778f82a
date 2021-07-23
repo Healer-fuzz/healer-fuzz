@@ -1,0 +1,8 @@
+r0 = syz_usb_connect$cdc_ncm(0x0, 0x6e, &(0x7f0000000000)=ANY=[@ANYBLOB="12010000030000402505a1a440000102030109025c000215000000090400000102090000052406000105240000000d240f0100000000000000000006241a000000090581030002"], 0x0)
+r1 = syz_open_dev$char_usb(0xc, 0xb4, 0x0)
+write$char_usb(r1, 0x0, 0x0)
+r2 = syz_open_dev$char_usb(0xc, 0xb4, 0x0)
+write$char_usb(r2, 0x0, 0x0)
+syz_open_dev$char_usb(0xc, 0xb4, 0x0)
+syz_usb_control_io$cdc_ncm(0xffffffffffffffff, 0x0, 0x0)
+syz_usb_control_io$cdc_ncm(r0, 0x0, 0x0)

@@ -1,0 +1,3 @@
+r0 = socket(0x10, 0x3, 0x0)
+setsockopt$netlink_NETLINK_TX_RING(r0, 0x10e, 0xc, &(0x7f0000000000)={0xffffffffffff1e7a}, 0x10)
+write(r0, &(0x7f0000000100)="2400000052001f0014f9f407000904000a00071010000100feff2a000900000000001000", 0x24)

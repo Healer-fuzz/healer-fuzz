@@ -1,0 +1,6 @@
+r0 = socket$can_bcm(0x1d, 0x2, 0x2)
+r1 = socket$can_bcm(0x1d, 0x2, 0x2)
+ioctl$ifreq_SIOCGIFINDEX_vcan(r1, 0x8933, &(0x7f0000000100)={'vcan0\x00', <r2=>0x0})
+connect$can_bcm(r1, &(0x7f0000001ff0)={0x1d, r2}, 0x10)
+r3 = dup3(r1, r0, 0x0)
+sendmsg$can_raw(r3, &(0x7f0000001fc8)={0x0, 0x0, &(0x7f00000001c0)={&(0x7f000000a000)=@canfd={{0x1}, 0x0, 0x0, 0x0, 0x0, "0327e1b22b5fcef7739c699f5ff986ca08990039576a7d5cb2bdac3fa80acf584ecb5fee496e6866856b76b5ee00000000000000084e2f9663a918fa1efd9b0b"}, 0x2000a048}}, 0x0)

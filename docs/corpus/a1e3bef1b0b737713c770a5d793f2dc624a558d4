@@ -1,0 +1,2 @@
+r0 = syz_init_net_socket$nl_rdma(0x10, 0x3, 0x10)
+write(r0, &(0x7f0000000100)="140000001e005f0014f9f407faac470006000008", 0x14)

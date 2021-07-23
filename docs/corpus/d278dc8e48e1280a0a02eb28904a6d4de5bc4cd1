@@ -1,0 +1,2 @@
+r0 = socket$l2tp6(0xa, 0x2, 0x73)
+ioctl$sock_inet6_SIOCADDRT(r0, 0x890b, &(0x7f00000048c0)={@private2, @private0, @private0, 0x0, 0x0, 0x97b})

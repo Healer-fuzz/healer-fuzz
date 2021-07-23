@@ -1,0 +1,8 @@
+mmap(&(0x7f0000000000/0xb36000)=nil, 0xb36000, 0x1000007, 0x10, 0xffffffffffffffff, 0x0)
+pipe(&(0x7f0000000180)={<r0=>0xffffffffffffffff, <r1=>0xffffffffffffffff})
+sendmsg$nl_route_sched(0xffffffffffffffff, &(0x7f0000000080)={0x0, 0x0, &(0x7f00000002c0)={&(0x7f0000000000)=ANY=[@ANYBLOB="680000003000ed0300000000000000000000000054000100500001000c000100736b626564697400240002800600040000000000180002"], 0x68}}, 0x0)
+r2 = socket$inet_udp(0x2, 0x2, 0x0)
+close(r2)
+socket$nl_route(0x10, 0x3, 0x0)
+write$binfmt_misc(r1, &(0x7f0000000000)=ANY=[], 0xfffffecc)
+splice(r0, 0x0, r2, 0x0, 0x4ffe6, 0x0)

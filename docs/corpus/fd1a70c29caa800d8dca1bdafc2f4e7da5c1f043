@@ -1,0 +1,7 @@
+pipe(&(0x7f0000000000)={<r0=>0xffffffffffffffff, <r1=>0xffffffffffffffff})
+sendmsg$NL80211_CMD_GET_KEY(0xffffffffffffffff, &(0x7f0000000200)={0x0, 0x0, &(0x7f00000001c0)={&(0x7f0000000180)={0x20, 0x0, 0x0, 0x0, 0x0, {{}, {@void, @val={0xc, 0x99, {0x0, 0x6f}}}}}, 0x20}}, 0x0)
+vmsplice(r1, &(0x7f0000000080)=[{&(0x7f0000000180)="bad75e693175ff4ccfc4", 0xfffffec5}, {&(0x7f0000000300)="76df8cfefa7ddac22dcfcf9e00c693a47524fbfa60133f4bf9500ca94f344e4dd28a9ec9014befb0ea01a514ea8c7c66e5e88e77a778affc2a2030f7fbfa96fe6c14a0c75aee26637a81e3bcb693e7513645eb550c7adad4103ebae473f42372227fa59722490bdd9f2774cffe4bd181ffffffffffffffc3788e745965108c770cc26d1936bcc660d3ccbf2feaeb4603347ab0", 0x93}], 0x2, 0x8)
+close(r1)
+socket$nl_route(0x10, 0x3, 0x0)
+write(0xffffffffffffffff, &(0x7f0000000180)="220000001400256304000000000000040208031301000000080002", 0x1b)
+splice(r0, 0x0, r1, 0x0, 0x100000000, 0x0)

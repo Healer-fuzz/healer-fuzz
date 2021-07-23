@@ -1,0 +1,8 @@
+r0 = openat$proc_mixer(0xffffffffffffff9c, &(0x7f0000000040)='/proc/asound/card2/oss_mixer\x00', 0x0, 0x0)
+r1 = openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
+mmap(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x1800003, 0x12, r1, 0x0)
+preadv(r1, &(0x7f0000000280), 0x18, 0xd9f, 0x0)
+write$proc_mixer(0xffffffffffffffff, &(0x7f0000000080)=[{'CD', @val={' \'', 'Capture Switch', '\' '}}, {'LINE2', @void}, {'OGAIN', @val={' \'', 'Master Capture Switch', '\' '}}, {'ALTPCM', @val={' \'', 'Mic', '\' '}}], 0x84)
+r2 = openat$proc_mixer(0xffffffffffffff9c, &(0x7f0000000000)='/proc/asound/card0/oss_mixer\x00', 0x2002, 0x0)
+write$binfmt_script(r2, &(0x7f0000000080)=ANY=[], 0x102f)
+dup3(r0, r2, 0x0)

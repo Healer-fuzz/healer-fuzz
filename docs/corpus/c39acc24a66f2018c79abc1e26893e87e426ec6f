@@ -1,0 +1,6 @@
+sendmsg$ETHTOOL_MSG_LINKINFO_GET(0xffffffffffffffff, 0x0, 0x0)
+sendmmsg(0xffffffffffffffff, &(0x7f0000001d40)=[{{0x0, 0x0, &(0x7f0000000280)=[{&(0x7f00000000c0)="b635430cfcef884b52d222ce8cc676b9e28a2eaa7222af12952e628331921e8f0aebf043226c8ef6c3084246cc0606a1947c55047f6977dd1367278b7590ebf1f6d36feb782e8bb6bd4d3ceb03eb58505941", 0x52}], 0x1}}], 0x1, 0x0)
+sendmsg$ETHTOOL_MSG_DEBUG_GET(0xffffffffffffffff, 0x0, 0x0)
+keyctl$instantiate(0xc, 0x0, &(0x7f0000000100)=ANY=[@ANYBLOB='new default user:'], 0x2a, 0x0)
+clone(0x2000100, 0x0, 0xfffffffffffffffe, 0x0, 0xffffffffffffffff)
+add_key(&(0x7f0000000140)='encrypted\x00', &(0x7f0000000180)={'syz'}, &(0x7f0000000100), 0xca, 0xfffffffffffffffe)

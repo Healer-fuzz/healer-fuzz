@@ -1,0 +1,2 @@
+r0 = socket$nl_xfrm(0x10, 0x3, 0x6)
+sendmsg$nl_xfrm(r0, &(0x7f0000000500)={0x0, 0x0, &(0x7f00000004c0)={&(0x7f0000000100)=@newsa={0x13c, 0x10, 0x8cda695f2e890469, 0x0, 0x0, {{@in6=@rand_addr=' \x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01', @in=@private}, {@in=@broadcast, 0x0, 0x2b}, @in6=@rand_addr=' \x01\x00', {}, {}, {}, 0x0, 0x0, 0x2}, [@algo_aead={0x4c, 0x12, {{'generic-gcm-aesni\x00'}}}]}, 0x13c}}, 0x0)

@@ -1,0 +1,2 @@
+r0 = add_key(&(0x7f0000000400)='big_key\x00', &(0x7f0000000440)={'syz', 0x0}, &(0x7f0000000000)="c6", 0xfe25, 0xfffffffffffffffd)
+keyctl$revoke(0x3, r0)

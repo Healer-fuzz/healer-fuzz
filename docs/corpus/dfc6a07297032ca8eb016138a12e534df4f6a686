@@ -1,0 +1,2 @@
+r0 = syz_open_procfs(0x0, &(0x7f00000002c0)='ns\x00')
+mknodat(r0, &(0x7f0000000300)='./file0\x00', 0x0, 0x0)

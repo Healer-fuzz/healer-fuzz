@@ -1,0 +1,6 @@
+pipe(&(0x7f00000002c0)={0xffffffffffffffff, <r0=>0xffffffffffffffff})
+r1 = fcntl$dupfd(r0, 0x3, 0xffffffffffffffff)
+write(r1, &(0x7f0000000100), 0xfffffe5d)
+pipe(&(0x7f00000002c0)={0xffffffffffffffff, <r2=>0xffffffffffffffff})
+r3 = fcntl$dupfd(r2, 0x3, 0xffffffffffffffff)
+write(r3, &(0x7f0000000100), 0xfffffe5d)

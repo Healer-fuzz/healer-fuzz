@@ -1,0 +1,4 @@
+r0 = socket$nl_route(0x10, 0x3, 0x0)
+sendmsg$kcm(0xffffffffffffffff, &(0x7f0000000000)={0x0, 0x0, &(0x7f0000000080)=[{&(0x7f0000000040)="2e00000023000511d25a80648c63940d0124fc6010", 0x15}], 0x1}, 0x0)
+ioctl$sock_inet_SIOCSIFPFLAGS(0xffffffffffffffff, 0x8934, &(0x7f0000000040)={'virt_wifi0\x00'})
+ioctl(r0, 0x8b24, &(0x7f0000000040))

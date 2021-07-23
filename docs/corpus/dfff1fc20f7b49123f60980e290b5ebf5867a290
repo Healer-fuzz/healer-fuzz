@@ -1,0 +1,7 @@
+r0 = memfd_create(&(0x7f0000000040)='y\x105%\xfa,\x1e\x99\xa2\xc9\x8e\xcd\xfc\xfa\xf6\x12\x95^\xdfT\xe2=\x0e~F\x00s', 0x2)
+r1 = openat(0xffffffffffffff9c, &(0x7f0000000080)='/proc/self/exe\x00', 0x0, 0x0)
+mmap(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x1800003, 0x12, r1, 0x0)
+preadv(r1, &(0x7f0000000280), 0x18, 0xd9f, 0x0)
+ftruncate(r0, 0x6162)
+fcntl$addseals(r0, 0x409, 0x7)
+write(r0, &(0x7f0000000000)='j', 0x1)

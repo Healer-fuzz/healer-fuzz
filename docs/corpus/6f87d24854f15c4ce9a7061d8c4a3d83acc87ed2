@@ -1,0 +1,2 @@
+r0 = openat$sequencer2(0xffffffffffffff9c, &(0x7f0000000100)='/dev/sequencer2\x00', 0x81, 0x0)
+write$sequencer(r0, &(0x7f0000000000)=ANY=[@ANYBLOB="fd"], 0x8)

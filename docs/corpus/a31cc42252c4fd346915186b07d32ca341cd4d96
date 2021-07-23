@@ -1,0 +1,3 @@
+r0 = socket$alg(0x26, 0x5, 0x0)
+bind$alg(r0, &(0x7f0000000080)={0x26, 'skcipher\x00', 0x0, 0x0, 'lrw(serpent)\x00'}, 0x58)
+setsockopt$ALG_SET_KEY(r0, 0x117, 0x1, &(0x7f0000000100)="74d57425058fa0dfb07ca6274a61ffc9c7b3484c85bdd2652ae23518c7d18b97850bfc986987f4fd619340283bbc6add", 0x30)

@@ -1,0 +1,7 @@
+r0 = openat$ptmx(0xffffffffffffff9c, &(0x7f00000000c0)='/dev/ptmx\x00', 0x6, 0x0)
+r1 = epoll_create1(0x0)
+write$binfmt_aout(r0, &(0x7f0000000940)=ANY=[@ANYBLOB="e93dd96813"], 0x3c)
+ioctl$TCSETS(r0, 0x40045431, &(0x7f0000000240))
+r2 = syz_open_pts(r0, 0x0)
+epoll_ctl$EPOLL_CTL_ADD(r1, 0x1, r2, &(0x7f0000000080))
+ioctl$TCSETS(r2, 0x5402, &(0x7f0000000040))

@@ -1,0 +1,5 @@
+r0 = openat$ptmx(0xffffffffffffff9c, &(0x7f0000005500)='/dev/ptmx\x00', 0x0, 0x0)
+ioctl$TCSETS(r0, 0x40045431, &(0x7f00003b9fdc))
+r1 = syz_open_pts(r0, 0x0)
+ioctl$TCXONC(r0, 0x540a, 0x2)
+ioctl$TCXONC(r1, 0x540a, 0x0)

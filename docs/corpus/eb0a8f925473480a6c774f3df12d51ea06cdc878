@@ -1,0 +1,1 @@
+syz_mount_image$reiserfs(&(0x7f0000001b80)='reiserfs\x00', &(0x7f0000001bc0)='./file0\x00', 0x0, 0x1, &(0x7f0000000100)=[{0x0, 0x0, 0xc76}], 0x0, &(0x7f0000001d80)={[{@jqfmt_vfsv0='jqfmt=vfsv0'}, {@usrjquota_file='usrjquota=syz', 0x38}]})

@@ -1,0 +1,4 @@
+r0 = add_key$fscrypt_v1(&(0x7f0000000000)='logon\x00', &(0x7f0000000040)={'fscrypt:', @desc3='e8dab99234bb312e'}, &(0x7f0000000080)={0x0, "c8b916842f18a8350baf448f997f5d64ba2806e10090b0afd270d83d2b37444891fa9ad9c916f5de2c298df3b075a8d6a01446977fad7fc40489995829841542"}, 0x48, 0xfffffffffffffffd)
+r1 = add_key$fscrypt_v1(&(0x7f0000000040)='logon\x00', &(0x7f0000000240)={'fscrypt:', @desc3='e8dab99234bb312e'}, &(0x7f0000000280)={0x0, "10e6713ecd6173498ef14da428f6b39cd543374b5e498f42a6a363dc51f83dcf861fb363dca32095daa1ef073d5c67481914b46e68fdaddd8245b35026d9c0ba"}, 0x48, 0xfffffffffffffffe)
+r2 = add_key$fscrypt_v1(&(0x7f0000000040)='logon\x00', &(0x7f0000000240)={'fscrypt:', @desc3='e8dab99234bb312e'}, &(0x7f0000000280)={0x0, "10e6713ecd6173498ef14da428f6b39cd543374b5e498f42a6a363dc51f83dcf861fb363dca32095daa1ef073d5c67481914b46e68fdaddd8245b35026d9c0ba"}, 0x48, 0xfffffffffffffffe)
+keyctl$KEYCTL_MOVE(0x1e, r0, r1, r2, 0x0)

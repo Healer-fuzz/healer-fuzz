@@ -1,0 +1,5 @@
+r0 = memfd_create(&(0x7f0000000500)='+\x8b\x8a\xa9\x16\x11O\xdd\xdfk(F\x99\xdf\x92\xd5>oJ\x02u\x9b\x94a\xac', 0x0)
+r1 = socket$inet_udplite(0x2, 0x2, 0x88)
+getsockopt$sock_cred(r1, 0x1, 0x11, &(0x7f0000000240)={0x0, <r2=>0x0}, &(0x7f0000000280)=0x5)
+setuid(r2)
+fcntl$setlease(r0, 0x400, 0x0)

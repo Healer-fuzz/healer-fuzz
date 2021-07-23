@@ -1,0 +1,4 @@
+r0 = openat$rfkill(0xffffffffffffff9c, &(0x7f0000000040)='/dev/rfkill\x00', 0x48800, 0x0)
+ioctl$BLKREPORTZONE(0xffffffffffffffff, 0xc0101282, &(0x7f00000002c0)=ANY=[@ANYBLOB="000000000000000001"])
+sendmsg$IPVS_CMD_FLUSH(0xffffffffffffffff, &(0x7f0000000140)={0x0, 0x0, &(0x7f0000000000)={0x0, 0xffffffffffffffe2}}, 0x0)
+readv(r0, &(0x7f0000000100)=[{&(0x7f0000000280)=""/1}], 0x2000000000000020)

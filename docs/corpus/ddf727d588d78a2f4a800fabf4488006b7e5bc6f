@@ -1,0 +1,5 @@
+r0 = add_key$keyring(&(0x7f0000000080)='keyring\x00', &(0x7f0000000400)={'syz', 0x1}, 0x0, 0x0, 0xfffffffffffffffe)
+r1 = openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
+mmap(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x1800003, 0x12, r1, 0x0)
+preadv(r1, &(0x7f0000000280), 0x18, 0xd9f, 0x0)
+keyctl$KEYCTL_RESTRICT_KEYRING(0x1d, r0, &(0x7f0000000100)='asymmetric\x00', &(0x7f0000000780)=@secondary='builtin_and_secondary_trusted\x00')

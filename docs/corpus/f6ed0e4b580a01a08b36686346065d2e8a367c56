@@ -1,0 +1,1 @@
+mprotect(&(0x7f000064a000/0x1000)=nil, 0xffffffffdf9b5fff, 0x0)

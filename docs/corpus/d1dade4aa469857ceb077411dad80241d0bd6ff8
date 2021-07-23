@@ -1,0 +1,2 @@
+r0 = openat$6lowpan_control(0xffffffffffffff9c, &(0x7f0000000080)='/sys/kernel/debug/bluetooth/6lowpan_control\x00', 0x2, 0x0)
+writev(r0, &(0x7f00000000c0)=[{&(0x7f0000000280)="a4", 0x1}], 0x1)

@@ -1,0 +1,1 @@
+syz_emit_ethernet(0x3a, &(0x7f00000000c0)={@broadcast, @local, @void, {@ipv6={0x86dd, @generic={0x0, 0x6, "b4819c", 0x4, 0x2f, 0x0, @private1, @mcast2, {[], "b0565a6e"}}}}}, 0x0)

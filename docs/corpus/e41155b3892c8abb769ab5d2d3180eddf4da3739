@@ -1,0 +1,2 @@
+unshare(0x40000000)
+ioctl$SIOCSIFHWADDR(0xffffffffffffffff, 0x8924, 0x0)

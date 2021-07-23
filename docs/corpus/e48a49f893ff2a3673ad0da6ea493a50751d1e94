@@ -1,0 +1,3 @@
+r0 = syz_init_net_socket$nfc_llcp(0x27, 0x3, 0x1)
+bind$nfc_llcp(r0, &(0x7f0000000080)={0x27, 0x0, 0x0, 0x0, 0x0, 0x0, "0872c72cf693cbd043b9bdb0b6b9f196bf98373cf60c2aafd8a79181057bfafb17c91cf66c5dfe13820e36fdad003d1bf47525af0a668979d7588d5e707d9c"}, 0x60)
+getpeername(r0, 0x0, &(0x7f0000000040))

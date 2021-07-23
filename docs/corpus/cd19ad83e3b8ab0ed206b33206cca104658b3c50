@@ -1,0 +1,2 @@
+r0 = syz_open_dev$radio(&(0x7f0000000300)='/dev/radio#\x00', 0x0, 0x2)
+ioctl$VIDIOC_QUERY_EXT_CTRL(r0, 0xc0e85667, &(0x7f0000000340)={0x0, 0x0, "eaa8857d34fe6618480764783b7b9bbba061283d6014d0353bc72a6bf3582da5"})

@@ -1,0 +1,3 @@
+r0 = syz_open_procfs(0x0, &(0x7f0000000300)='map_files\x00')
+fchdir(r0)
+quotactl(0x2080000200, &(0x7f0000000100)='./file1\x00', 0xffffffffffffffff, &(0x7f0000000000)='-0')
