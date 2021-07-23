@@ -1,5 +1,0 @@
-r0 = openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
-pipe(&(0x7f0000000100)={<r1=>0xffffffffffffffff, <r2=>0xffffffffffffffff})
-syz_genetlink_get_family_id$nl80211(&(0x7f0000000080)='nl80211\x00', r1)
-read(r1, &(0x7f00000001c0)=""/93, 0x5d)
-splice(r0, 0x0, r2, 0x0, 0x8, 0x0)

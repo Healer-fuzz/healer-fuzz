@@ -1,3 +1,0 @@
-r0 = openat$snapshot(0xffffffffffffff9c, &(0x7f0000000100)='/dev/snapshot\x00', 0x0, 0x0)
-setreuid(0x0, 0xee01)
-ioctl$SNAPSHOT_CREATE_IMAGE(r0, 0x40043311, 0x0)

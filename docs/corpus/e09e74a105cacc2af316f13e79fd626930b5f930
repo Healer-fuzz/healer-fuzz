@@ -1,4 +1,0 @@
-r0 = openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
-mmap(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x180000e, 0x12, r0, 0x0)
-r1 = openat$sequencer(0xffffffffffffff9c, &(0x7f00000019c0)='/dev/sequencer\x00', 0x0, 0x0)
-ioctl$SNDCTL_SEQ_GETOUTCOUNT(r1, 0xc0046d00, &(0x7f0000000080))

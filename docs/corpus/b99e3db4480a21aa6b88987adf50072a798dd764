@@ -1,2 +1,0 @@
-r0 = syz_init_net_socket$nl_generic(0x10, 0x3, 0x10)
-ioctl$sock_SIOCGIFINDEX_802154(r0, 0x8947, &(0x7f0000000500)={'wpan1\x00'})

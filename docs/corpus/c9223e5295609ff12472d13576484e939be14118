@@ -1,3 +1,0 @@
-openat$dir(0xffffffffffffff9c, &(0x7f0000000000)='./file0\x00', 0x2842, 0x0)
-add_key(&(0x7f0000000140)='encrypted\x00', 0x0, 0x0, 0x0, 0xfffffffffffffffe)
-faccessat(0xffffffffffffff9c, &(0x7f0000000180)='./file0\x00', 0x0)

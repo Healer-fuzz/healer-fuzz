@@ -1,5 +1,0 @@
-r0 = openat$proc_mixer(0xffffffffffffff9c, &(0x7f0000000040)='/proc/asound/card2/oss_mixer\x00', 0x0, 0x0)
-r1 = openat$proc_mixer(0xffffffffffffff9c, &(0x7f00000000c0)='/proc/asound/card0/oss_mixer\x00', 0x2002, 0x0)
-read$proc_mixer(r0, &(0x7f0000000100)=""/163, 0xa3)
-write$binfmt_script(r1, &(0x7f0000000140)=ANY=[], 0x102f)
-dup3(r0, r1, 0x0)

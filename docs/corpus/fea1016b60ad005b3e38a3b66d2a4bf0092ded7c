@@ -1,2 +1,0 @@
-r0 = gettid()
-sched_getparam(r0, &(0x7f0000000080))

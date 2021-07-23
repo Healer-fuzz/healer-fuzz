@@ -1,1 +1,0 @@
-syz_mount_image$adfs(&(0x7f0000000400)='adfs\x00', &(0x7f0000000440)='./file0\x00', 0x0, 0x0, &(0x7f00000006c0), 0x0, &(0x7f0000000740)={[{}], [{@uid_eq={'uid', 0x3d, 0xffffffffffffffff}}]})

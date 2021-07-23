@@ -1,3 +1,0 @@
-r0 = syz_open_procfs(0xffffffffffffffff, &(0x7f0000000000)='attr/current\x00')
-exit(0x0)
-preadv(r0, &(0x7f0000000280)=[{&(0x7f00000000c0)=""/170, 0xaa}], 0x1, 0x0, 0x0)

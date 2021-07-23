@@ -1,3 +1,0 @@
-r0 = add_key$fscrypt_v1(&(0x7f0000000000)='logon\x00', &(0x7f0000000040)={'fscrypt:'}, &(0x7f0000000080)={0x0, "419023c5efa0aac1ce845e2bd4dde6d98e584a05baac0d98b0796db22fab556cd617cf0b277e703c39678bbe2c3c1b258443d3c6447c127e79c8d1ce3abb35b1"}, 0x48, 0xfffffffffffffffb)
-keyctl$update(0x2, r0, &(0x7f0000000100)='L', 0x1)
-keyctl$revoke(0x3, r0)

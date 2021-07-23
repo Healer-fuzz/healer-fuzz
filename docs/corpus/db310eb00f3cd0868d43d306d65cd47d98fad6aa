@@ -1,2 +1,0 @@
-r0 = syz_open_dev$vivid(&(0x7f0000000440)='/dev/video#\x00', 0x2, 0x2)
-ioctl$VIDIOC_QUERY_EXT_CTRL(r0, 0xc0e85667, &(0x7f00000007c0)={0x8000000, 0x0, "a838b8aa73aa6dc406c947b7cd3d10bf2566919a64a726d9ccc6e5680f7e4067"})

@@ -1,2 +1,0 @@
-r0 = openat$vsock(0xffffffffffffff9c, &(0x7f0000000000)='/dev/vsock\x00', 0x0, 0x0)
-fsetxattr$system_posix_acl(r0, &(0x7f0000000040)='system.posix_acl_access\x00', &(0x7f0000000080)={{}, {}, [], {}, [], {0x8}}, 0x24, 0x0)

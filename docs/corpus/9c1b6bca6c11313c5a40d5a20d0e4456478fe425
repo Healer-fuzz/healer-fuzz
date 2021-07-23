@@ -1,3 +1,0 @@
-ioctl$UI_DEV_DESTROY(0xffffffffffffffff, 0x5502)
-r0 = openat$char_raw_ctl(0xffffffffffffff9c, &(0x7f0000000840)='/dev/raw/rawctl\x00', 0x0, 0x0)
-ioctl$RAW_CHAR_CTRL_SETBIND(r0, 0xac00, &(0x7f0000000880)={0x0, 0x7, 0x0})

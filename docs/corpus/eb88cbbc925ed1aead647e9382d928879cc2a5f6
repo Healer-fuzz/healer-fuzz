@@ -1,1 +1,0 @@
-openat$sndtimer(0xffffffffffffff9c, &(0x7f0000000000)='/dev/snd/timer\x00', 0x3d1247310190c1b8)

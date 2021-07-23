@@ -1,8 +1,0 @@
-clone(0x2100001ffc, 0x0, 0xfffffffffffffffe, 0x0, 0xffffffffffffffff)
-r0 = memfd_create(&(0x7f0000000280)='[\xdbX\xae[\x1a\xa9\xfd\xfe\xadD\x05\r\xd1md\xc8\x85HX\xa9%\f\x1ae\x00\x90\x93\x12l\xb6Z\x95\xab\x00\x00\x00\x00Y\xd1c\x81\x9eG\xf9,\xe2\xc6a\x8b\xe8\xcf\xda$\r+Op\xd0\xa2\x8a\x1eb;(\xb5\xe1jS\xd6\x91;\xce\xbfQ\xb9\xdb5\xff5i\x14\xad5\x032%||\xa0\x8ez\xadT\xc8\f\xe5\x89\xbf3:\x99\x1e\xac`\xc3\xcf\xd3\xae\xd2\a\x11\xa9\x95\xd2q#\xc6\xca\x97!*\x886Ka\x13\xf9\x0f[', 0x0)
-r1 = socket$unix(0x1, 0x2, 0x0)
-getsockopt$sock_cred(r1, 0x1, 0x11, &(0x7f0000caaffb)={0x0, <r2=>0x0}, &(0x7f0000cab000)=0xc)
-setresuid(0x0, r2, 0x0)
-add_key$keyring(&(0x7f0000000140)='keyring\x00', 0x0, 0x0, 0x0, 0xfffffffffffffffe)
-fsetxattr$system_posix_acl(0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0)
-execveat(r0, &(0x7f0000000000)='\x00', 0x0, 0x0, 0x1000)

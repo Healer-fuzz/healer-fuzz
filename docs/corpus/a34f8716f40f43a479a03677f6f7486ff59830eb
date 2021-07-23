@@ -1,2 +1,0 @@
-syz_genetlink_get_family_id$ieee802154(&(0x7f00000001c0)='802.15.4 MAC\x00', 0xffffffffffffffff)
-arch_prctl$ARCH_GET_GS(0x1004, &(0x7f00000061c0))

@@ -1,2 +1,0 @@
-r0 = syz_open_procfs(0xffffffffffffffff, &(0x7f0000000040)='comm\x00')
-read$alg(r0, &(0x7f0000000080)=""/212, 0xd4)

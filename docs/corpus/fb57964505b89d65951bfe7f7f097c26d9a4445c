@@ -1,4 +1,0 @@
-r0 = openat$misdntimer(0xffffffffffffff9c, &(0x7f0000000040)='/dev/mISDNtimer\x00', 0x0, 0x0)
-ioctl$IMADDTIMER(r0, 0x80044940, &(0x7f0000000080)=0xf4240)
-ioctl$IMADDTIMER(r0, 0x80044940, &(0x7f0000000000)=0x14)
-ioctl$IMDELTIMER(r0, 0x80044941, &(0x7f0000000180))

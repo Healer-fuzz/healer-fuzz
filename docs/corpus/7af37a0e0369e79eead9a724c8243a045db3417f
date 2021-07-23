@@ -1,2 +1,0 @@
-r0 = syz_open_procfs(0xffffffffffffffff, &(0x7f0000000580)='net/ip6_tables_targets\x00')
-read$alg(r0, &(0x7f0000000680)=""/102, 0xdbb3)

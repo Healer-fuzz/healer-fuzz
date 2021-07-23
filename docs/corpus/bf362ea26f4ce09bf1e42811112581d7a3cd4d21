@@ -1,5 +1,0 @@
-r0 = syz_open_dev$video(&(0x7f0000000000)='/dev/video#\x00', 0xd, 0x0)
-ioctl$VIDIOC_S_FMT(r0, 0xc0d05605, &(0x7f0000000340)={0x1, @vbi})
-mprotect(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x4)
-r1 = syz_open_dev$video(&(0x7f0000000000)='/dev/video#\x00', 0xd, 0x0)
-ioctl$VIDIOC_S_FMT(r1, 0xc0d05605, &(0x7f0000000340)={0x0, @vbi})

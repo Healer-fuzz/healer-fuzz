@@ -1,2 +1,0 @@
-r0 = syz_open_dev$video(&(0x7f0000000000)='/dev/video#\x00', 0xd, 0x0)
-ioctl$VIDIOC_G_STD(r0, 0x80085617, &(0x7f0000000100))

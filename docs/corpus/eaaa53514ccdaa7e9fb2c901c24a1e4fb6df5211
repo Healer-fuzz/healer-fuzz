@@ -1,2 +1,0 @@
-r0 = syz_init_net_socket$802154_raw(0x24, 0x3, 0x0)
-bind(r0, &(0x7f0000000040)=@ieee802154={0x24, @short}, 0x80)

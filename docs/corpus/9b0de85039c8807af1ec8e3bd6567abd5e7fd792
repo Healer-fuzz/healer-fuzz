@@ -1,4 +1,0 @@
-r0 = socket$nl_generic(0x10, 0x3, 0x10)
-r1 = syz_genetlink_get_family_id$batadv(&(0x7f00000005c0)='batadv\x00', 0xffffffffffffffff)
-ioctl$ifreq_SIOCGIFINDEX_batadv_mesh(r0, 0x8933, &(0x7f0000000200)={'batadv0\x00', <r2=>0x0})
-sendmsg$BATADV_CMD_SET_VLAN(r0, &(0x7f0000000300)={0x0, 0x0, &(0x7f00000002c0)={&(0x7f0000000240)={0x2c, r1, 0x1, 0x0, 0x0, {}, [@BATADV_ATTR_MESH_IFINDEX={0x8, 0x3, r2}, @BATADV_ATTR_AP_ISOLATION_ENABLED={0x5}, @BATADV_ATTR_VLANID={0x6}]}, 0x2c}}, 0x0)

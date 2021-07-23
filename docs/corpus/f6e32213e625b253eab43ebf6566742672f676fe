@@ -1,2 +1,0 @@
-r0 = openat$dlm_plock(0xffffffffffffff9c, &(0x7f0000000040)='/dev/dlm_plock\x00', 0xa2141, 0x0)
-writev(r0, &(0x7f0000000400)=[{&(0x7f0000000080)="10", 0x1}], 0x1)

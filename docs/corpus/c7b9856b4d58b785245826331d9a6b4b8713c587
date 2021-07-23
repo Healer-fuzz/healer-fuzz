@@ -1,2 +1,0 @@
-r0 = syz_open_dev$vbi(&(0x7f0000000080)='/dev/vbi#\x00', 0x1, 0x2)
-ioctl$VIDIOC_ENUMOUTPUT(r0, 0xc0485630, &(0x7f00000000c0)={0xffffffff, "6380fe55fd0cd525df5e076bf341ae164af122d072f44a9c5251b341673b881a"})

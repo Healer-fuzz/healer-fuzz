@@ -1,2 +1,0 @@
-r0 = add_key$fscrypt_v1(&(0x7f0000000080)='logon\x00', &(0x7f00000000c0)={'fscrypt:', @desc3='e8dab99234bb312e'}, &(0x7f0000000100)={0x0, "b60f11e9630f3aebb6fc8c49663b7254c1e33c3ae5a3f4fa4bd5f78a5eda5e7563fd5b4e55e2c138158a21c92af91d73a5d8a1d190493f889d8e913c702fda46"}, 0x48, 0xfffffffffffffffe)
-add_key$fscrypt_v1(&(0x7f0000000280)='logon\x00', 0x0, 0x0, 0x0, r0)

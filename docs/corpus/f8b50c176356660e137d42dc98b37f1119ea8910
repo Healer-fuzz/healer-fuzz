@@ -1,5 +1,0 @@
-r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000000)='memory.events\x00', 0x275a, 0x0)
-writev(r0, &(0x7f00000001c0)=[{&(0x7f0000000400)="b19462c33f5d8115ec7c43e324cb91c04ab79a9d9abe98033e3295eebff7f4b93ac52a7368d1be44dc0e346c21e220fa44fde347ffb59892f2c7713ce44d0acec8d57d0ac439e24d4c", 0x49}], 0x1)
-mmap(&(0x7f0000000000/0x4000)=nil, 0x4000, 0x1, 0x10012, r0, 0x0)
-r1 = socket$inet6_sctp(0xa, 0x10000000005, 0x84)
-setsockopt$inet_sctp6_SCTP_PEER_ADDR_THLDS(r1, 0x84, 0x84, &(0x7f0000000040)={0x0, @in6={{0xa, 0x0, 0x0, @empty}}}, 0x90)

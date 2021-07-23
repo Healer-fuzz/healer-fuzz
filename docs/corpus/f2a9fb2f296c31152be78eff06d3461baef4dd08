@@ -1,2 +1,0 @@
-r0 = add_key$keyring(&(0x7f0000003340)='keyring\x00', &(0x7f0000003380)={'syz', 0x0}, 0x0, 0x0, 0xffffffffffffffff)
-keyctl$invalidate(0x15, r0)

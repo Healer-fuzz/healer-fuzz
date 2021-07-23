@@ -1,4 +1,0 @@
-r0 = openat$tun(0xffffffffffffff9c, &(0x7f0000000080)='/dev/net/tun\x00', 0x88002, 0x0)
-sendmmsg(0xffffffffffffffff, &(0x7f0000000000)=[{{0x0, 0x0, &(0x7f0000001500)=[{&(0x7f0000000040)="d3622fe8d846be6e3098e4ee32fb6e7e1776", 0x12}], 0x1, 0x0, 0x0, 0xffffffe0}}], 0x1, 0x0)
-ioctl$TUNSETIFF(r0, 0x400454ca, &(0x7f0000000040)={'syzkaller1\x00'})
-write$tun(r0, &(0x7f00000001c0)=ANY=[@ANYBLOB="00000200000000001c0060835f7fb8362c"], 0xfca)

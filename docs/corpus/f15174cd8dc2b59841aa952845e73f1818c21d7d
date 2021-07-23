@@ -1,4 +1,0 @@
-syz_mount_image$tmpfs(0x0, &(0x7f0000000080)='./file0\x00', 0x0, 0x0, 0x0, 0x0, &(0x7f0000000280)=ANY=[@ANYBLOB='nr_inodes=5,mode=0'])
-mount(0x0, &(0x7f0000000000)='./file0\x00', &(0x7f0000000040)='hugetlbfs\x00', 0x0, &(0x7f0000000280))
-r0 = syz_open_procfs(0x0, &(0x7f0000000080)='mountinfo\x00')
-preadv(r0, &(0x7f0000000940)=[{&(0x7f0000000400)=""/52, 0x34}], 0x1, 0x7fff, 0x0)

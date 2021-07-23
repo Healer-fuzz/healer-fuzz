@@ -1,5 +1,0 @@
-r0 = fanotify_init(0x0, 0x0)
-r1 = creat(&(0x7f0000000000)='./file0\x00', 0x0)
-fanotify_mark(r0, 0x105, 0x4000103b, r1, 0x0)
-r2 = creat(&(0x7f0000000080)='./file0\x00', 0x0)
-dup2(r2, r0)

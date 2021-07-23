@@ -1,4 +1,0 @@
-r0 = syz_init_net_socket$nl_generic(0x10, 0x3, 0x10)
-r1 = syz_init_net_socket$nl_generic(0x10, 0x3, 0x10)
-r2 = syz_genetlink_get_family_id$netlbl_unlabel(&(0x7f0000000180)='NLBL_UNLBL\x00', r1)
-sendmsg$NLBL_UNLABEL_C_STATICADD(r0, &(0x7f0000000240)={0x0, 0x0, &(0x7f00000001c0)={&(0x7f0000000280)={0x74, r2, 0x1, 0x0, 0x0, {0x4}, [@NLBL_UNLABEL_A_IPV4ADDR={0x7, 0x4, @local}, @NLBL_UNLABEL_A_SECCTX={0x28, 0x7, 'system_u:object_r:setrans_exec_t:s0\x00'}, @NLBL_UNLABEL_A_IFACE={0x14, 0x6, 'macvlan0\x00'}, @NLBL_UNLABEL_A_IPV4MASK={0x7, 0x5, @multicast2}, @NLBL_UNLABEL_A_IPV6ADDR={0x14, 0x2, @local}]}, 0x74}}, 0x0)

@@ -1,2 +1,0 @@
-r0 = inotify_init()
-inotify_rm_watch(r0, 0x0)

@@ -1,3 +1,0 @@
-r0 = socket$inet6(0xa, 0x40000080806, 0x0)
-listen(r0, 0x0)
-setsockopt$inet6_IPV6_XFRM_POLICY(r0, 0x10d, 0x10, &(0x7f0000000000)={{{@in, @in=@broadcast}}, {{@in=@private}, 0x0, @in6=@dev}}, 0x6)

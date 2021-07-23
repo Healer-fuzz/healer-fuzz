@@ -1,6 +1,0 @@
-r0 = socket$inet(0x2, 0x3, 0x7)
-connect$inet(0xffffffffffffffff, &(0x7f0000000000)={0x2, 0x0, @local}, 0x12)
-setsockopt$inet_IP_XFRM_POLICY(r0, 0x0, 0x23, &(0x7f0000000000)={{{@in=@multicast2, @in=@private}}, {{@in6=@mcast2}, 0x0, @in6=@empty}}, 0xe8)
-setsockopt$inet_msfilter(r0, 0x0, 0x29, &(0x7f00000002c0)=ANY=[@ANYBLOB="e0000002ac1414aa0000000002"], 0x18)
-r1 = syz_open_procfs(0x0, &(0x7f0000000140)='net/mcfilter\x00')
-preadv(r1, &(0x7f0000000ac0)=[{&(0x7f0000000640)=""/57, 0x39}], 0x1, 0x0, 0x0)

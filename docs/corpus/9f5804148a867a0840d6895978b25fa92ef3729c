@@ -1,2 +1,0 @@
-setregid(0xffffffffffffffff, 0xee00)
-setregid(0xee00, 0xee00)

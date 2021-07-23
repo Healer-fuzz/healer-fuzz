@@ -1,8 +1,0 @@
-r0 = add_key$keyring(0x0, &(0x7f0000000380)={'syz', 0x2}, 0x0, 0x0, 0xfffffffffffffffe)
-add_key$keyring(&(0x7f0000000040)='keyring\x00', &(0x7f0000000080)={'syz', 0x0}, 0x0, 0x0, 0x0)
-add_key$fscrypt_v1(0x0, &(0x7f0000000400)={'fscrypt:', @desc3='e8dab99234bb312e'}, &(0x7f0000000440)={0x0, "ce9faa4da5279f06dca924949c414a11e5e69832bdee8a39f2e3f8affd4fec28b39add563c4692ef644e91ec96c11e355768d6dd3d7a2353962f0542cf3d1516"}, 0x48, 0x0)
-r1 = socket$phonet_pipe(0x23, 0x5, 0x2)
-setsockopt$PNPIPE_ENCAP(r1, 0x113, 0x1, &(0x7f00000000c0)=0x1, 0x4)
-add_key$fscrypt_v1(&(0x7f00000003c0)='logon\x00', &(0x7f0000000400)={'fscrypt:', @desc3='e8dab99234bb312e'}, &(0x7f0000000440)={0x0, "ce9faa4da5279f06dca924949c414a11e5e69832bdee8a39f2e3f8affd4fec28b39add563c4692ef644e91ec96c11e355768d6dd3d7a2353962f0542cf3d1516"}, 0x48, 0x0)
-keyctl$instantiate(0xc, 0x0, 0x0, 0x0, 0x0)
-add_key$fscrypt_v1(&(0x7f00000003c0)='logon\x00', 0x0, 0x0, 0x0, r0)

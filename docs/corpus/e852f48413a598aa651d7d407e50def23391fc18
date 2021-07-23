@@ -1,3 +1,0 @@
-syz_mount_image$omfs(0x0, &(0x7f0000000140)='./file0\x00', 0x0, 0x0, 0x0, 0x0, 0x0)
-clone(0x100, 0x0, 0xfffffffffffffffe, 0x0, 0xffffffffffffffff)
-mount$overlay(0x0, &(0x7f0000000080)='./file0\x00', &(0x7f0000000100)='overlay\x00', 0x0, &(0x7f0000000180)={[{@metacopy_off='metacopy=off'}, {@xino_off='xino=off'}, {@xino_auto='xino=auto'}]})

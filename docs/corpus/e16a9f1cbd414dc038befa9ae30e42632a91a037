@@ -1,2 +1,0 @@
-r0 = openat$smack_thread_current(0xffffffffffffff9c, &(0x7f0000000080)='/proc/thread-self/attr/current\x00', 0x2, 0x0)
-fsetxattr$security_evm(r0, &(0x7f00000000c0)='security.evm\x00', 0x0, 0x0, 0x0)

@@ -1,2 +1,0 @@
-clone(0x100, 0x0, 0xfffffffffffffffe, 0x0, 0xffffffffffffffff)
-add_key(&(0x7f0000000140)='encrypted\x00', &(0x7f0000000180)={'syz', 0x0}, &(0x7f0000000000)="70ee29e07f1d53d38a6d7ed251d38e0eb64e65192328422c43f16fcdfff61231174651668f83291b9efe1b612df94e09", 0x30, 0xfffffffffffffffe)

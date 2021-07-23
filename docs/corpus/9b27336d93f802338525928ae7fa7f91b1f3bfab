@@ -1,7 +1,0 @@
-r0 = socket$inet6(0xa, 0x2, 0x0)
-r1 = socket$inet_udplite(0x2, 0x2, 0x88)
-getsockopt$sock_cred(r1, 0x1, 0x11, &(0x7f0000000240)={0x0, <r2=>0x0}, &(0x7f0000000280)=0x5)
-setuid(r2)
-bind$inet6(r0, &(0x7f0000f13000)={0xa, 0x4e22}, 0x1c)
-r3 = socket$netlink(0x10, 0x3, 0x8000000004)
-writev(r3, &(0x7f00000001c0)=[{&(0x7f0000000080)="580000001500add427323b472545b45602117fffffff81004e22000d00ff0028925aa80020007b00090080000efffeffe809000000ff0000f03ac7100003ffffffffffffffffffffffe7ee00000000000000000200000000", 0x58}], 0x1)

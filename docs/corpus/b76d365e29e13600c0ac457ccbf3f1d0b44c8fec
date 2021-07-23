@@ -1,5 +1,0 @@
-getpid()
-ioctl$KVM_XEN_HVM_CONFIG(0xffffffffffffffff, 0x4038ae7a, 0x0)
-creat(&(0x7f0000000240)='./file0\x00', 0x0)
-r0 = open(&(0x7f0000032ff8)='./file0\x00', 0x0, 0x0)
-fchdir(r0)

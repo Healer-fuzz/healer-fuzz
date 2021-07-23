@@ -1,7 +1,0 @@
-pipe(&(0x7f00000000c0)={<r0=>0xffffffffffffffff, <r1=>0xffffffffffffffff})
-r2 = socket$inet_udp(0x2, 0x2, 0x0)
-close(r2)
-socket$inet(0x10, 0x2, 0x0)
-write(0xffffffffffffffff, &(0x7f0000000000)="2400000052001f0014f9f407000904000a00071008000100ffffffff", 0x1c)
-write$binfmt_misc(r1, &(0x7f0000000000)=ANY=[], 0xfffffecc)
-splice(r0, 0x0, r2, 0x0, 0x10003, 0x0)

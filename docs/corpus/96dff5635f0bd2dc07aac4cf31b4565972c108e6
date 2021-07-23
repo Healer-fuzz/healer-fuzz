@@ -1,1 +1,0 @@
-openat$nvram(0xffffffffffffff9c, &(0x7f0000000080)='/dev/nvram\x00', 0x129280, 0x0)

@@ -1,2 +1,0 @@
-r0 = syz_open_dev$loop(&(0x7f00000001c0)='/dev/loop#\x00', 0x75f, 0x0)
-lseek(r0, 0x0, 0x0)

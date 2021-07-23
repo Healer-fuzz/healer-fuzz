@@ -1,2 +1,0 @@
-ioctl$RNDADDENTROPY(0xffffffffffffffff, 0x40085203, 0x0)
-alarm(0xffffffffffffff00)

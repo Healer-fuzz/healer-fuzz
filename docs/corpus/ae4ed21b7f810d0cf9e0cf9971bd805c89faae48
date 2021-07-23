@@ -1,4 +1,0 @@
-r0 = socket$nl_generic(0x10, 0x3, 0x10)
-close(r0)
-syz_btf_id_by_name$bpf_lsm(0x0)
-readv(r0, &(0x7f0000000480)=[{&(0x7f0000000080)=""/168, 0xa8}], 0x1)

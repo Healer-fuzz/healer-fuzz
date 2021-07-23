@@ -1,7 +1,0 @@
-r0 = openat(0xffffffffffffffff, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
-mmap(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x1800003, 0x12, r0, 0x0)
-preadv(r0, &(0x7f0000000280), 0x18, 0xd9f, 0x0)
-r1 = openat$adsp1(0xffffffffffffff9c, &(0x7f0000000180)='/dev/adsp1\x00', 0xaa002, 0x0)
-ioctl$SNDCTL_DSP_SETFRAGMENT(r1, 0xc004500a, &(0x7f0000000100))
-ioctl$SNDCTL_DSP_SETFMT(r1, 0xc0045005, &(0x7f0000000280)=0x1000)
-write$binfmt_misc(r1, &(0x7f00000015c0)={'syz0', "568da2a9fa3b12abb0c3d0f6f892b0b3c037fcecf1345943ce5b5a30c0da710baf2aec313c26a2847ff64a1c63880e056a3f5f7964a9654141c46db457b213e44fe73c79fcc580c72fa117016ed0f091a60a116a980120fba250c77af634aef75658bf445098ab4a2cf42b8ed40c0072a78100140ac60094c1a94774"}, 0x80)

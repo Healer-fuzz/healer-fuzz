@@ -1,1 +1,0 @@
-syz_open_dev$midi(&(0x7f0000000000)='/dev/midi#\x00', 0x40008a, 0x4000)

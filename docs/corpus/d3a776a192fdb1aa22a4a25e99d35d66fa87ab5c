@@ -1,2 +1,0 @@
-socketpair(0x1, 0x5, 0x0, &(0x7f0000000740)={0xffffffffffffffff, <r0=>0xffffffffffffffff})
-ioctl$PERF_EVENT_IOC_SET_FILTER(r0, 0x8927, &(0x7f0000000080)='ip6tnl0:')

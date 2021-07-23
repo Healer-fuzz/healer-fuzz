@@ -1,3 +1,0 @@
-r0 = gettid()
-r1 = getpid()
-rt_tgsigqueueinfo(r1, r0, 0x0, &(0x7f0000000180)={0x0, 0x0, 0xfffffffa})

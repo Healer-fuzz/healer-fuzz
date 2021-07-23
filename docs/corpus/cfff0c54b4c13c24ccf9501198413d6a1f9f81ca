@@ -1,7 +1,0 @@
-r0 = open(&(0x7f0000000180)='./bus\x00', 0x1e3542, 0x0)
-r1 = creat(&(0x7f0000000100)='./bus\x00', 0x0)
-ioctl$FS_IOC_SETFLAGS(r1, 0x40086602, &(0x7f0000000040))
-ftruncate(r1, 0x2008003)
-write$P9_RWSTAT(r0, &(0x7f0000000000)={0x7}, 0x7)
-r2 = open(&(0x7f0000002000)='./bus\x00', 0x143042, 0x0)
-ftruncate(r2, 0x200800a)

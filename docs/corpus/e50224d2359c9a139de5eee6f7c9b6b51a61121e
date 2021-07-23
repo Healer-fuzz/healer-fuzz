@@ -1,2 +1,0 @@
-r0 = socket$inet_sctp(0x2, 0x5, 0x84)
-ioctl$sock_SIOCETHTOOL(r0, 0x8946, &(0x7f0000008f80)={'batadv_slave_1\x00', &(0x7f0000008e80)=@ethtool_rxnfc={0x2d, 0x0, 0x0, {0x0, @tcp_ip6_spec={@private1, @mcast2}, {0x0, @local}, @tcp_ip6_spec={@empty, @local}, {0x0, @broadcast}}}})

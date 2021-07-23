@@ -1,4 +1,0 @@
-r0 = socket(0x11, 0x2, 0x0)
-r1 = socket$nl_sock_diag(0x10, 0x3, 0x4)
-ioctl$ifreq_SIOCGIFINDEX_vcan(r1, 0x8933, &(0x7f0000000180)={'vcan0\x00', <r2=>0x0})
-sendto$packet(r0, &(0x7f0000000100)="23ead6c4aefad3094b1a14270707db0eba851cbd4e4a6b6c16ac1d4f7a63a0154f1eadda6f0d37d092a3f9e7dd5a3e160eb1271562fcb9f65ed377efa8c911c3428d926d01b81fbf", 0x48, 0x0, &(0x7f00000005c0)={0x11, 0xd, r2, 0x1, 0x0, 0x6, @link_local}, 0x14)

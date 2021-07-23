@@ -1,2 +1,0 @@
-r0 = syz_init_net_socket$bt_hci(0x1f, 0x3, 0x1)
-ioctl$sock_SIOCGIFVLAN_SET_VLAN_NAME_TYPE_CMD(r0, 0x8982, &(0x7f0000000040)={0x6, 'ip6tnl0\x00', {0x7fff}})

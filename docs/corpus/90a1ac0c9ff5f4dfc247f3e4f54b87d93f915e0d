@@ -1,2 +1,0 @@
-r0 = fsopen(&(0x7f0000000080)='rpc_pipefs\x00', 0x0)
-fsconfig$FSCONFIG_SET_FLAG(r0, 0x5, &(0x7f0000000100)='async\x00', 0x0, 0x7)

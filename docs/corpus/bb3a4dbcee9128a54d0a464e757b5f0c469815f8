@@ -1,3 +1,0 @@
-r0 = add_key$keyring(&(0x7f0000000000)='keyring\x00', &(0x7f0000000040)={'syz', 0x1}, 0x0, 0x0, 0xfffffffffffffffc)
-r1 = add_key$fscrypt_v1(&(0x7f0000000340)='logon\x00', &(0x7f0000000380)={'fscrypt:', @desc4='85baa174f0cb1142'}, &(0x7f00000071c0)={0x0, "e5b28e767e6275b59c3f3b77ec690530f6b0be84a1f4323dd70cae1fc7d173c7b7758003e531a6c960e48e22ef764f8646f659e8e908246b49147ac709262c41"}, 0x48, r0)
-keyctl$update(0x2, r1, &(0x7f0000007240)='\'', 0x1)

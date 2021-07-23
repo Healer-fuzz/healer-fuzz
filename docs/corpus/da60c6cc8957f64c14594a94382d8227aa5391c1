@@ -1,2 +1,0 @@
-r0 = syz_mount_image$tmpfs(&(0x7f0000000040)='tmpfs\x00', &(0x7f0000000080)='./file0\x00', 0x0, 0x0, 0x0, 0x0, &(0x7f0000000580)={[{@mode={'mode', 0x3d, 0x7fff}}]})
-mkdirat(r0, &(0x7f0000000540)='./file0\x00', 0x0)

@@ -1,5 +1,0 @@
-pipe(&(0x7f00000000c0)={0xffffffffffffffff, <r0=>0xffffffffffffffff})
-write(r0, &(0x7f0000000000)="fc0000001d000724ab09254ec100070007ab08001b000000f0ffff002100057e0000000000000e000039000000039815fad151ba0101099cecb94b46fe0000000a00020025", 0xffffff0c)
-pipe(&(0x7f0000000100)={<r1=>0xffffffffffffffff, <r2=>0xffffffffffffffff})
-write$binfmt_misc(r2, 0x0, 0xfffffecc)
-splice(r1, 0x0, r0, 0x0, 0xffffffffffff8001, 0x7)

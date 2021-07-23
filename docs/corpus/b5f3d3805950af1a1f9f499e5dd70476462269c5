@@ -1,3 +1,0 @@
-r0 = syz_open_dev$usbfs(&(0x7f00000004c0)='/dev/bus/usb/00#/00#\x00', 0x200000077, 0x1)
-ioctl$USBDEVFS_IOCTL(r0, 0xc0105512, &(0x7f0000000040)=@usbdevfs_connect)
-ioctl$USBDEVFS_IOCTL(r0, 0xc00c5512, &(0x7f0000000380))

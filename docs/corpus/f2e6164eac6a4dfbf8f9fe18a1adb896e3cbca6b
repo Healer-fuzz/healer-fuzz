@@ -1,2 +1,0 @@
-r0 = openat$cachefiles(0xffffffffffffff9c, &(0x7f00000000c0)='/dev/cachefiles\x00', 0x141201, 0x0)
-write$char_usb(r0, &(0x7f0000000180)="8716b06d2ed107169ec1c4fcec6db7786e65df72b9ceddbeff53a9e582742977f5d731c353026906a49768147df902a180d89506c90f593c33fabc12e9065e46ff5b56319b2d0a", 0x47)

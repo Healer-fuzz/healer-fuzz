@@ -1,2 +1,0 @@
-r0 = socket$packet(0x11, 0x3, 0x300)
-ioctl$sock_SIOCETHTOOL(r0, 0x8946, &(0x7f0000000100)={'netdevsim0\x00', &(0x7f0000000000)=@ethtool_rxnfc={0xf, 0x0, 0x0, {0x0, @hdata="f72b01709443ad5d709a85f37dff00c05d984fca36a826bd207e4eb2ca95d271877c2d35fbf4aad2272e68f61291973e97086cab", {0x0, @random="f1a2496ef687"}, @udp_ip6_spec={@private0, @rand_addr=' \x01\x00'}, {0x0, @multicast}}}})

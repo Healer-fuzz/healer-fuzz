@@ -1,3 +1,0 @@
-r0 = syz_open_dev$media(&(0x7f00000001c0)='/dev/media#\x00', 0x8000000000003, 0x0)
-setrlimit(0x7, &(0x7f0000000000))
-ioctl$MEDIA_IOC_REQUEST_ALLOC(r0, 0x80047c05, 0x0)

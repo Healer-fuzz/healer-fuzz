@@ -1,1 +1,0 @@
-syz_mount_image$nfs4(&(0x7f0000000c40)='nfs4\x00', &(0x7f0000000c80)='./file0\x00', 0x0, 0x0, 0x0, 0x0, &(0x7f0000003140)={[{'fsc,ntext'}]})

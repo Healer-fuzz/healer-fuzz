@@ -1,5 +1,0 @@
-sendmsg(0xffffffffffffffff, &(0x7f0000000300)={0x0, 0x0, &(0x7f0000000100)}, 0x0)
-socketpair(0x1, 0x1, 0x0, &(0x7f0000000740)={0xffffffffffffffff, <r0=>0xffffffffffffffff})
-ioctl$PERF_EVENT_IOC_SET_FILTER(r0, 0x89f0, &(0x7f0000000300)='gre0\x00')
-sendmsg(0xffffffffffffffff, &(0x7f0000000340)={0x0, 0x0, &(0x7f00000001c0)=[{&(0x7f0000000080)="399d62fe542f221e0a820c51de0133119f77daf7aafad955bfea96e802e136ba9f9974ad833c9cb90b617807f4aada52722c2efc949221d7b4734beca0c90d1eaff375ac198f0b9f0d7096d490dfac6ad24e19d3e9893e28f4348f4b785ee55ca8fc2f269a869919bbbb6deada9dd06c67ef21c4c040559acdbc1d7ec9831d7512eee70c7a5c207771b121f97f7cae34ba", 0x91}], 0x1}, 0x0)
-ioctl$PERF_EVENT_IOC_SET_FILTER(r0, 0x89f1, &(0x7f0000000300)='gre0\x00')

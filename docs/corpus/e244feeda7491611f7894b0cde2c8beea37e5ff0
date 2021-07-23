@@ -1,5 +1,0 @@
-r0 = socket$inet6(0xa, 0x80002, 0x88)
-recvfrom$inet6(r0, &(0x7f0000000140)=""/81, 0x51, 0x0, 0x0, 0x0)
-bind$inet6(r0, &(0x7f00000001c0)={0xa, 0x10010000004e20}, 0x1c)
-syz_emit_ethernet(0x83, &(0x7f0000000100)=ANY=[@ANYBLOB="aaaaaaaaaaaaaaaaaaaaaaaa86dd60fbba97004d8880fe800001000000000000000000000600ff02000000000000000000000000000101004e20000090"], 0x0)
-sendto$inet6(r0, 0x0, 0x0, 0x0, &(0x7f0000000080)={0xa, 0x4e20, 0x0, @mcast2}, 0x1c)

@@ -1,4 +1,0 @@
-r0 = io_uring_setup(0x84, &(0x7f0000000140))
-r1 = openat$userio(0xffffffffffffff9c, &(0x7f00000001c0)='/dev/userio\x00', 0x0, 0x0)
-preadv(r1, &(0x7f00000002c0)=[{&(0x7f0000000000)=""/92, 0x5c}], 0x1, 0x0, 0x0)
-close(r0)

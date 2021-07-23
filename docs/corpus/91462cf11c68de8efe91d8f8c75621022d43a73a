@@ -1,5 +1,0 @@
-r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000080)='cgroup.controllers\x00', 0x275a, 0x0)
-write$binfmt_script(r0, &(0x7f0000000380)=ANY=[@ANYBLOB="84e00c00044df32ca4b673c25fb2f4808051ad287621ea6d05bea63f54f66603"], 0xfea7)
-mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x1, 0x10012, r0, 0x0)
-r1 = socket$inet_udp(0x2, 0x2, 0x0)
-setsockopt$IP_VS_SO_SET_ADD(r1, 0x0, 0x482, &(0x7f0000000000)={0x0, @multicast1, 0x0, 0x0, 'dh\x00'}, 0x2c)

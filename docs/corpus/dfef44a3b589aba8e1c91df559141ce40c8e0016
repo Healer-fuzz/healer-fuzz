@@ -1,6 +1,0 @@
-r0 = signalfd(0xffffffffffffffff, &(0x7f00000013c0), 0x8)
-r1 = memfd_create(&(0x7f0000002300)='~\x15L\xe0\x00'/16, 0x0)
-r2 = dup2(r1, r0)
-write$P9_RXATTRWALK(r2, &(0x7f0000000000)={0xf}, 0xfffffe9c)
-write$P9_RWRITE(r0, 0x0, 0x0)
-write$P9_RXATTRCREATE(r2, 0x0, 0x0)

@@ -1,2 +1,0 @@
-r0 = socket(0x28, 0x1, 0x0)
-syz_genetlink_get_family_id$nl80211(&(0x7f0000000440)='nl80211\x00', r0)

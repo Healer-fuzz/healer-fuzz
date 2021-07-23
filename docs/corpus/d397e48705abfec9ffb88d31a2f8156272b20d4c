@@ -1,2 +1,0 @@
-syz_mount_image$udf(0x0, &(0x7f0000000100)='./file0\x00', 0x0, 0x0, 0x0, 0x0, 0x0)
-mount(&(0x7f0000000080)=@nullb='/dev/nullb0\x00', &(0x7f0000000200)='./file0\x00', &(0x7f0000000240)='gfs2\x00', 0x0, &(0x7f0000000280)='debug')

@@ -1,2 +1,0 @@
-keyctl$instantiate(0xc, 0x0, &(0x7f0000000100)=@encrypted_new={'new ', 'default', 0x20, 'user:', 'syz'}, 0x2a, 0x0)
-add_key(&(0x7f0000000140)='encrypted\x00', &(0x7f0000000180)={'syz'}, &(0x7f0000000100), 0xca, 0xfffffffffffffffe)

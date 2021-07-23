@@ -1,1 +1,0 @@
-syz_mount_image$msdos(&(0x7f00000000c0)='msdos\x00', &(0x7f0000000100)='./file0\x00', 0x0, 0x0, &(0x7f0000000640), 0x0, &(0x7f0000000740)={[{@fat=@sys_immutable='sys_immutable'}, {@fat=@gid={'gid', 0x3d, 0xee01}}, {@fat=@check_normal='check=normal'}]})

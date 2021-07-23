@@ -1,5 +1,0 @@
-creat(&(0x7f00000002c0)='./file0\x00', 0x0)
-clone(0x100, 0x0, 0xfffffffffffffffe, 0x0, 0xffffffffffffffff)
-pipe2$9p(&(0x7f00000001c0)={<r0=>0xffffffffffffffff, <r1=>0xffffffffffffffff}, 0x0)
-write$P9_RLERRORu(r1, &(0x7f0000000280)=ANY=[@ANYBLOB="1c"], 0x52)
-mount$9p_fd(0x0, &(0x7f0000000040)='./file0\x00', &(0x7f0000000100)='9p\x00', 0x0, &(0x7f0000000200)={'trans=fd,', {'rfdno', 0x3d, r0}, 0x2c, {'wfdno', 0x3d, r1}, 0x2c, {[{@version_u='version=9p2000.u', 0x52}]}})

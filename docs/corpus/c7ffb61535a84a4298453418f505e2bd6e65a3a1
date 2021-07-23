@@ -1,2 +1,0 @@
-r0 = socket$nl_route(0x10, 0x3, 0x0)
-sendmsg$nl_route_sched(r0, &(0x7f0000000140)={0x0, 0x0, &(0x7f0000000180)={&(0x7f00000002c0)=ANY=[@ANYBLOB="c00000002c00270d00"/20, @ANYRES32, @ANYBLOB="00000b0000000000f2ff00000700010066"], 0xc0}}, 0x0)

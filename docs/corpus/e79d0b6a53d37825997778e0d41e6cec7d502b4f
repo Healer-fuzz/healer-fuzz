@@ -1,6 +1,0 @@
-r0 = creat(&(0x7f0000000200)='./bus\x00', 0x0)
-r1 = creat(&(0x7f0000000040)='./bus\x00', 0x0)
-fallocate(r1, 0x1, 0x0, 0xc000000)
-writev(r1, &(0x7f0000000500)=[{&(0x7f0000000580)="99", 0x1}], 0x1)
-fallocate(r0, 0x20, 0x0, 0xffff77ff000)
-write$binfmt_script(r1, &(0x7f0000000600)={'#! ', './bus'}, 0x9)

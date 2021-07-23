@@ -1,5 +1,0 @@
-r0 = memfd_create(&(0x7f0000000080)='\aE\x93#\x06nodev\x00\xa8\x1e;V\xfb\'{\xdaK\x9f\x8a\xae\f\x91\xcdn\xdd\xadm\xe1\xe0`B\xca\x7f\xb0C\xd8?\xdc\xf5\b^\x127\xdfc2&\xdb\x7f\n\xdd\xc69i\"\xc6\xfb\xe7\xf2\xbbK^\x92\x9c\xa3Fi*\x83\xed\xab5\x02\x05\xb0u\x16\xa12|\xb8\x17Km?0\xe5', 0x6)
-r1 = socket(0xa, 0x2, 0x0)
-getsockopt$sock_cred(r1, 0x1, 0x11, &(0x7f0000caaffb)={0x0, <r2=>0x0}, &(0x7f0000cab000)=0xa)
-setresuid(0x0, r2, 0x0)
-fchown(r0, 0xee01, 0x0)

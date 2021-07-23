@@ -1,2 +1,0 @@
-r0 = gettid()
-ioprio_get$pid(0x3, r0)

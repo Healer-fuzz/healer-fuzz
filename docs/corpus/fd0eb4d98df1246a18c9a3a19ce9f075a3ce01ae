@@ -1,2 +1,0 @@
-mkdir(&(0x7f00000001c0)='./file0\x00', 0x0)
-mount$binder(0x0, &(0x7f0000001240)='./file0\x00', &(0x7f0000001280)='binder\x00', 0x0, &(0x7f0000000040)={[{@stats='stats=global'}]})

@@ -1,2 +1,0 @@
-r0 = socket$inet_smc(0x2b, 0x1, 0x0)
-ioctl$sock_SIOCETHTOOL(r0, 0x8946, &(0x7f0000000340)={'wlan1\x00', &(0x7f0000000300)=@ethtool_stats})

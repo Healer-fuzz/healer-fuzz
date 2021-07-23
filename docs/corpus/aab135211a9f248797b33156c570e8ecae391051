@@ -1,2 +1,0 @@
-r0 = syz_open_dev$vbi(&(0x7f0000000600)='/dev/vbi#\x00', 0x3, 0x2)
-ioctl$VIDIOC_S_OUTPUT(r0, 0xc004562f, &(0x7f0000000280)=0x1)

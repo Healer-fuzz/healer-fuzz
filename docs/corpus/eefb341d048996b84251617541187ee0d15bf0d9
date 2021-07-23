@@ -1,6 +1,0 @@
-r0 = openat$dlm_plock(0xffffffffffffff9c, &(0x7f0000000000)='/dev/dlm_plock\x00', 0x0, 0x0)
-syz_genetlink_get_family_id$l2tp(&(0x7f0000000080)='l2tp\x00', 0xffffffffffffffff)
-socket$nl_generic(0x10, 0x3, 0x10)
-syz_open_dev$dri(&(0x7f0000000380)='/dev/dri/card#\x00', 0x10001, 0x0)
-ioctl$ASHMEM_PURGE_ALL_CACHES(r0, 0x770a, 0x0)
-openat$dlm_plock(0xffffffffffffff9c, &(0x7f0000000580)='/dev/dlm_plock\x00', 0x103000, 0x0)

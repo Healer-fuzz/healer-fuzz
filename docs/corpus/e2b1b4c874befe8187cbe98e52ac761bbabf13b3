@@ -1,2 +1,0 @@
-r0 = syz_open_dev$vbi(&(0x7f0000000040)='/dev/vbi#\x00', 0x1, 0x2)
-ioctl$VIDIOC_TRY_FMT(r0, 0xc0d05640, &(0x7f0000000080)={0x7})

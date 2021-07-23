@@ -1,3 +1,0 @@
-r0 = openat$vhost_vsock(0xffffffffffffff9c, &(0x7f0000000340)='/dev/vhost-vsock\x00', 0x2, 0x0)
-ioctl$BTRFS_IOC_START_SYNC(r0, 0xaf01, 0x0)
-ioctl$BTRFS_IOC_SET_RECEIVED_SUBVOL(r0, 0x4004af07, 0x0)

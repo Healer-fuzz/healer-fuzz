@@ -1,2 +1,0 @@
-r0 = syz_open_dev$vim2m(&(0x7f0000000080)='/dev/video#\x00', 0x1fb, 0x2)
-ioctl$vim2m_VIDIOC_ENUM_FMT(r0, 0xc0405602, &(0x7f0000000000)={0x0, 0x1, 0x0, "4be47eb35795bedfa8159df8698a0a8207131d0b305409c537ae6983ce06c52c"})

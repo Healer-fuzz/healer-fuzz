@@ -1,5 +1,0 @@
-r0 = syz_init_net_socket$bt_hci(0x1f, 0x3, 0x1)
-bind$bt_hci(r0, &(0x7f0000000040)={0x1f, 0xffff, 0x3}, 0x6)
-write$binfmt_misc(r0, &(0x7f0000000080)=ANY=[@ANYBLOB="3200030007"], 0xd)
-r1 = openat$uinput(0xffffffffffffff9c, &(0x7f0000000000)='/dev/uinput\x00', 0x0, 0x0)
-dup2(r1, r0)

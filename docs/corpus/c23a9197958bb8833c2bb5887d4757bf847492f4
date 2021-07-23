@@ -1,4 +1,0 @@
-bpf$MAP_UPDATE_BATCH(0x1a, &(0x7f00000002c0)={&(0x7f0000000080)="695d180a843bffde75554bca1b91dd2ca3dabdbdd0e4062f972d096df7d9f79f197d267fd943212d1903f8b46f7bdfae61fe2ae8c8d4586ef7a913711c4c98a37bb9cb65540274e2e23e671677da1c940a", 0x0, 0x0, 0x0}, 0x38)
-r0 = openat$tun(0xffffffffffffff9c, &(0x7f0000000080)='/dev/net/tun\x00', 0x0, 0x0)
-ioctl$TUNSETIFF(r0, 0x400454ca, &(0x7f00000000c0)={'nr0\x00'})
-ioctl$TUNSETOFFLOAD(r0, 0x400454d0, 0x1)

@@ -1,2 +1,0 @@
-r0 = syz_open_dev$vcsa(&(0x7f0000000000)='/dev/vcsa#\x00', 0x1, 0x2)
-write$char_usb(r0, &(0x7f0000000040)="10", 0x8800000)

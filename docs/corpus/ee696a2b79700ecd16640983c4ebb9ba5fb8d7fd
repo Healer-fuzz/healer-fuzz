@@ -1,8 +1,0 @@
-r0 = socket$vsock_stream(0x28, 0x1, 0x0)
-bind$vsock_stream(r0, &(0x7f0000000380)={0x28, 0x0, 0x0, @host}, 0x10)
-r1 = socket$vsock_stream(0x28, 0x1, 0x0)
-listen(r0, 0x6)
-connect$vsock_stream(r1, &(0x7f0000000040), 0x10)
-r2 = accept$alg(r0, 0x0, 0x0)
-setsockopt$SO_VM_SOCKETS_BUFFER_MAX_SIZE(r1, 0x28, 0x2, &(0x7f0000000000), 0x8)
-sendmmsg$alg(r2, &(0x7f0000004a80)=[{0x0, 0x0, &(0x7f0000000240)=[{&(0x7f0000000100)="f75a4cfd0e71108426e384f4565927ce39b7abdeebd0097bdf578a2c67fcf6e48d03f07d26e4de015e1c4a73598b88687742893e9e8b253abd2e56d9d70b106e2b56710892b71c7b546acab0a80a56e95208a6ce9e97cceb8048794332e79f235f33a8a652e42b8daec36e41d1a825dc2218603e627de56d079627ab4936dc2943", 0x81}], 0x1}], 0x1, 0x44)

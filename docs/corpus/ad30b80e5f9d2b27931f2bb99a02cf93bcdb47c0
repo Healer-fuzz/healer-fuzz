@@ -1,7 +1,0 @@
-r0 = socket$unix(0x1, 0x1, 0x0)
-bind$unix(r0, &(0x7f0000003000)=@file={0x1, '\xe9\x1fq\x89Y\x1e\x923aK\x00'}, 0x6e)
-close(r0)
-eventfd(0x0)
-clone(0x40000000007fc, 0x0, 0xfffffffffffffffe, 0x0, 0xffffffffffffffff)
-r1 = fanotify_init(0x0, 0x0)
-mount$9p_fd(0x0, &(0x7f0000000100)='\xe9\x1fq\x89Y\x1e\x923aK\x00', &(0x7f0000000040)='9p\x00', 0x0, &(0x7f00000001c0)={'trans=fd,', {'rfdno', 0x3d, r0}, 0x2c, {'wfdno', 0x3d, r1}})

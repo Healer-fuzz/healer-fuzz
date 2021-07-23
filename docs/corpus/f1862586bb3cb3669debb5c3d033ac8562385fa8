@@ -1,6 +1,0 @@
-r0 = socket$inet_udp(0x2, 0x2, 0x0)
-r1 = memfd_create(&(0x7f0000000080)='#}\x04\xe4\xfc\x1e\xff~\xb1\xe0\xa5\x9d\xc8\xca3\'\x12xY!\xacvaR\x83o\x03d\x91\xd5\x04i}\x03\x00@\x0e\xe6\x995b\x00\x00\x00\x00\x00\x00\x00\x8e\x96\xb7=\xb9OmILO\x8d\x00\x00\x00\x00\x00\xfe\x00\x00\x00\x00\x00\x00\x00\x00\x00', 0x0)
-setsockopt$inet_mtu(r0, 0x0, 0xa, &(0x7f0000000280)=0x3, 0x3)
-ftruncate(r1, 0x40001)
-connect$inet(r0, &(0x7f0000000040)={0x2, 0x0, @remote}, 0x10)
-sendfile(r0, r1, 0x0, 0xffe4)

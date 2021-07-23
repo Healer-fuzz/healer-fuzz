@@ -1,5 +1,0 @@
-r0 = openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
-mmap(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x380000a, 0x12, r0, 0x0)
-preadv(r0, &(0x7f0000000280), 0x18, 0xd9f, 0x0)
-symlink(&(0x7f0000000140)='./file0/../file0\x00', &(0x7f0000000100)='./file0\x00')
-syz_mount_image$nfs(&(0x7f0000000080)='nfs\x00', &(0x7f0000000040)='./file0/../file0\x00', 0x0, 0x3, &(0x7f00000015c0)=[{&(0x7f0000000300)="7f664c11fa619b815f583b5ea537536f3aecd8863ce6e914718aea8d907711245dccf683198302719d55b20982efaf4ae66fc207cf9359b0b2546af2aa9d6ee8ddcf4c433f70ff39d988f5bb3bd56ab83b946ea2e47b4120119517", 0x5b, 0xfffffffffffffaf4}, {&(0x7f0000000440)="f38ef1ca26b8ad5a0857741429a3a0c10795c737c95ecf234b43763faae82a0e4b", 0x21, 0x1}, {0x0, 0x0, 0xc62}], 0x0, &(0x7f0000001680)={[], [{@subj_type={'subj_type', 0x3d, '(:\\,}'}}]})

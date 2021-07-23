@@ -1,5 +1,0 @@
-clone(0x20002044dfc, 0x0, 0xfffffffffffffffe, 0x0, 0xffffffffffffffff)
-exit_group(0x0)
-mkdir(&(0x7f0000000400)='./file0\x00', 0x0)
-r0 = openat$fuse(0xffffffffffffff9c, &(0x7f00000000c0)='/dev/fuse\x00', 0x42, 0x0)
-mount$fuseblk(&(0x7f0000000000)='/dev/loop0\x00', &(0x7f0000002040)='./file0\x00', &(0x7f0000004300)='fuseblk\x00', 0x0, &(0x7f0000000480)={{'fd', 0x3d, r0}, 0x2c, {'rootmode', 0x3d, 0x4000}, 0x2c, {'user_id'}, 0x2c, {'group_id'}})

@@ -1,1 +1,0 @@
-syz_mount_image$jfs(&(0x7f0000001380)='jfs\x00', &(0x7f00000013c0)='./file0\x00', 0x0, 0x0, &(0x7f0000001980), 0x0, &(0x7f0000001a80)=ANY=[@ANYBLOB='iocharset=maccenteuro,uid=', @ANYRESHEX=0xee01, @ANYBLOB=',integrity'])

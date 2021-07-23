@@ -1,3 +1,0 @@
-setsockopt$CAIFSO_REQ_PARAM(0xffffffffffffffff, 0x116, 0x80, &(0x7f0000000000)="8ccd3ed3604b53a7d7c3e3995c42d7605b", 0x11)
-r0 = socket$nl_audit(0x10, 0x3, 0x9)
-ioctl$sock_ifreq(r0, 0x8922, &(0x7f0000000000)={'netdevsim0\x00', @ifru_ivalue})

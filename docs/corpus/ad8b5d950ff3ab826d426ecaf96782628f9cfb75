@@ -1,2 +1,0 @@
-bpf$BPF_TASK_FD_QUERY(0x14, &(0x7f0000000180)={0x0, 0xffffffffffffffff, 0x0, 0x20, &(0x7f0000000000)='/proc/net/\x00\x00t4/c+\x0fG\xf9aK\fX\a0\x04\x00\x00\x82q\xee'}, 0x30)
-openat$cgroup_root(0xffffffffffffff9c, &(0x7f0000000000), 0x200002, 0x0)

@@ -1,4 +1,0 @@
-r0 = openat$ppp(0xffffffffffffff9c, &(0x7f0000000200)='/dev/ppp\x00', 0x80000101005, 0x0)
-r1 = dup2(r0, r0)
-ioctl$EVIOCGPROP(r1, 0xc004743e, &(0x7f0000000000)=""/246)
-pwritev(r1, &(0x7f0000001580)=[{&(0x7f0000000340)='\x00!', 0x2}], 0x1, 0x0, 0x0)

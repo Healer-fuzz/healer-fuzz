@@ -1,2 +1,0 @@
-r0 = syz_open_dev$vbi(&(0x7f0000000000)='/dev/vbi#\x00', 0x2, 0x2)
-ioctl$VIDIOC_UNSUBSCRIBE_EVENT(r0, 0xc0d05605, &(0x7f0000000040)={0x4})

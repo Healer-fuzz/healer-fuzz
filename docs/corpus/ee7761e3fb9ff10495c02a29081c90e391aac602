@@ -1,3 +1,0 @@
-r0 = socket$inet6(0xa, 0x2, 0x0)
-bind$inet6(r0, &(0x7f0000000040)={0xa, 0xe22, 0x0, @mcast2, 0x2}, 0x1c)
-syz_emit_ethernet(0x83, &(0x7f0000000100)={@local, @local, @void, {@ipv6={0x86dd, @udp={0x0, 0x6, '\b\x00', 0x4d, 0x11, 0x0, @remote, @mcast2, {[], {0x0, 0xe22, 0x4d, 0x0, @opaque="065fc90c327e0a804b77dcc2a3468d04b4ec601e5f0ba1e02e34086d085e09bb13de72931b2b327db53ab617471b52c43abd6a5a559dea2b5a410d12b7122e2089b2894858"}}}}}}, 0x0)

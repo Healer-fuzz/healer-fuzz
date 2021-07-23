@@ -1,2 +1,0 @@
-r0 = add_key$keyring(&(0x7f0000000080)='keyring\x00', &(0x7f00000000c0)={'syz', 0x3}, 0x0, 0x0, 0xfffffffffffffffe)
-keyctl$search(0x6, r0, &(0x7f00000002c0)='id_resolver\x00', 0x0, 0x0)

@@ -1,6 +1,0 @@
-r0 = openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
-pipe(&(0x7f0000000380)={<r1=>0xffffffffffffffff, <r2=>0xffffffffffffffff})
-close(r2)
-close(r0)
-pipe2(&(0x7f0000000280), 0x84800)
-splice(r1, 0x0, r2, 0x0, 0x8000, 0x0)

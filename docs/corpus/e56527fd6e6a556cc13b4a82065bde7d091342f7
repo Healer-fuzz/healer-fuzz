@@ -1,2 +1,0 @@
-r0 = openat$ipvs(0xffffffffffffff9c, &(0x7f00000006c0)='/proc/sys/net/ipv4/vs/sync_ports\x00', 0x2, 0x0)
-write$RDMA_USER_CM_CMD_LEAVE_MCAST(r0, 0x0, 0x0)

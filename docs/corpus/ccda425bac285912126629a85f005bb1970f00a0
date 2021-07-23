@@ -1,6 +1,0 @@
-pipe(&(0x7f0000000000)={<r0=>0xffffffffffffffff, <r1=>0xffffffffffffffff})
-r2 = socket$alg(0x26, 0x5, 0x0)
-bind$alg(r2, &(0x7f00000002c0)={0x26, 'hash\x00', 0x0, 0x0, 'sm3\x00'}, 0x58)
-r3 = accept4(r2, 0x0, 0x0, 0x0)
-vmsplice(r1, &(0x7f0000000240)=[{&(0x7f0000000340)="549fbe57f035280d7e291a645cd27ce21e0932d943812033610f1402273d33d18b4309758f791895928a84fa65e43cbbe836c4cca41f5b0fbefb51cdefc0d8e1d29c689a0d78cd3b56d243475b0f3a8e8dd18cf85480a1472737829c1f661418138055fe722d1beeb15a0cddd7bddd7c74ed5da9ec482e3e7292c104db0a0270", 0x80}], 0x1, 0x0)
-splice(r0, 0x0, r3, 0x0, 0x1ea71, 0x0)

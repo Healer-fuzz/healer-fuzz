@@ -1,7 +1,0 @@
-socket$inet_udplite(0x2, 0x2, 0x88)
-socketpair$unix(0x1, 0x2, 0x0, &(0x7f0000000040))
-socket$inet6_tcp(0xa, 0x1, 0x0)
-socket$inet_udplite(0x2, 0x2, 0x88)
-socket$inet6_tcp(0xa, 0x1, 0x0)
-openat$mixer(0xffffffffffffff9c, &(0x7f00000003c0)='/dev/mixer\x00', 0x0, 0x0)
-syz_execute_func(&(0x7f0000000080)="b16c91cd808e6b006969ef69dc00d98a20d0d0c402793382040000001cc1c7c7e4c653fb0fc4014c5868f4a95ff965be3c3bc4e17950ea01efc48192558dc3c366450f186746d1d97c7c730f5726400f0d18c4de306d5f660fc226f7714600000a8ab1b1820142d86f04f404f4bd110f00204ffe4ffefe")

@@ -1,2 +1,0 @@
-r0 = syz_open_procfs(0xffffffffffffffff, &(0x7f0000001980)='cpuset\x00')
-read$FUSE(r0, &(0x7f0000003a00)={0x2020}, 0x2020)

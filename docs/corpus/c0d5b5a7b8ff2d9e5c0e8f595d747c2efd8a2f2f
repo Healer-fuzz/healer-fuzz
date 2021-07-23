@@ -1,3 +1,0 @@
-r0 = openat$pidfd(0xffffffffffffff9c, &(0x7f0000000080)='/proc/self\x00', 0x0, 0x0)
-r1 = dup(r0)
-mkdirat$cgroup(r1, &(0x7f0000000040)='syz1\x00', 0x1ff)

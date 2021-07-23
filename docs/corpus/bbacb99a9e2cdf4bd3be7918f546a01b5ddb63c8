@@ -1,4 +1,0 @@
-syz_init_net_socket$nl_generic(0x10, 0x3, 0x10)
-syz_genetlink_get_family_id$ieee802154(&(0x7f0000000380)='802.15.4 MAC\x00', 0xffffffffffffffff)
-syz_init_net_socket$nl_generic(0x10, 0x3, 0x10)
-syz_init_net_socket$nl_generic(0x10, 0x3, 0x10)

@@ -1,2 +1,0 @@
-r0 = syz_open_dev$sg(&(0x7f0000000100)='/dev/sg#\x00', 0x0, 0x20081)
-ioctl$SG_GET_REQUEST_TABLE(r0, 0x2286, &(0x7f0000000140))

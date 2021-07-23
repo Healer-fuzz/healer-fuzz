@@ -1,3 +1,0 @@
-io_uring_setup(0x0, &(0x7f0000000000))
-r0 = socket$l2tp6(0xa, 0x2, 0x73)
-ioctl$sock_TIOCINQ(r0, 0x541b, &(0x7f00000000c0))

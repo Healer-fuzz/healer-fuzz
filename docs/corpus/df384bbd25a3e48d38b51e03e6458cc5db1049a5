@@ -1,3 +1,0 @@
-r0 = syz_open_dev$cec(&(0x7f0000000000)='/dev/cec#\x00', 0xffffffffffffffff, 0x2)
-ioctl$IOC_PR_PREEMPT(r0, 0x40046109, &(0x7f0000000080)={0x32})
-close(r0)

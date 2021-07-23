@@ -1,3 +1,0 @@
-r0 = openat$loop_ctrl(0xffffffffffffff9c, &(0x7f0000000140)='/dev/loop-control\x00', 0x0, 0x0)
-r1 = syz_init_net_socket$nfc_raw(0x27, 0x5, 0x0)
-dup2(r0, r1)

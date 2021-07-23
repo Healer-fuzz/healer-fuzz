@@ -1,3 +1,0 @@
-r0 = openat$nullb(0xffffffffffffff9c, &(0x7f0000001000)='/dev/nullb0\x00', 0x101802, 0x0)
-r1 = dup(r0)
-fallocate(r1, 0x0, 0x0, 0x34bdf880)

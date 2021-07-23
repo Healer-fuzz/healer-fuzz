@@ -1,3 +1,0 @@
-openat$dlm_monitor(0xffffffffffffff9c, &(0x7f0000000000)='/dev/dlm-monitor\x00', 0x0, 0x0)
-r0 = socket$inet6(0xa, 0x3, 0x5)
-ioctl$sock_inet6_udp_SIOCOUTQ(r0, 0x5411, &(0x7f0000000040))

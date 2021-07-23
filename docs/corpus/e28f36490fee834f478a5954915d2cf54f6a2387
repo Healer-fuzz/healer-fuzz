@@ -1,3 +1,0 @@
-r0 = openat$proc_mixer(0xffffffffffffff9c, &(0x7f0000000000)='/proc/asound/card2/oss_mixer\x00', 0x101402, 0x0)
-write$binfmt_elf64(r0, 0x0, 0x0)
-close(r0)

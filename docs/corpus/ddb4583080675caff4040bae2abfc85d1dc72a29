@@ -1,3 +1,0 @@
-r0 = gettid()
-r1 = gettid()
-kcmp(r0, r1, 0x1, 0xffffffffffffffff, 0xffffffffffffffff)

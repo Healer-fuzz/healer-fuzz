@@ -1,7 +1,0 @@
-r0 = openat$zero(0xffffffffffffff9c, &(0x7f0000000000)='/dev/zero\x00', 0x0, 0x0)
-r1 = openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
-mmap(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x380000d, 0x12, r1, 0x0)
-preadv(r0, &(0x7f0000000280)=[{0x0}], 0x1, 0x0, 0x0)
-mprotect(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x6)
-add_key$fscrypt_v1(&(0x7f0000000240)='logon\x00', 0x0, 0x0, 0x0, 0xfffffffffffffffd)
-add_key$fscrypt_provisioning(&(0x7f0000000040)='fscrypt-provisioning\x00', &(0x7f0000000080)={'syz', 0x1}, &(0x7f00000001c0)={0x2, 0x0, @a='\x01\x02\x03\x04\x05\x06\a\b\t\n\v\f\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !\"#$%&\'()*+,-./0123456789:;<=>?@'}, 0x48, 0xfffffffffffffffd)

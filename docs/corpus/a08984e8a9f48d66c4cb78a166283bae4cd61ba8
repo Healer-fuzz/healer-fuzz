@@ -1,3 +1,0 @@
-r0 = openat$rtc(0xffffffffffffff9c, &(0x7f00000000c0)='/dev/rtc0\x00', 0x0, 0x0)
-ioctl$RTC_PIE_ON(r0, 0x7005)
-ioctl$RTC_IRQP_SET(r0, 0x4008700c, 0x13bc)

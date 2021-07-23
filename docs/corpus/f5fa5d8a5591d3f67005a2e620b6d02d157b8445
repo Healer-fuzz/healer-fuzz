@@ -1,1 +1,0 @@
-syz_mount_image$xfs(&(0x7f0000001fc0)='xfs\x00', &(0x7f0000002000)='./file0\x00', 0x0, 0x0, &(0x7f00000022c0), 0x80, &(0x7f0000002340)={[{@usrquota='usrquota'}, {@gqnoenforce='gqnoenforce'}, {@noalign='noalign'}, {@swalloc='swalloc'}, {@nodiscard='nodiscard'}]})

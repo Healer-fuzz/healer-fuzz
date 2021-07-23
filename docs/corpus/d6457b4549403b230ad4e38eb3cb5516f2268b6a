@@ -1,1 +1,0 @@
-syz_emit_vhci(&(0x7f0000000280)=@HCI_VENDOR_PKT, 0x2)

@@ -1,2 +1,0 @@
-r0 = fsopen(&(0x7f0000000200)='virtiofs\x00', 0x0)
-fsconfig$FSCONFIG_SET_FD(r0, 0x2, &(0x7f0000000080)='\x00', 0x2, r0)

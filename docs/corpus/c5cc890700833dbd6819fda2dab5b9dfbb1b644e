@@ -1,5 +1,0 @@
-openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
-syz_usb_connect(0x4, 0x24, 0x0, 0x0)
-prctl$PR_SET_MM_EXE_FILE(0x23, 0xd, 0xffffffffffffffff)
-r0 = syz_usb_connect(0x0, 0x2d, &(0x7f0000000040)=ANY=[@ANYBLOB="1201000005d0d3087d07aa04d85b0102030109021b0001000000000904000001dbcc7a000905851340"], 0x0)
-syz_usb_control_io$hid(r0, 0x0, 0x0)

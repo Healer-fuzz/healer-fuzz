@@ -1,1 +1,0 @@
-syz_mount_image$gfs2(&(0x7f0000006280)='gfs2\x00', &(0x7f00000062c0)='./file0\x00', 0x0, 0x0, &(0x7f00000064c0), 0x0, &(0x7f0000000000)={[{@statfs_percent={'statfs_percent', 0x3d, 0xd925}}]})

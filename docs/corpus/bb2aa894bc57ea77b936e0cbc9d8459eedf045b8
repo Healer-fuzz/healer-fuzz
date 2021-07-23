@@ -1,2 +1,0 @@
-r0 = openat$mice(0xffffffffffffff9c, &(0x7f0000002b00)='/dev/input/mice\x00', 0x0)
-mq_getsetattr(r0, 0x0, 0x0)

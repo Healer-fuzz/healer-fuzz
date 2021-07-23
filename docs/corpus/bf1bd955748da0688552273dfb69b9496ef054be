@@ -1,2 +1,0 @@
-r0 = syz_open_dev$tty1(0xc, 0x4, 0x1)
-ioctl$VT_RESIZEX(r0, 0x4b4a, &(0x7f0000000380))

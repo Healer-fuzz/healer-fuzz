@@ -1,1 +1,0 @@
-getpriority(0x1, 0xffffffffffffffff)

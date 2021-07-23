@@ -1,2 +1,0 @@
-symlink(&(0x7f0000000000)='./file0\x00', &(0x7f0000000100)='./file0\x00')
-utimensat(0xffffffffffffff9c, &(0x7f0000001180)='./file0\x00', &(0x7f00000011c0), 0x2)

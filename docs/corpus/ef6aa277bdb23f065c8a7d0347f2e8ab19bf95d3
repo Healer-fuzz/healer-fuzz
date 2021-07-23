@@ -1,3 +1,0 @@
-mkdir(&(0x7f00000003c0)='./file0\x00', 0x0)
-clone(0x800100, 0x0, 0xfffffffffffffffe, 0x0, 0xffffffffffffffff)
-mount$overlay(0x0, &(0x7f0000000200)='./file0\x00', &(0x7f00000000c0)='overlay\x00', 0x0, &(0x7f0000000240)=ANY=[@ANYBLOB='lowerdir=.:file0'])

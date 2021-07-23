@@ -1,2 +1,0 @@
-r0 = syz_open_procfs(0xffffffffffffffff, &(0x7f0000000080)='net/ip6_mr_cache\x00')
-preadv(r0, &(0x7f0000003580)=[{&(0x7f0000000100)=""/84, 0x54}], 0x1, 0x20, 0x0)

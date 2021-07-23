@@ -1,1 +1,0 @@
-syz_mount_image$udf(&(0x7f0000006900)='udf\x00', &(0x7f0000006940)='./file0\x00', 0x0, 0x0, &(0x7f0000006b00), 0x0, &(0x7f0000006b80)={[{@utf8='utf8'}, {@iocharset={'iocharset', 0x3d, 'cp874'}}]})

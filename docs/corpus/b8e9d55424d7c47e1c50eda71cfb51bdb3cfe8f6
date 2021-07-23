@@ -1,3 +1,0 @@
-syz_mount_image$ext4(0x0, &(0x7f0000000100)='./file0\x00', 0x0, 0x0, 0x0, 0x0, 0x0)
-lsetxattr$system_posix_acl(&(0x7f00000008c0)='./file0\x00', &(0x7f0000000900)='system.posix_acl_default\x00', &(0x7f0000000ac0)={{}, {}, [{}, {}, {}, {}], {}, [{}, {}, {}]}, 0x5c, 0x0)
-listxattr(&(0x7f0000000140)='./file0\x00', &(0x7f0000000180)=""/8, 0x8)

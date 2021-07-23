@@ -1,8 +1,0 @@
-openat(0xffffffffffffff9c, 0x0, 0x0, 0x0)
-ioctl$IOC_PR_PREEMPT(0xffffffffffffffff, 0x401070c9, 0x0)
-mkdir(&(0x7f0000000240)='./file1\x00', 0x0)
-mkdir(&(0x7f0000000040)='./bus\x00', 0x0)
-symlink(&(0x7f00000000c0)='./bus\x00', &(0x7f0000000140)='./bus/file1\x00')
-mkdir(&(0x7f0000000080)='./file0\x00', 0x0)
-mount$overlay(0x400002, &(0x7f0000000000)='./bus\x00', &(0x7f0000000100)='overlay\x00', 0x0, &(0x7f00000003c0)=ANY=[@ANYBLOB='upperdir=./file1,lowerdir=./bus,workdir=./file0,metacopy=on'])
-rename(&(0x7f00000001c0)='./bus/file1\x00', &(0x7f0000003340)='./bus/file2\x00')

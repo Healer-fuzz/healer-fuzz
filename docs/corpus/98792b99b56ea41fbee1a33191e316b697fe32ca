@@ -1,5 +1,0 @@
-r0 = socket$inet6_tcp(0xa, 0x1, 0x0)
-setsockopt$inet6_tcp_TCP_MD5SIG(r0, 0x6, 0xe, &(0x7f0000000800)={@in6={{0xa, 0x0, 0x0, @ipv4={[], [], @multicast2}}}, 0x0, 0x0, 0x22, 0x0, "b74f5b12ee62fd11f9f3e1045eb5eea5730e6ff765a3131ee81cb88964293f97e80a93d29e83f4e663c52f03046875fa464df8e9f7d1f7057c421d2830f6e002e1c194b420f52c7d8a6d9d9b2c8bdb62"}, 0xd8)
-setsockopt$inet6_tcp_TCP_MD5SIG(r0, 0x6, 0xe, &(0x7f0000000800)={@in6={{0xa, 0x0, 0x0, @ipv4={[], [], @multicast2}}}, 0x0, 0x0, 0x0, 0x0, "b74f5b12ee62fd11f9f3e1045eb5eea5730e6ff765a3131ee81cb88964293f97e80a93d29e83f4e663c52f03046875fa464df8e9f7d1f7057c421d2830f6e002e1c194b420f52c7d8a6d9d9b2c8bdb62"}, 0xd8)
-r1 = socket$inet6_tcp(0xa, 0x1, 0x0)
-dup2(r1, r0)

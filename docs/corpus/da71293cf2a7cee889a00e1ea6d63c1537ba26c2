@@ -1,7 +1,0 @@
-r0 = socket$inet6_tcp(0xa, 0x1, 0x0)
-bind$inet6(r0, &(0x7f0000000040)={0xa, 0x5e22}, 0x1c)
-listen(r0, 0x0)
-r1 = socket$netlink(0x10, 0x3, 0x8000000004)
-openat(0xffffffffffffff9c, 0x0, 0x0, 0x0)
-preadv(0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0)
-writev(r1, &(0x7f0000000080)=[{&(0x7f00000001c0)="580000001400add427323b470c45b45602067fffffff81004e22000d00ff0028925aa80020007b00090080000efffeffe809000000ff0000f03ac71082300000ffffffffffffffffffe7ee00000000000000000200000000", 0x58}], 0x1)

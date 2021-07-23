@@ -1,2 +1,0 @@
-r0 = syz_open_procfs$userns(0xffffffffffffffff, &(0x7f0000000300)='ns/user\x00')
-ioctl$NS_GET_NSTYPE(r0, 0xb703, 0x0)

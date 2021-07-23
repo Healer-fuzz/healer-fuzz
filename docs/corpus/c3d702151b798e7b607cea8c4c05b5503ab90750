@@ -1,3 +1,0 @@
-r0 = syz_open_dev$ndb(&(0x7f0000000240)='/dev/nbd#\x00', 0x0, 0x0)
-fork()
-ioctl$BLKIOOPT(r0, 0x1279, &(0x7f0000000080))

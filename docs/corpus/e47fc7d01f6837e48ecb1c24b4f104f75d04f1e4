@@ -1,2 +1,0 @@
-r0 = syz_open_dev$loop(&(0x7f0000000000)='/dev/loop#\x00', 0x40000000, 0x181083)
-ioctl$BLKBSZSET(r0, 0x40081271, &(0x7f0000000080)=0x400)

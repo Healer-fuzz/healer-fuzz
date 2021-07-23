@@ -1,2 +1,0 @@
-r0 = socket$nl_rdma(0x10, 0x3, 0x14)
-ioctl$sock_SIOCETHTOOL(r0, 0x8946, &(0x7f0000000300)={'veth0_vlan\x00', &(0x7f00000002c0)=@ethtool_pauseparam={0x26}})

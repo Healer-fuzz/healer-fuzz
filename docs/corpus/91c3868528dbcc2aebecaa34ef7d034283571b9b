@@ -1,2 +1,0 @@
-r0 = syz_open_procfs(0x0, &(0x7f0000000380)='mountstats\x00')
-preadv(r0, &(0x7f0000000940)=[{&(0x7f0000000400)=""/52, 0x34}], 0x1, 0x7fff, 0x0)

@@ -1,2 +1,0 @@
-r0 = openat$proc_mixer(0xffffffffffffff9c, &(0x7f0000000400)='/proc/asound/card2/oss_mixer\x00', 0x121401, 0x0)
-write$proc_mixer(r0, &(0x7f0000000440)=ANY=[], 0xdf)

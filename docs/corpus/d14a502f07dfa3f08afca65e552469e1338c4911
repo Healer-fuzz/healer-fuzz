@@ -1,4 +1,0 @@
-r0 = syz_genetlink_get_family_id$nl80211(&(0x7f0000000040)='nl80211\x00', 0xffffffffffffffff)
-r1 = socket$nl_generic(0x10, 0x3, 0x10)
-ioctl$sock_SIOCGIFINDEX_80211(r1, 0x8933, &(0x7f0000000a00)={'wlan1\x00', <r2=>0x0})
-sendmsg$NL80211_CMD_CHANNEL_SWITCH(r1, &(0x7f0000000c40)={0x0, 0x0, &(0x7f0000000c00)={&(0x7f0000000a40)={0x2c, r0, 0x1, 0x0, 0x0, {{}, {@val={0x8, 0x3, r2}, @void}}, [@chandef_params=[@NL80211_ATTR_WIPHY_FREQ={0x8}], @NL80211_ATTR_CH_SWITCH_COUNT={0x8, 0xb7, 0x10000d6}]}, 0x2c}}, 0x0)

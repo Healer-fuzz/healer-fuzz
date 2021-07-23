@@ -1,8 +1,0 @@
-r0 = openat$kvm(0xffffffffffffff9c, &(0x7f0000000200)='/dev/kvm\x00', 0x0, 0x0)
-r1 = ioctl$KVM_CREATE_VM(r0, 0xae01, 0x0)
-syz_kvm_setup_cpu$x86(0xffffffffffffffff, 0xffffffffffffffff, &(0x7f000001f000/0x18000)=nil, &(0x7f0000000000)=[@text16={0x10, &(0x7f0000000080)="0f326766c7442400596769df6766c7442402f69bc91a6766c744240600000000670f0114240f09da3d66b90902000066b80048000066ba000000000f300f005dde66b9ba080000baa10066edbaf80c66b8102c178c66efbafc0c66b80e00000066ef0f06d9e8", 0x66}], 0x1, 0x0, 0x0, 0x0)
-r2 = ioctl$KVM_CREATE_VCPU(r1, 0xae41, 0x0)
-ioctl$KVM_SET_USER_MEMORY_REGION(r1, 0x4020ae46, &(0x7f0000bf7000)={0x0, 0x0, 0x0, 0x2000, &(0x7f0000000000/0x2000)=nil})
-ioctl$KVM_SET_REGS(r2, 0x4090ae82, &(0x7f0000000140)={[0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0xc5e]})
-ioctl$KVM_RUN(r2, 0xae80, 0x0)
-ioctl$KVM_RUN(r2, 0xae80, 0x0)

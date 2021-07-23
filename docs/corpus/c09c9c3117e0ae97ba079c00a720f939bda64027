@@ -1,6 +1,0 @@
-r0 = syz_open_dev$ndb(&(0x7f0000000040)='/dev/nbd#\x00', 0x0, 0x0)
-socketpair$nbd(0x1, 0x1, 0x0, &(0x7f0000000000)={<r1=>0xffffffffffffffff})
-ioctl$NBD_SET_SOCK(r0, 0xab00, r1)
-ioctl$NBD_CLEAR_SOCK(r0, 0xab03)
-add_key$keyring(&(0x7f0000000380)='keyring\x00', &(0x7f00000003c0)={'syz', 0x3}, 0x0, 0x0, 0xffffffffffffffff)
-ioctl$NBD_CLEAR_SOCK(r0, 0xab04)

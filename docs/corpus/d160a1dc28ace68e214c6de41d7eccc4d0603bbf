@@ -1,5 +1,0 @@
-r0 = syz_mount_image$vfat(&(0x7f00000000c0)='vfat\x00', &(0x7f0000000100)='./file0\x00', 0x0, 0x2, &(0x7f00000001c0)=[{&(0x7f0000000000)="eb3c906d6b66732e66617400028001000240000004f801", 0x17}, {&(0x7f0000000380)="b02271912f6f03fe5ff401836fec0391bdc140", 0x13, 0xb4e}], 0x0, &(0x7f0000000080)={[{@iocharset={'iocharset', 0x3d, 'cp860'}}]})
-r1 = openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
-mmap(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x1800003, 0x12, r1, 0x0)
-preadv(r1, &(0x7f0000000280), 0x18, 0xd9f, 0x0)
-mknodat(r0, &(0x7f0000000100)='./file0\x00', 0x0, 0x0)

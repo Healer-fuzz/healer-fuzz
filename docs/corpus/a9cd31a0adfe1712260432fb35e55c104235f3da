@@ -1,4 +1,0 @@
-mkdir(&(0x7f0000000000)='./file1\x00', 0x0)
-pipe(&(0x7f0000000100)={0xffffffffffffffff, <r0=>0xffffffffffffffff})
-mount$fuse(0x0, 0x0, 0x0, 0x0, &(0x7f0000000400)=ANY=[@ANYBLOB='fd=', @ANYRESHEX=r0])
-mount(0x0, &(0x7f0000000380)='./file1\x00', &(0x7f0000000080)='fuse\x00', 0x0, &(0x7f0000000400))

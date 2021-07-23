@@ -1,2 +1,0 @@
-r0 = openat$cuse(0xffffffffffffff9c, &(0x7f0000000140)='/dev/cuse\x00', 0x2, 0x0)
-writev(r0, &(0x7f0000002580)=[{&(0x7f0000000100)="92d96157d8a7c848f1af32", 0xb}, {&(0x7f0000000140)="4d93eee041", 0x5}], 0x2)

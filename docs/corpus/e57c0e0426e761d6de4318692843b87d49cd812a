@@ -1,2 +1,0 @@
-r0 = syz_open_dev$usbmon(&(0x7f0000000000)='/dev/usbmon#\x00', 0x0, 0x121701)
-read$usbmon(r0, 0x0, 0x0)

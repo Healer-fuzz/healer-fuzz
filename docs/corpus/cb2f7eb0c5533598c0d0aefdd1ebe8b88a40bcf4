@@ -1,4 +1,0 @@
-r0 = socket$inet6(0xa, 0x80002, 0x0)
-setsockopt$inet6_udp_encap(r0, 0x11, 0x64, &(0x7f0000000300)=0x1, 0x4)
-bind$inet6(r0, &(0x7f0000000040)={0xa, 0x4e20, 0x0, @empty}, 0x1c)
-syz_emit_ethernet(0xbe, &(0x7f00000000c0)={@local, @multicast, @void, {@ipv4={0x800, @udp={{0x5, 0x4, 0x0, 0x0, 0xb0, 0x0, 0x0, 0x0, 0x11, 0x0, @empty, @broadcast}, {0x0, 0x4e20, 0x9c, 0x0, @wg=@initiation={0x1, 0x0, "7c5e52b9ad6acac9ec500f5af7d1319b8eff759180e1e187eaf0876d1670aa3b", "e8b4674239c8d248790667585c5f12a240e914715750217c484acf463f435de660f87ae01a6cc6ff78920dee6b0a09fd", "efcc05cb78c4a8f95634df969c5be6abffb17a1cc6d01b5370500ecf", {"b3b1d50189ca04003c8358dd6ef422cf", "fb5003a7fccbefb34c00604dab919f55"}}}}}}}, 0x0)

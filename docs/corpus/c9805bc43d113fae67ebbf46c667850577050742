@@ -1,3 +1,0 @@
-r0 = openat$6lowpan_control(0xffffffffffffff9c, &(0x7f0000000000)='/sys/kernel/debug/bluetooth/6lowpan_control\x00', 0x2, 0x0)
-write$6lowpan_control(0xffffffffffffffff, &(0x7f0000000040)='disconnect aa:aa:aa:aa:aa:11 2', 0x1e)
-write$6lowpan_control(r0, &(0x7f0000000040)='connect aa:aa:aa:aa:aa:11 1', 0x23)

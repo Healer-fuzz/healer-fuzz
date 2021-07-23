@@ -1,2 +1,0 @@
-r0 = syz_open_procfs(0xffffffffffffffff, &(0x7f0000000000)='net/packet\x00')
-preadv2(r0, &(0x7f0000000280)=[{&(0x7f0000000080)=""/236, 0xec}], 0x1, 0x1, 0x0, 0x0)

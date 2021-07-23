@@ -1,3 +1,0 @@
-r0 = syz_usb_connect(0x0, 0x36, &(0x7f00000000c0)=ANY=[@ANYBLOB="31010000dccd5e08cb060900be65200084010902240001000000000904340102d46de70009058acfe2"], 0x0)
-syz_usb_control_io$printer(r0, 0x0, 0x0)
-syz_open_dev$evdev(&(0x7f0000000900)='/dev/input/event#\x00', 0x4, 0x0)

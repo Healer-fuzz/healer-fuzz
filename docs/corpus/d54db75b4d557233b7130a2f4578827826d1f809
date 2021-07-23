@@ -1,2 +1,0 @@
-r0 = syz_mount_image$afs(&(0x7f0000001480)='afs\x00', &(0x7f0000000040)='./file0\x00', 0x0, 0x0, 0x0, 0x0, &(0x7f00000014c0)=ANY=[@ANYBLOB="736f757263653d255e5d3a7a0dde5d28ac6f4b7c11891764d503f2187b3a0f805b2d2d3a2c64796e"])
-openat$incfs(r0, &(0x7f0000000600)='.log\x00', 0x88043, 0x0)

@@ -1,5 +1,0 @@
-rt_sigprocmask(0x0, &(0x7f000078b000)={[0xfffffffffffffffd]}, 0x0, 0x8)
-r0 = gettid()
-tkill(r0, 0x3c)
-r1 = signalfd(0xffffffffffffffff, &(0x7f00007aeff8)={[0xfffffffffffffffc]}, 0x8)
-read(r1, &(0x7f0000000740)=""/384, 0xff94)

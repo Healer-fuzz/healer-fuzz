@@ -1,6 +1,0 @@
-mkdirat(0xffffffffffffff9c, &(0x7f0000000040)='./file0\x00', 0x0)
-mount(0x0, &(0x7f0000000200)='./file0\x00', &(0x7f0000000440)='proc\x00', 0x0, 0x0)
-r0 = open$dir(&(0x7f0000000080)='./file0\x00', 0x0, 0x0)
-getdents64(r0, &(0x7f0000000540)=""/188, 0x724)
-getdents64(r0, &(0x7f00000000c0)=""/224, 0xe0)
-getdents(r0, 0x0, 0x700)

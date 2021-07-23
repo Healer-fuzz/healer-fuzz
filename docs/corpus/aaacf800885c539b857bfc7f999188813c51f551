@@ -1,7 +1,0 @@
-r0 = gettid()
-r1 = openat$sndseq(0xffffffffffffff9c, &(0x7f0000000000)='/dev/snd/seq\x00', 0x0)
-read(r1, &(0x7f0000000440)=""/266, 0x10a)
-ioctl$SNDRV_SEQ_IOCTL_REMOVE_EVENTS(r1, 0x4040534e, &(0x7f0000000040)={0x305, @time})
-ioctl$SNDRV_SEQ_IOCTL_SET_QUEUE_INFO(r1, 0xc08c5335, &(0x7f0000000080)={0x0, 0x0, 0x0, 'queue1\x00'})
-ioctl$SNDRV_SEQ_IOCTL_GET_QUEUE_STATUS(r1, 0xc05c5340, &(0x7f00000003c0))
-tkill(r0, 0x7)

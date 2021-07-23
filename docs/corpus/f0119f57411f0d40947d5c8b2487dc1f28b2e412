@@ -1,2 +1,0 @@
-r0 = socket$phonet_pipe(0x23, 0x5, 0x2)
-ioctl$ifreq_SIOCGIFINDEX_batadv_hard(r0, 0x8933, &(0x7f00000000c0)={'batadv_slave_0\x00'})

@@ -1,4 +1,0 @@
-r0 = syz_open_dev$evdev(&(0x7f00000000c0)='/dev/input/event#\x00', 0x0, 0x0)
-syz_usb_disconnect(r0)
-syz_usb_connect(0x0, 0x2d, &(0x7f0000000080)=ANY=[@ANYBLOB="12010000246b9f4013206104ec4c000000010902"], 0x0)
-ioctl$EVIOCGMTSLOTS(r0, 0xc0085508, 0x0)

@@ -1,2 +1,0 @@
-r0 = socket$unix(0x1, 0x2, 0x0)
-ioctl$sock_SIOCETHTOOL(r0, 0x8931, &(0x7f0000000040)={'ipvlan0\x00', 0x0})

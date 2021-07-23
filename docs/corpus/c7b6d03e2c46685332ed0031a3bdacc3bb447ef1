@@ -1,2 +1,0 @@
-syz_mount_image$tmpfs(&(0x7f0000000140)='tmpfs\x00', &(0x7f0000000180)='./file0\x00', 0x0, 0x0, 0x0, 0x0, &(0x7f0000000680)=ANY=[])
-syz_mount_image$tmpfs(&(0x7f0000000440)='tmpfs\x00', &(0x7f0000000480)='./file0\x00', 0x0, 0x0, 0x0, 0x48020, &(0x7f0000001940)={[{@nr_inodes={'nr_inodes', 0x3d, [0x30]}}]})

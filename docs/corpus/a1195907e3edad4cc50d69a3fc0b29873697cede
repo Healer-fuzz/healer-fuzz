@@ -1,5 +1,0 @@
-r0 = socket$nl_generic(0x10, 0x3, 0x10)
-r1 = syz_genetlink_get_family_id$batadv(&(0x7f0000000080)='batadv\x00', 0xffffffffffffffff)
-r2 = socket$inet(0x2, 0x3, 0x9)
-ioctl$ifreq_SIOCGIFINDEX_batadv_mesh(r2, 0x8933, &(0x7f0000000000)={'batadv0\x00', <r3=>0x0})
-sendmsg$BATADV_CMD_SET_MESH(r0, &(0x7f0000000340)={0x0, 0x0, &(0x7f0000000300)={&(0x7f0000000280)={0x4c, r1, 0x1, 0x0, 0x0, {}, [@BATADV_ATTR_BONDING_ENABLED={0x5}, @BATADV_ATTR_BRIDGE_LOOP_AVOIDANCE_ENABLED={0x5}, @BATADV_ATTR_MESH_IFINDEX={0x8, 0x3, r3}, @BATADV_ATTR_AGGREGATED_OGMS_ENABLED={0x5}, @BATADV_ATTR_GW_BANDWIDTH_UP={0x8}, @BATADV_ATTR_MULTICAST_FORCEFLOOD_ENABLED={0x5}, @BATADV_ATTR_GW_SEL_CLASS={0x8}]}, 0x4c}}, 0x0)

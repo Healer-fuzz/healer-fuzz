@@ -1,6 +1,0 @@
-r0 = openat$ptmx(0xffffffffffffff9c, &(0x7f0000000040)='/dev/ptmx\x00', 0x41, 0x0)
-write$binfmt_aout(r0, &(0x7f0000000440)=ANY=[@ANYBLOB="e498c9959f1b5e61bfbfe955df7790b9d4b510828d9770f18bd961b8f5fb4865914ab755548e65e381cf137127435e9fc25d16f4f6f69ae179370c5da6c2a2b1bfc4d5946f1cc3598211efa65c799b3371625e0d"], 0xff2e)
-ioctl$TCSETS(r0, 0x40045431, &(0x7f0000000100)={0x0, 0x0, 0x0, 0x0, 0x0, "00e4d3f26c00000173d5e822a7632200"})
-r1 = syz_open_pts(r0, 0x0)
-r2 = dup3(r1, r0, 0x0)
-read$FUSE(r2, &(0x7f0000006140)={0x2020}, 0x2020)

@@ -1,6 +1,0 @@
-r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000180)='cgroup.controllers\x00', 0x275a, 0x0)
-ioctl$FS_IOC_SETFLAGS(r0, 0x40086602, &(0x7f00000002c0)=0x2000000)
-write$cgroup_int(r0, &(0x7f0000000380), 0x1040c)
-close(r0)
-close(0xffffffffffffffff)
-openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000180)='cgroup.controllers\x00', 0x275a, 0x0)

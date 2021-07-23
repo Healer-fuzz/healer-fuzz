@@ -1,3 +1,0 @@
-r0 = syz_open_procfs(0x0, &(0x7f0000000000)='environ\x00')
-r1 = openat$hwrng(0xffffffffffffff9c, &(0x7f0000000040)='/dev/hwrng\x00', 0x0, 0x0)
-dup2(r1, r0)

@@ -1,3 +1,0 @@
-r0 = syz_open_procfs(0xffffffffffffffff, &(0x7f0000000000)='pagemap\x00')
-lseek(r0, 0xfffffffffffffffd, 0x0)
-readv(r0, &(0x7f0000000440)=[{&(0x7f0000000100)=""/1, 0x1}], 0x1)

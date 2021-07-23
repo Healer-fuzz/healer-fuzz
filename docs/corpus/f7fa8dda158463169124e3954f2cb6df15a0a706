@@ -1,2 +1,0 @@
-r0 = memfd_create(&(0x7f0000000040)='procp0keyrip\x03\x00', 0x5)
-fallocate(r0, 0x3, 0x7fffffffffffdffe, 0x2)

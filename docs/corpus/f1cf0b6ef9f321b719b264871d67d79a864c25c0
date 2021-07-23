@@ -1,4 +1,0 @@
-setsockopt$inet_tcp_int(0xffffffffffffffff, 0x6, 0x0, &(0x7f00000000c0)=0x20001, 0x4)
-r0 = socket$inet_tcp(0x2, 0x1, 0x0)
-setsockopt$inet_tcp_TCP_MD5SIG(r0, 0x6, 0xe, &(0x7f0000000100)={@in={{0x2, 0x0, @empty}}, 0x0, 0x0, 0x4f, 0x0, "a01447ac7c552f5645c657212205d4b56e0794ac42389556b107717bbc652e4d584d04d3d6d7208983f07ffcf0000000800000000027aba6a97b5f07000000fa287ad931ff2da319606f1e55f38d5859"}, 0xd8)
-setsockopt$inet_tcp_int(r0, 0x6, 0x20, &(0x7f0000000040)=0x2, 0xf6)

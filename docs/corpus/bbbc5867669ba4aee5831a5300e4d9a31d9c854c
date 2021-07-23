@@ -1,6 +1,0 @@
-mknodat$null(0xffffffffffffff9c, &(0x7f0000000000)='./file0\x00', 0x0, 0x103)
-r0 = inotify_init1(0x0)
-inotify_add_watch(r0, &(0x7f0000000040)='./file0\x00', 0x400)
-r1 = inotify_init()
-inotify_add_watch(r1, &(0x7f0000000200)='./file0\x00', 0xb24)
-unlink(&(0x7f0000000240)='./file0\x00')

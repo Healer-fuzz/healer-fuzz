@@ -1,4 +1,0 @@
-syz_mount_image$nilfs2(&(0x7f00000001c0)='nilfs2\x00', &(0x7f0000000200)='./file0\x00', 0xf7, 0x0, &(0x7f0000000240), 0x0, &(0x7f0000000280)={[{@nobarrier='nobarrier'}, {@order_strict='order=strict'}]})
-syz_open_dev$dri(0x0, 0x0, 0x2300)
-r0 = syz_open_procfs$userns(0x0, &(0x7f0000001180)='ns/user\x00')
-ioctl$NS_GET_OWNER_UID(r0, 0xb704, &(0x7f0000001300))

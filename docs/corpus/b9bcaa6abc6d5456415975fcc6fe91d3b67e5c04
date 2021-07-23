@@ -1,3 +1,0 @@
-r0 = openat$sndseq(0xffffffffffffff9c, &(0x7f0000000000)='/dev/snd/seq\x00', 0x109881)
-ioctl$SNDRV_SEQ_IOCTL_SET_PORT_INFO(r0, 0xc0a85320, &(0x7f0000000080)={{0x80}, 'port1\x00', 0xea, 0x31c07})
-openat$sequencer2(0xffffffffffffff9c, &(0x7f0000000140)='/dev/sequencer2\x00', 0x2, 0x0)

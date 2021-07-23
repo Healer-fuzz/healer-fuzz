@@ -1,3 +1,0 @@
-sendmsg$kcm(0xffffffffffffffff, &(0x7f0000001500)={&(0x7f0000000000)=@pppoe={0x18, 0x0, {0x0, @empty, 'ip6gretap0\x00'}}, 0x80, 0x0}, 0x0)
-socketpair(0x1, 0x2, 0x0, &(0x7f0000000080)={0xffffffffffffffff, <r0=>0xffffffffffffffff})
-ioctl$PERF_EVENT_IOC_SET_FILTER(r0, 0x8946, &(0x7f0000000340)='lo:\x96%\xd6Q\xb1Y\xa9\xc8J,`\xd2\x98\x00\x00\x00 ')

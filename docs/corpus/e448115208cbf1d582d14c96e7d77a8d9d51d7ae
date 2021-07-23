@@ -1,3 +1,0 @@
-r0 = syz_open_dev$sndctrl(&(0x7f0000000c40)='/dev/snd/controlC#\x00', 0x0, 0x8b00)
-ioctl$SNDRV_CTL_IOCTL_SUBSCRIBE_EVENTS(r0, 0xc0045516, &(0x7f0000000000)=0xed)
-read$FUSE(r0, &(0x7f0000000c80)={0x2020}, 0x2020)

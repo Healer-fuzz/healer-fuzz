@@ -1,1 +1,0 @@
-syz_mount_image$udf(&(0x7f0000000040)='udf\x00', &(0x7f0000000080)='./file0\x00', 0x0, 0x1, &(0x7f00000002c0)=[{0x0, 0x0, 0x480}], 0x0, &(0x7f00000055c0)={[{@uid={'uid'}}, {@lastblock={'lastblock', 0x3d, 0xffffffffffffffe1}}]})

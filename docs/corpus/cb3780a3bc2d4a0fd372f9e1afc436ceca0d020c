@@ -1,5 +1,0 @@
-r0 = syz_usb_connect(0x0, 0x2d, &(0x7f0000000040)=ANY=[@ANYBLOB="12010000f70d1810d804300a31ac0000000109021b0001000000000904"], 0x0)
-syz_usb_disconnect(r0)
-r1 = syz_usb_connect(0x0, 0x34, &(0x7f0000000040)=ANY=[@ANYBLOB="1201000097c2f5081d0670c1"], 0x0)
-syz_usb_control_io(r1, 0x0, 0x0)
-syz_usb_connect$cdc_ecm(0x0, 0x0, 0x0, 0x0)

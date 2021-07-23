@@ -1,3 +1,0 @@
-r0 = syz_open_dev$amidi(&(0x7f0000000040)='/dev/amidi#\x00', 0x200, 0x1)
-r1 = syz_open_dev$amidi(&(0x7f0000000040)='/dev/amidi#\x00', 0x200, 0x1)
-dup2(r0, r1)

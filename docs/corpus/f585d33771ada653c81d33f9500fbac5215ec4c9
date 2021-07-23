@@ -1,2 +1,0 @@
-r0 = socket$nl_xfrm(0x10, 0x3, 0x6)
-ioctl$sock_SIOCETHTOOL(r0, 0x8946, &(0x7f0000000440)={'vlan0\x00', &(0x7f0000000340)=@ethtool_perm_addr})

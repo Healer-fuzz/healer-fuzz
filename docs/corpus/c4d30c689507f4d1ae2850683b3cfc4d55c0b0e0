@@ -1,4 +1,0 @@
-mkdir(&(0x7f0000000400)='./file0\x00', 0x0)
-r0 = openat$fuse(0xffffffffffffff9c, &(0x7f0000002080)='/dev/fuse\x00', 0x42, 0x0)
-mount$fuse(0x0, &(0x7f00000020c0)='./file0\x00', &(0x7f0000002100)='fuse\x00', 0x0, &(0x7f0000002140)=ANY=[@ANYBLOB='fd=', @ANYRESHEX=r0, @ANYBLOB=',rootmode=0000000000000000040000,user_id=', @ANYRESDEC=0x0, @ANYBLOB=',group_id=', @ANYRESDEC=0x0])
-write$FUSE_NOTIFY_STORE(r0, &(0x7f0000000000)={0x29, 0x4, 0x0, {0x1, 0x8000000000000000, 0x1, 0x0, [0x0]}}, 0x29)

@@ -1,3 +1,0 @@
-fork()
-r0 = syz_open_dev$tty1(0xc, 0x4, 0x1)
-ioctl$TIOCGDEV(r0, 0x80045432, &(0x7f0000000000))

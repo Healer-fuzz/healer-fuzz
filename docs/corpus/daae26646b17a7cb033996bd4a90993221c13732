@@ -1,3 +1,0 @@
-write(0xffffffffffffffff, &(0x7f0000000000)="1f0000000104fffffd3b000007110600f30501", 0x13)
-r0 = socket$nl_netfilter(0x10, 0x3, 0xc)
-ioctl$sock_ifreq(r0, 0x8947, &(0x7f0000000000)={'bond0\x00', @ifru_names})

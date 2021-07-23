@@ -1,8 +1,0 @@
-r0 = openat(0xffffffffffffffff, &(0x7f0000000080)='/proc/self/exe\x00', 0x0, 0x0)
-mmap(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x1800003, 0x12, r0, 0x0)
-preadv(r0, &(0x7f0000000280), 0x18, 0xd9f, 0x0)
-r1 = socket$nl_generic(0x10, 0x3, 0x10)
-r2 = syz_genetlink_get_family_id$nl80211(&(0x7f0000000500)='nl80211\x00', 0xffffffffffffffff)
-r3 = socket$nl_generic(0x10, 0x3, 0x10)
-ioctl$sock_SIOCGIFINDEX_80211(r1, 0x8933, &(0x7f0000000300)={'wlan0\x00', <r4=>0x0})
-sendmsg$NL80211_CMD_NEW_INTERFACE(r3, &(0x7f0000000400)={0x0, 0x0, &(0x7f00000003c0)={&(0x7f0000000540)=ANY=[@ANYBLOB='X\x00\x00\x00', @ANYRES16=r2, @ANYBLOB="09000000000000f0ff000700000008000300", @ANYRES32=r4, @ANYBLOB="0800051d000000001400060076657468315f746f5f7465616d0000000400cc0008000500040000001400040073"], 0x58}}, 0x0)

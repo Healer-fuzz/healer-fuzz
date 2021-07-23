@@ -1,1 +1,0 @@
-syz_mount_image$xfs(&(0x7f0000000000)='xfs\x00', &(0x7f0000000040)='./file0\x00', 0x0, 0x0, &(0x7f0000000100), 0x408, &(0x7f00000021c0)={[{@largeio='largeio'}, {@nobarrier='nobarrier'}]})

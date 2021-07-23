@@ -1,4 +1,0 @@
-r0 = socket$nl_route(0x10, 0x3, 0x0)
-sendmsg$ETHTOOL_MSG_COALESCE_SET(0xffffffffffffffff, &(0x7f0000000000)={0x0, 0x0, &(0x7f0000000380)={&(0x7f0000000040)=ANY=[@ANYBLOB='<\x00\x00\x00', @ANYRES16, @ANYBLOB="0100000000000000000014"], 0x3c}}, 0x0)
-ioctl$sock_inet_SIOCSIFPFLAGS(0xffffffffffffffff, 0x8934, &(0x7f0000000040)={'virt_wifi0\x00'})
-ioctl(r0, 0x8b32, &(0x7f0000000040))

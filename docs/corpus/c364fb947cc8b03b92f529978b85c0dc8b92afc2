@@ -1,4 +1,0 @@
-r0 = syz_open_dev$evdev(&(0x7f0000000000)='/dev/input/event#\x00', 0x0, 0x0)
-syz_usb_disconnect(r0)
-syz_usb_connect$cdc_ncm(0x0, 0x6e, &(0x7f0000000140)=ANY=[@ANYBLOB="12010000020000402505a1a44000010203010902"], 0x0)
-ioctl$BTRFS_IOC_QUOTA_RESCAN_WAIT(r0, 0x942e, 0x0)

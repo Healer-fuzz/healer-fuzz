@@ -1,2 +1,0 @@
-r0 = socket$nl_generic(0x10, 0x3, 0x10)
-ioctl$sock_FIOGETOWN(r0, 0x8903, &(0x7f0000000040))

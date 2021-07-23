@@ -1,7 +1,0 @@
-ftruncate(0xffffffffffffffff, 0x0)
-r0 = syz_open_dev$sg(&(0x7f0000000000)='/dev/sg#\x00', 0x0, 0x2)
-r1 = dup(r0)
-write$FUSE_INIT(r1, &(0x7f0000001580)={0x50}, 0x50)
-read$FUSE(r1, 0x0, 0x0)
-dup(0xffffffffffffffff)
-ioctl$sock_SIOCDELDLCI(0xffffffffffffffff, 0x8981, &(0x7f0000000040)={'ip6gre0\x00'})

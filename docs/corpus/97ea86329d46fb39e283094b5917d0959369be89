@@ -1,4 +1,0 @@
-socketpair$unix(0x1, 0x1, 0x0, &(0x7f0000000000)={0xffffffffffffffff, <r0=>0xffffffffffffffff})
-r1 = dup(r0)
-ioctl$PERF_EVENT_IOC_ENABLE(r1, 0x8912, 0x400200)
-clock_gettime(0xfffffffffffffffb, 0xfffffffffffffffd)

@@ -1,6 +1,0 @@
-mkdir(&(0x7f0000000000)='./file0\x00', 0x0)
-pipe2$9p(&(0x7f0000000240)={<r0=>0xffffffffffffffff}, 0x0)
-r1 = openat$sndseq(0xffffffffffffff9c, &(0x7f00000001c0)='/dev/snd/seq\x00', 0x2)
-write$sndseq(r1, 0x0, 0x0)
-r2 = dup(r1)
-mount$9p_fd(0x0, &(0x7f0000000000)='./file0\x00', &(0x7f0000000080)='9p\x00', 0x0, &(0x7f0000000300)={'trans=fd,', {'rfdno', 0x3d, r0}, 0x2c, {'wfdno', 0x3d, r2}, 0x2c, {[], [], 0x6b}})

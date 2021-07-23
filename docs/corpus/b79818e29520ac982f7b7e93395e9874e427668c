@@ -1,2 +1,0 @@
-syz_genetlink_get_family_id$ipvs(&(0x7f0000000380)='IPVS\x00', 0xffffffffffffffff)
-sendmsg$IPVS_CMD_FLUSH(0xffffffffffffffff, 0x0, 0x0)

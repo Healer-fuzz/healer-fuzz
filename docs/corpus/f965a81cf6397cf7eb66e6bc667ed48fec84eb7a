@@ -1,4 +1,0 @@
-r0 = socket$can_bcm(0x1d, 0x2, 0x2)
-connect$can_bcm(r0, &(0x7f0000000000), 0x10)
-ioctl$ifreq_SIOCGIFINDEX_vcan(r0, 0x8933, &(0x7f00000003c0)={'vxcan0\x00', <r1=>0x0})
-sendmsg$can_bcm(r0, &(0x7f0000000480)={&(0x7f0000000340)={0x1d, r1}, 0x10, &(0x7f00000000c0)={&(0x7f0000000580)={0x1, 0x7ab0715dca68fed7, 0x0, {}, {}, {}, 0x1, @canfd={{}, 0x0, 0x0, 0x0, 0x0, "b8ee0816756b62187804752330b2b55830d7228ef1593c0639bd084bba0bfd8db72f70e5b2e7f90e11cbc6ec61a03fc316d5d47970907af5fc4a27f6cf718909"}}, 0x80}}, 0x0)

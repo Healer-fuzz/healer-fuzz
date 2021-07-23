@@ -1,2 +1,0 @@
-r0 = syz_open_dev$I2C(&(0x7f0000000380)='/dev/i2c-#\x00', 0x0, 0x0)
-read(r0, 0x0, 0x0)

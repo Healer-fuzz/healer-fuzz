@@ -1,8 +1,0 @@
-inotify_init()
-eventfd(0x0)
-socket$inet_udplite(0x2, 0x2, 0x88)
-socket$inet_udplite(0x2, 0x2, 0x88)
-syz_open_dev$vbi(&(0x7f0000000140)='/dev/vbi#\x00', 0xffffffffffffffff, 0x2)
-openat$vfio(0xffffffffffffff9c, &(0x7f0000000040)='/dev/vfio/vfio\x00', 0x0, 0x0)
-syz_open_dev$media(&(0x7f0000000080)='/dev/media#\x00', 0x0, 0x0)
-syz_execute_func(&(0x7f0000001300)="b13691cd806969ef69dc00d9c44139fd5bf91cc1c7c7e4c653fb0fc4014c5868f4a95ff9c44149f2168f4808eebce00000802000c421fc51c1ea01efc48192558dc3c366450f186746f3400faee47c7c730f5726400f0d18c401fe5ff6e3df646736676666430fefb3000000000804f4f30f1a1254111d54111d00")

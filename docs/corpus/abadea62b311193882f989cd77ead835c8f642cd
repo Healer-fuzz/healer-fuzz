@@ -1,2 +1,0 @@
-r0 = openat$6lowpan_enable(0xffffffffffffff9c, &(0x7f0000000040)='/sys/kernel/debug/bluetooth/6lowpan_enable\x00', 0x2, 0x0)
-read(r0, &(0x7f0000000380)=""/150, 0x96)

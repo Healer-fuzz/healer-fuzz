@@ -1,4 +1,0 @@
-open(&(0x7f0000001480)='./file0\x00', 0x40c1, 0x0)
-r0 = syz_open_procfs(0x0, &(0x7f00000017c0)='mounts\x00')
-r1 = openat$tcp_congestion(0xffffffffffffff9c, &(0x7f00000019c0)='/proc/sys/net/ipv4/tcp_congestion_control\x00', 0x1, 0x0)
-mount$9p_fd(0x0, &(0x7f0000001940)='./file0\x00', &(0x7f0000001980)='9p\x00', 0x0, &(0x7f0000003b40)={'trans=fd,', {'rfdno', 0x3d, r0}, 0x2c, {'wfdno', 0x3d, r1}})

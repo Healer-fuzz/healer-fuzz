@@ -1,6 +1,0 @@
-pipe(&(0x7f0000000380)={<r0=>0xffffffffffffffff, <r1=>0xffffffffffffffff})
-r2 = socket$netlink(0x10, 0x3, 0xc)
-writev(r2, &(0x7f0000000080)=[{&(0x7f00000042c0)="1f00000002031900000007000000068100023b0509000100010100ff3ffe58", 0x1f}], 0x1)
-writev(0xffffffffffffffff, &(0x7f0000000100)=[{&(0x7f0000000000)="1f0000000203193b000007000000068100023b05", 0x14}], 0x1)
-splice(r0, 0x0, r2, 0x0, 0x422000a7f, 0x0)
-write$binfmt_elf64(r1, &(0x7f0000000000)=ANY=[], 0xffb4)

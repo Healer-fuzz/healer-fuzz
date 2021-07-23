@@ -1,3 +1,0 @@
-pipe2$9p(&(0x7f00000000c0)={<r0=>0xffffffffffffffff}, 0x0)
-r1 = syz_open_dev$dmmidi(&(0x7f0000000080)='/dev/dmmidi#\x00', 0x20000000000000, 0x42)
-mount$9p_fd(0x0, &(0x7f0000000040)='.\x00', &(0x7f0000000080)='9p\x00', 0x0, &(0x7f0000000200)={'trans=fd,', {'rfdno', 0x3d, r0}, 0x2c, {'wfdno', 0x3d, r1}})

@@ -1,4 +1,0 @@
-r0 = syz_io_uring_setup(0x76d1, &(0x7f0000000140), &(0x7f0000ffc000/0x4000)=nil, &(0x7f0000ffd000/0x3000)=nil, &(0x7f0000000000), &(0x7f0000000100))
-openat$procfs(0xffffff9c, &(0x7f0000000200)='/proc/crypto\x00', 0x0, 0x0)
-io_uring_register$IORING_REGISTER_BUFFERS(r0, 0x0, &(0x7f00000006c0)=[{&(0x7f0000000040)=""/151, 0x97}], 0x1)
-io_uring_register$IORING_UNREGISTER_BUFFERS(r0, 0x1, 0x0, 0x0)

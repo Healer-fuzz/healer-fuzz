@@ -1,4 +1,0 @@
-r0 = add_key$keyring(&(0x7f0000000100)='keyring\x00', &(0x7f0000000140)={'syz', 0x1}, 0x0, 0x0, 0xfffffffffffffffb)
-r1 = request_key(&(0x7f0000000040)='keyring\x00', &(0x7f0000000080)={'syz', 0x1}, 0x0, 0xffffffffffffffff)
-r2 = add_key$keyring(&(0x7f0000001540)='keyring\x00', &(0x7f0000001580)={'syz', 0x3}, 0x0, 0x0, 0xfffffffffffffffd)
-keyctl$KEYCTL_MOVE(0xb, r0, r1, r2, 0x0)

@@ -1,2 +1,0 @@
-r0 = fork()
-syz_open_procfs$namespace(r0, 0x0)

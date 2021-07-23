@@ -1,3 +1,0 @@
-r0 = syz_init_net_socket$ax25(0x3, 0x3, 0x0)
-setsockopt$ax25_SO_BINDTODEVICE(0xffffffffffffffff, 0x101, 0x19, &(0x7f0000000000)=@bpq0='bpq0\x00', 0x10)
-ioctl$sock_netdev_private(r0, 0x89f9, &(0x7f0000000000))

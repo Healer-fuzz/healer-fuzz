@@ -1,3 +1,0 @@
-io_setup(0x7fff, &(0x7f0000000000))
-io_setup(0x81, &(0x7f00000000c0)=<r0=>0x0)
-io_destroy(r0)

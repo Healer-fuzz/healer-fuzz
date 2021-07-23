@@ -1,1 +1,0 @@
-syz_mount_image$msdos(&(0x7f0000000080)='msdos\x00', &(0x7f00000000c0)='./file0\x00', 0x0, 0x0, &(0x7f00000002c0), 0x0, &(0x7f0000000380)={[{@fat=@allow_utime={'allow_utime', 0x3d, 0x80000001}}]})

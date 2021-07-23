@@ -1,4 +1,0 @@
-r0 = fsopen(&(0x7f0000000000)='overlay\x00', 0x0)
-clone(0x26100900, 0x0, 0xfffffffffffffffe, 0x0, 0xffffffffffffffff)
-fsconfig$FSCONFIG_SET_STRING(r0, 0x1, &(0x7f0000000040)='!\\-\\[/\'--&!({\\\x00', &(0x7f0000000080)='overlay\x00', 0x0)
-fsconfig$FSCONFIG_CMD_CREATE(r0, 0x6, 0x0, 0x0, 0x0)

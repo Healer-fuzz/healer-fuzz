@@ -1,3 +1,0 @@
-timer_create(0xfffffffffffffffc, 0x0, &(0x7f0000000040))
-exit(0x0)
-timer_delete(0x0)

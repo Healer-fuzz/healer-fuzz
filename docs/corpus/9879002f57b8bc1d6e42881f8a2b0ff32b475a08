@@ -1,2 +1,0 @@
-r0 = socket$packet(0x11, 0x2, 0x300)
-ioctl$sock_SIOCETHTOOL(r0, 0x8946, &(0x7f0000000000)={'batadv0\x00', &(0x7f0000000440)=@ethtool_gstrings={0x1b, 0x1}})

@@ -1,1 +1,0 @@
-add_key$fscrypt_provisioning(&(0x7f0000000300)='fscrypt-provisioning\x00', 0x0, &(0x7f0000000380)={0x2, 0x5, @d='abcdefghijklmnop'}, 0x18, 0xfffffffffffffffd)

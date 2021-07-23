@@ -1,2 +1,0 @@
-mkdir(&(0x7f0000000280)='./file0\x00', 0x0)
-mount$bpf(0x0, &(0x7f0000000100)='./file0\x00', &(0x7f0000000180)='bpf\x00', 0x0, &(0x7f0000000200)={[{@mode={'mode'}}], [{@permit_directio='permit_directio'}]})

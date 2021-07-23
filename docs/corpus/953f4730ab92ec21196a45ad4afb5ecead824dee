@@ -1,2 +1,0 @@
-setrlimit(0x8, &(0x7f0000000000))
-mlockall(0x7)

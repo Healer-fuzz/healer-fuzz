@@ -1,1 +1,0 @@
-syz_emit_ethernet(0x66, &(0x7f0000000540)={@empty=[0x7], @link_local, @void, {@ipv6={0x86dd, @generic={0x0, 0x6, "8384b3", 0x30, 0x67, 0x0, @private1, @mcast2, {[], "db22d5bef1c670050a7c05314c4d5f885b1527ede3bf5ea0571c97c7dd8f915c25c67811c4ea005928fa334fc64d4ed8"}}}}}, 0x0)

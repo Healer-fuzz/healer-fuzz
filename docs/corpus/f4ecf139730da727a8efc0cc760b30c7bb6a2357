@@ -1,5 +1,0 @@
-mkdir(&(0x7f0000000200)='./file1\x00', 0x0)
-mkdir(&(0x7f0000000380)='./bus\x00', 0x0)
-mkdir(&(0x7f0000000280)='./file0\x00', 0x0)
-mount$overlay(0x400000, &(0x7f0000000000)='./bus\x00', &(0x7f0000000440)='overlay\x00', 0x0, &(0x7f0000000340)=ANY=[@ANYBLOB='lowerdir=./bus,workdir=./file1,upperdir=./file0'])
-removexattr(&(0x7f0000000240)='./bus\x00', &(0x7f0000000680)=@random={'btrfs.', 'system.posix_acl_access\x00'})

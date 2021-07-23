@@ -1,2 +1,0 @@
-r0 = openat$mice(0xffffffffffffff9c, &(0x7f0000000000)='/dev/input/mice\x00', 0x0)
-fcntl$setstatus(r0, 0x4, 0x2c00)

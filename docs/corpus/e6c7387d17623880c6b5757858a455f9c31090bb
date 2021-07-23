@@ -1,2 +1,0 @@
-r0 = openat$full(0xffffffffffffff9c, &(0x7f0000000580)='/dev/full\x00', 0x201, 0x0)
-write$snapshot(r0, 0x0, 0x0)

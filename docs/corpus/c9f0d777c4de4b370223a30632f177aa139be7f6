@@ -1,4 +1,0 @@
-r0 = syz_open_procfs(0x0, &(0x7f0000000080)='gid_map\x00')
-r1 = syz_open_procfs(0xffffffffffffffff, &(0x7f0000000000)='net/protocols\x00')
-dup3(r1, r0, 0x0)
-read$FUSE(r0, 0x0, 0x0)

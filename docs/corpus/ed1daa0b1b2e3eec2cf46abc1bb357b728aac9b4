@@ -1,5 +1,0 @@
-mkdir(&(0x7f0000000040)='./file0\x00', 0x0)
-r0 = syz_open_procfs(0x0, &(0x7f0000000100)='net/fib_triestat\x00')
-preadv(r0, &(0x7f0000000080)=[{&(0x7f0000000280)=""/76, 0xff0d}], 0x1, 0x0, 0x0)
-mount$tmpfs(0x0, 0x0, 0x0, 0x0, &(0x7f0000000300)=ANY=[@ANYBLOB='mask=MAY_EXEC,uid=j'])
-mount(0x0, &(0x7f0000000000)='./file0\x00', &(0x7f00000000c0)='tracefs\x00', 0x0, &(0x7f0000000280))

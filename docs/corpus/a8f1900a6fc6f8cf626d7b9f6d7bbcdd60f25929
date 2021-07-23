@@ -1,8 +1,0 @@
-r0 = openat$udambuf(0xffffffffffffff9c, &(0x7f0000000200)='/dev/udmabuf\x00', 0x2)
-r1 = openat$udambuf(0xffffffffffffff9c, &(0x7f0000000200)='/dev/udmabuf\x00', 0x2)
-r2 = memfd_create(&(0x7f0000000080)='y\x105%\xfa,\x1f\x99\xa2\xc9\x8e\xcd\xfc\xfa\xf6\x12\x95^\xdfT\xe2=\x0e~F\xcds', 0x2)
-ftruncate(r2, 0x2000)
-fcntl$addseals(r2, 0x409, 0x7)
-ioctl$UDMABUF_CREATE_LIST(r1, 0x40087543, &(0x7f00000001c0)={0x0, 0x1, [{r2, 0x0, 0x0, 0x2000}]})
-fcntl$dupfd(r2, 0x0, r0)
-close_range(r0, 0xffffffffffffffff, 0x0)

@@ -1,2 +1,0 @@
-ioctl$SIOCPNADDRESOURCE(0xffffffffffffffff, 0x89e0, 0x0)
-syz_usbip_server_init(0x2)

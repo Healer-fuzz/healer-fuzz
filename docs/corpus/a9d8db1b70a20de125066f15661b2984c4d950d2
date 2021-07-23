@@ -1,2 +1,0 @@
-r0 = syz_open_procfs(0x0, &(0x7f00000004c0)='net/ip6_flowlabel\x00')
-preadv(r0, &(0x7f00000001c0)=[{&(0x7f0000000040)=""/56, 0x38}], 0x1, 0xd9c, 0x0)

@@ -1,5 +1,0 @@
-clone(0x3117804dfd, 0x0, 0xfffffffffffffffe, 0x0, 0xffffffffffffffff)
-r0 = syz_open_procfs$namespace(0x0, &(0x7f0000000000)='ns/user\x00')
-r1 = gettid()
-tkill(r1, 0x37)
-setns(r0, 0x0)

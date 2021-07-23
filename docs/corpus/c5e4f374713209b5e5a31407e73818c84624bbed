@@ -1,4 +1,0 @@
-r0 = syz_open_dev$vim2m(&(0x7f00000000c0)='/dev/video#\x00', 0x100000000, 0x2)
-syz_genetlink_get_family_id$tipc(0x0, 0xffffffffffffffff)
-sendmsg$TIPC_CMD_SHOW_NAME_TABLE(0xffffffffffffffff, 0x0, 0x0)
-write$P9_RLERROR(r0, &(0x7f0000000400)={0xc, 0x7, 0x0, {0x3, '\x10:@'}}, 0xc)

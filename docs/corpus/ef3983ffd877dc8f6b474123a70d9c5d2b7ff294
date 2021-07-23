@@ -1,4 +1,0 @@
-keyctl$instantiate(0xc, 0x0, &(0x7f0000000100)=ANY=[@ANYBLOB="6c6f61642064656661756c7420747275737465643a757365723a2030303030b03030303030303030303030303036312000"], 0x31, 0x0)
-r0 = add_key(&(0x7f0000000140)='encrypted\x00', &(0x7f0000000180)={'syz'}, &(0x7f0000000100), 0xca, 0xfffffffffffffffe)
-r1 = add_key$keyring(&(0x7f0000000400)='keyring\x00', &(0x7f0000000440)={'syz', 0x0}, 0x0, 0x0, r0)
-add_key$keyring(&(0x7f0000001400)='keyring\x00', &(0x7f0000001440)={'syz', 0x3}, 0x0, 0x0, r1)

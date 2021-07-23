@@ -1,4 +1,0 @@
-r0 = syz_init_net_socket$nl_generic(0x10, 0x3, 0x10)
-r1 = syz_genetlink_get_family_id$nl802154(&(0x7f0000000040)='nl802154\x00', 0xffffffffffffffff)
-ioctl$sock_SIOCGIFINDEX_802154(r0, 0x8933, &(0x7f0000000100)={'wpan0\x00', <r2=>0x0})
-sendmsg$NL802154_CMD_SET_SEC_PARAMS(r0, &(0x7f0000000280)={0x0, 0x0, &(0x7f0000000240)={&(0x7f00000001c0)={0x2c, r1, 0x5e8b108030955577, 0x0, 0x0, {}, [@NL802154_ATTR_IFINDEX={0x8, 0x3, r2}, @NL802154_ATTR_SEC_FRAME_COUNTER={0x8}, @NL802154_ATTR_SEC_OUT_LEVEL={0x8}]}, 0x2c}}, 0x0)

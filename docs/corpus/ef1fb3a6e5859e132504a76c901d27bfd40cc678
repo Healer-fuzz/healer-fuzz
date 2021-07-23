@@ -1,2 +1,0 @@
-r0 = syz_open_dev$vim2m(&(0x7f0000000200)='/dev/video#\x00', 0x7fff, 0x2)
-ioctl$vim2m_VIDIOC_ENUM_FRAMESIZES(r0, 0xc02c564a, &(0x7f0000000240)={0x0, 0x35315241, 0x0, @stepwise})

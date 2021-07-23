@@ -1,2 +1,0 @@
-r0 = syz_open_procfs(0x0, &(0x7f0000000000)='ns\x00')
-open_tree(r0, &(0x7f00000000c0)='./cgroup\x00', 0x801)

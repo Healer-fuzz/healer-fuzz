@@ -1,2 +1,0 @@
-r0 = syz_open_dev$sndpcmp(&(0x7f0000000580)='/dev/snd/pcmC#D#p\x00', 0x0, 0x141202)
-writev(r0, &(0x7f0000001940)=[{&(0x7f00000005c0)="e9", 0x1}], 0x1)

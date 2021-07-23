@@ -1,5 +1,0 @@
-r0 = epoll_create1(0x0)
-r1 = openat$ptmx(0xffffffffffffff9c, &(0x7f0000000000)='/dev/ptmx\x00', 0x0, 0x0)
-epoll_ctl$EPOLL_CTL_ADD(r0, 0x1, r1, &(0x7f0000000040))
-r2 = socket$inet6_sctp(0xa, 0x800000000000001, 0x84)
-dup3(r2, r0, 0x0)

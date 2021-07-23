@@ -1,4 +1,0 @@
-mkdirat$cgroup_root(0xffffffffffffff9c, &(0x7f0000000000)='./cgroup/syz0\x00', 0x1ff)
-r0 = openat$cgroup_root(0xffffffffffffff9c, &(0x7f0000000000), 0x200002, 0x0)
-r1 = openat$cgroup_type(r0, &(0x7f00000000c0)='cgroup.type\x00', 0x2, 0x0)
-sendfile(r1, r1, 0x0, 0x4)

@@ -1,2 +1,0 @@
-r0 = syz_open_procfs$namespace(0xffffffffffffffff, &(0x7f0000000040)='ns/user\x00')
-setns(r0, 0x2000000)

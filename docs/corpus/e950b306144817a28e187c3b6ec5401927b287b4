@@ -1,2 +1,0 @@
-r0 = syz_open_procfs(0x0, &(0x7f0000000000)='net/vlan/vlan1\x00')
-preadv(r0, &(0x7f0000001340)=[{&(0x7f00000001c0)=""/188, 0xbc}], 0x1, 0x500000, 0x0)

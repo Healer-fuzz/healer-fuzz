@@ -1,3 +1,0 @@
-r0 = syz_open_dev$sndpcmp(&(0x7f0000000040)='/dev/snd/pcmC#D#p\x00', 0x0, 0x0)
-r1 = epoll_create(0xfff)
-epoll_ctl$EPOLL_CTL_ADD(r1, 0x1, r0, &(0x7f00000000c0)={0x20000015})

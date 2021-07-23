@@ -1,2 +1,0 @@
-fork()
-sendmsg$DEVLINK_CMD_RELOAD(0xffffffffffffffff, 0x0, 0x0)

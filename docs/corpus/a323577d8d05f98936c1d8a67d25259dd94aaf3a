@@ -1,2 +1,0 @@
-r0 = openat$ocfs2_control(0xffffffffffffff9c, &(0x7f0000000040)='/dev/ocfs2_control\x00', 0x80c42, 0x0)
-writev(r0, &(0x7f00000002c0)=[{&(0x7f0000000080)="cb", 0x1}], 0x1)

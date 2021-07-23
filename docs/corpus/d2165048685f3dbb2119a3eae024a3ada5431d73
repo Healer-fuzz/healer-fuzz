@@ -1,3 +1,0 @@
-r0 = memfd_create(&(0x7f00000000c0)='#\'%nodev\x00\x7f\xe5\xd0ql\x86\xcd\xe6\x14\x93\xb0\x7f_,y<', 0x4)
-fcntl$setstatus(r0, 0x4, 0x42000)
-mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x0, 0x25011, r0, 0x0)

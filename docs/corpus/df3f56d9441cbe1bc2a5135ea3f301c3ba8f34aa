@@ -1,2 +1,0 @@
-r0 = syz_open_dev$swradio(&(0x7f0000000040)='/dev/swradio#\x00', 0x0, 0x2)
-ioctl$VIDIOC_ENUM_FMT(r0, 0xc0405602, &(0x7f0000000080)={0x201, 0xb, 0x0, "d3324d8ee44a478003000000ed8c6defa550df16c166d200"})

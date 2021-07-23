@@ -1,8 +1,0 @@
-r0 = creat(&(0x7f00000000c0)='./file0\x00', 0x0)
-ioctl$PPPOEIOCDFWD(r0, 0xb101, 0x0)
-write$cgroup_type(r0, &(0x7f0000000040)='threaded\x00', 0xfd87)
-fallocate(r0, 0x0, 0x0, 0x26b4)
-setsockopt$ipx_IPX_TYPE(r0, 0x100, 0x1, &(0x7f0000000300), 0x4)
-ioctl$SNDRV_CTL_IOCTL_RAWMIDI_PREFER_SUBDEVICE(r0, 0x40045542, &(0x7f0000000180))
-fallocate(r0, 0x3, 0x5e00, 0x2cbd)
-sync_file_range(r0, 0x2000, 0x0, 0x2)

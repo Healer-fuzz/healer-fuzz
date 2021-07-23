@@ -1,3 +1,0 @@
-keyctl$join(0x1, &(0x7f0000000100)={'syz', 0x3})
-add_key(&(0x7f00000000c0)='logon\x00', &(0x7f00000001c0)={'syz', 0x3}, &(0x7f0000000200)="5ba019ee1a3defa8c209d8f2340d72a22cb0cff486d70c8cde4763186f78c0e1aff79ebe1aa2f93addf4484f1372eb554e84012c587cef06d00d96", 0x3b, 0xfffffffffffffffc)
-request_key(&(0x7f0000000040)='keyring\x00', &(0x7f0000000080)={'syz', 0x2}, &(0x7f0000000180)='N\bU\x9bzT\xad\x9e\x8d\t\xb2psyz', 0x0)

@@ -1,5 +1,0 @@
-r0 = signalfd(0xffffffffffffffff, &(0x7f00000001c0), 0x8)
-close(r0)
-r1 = io_uring_setup(0x84, &(0x7f0000000140))
-fcntl$setstatus(r0, 0x4, 0x2c00)
-close(r1)

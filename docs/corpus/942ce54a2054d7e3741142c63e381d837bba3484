@@ -1,4 +1,0 @@
-r0 = syz_open_procfs(0x0, &(0x7f00000000c0)='comm\x00')
-r1 = syz_open_procfs(0x0, &(0x7f0000000140)='status\x00')
-writev(r0, &(0x7f0000000680)=[{&(0x7f0000000040)="cf8e18d7bd576ee3c6bb5e6ee75cdb", 0xf}, {0x0}, {0x0}], 0x3)
-preadv(r1, &(0x7f0000000000)=[{&(0x7f0000000280)=""/161, 0x3cb}], 0x1, 0x0, 0x0)

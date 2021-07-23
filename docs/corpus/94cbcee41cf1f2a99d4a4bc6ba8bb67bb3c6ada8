@@ -1,6 +1,0 @@
-r0 = socket$inet6_tcp(0xa, 0x1, 0x0)
-setsockopt$inet6_tcp_int(r0, 0x6, 0x13, &(0x7f00000000c0)=0x100000001, 0x4)
-connect$inet6(r0, &(0x7f0000000180)={0xa, 0x0, 0x0, @empty}, 0x1c)
-setsockopt$inet6_tcp_TCP_ULP(r0, 0x6, 0x1f, &(0x7f0000000340)='tls\x00', 0x4)
-setsockopt$inet6_tcp_TLS_TX(r0, 0x11a, 0x1, &(0x7f0000000080)=@gcm_256={{0x303}, "e53886a72afa65df", "bd13c0706c2b22b6bbacfb7c4f8c7e32425e7040faee88f3ddbcc66cc54b95aa", "c38a408f", "39d21040d2924444"}, 0x38)
-setsockopt$inet6_tcp_TLS_TX(r0, 0x11a, 0x2, &(0x7f00000001c0)=@gcm_256={{0x303}, "eae6782f93b30f55", "7cc80d44f86109df0856c664f177069ae33d959f2129efd146feb7adf956a920", '\x00', "363e9157338d9d7c"}, 0x38)

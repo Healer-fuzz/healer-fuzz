@@ -1,3 +1,0 @@
-r0 = openat$nullb(0xffffffffffffff9c, &(0x7f0000000480)='/dev/nullb0\x00', 0x0, 0x0)
-ioctl$BLKRRPART(r0, 0x125f, 0x0)
-ioctl$BLKFLSBUF(r0, 0x1261, 0x0)

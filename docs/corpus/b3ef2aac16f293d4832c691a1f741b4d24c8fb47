@@ -1,5 +1,0 @@
-mkdir(&(0x7f00000000c0)='./file1\x00', 0x0)
-r0 = socket$inet_icmp_raw(0x2, 0x3, 0x1)
-r1 = dup(r0)
-mount$fuse(0x0, 0x0, 0x0, 0x0, &(0x7f0000000400)=ANY=[@ANYBLOB='fd=', @ANYRESHEX=r1])
-mount(0x0, &(0x7f0000000380)='./file1\x00', &(0x7f0000000080)='autofs\x00', 0x0, &(0x7f0000000400))

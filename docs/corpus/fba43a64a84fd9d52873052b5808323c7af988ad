@@ -1,4 +1,0 @@
-mkdir(&(0x7f0000000100)='./file0\x00', 0x0)
-mount(&(0x7f0000000040)=ANY=[@ANYBLOB='/'], &(0x7f00000001c0)='./file0\x00', 0x0, 0x2005111, 0x0)
-r0 = syz_open_procfs(0x0, &(0x7f00000002c0)='mountinfo\x00')
-read(r0, &(0x7f0000000380)=""/233, 0xffbe)

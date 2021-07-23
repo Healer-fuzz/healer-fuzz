@@ -1,2 +1,0 @@
-io_setup(0x0, &(0x7f0000000040))
-prctl$PR_SET_MM_MAP_SIZE(0x23, 0x6, &(0x7f0000000000))

@@ -1,3 +1,0 @@
-r0 = socket$nl_generic(0x10, 0x3, 0x10)
-r1 = syz_genetlink_get_family_id$batadv(&(0x7f0000000080)='batadv\x00', 0xffffffffffffffff)
-sendmsg$BATADV_CMD_GET_BLA_BACKBONE(r0, &(0x7f0000000180)={0x0, 0x0, &(0x7f0000000140)={&(0x7f00000000c0)={0x24, r1, 0xf25, 0x0, 0x0, {}, [@BATADV_ATTR_GW_MODE={0x5}, @BATADV_ATTR_MESH_IFINDEX={0x8}]}, 0x24}}, 0x0)

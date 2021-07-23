@@ -1,3 +1,0 @@
-getpid()
-r0 = syz_open_dev$video4linux(&(0x7f0000000100)='/dev/v4l-subdev#\x00', 0x0, 0x0)
-ioctl$VIDIOC_QUERY_EXT_CTRL(r0, 0xc0e85667, &(0x7f00000000c0)={0xf0f000, 0x0, "06a1821a0007f652e5204f0e572860d29bcf736aa366bedb3febc7f9c67f1e17"})

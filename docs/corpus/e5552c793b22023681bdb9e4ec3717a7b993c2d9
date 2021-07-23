@@ -1,4 +1,0 @@
-mkdir(&(0x7f00000001c0)='./file0\x00', 0x0)
-pipe2$9p(&(0x7f0000000040)={<r0=>0xffffffffffffffff, <r1=>0xffffffffffffffff}, 0x0)
-r2 = dup(r1)
-mount$9p_fd(0x0, &(0x7f0000000000)='./file0\x00', &(0x7f0000000200)='9p\x00', 0x0, &(0x7f00000000c0)={'trans=fd,', {'rfdno', 0x3d, r0}, 0x2c, {'wfdno', 0x3d, r2}, 0x2c, {[{@nodevmap='nodevmap'}], [], 0x6b}})

@@ -1,2 +1,0 @@
-r0 = syz_open_procfs(0xffffffffffffffff, &(0x7f0000000080)='attr/current\x00')
-copy_file_range(r0, &(0x7f0000000040)=0xffffffffffffffc0, r0, 0x0, 0x0, 0x0)

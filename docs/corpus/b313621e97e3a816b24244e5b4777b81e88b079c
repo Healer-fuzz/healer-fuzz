@@ -1,3 +1,0 @@
-mknod$loop(&(0x7f0000000300)='./file0\x00', 0x0, 0x1)
-clone(0x2f802900, 0x0, 0xfffffffffffffffe, 0x0, 0xffffffffffffffff)
-mount$tmpfs(0x0, &(0x7f0000000000)='./file0\x00', &(0x7f0000000240)='tmpfs\x00', 0x0, &(0x7f0000000400)={[{@mpol={'mpol', 0x3d, {'prefer', '=relative'}}, 0xa}]})

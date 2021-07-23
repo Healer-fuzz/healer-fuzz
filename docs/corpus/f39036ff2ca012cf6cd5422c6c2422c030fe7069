@@ -1,3 +1,0 @@
-r0 = syz_init_net_socket$bt_l2cap(0x1f, 0x1, 0x3)
-r1 = dup(r0)
-ioctl$PERF_EVENT_IOC_SET_FILTER(r1, 0x8b06, &(0x7f0000000040)='wlan0\x00')

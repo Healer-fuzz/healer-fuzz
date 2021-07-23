@@ -1,4 +1,0 @@
-r0 = socket(0x40000000015, 0x5, 0x0)
-setsockopt$SO_RDS_TRANSPORT(r0, 0x114, 0x8, &(0x7f00000008c0), 0x4)
-ioctl$SIOCX25GSUBSCRIP(r0, 0x89e0, &(0x7f0000000400)={'bridge_slave_1\x00'})
-ioctl$SIOCX25GSUBSCRIP(r0, 0x89e0, &(0x7f0000000000)={'veth1_to_hsr\x00'})

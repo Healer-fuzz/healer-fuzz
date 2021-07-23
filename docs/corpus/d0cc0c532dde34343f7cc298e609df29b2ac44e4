@@ -1,4 +1,0 @@
-setsockopt$inet_msfilter(0xffffffffffffffff, 0x0, 0x29, &(0x7f0000000540)=ANY=[@ANYBLOB="e0040001ac1414aa"], 0x1)
-r0 = socket$inet_udp(0x2, 0x2, 0x0)
-setsockopt$inet_mreqn(r0, 0x0, 0x27, &(0x7f0000000240)={@multicast1, @remote}, 0xc)
-getsockopt$inet_buf(r0, 0x0, 0x29, &(0x7f0000000540)=""/197, &(0x7f0000000400)=0xffc4)

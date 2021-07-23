@@ -1,4 +1,0 @@
-r0 = syz_usb_connect(0x0, 0x2d, &(0x7f0000000000)=ANY=[@ANYBLOB="12010000c02e8240e917bf4a543f03fd030109021b0001000000000904001c01ff"], 0x0)
-syz_usb_control_io(r0, 0x0, 0x0)
-syz_usb_control_io$printer(r0, 0x0, 0x0)
-syz_usb_control_io$cdc_ncm(r0, &(0x7f0000000940)={0x14, &(0x7f0000000880)=ANY=[], 0x0}, 0x0)

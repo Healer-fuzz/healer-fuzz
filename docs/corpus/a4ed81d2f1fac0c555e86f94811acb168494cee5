@@ -1,5 +1,0 @@
-mkdir(&(0x7f0000000080)='./file0\x00', 0x0)
-r0 = openat$fuse(0xffffffffffffff9c, &(0x7f0000002080)='/dev/fuse\x00', 0x42, 0x0)
-mount$fuse(0x0, &(0x7f00000042c0)='./file0\x00', &(0x7f0000002000)='fuse\x00', 0x0, &(0x7f00000001c0)={{'fd', 0x3d, r0}, 0x2c, {'rootmode', 0x3d, 0x4000}, 0x2c, {'user_id'}, 0x2c, {'group_id'}, 0x2c, {[{@max_read={'max_read'}}, {@allow_other='allow_other'}, {@default_permissions='default_permissions'}]}})
-r1 = syz_open_procfs(0x0, &(0x7f0000000180)='mountinfo\x00')
-preadv(r1, &(0x7f0000000940)=[{&(0x7f0000000040)=""/42, 0x2a}, {&(0x7f00000008c0)=""/106, 0x5b}, {&(0x7f00000007c0)=""/242, 0xf2}, {&(0x7f0000001380)=""/239, 0xfc36}], 0xc7, 0x0, 0x0)

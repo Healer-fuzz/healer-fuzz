@@ -1,3 +1,0 @@
-mkdir(&(0x7f0000000040)='./file0\x00', 0x0)
-setxattr$trusted_overlay_upper(&(0x7f00000002c0)='./file0\x00', &(0x7f0000000100)='trusted.overlay.upper\x00', &(0x7f0000000700)=ANY=[], 0x5a, 0x0)
-lgetxattr(&(0x7f0000000140)='./file0\x00', &(0x7f0000000180)=@known='trusted.overlay.upper\x00', 0x0, 0x2)

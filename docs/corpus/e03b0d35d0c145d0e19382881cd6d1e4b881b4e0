@@ -1,4 +1,0 @@
-r0 = syz_open_procfs(0x0, &(0x7f0000000300)='map_files\x00')
-fchdir(r0)
-sendmsg$NL80211_CMD_NOTIFY_RADAR(0xffffffffffffffff, &(0x7f0000000340)={&(0x7f0000000140), 0xc, 0x0}, 0x0)
-quotactl(0x2080000200, &(0x7f0000000100)='./file1\x00', 0x0, &(0x7f0000000340)='-')

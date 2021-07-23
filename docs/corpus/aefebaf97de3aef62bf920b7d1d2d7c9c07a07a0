@@ -1,1 +1,0 @@
-pkey_mprotect(&(0x7f0000ff9000/0x4000)=nil, 0x4000, 0x1000000, 0xffffffffffffffff)

@@ -1,6 +1,0 @@
-r0 = openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
-mmap(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x1800003, 0x12, r0, 0x0)
-preadv(r0, &(0x7f0000000280), 0x100000000000008d, 0x4, 0x0)
-r1 = socket$nl_generic(0x10, 0x3, 0x10)
-r2 = syz_genetlink_get_family_id$ethtool(&(0x7f00000000c0)='ethtool\x00', 0xffffffffffffffff)
-sendmsg$ETHTOOL_MSG_COALESCE_SET(r1, &(0x7f00000002c0)={0x0, 0x0, &(0x7f00000001c0)={&(0x7f0000000100)=ANY=[@ANYBLOB='4\x00\x00\x00', @ANYRES16=r2, @ANYBLOB="03060000000000000000140000000800030000000008180001801400020073797a5f74756e"], 0x34}}, 0x0)

@@ -1,3 +1,0 @@
-mknod$loop(&(0x7f0000000080)='./file0\x00', 0x2000, 0x1)
-utimes(&(0x7f00000000c0)='./file1\x00', 0x0)
-chroot(&(0x7f0000000000)='./file0\x00')

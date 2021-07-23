@@ -1,3 +1,0 @@
-r0 = openat$ppp(0xffffffffffffff9c, &(0x7f0000000000)='/dev/ppp\x00', 0x0, 0x0)
-ioctl$PPPIOCNEWUNIT(r0, 0xc004743e, &(0x7f00000000c0))
-ioctl$PPPIOCCONNECT(r0, 0x4004743a, 0x0)

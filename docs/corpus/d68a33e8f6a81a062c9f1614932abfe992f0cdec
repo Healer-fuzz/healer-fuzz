@@ -1,2 +1,0 @@
-r0 = epoll_create(0x480000)
-fcntl$setownex(r0, 0x40e, &(0x7f0000000500)={0x1000000})

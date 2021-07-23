@@ -1,2 +1,0 @@
-r0 = socket$kcm(0x2, 0x3, 0x2)
-ioctl$SIOCSIFHWADDR(r0, 0x8b0d, &(0x7f0000000000)={'wg1\x00', @multicast})

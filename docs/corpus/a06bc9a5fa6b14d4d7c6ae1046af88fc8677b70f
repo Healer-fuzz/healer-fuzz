@@ -1,2 +1,0 @@
-r0 = socket$inet6_sctp(0xa, 0x10000000005, 0x84)
-getsockopt$inet_sctp6_SCTP_GET_ASSOC_ID_LIST(r0, 0x84, 0x4, &(0x7f0000002bc0), &(0x7f000095dffc)=0x4)

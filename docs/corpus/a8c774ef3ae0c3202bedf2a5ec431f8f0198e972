@@ -1,5 +1,0 @@
-clone(0x20002004ffc, 0x0, 0xfffffffffffffffe, 0x0, 0xffffffffffffffff)
-r0 = getpid()
-rt_tgsigqueueinfo(r0, r0, 0x4000000000000016, &(0x7f00000004c0))
-ptrace(0x4206, r0)
-ptrace$peeksig(0x2, r0, &(0x7f0000000000), &(0x7f0000000140))

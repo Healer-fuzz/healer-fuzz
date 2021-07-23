@@ -1,4 +1,0 @@
-r0 = openat$pfkey(0xffffffffffffff9c, &(0x7f0000000ec0)='/proc/self/net/pfkey\x00', 0x0, 0x0)
-r1 = syz_open_dev$usbmon(&(0x7f0000000000)='/dev/usbmon#\x00', 0x401, 0x0)
-syz_open_dev$usbmon(&(0x7f0000000100)='/dev/usbmon#\x00', 0x0, 0x0)
-dup2(r0, r1)

@@ -1,8 +1,0 @@
-sendmsg$netlink(0xffffffffffffffff, &(0x7f000000b940)={0x0, 0x0, &(0x7f0000009380)=[{&(0x7f0000000400)={0xac, 0x0, 0x0, 0x0, 0x0, "", [@nested={0x9c, 0x0, 0x0, 0x1, [@typed={0x95, 0x0, 0x0, 0x0, @binary="9c5a99bdcf36e87ab11291604140983759bf5f9256cf9e6688cb5d726508205972da8377b436f5e41f2ddb6bf14c9e8c726a8275c29a5f91e8900106bcb8c0c4f1cfdd4dca80fa38bc8955fde5dd604d86ef6d739f9f99d4be3c54d79fd1673c628e849a773d79ce59560b2e5e00026b62c8d96eadd54a8d7ad856f7eb6779b7d6bca8f59f9c622cfc6e17b60073011f13"}]}]}, 0xac}], 0x1}, 0x0)
-r0 = openat$ptmx(0xffffffffffffff9c, &(0x7f0000000180)='/dev/ptmx\x00', 0x8000000000006, 0x0)
-pipe2(0x0, 0x0)
-ioctl$TCSETS(r0, 0x40045431, &(0x7f0000000240)={0x0, 0x0, 0x0, 0x0, 0x0, "eaffffff090000000000000000000000000053"})
-write$binfmt_aout(r0, &(0x7f0000000240)=ANY=[], 0x35b)
-close(0xffffffffffffffff)
-r1 = syz_open_pts(r0, 0x0)
-ioctl$TCSETSF(r1, 0x5412, &(0x7f0000000000)={0x15, 0x0, 0x0, 0x0, 0x0, "00000007000000000000000900000000001000"})

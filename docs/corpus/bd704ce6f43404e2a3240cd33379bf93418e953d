@@ -1,4 +1,0 @@
-ioctl$SNDRV_SEQ_IOCTL_SET_CLIENT_INFO(0xffffffffffffffff, 0x40bc5311, &(0x7f0000000080)={0x0, 0x0, 'client1\x00', 0x0, "34c66ed3a2288f4e", "a6975a1c814d902bd03c2722cd06562546074d13b67302187699b10bcdf2e610"})
-r0 = syz_init_net_socket$bt_hci(0x1f, 0x3, 0x1)
-bind$bt_hci(r0, &(0x7f0000000040)={0x1f, 0xffff, 0x3}, 0x6)
-write$binfmt_misc(r0, &(0x7f0000000080)=ANY=[@ANYBLOB="2600030007"], 0xd)

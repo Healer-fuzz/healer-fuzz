@@ -1,6 +1,0 @@
-r0 = add_key$user(&(0x7f0000000000)='user\x00', &(0x7f0000000040)={'syz', 0x1}, &(0x7f0000000380)="a8", 0x1, 0xfffffffffffffffe)
-add_key$user(0x0, 0x0, 0x0, 0x0, 0xfffffffffffffffe)
-add_key(0x0, 0x0, &(0x7f0000000440)="06cb7982cf711d0a5ea6a64722bf5575", 0x10, 0x0)
-add_key$user(0x0, 0x0, &(0x7f0000000300)="f40b988e1f02bcb99d456284cbb0e4c87a508b06d20deb40c12e0fb3f7c103de85547ed4fbd8904662", 0x29, 0x0)
-r1 = add_key$user(&(0x7f0000000200)='user\x00', &(0x7f00000005c0)={'syz'}, &(0x7f00000000c0), 0x390, 0xfffffffffffffffd)
-keyctl$dh_compute(0x17, &(0x7f0000000140)={r0, r1, r1}, 0x0, 0x0, &(0x7f00000001c0)={&(0x7f0000000280)={'xcbc(anubis-generic)\x00'}})

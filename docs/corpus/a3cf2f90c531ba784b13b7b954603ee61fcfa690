@@ -1,2 +1,0 @@
-r0 = openat$sysctl(0xffffffffffffff9c, &(0x7f0000000040)='/proc/sys/net/ipv4/tcp_dsack\x00', 0x1, 0x0)
-lseek(r0, 0x0, 0x0)

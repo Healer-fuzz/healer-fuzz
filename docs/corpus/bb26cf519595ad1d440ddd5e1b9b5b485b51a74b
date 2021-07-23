@@ -1,1 +1,0 @@
-syz_emit_ethernet(0xc7, &(0x7f0000000180)=ANY=[@ANYBLOB="bbbbbbbbbbbb0000000000004305400f"], 0x0)

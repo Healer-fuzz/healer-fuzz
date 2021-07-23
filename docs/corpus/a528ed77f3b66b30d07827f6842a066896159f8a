@@ -1,2 +1,0 @@
-r0 = openat$autofs(0xffffffffffffff9c, &(0x7f0000000000)='/dev/autofs\x00', 0x0, 0x0)
-ioctl(r0, 0x9371, &(0x7f0000000500)="010000000000000018")

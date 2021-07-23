@@ -1,4 +1,0 @@
-r0 = syz_open_procfs(0xffffffffffffffff, &(0x7f0000000500)='net/stat\x00')
-getdents64(r0, &(0x7f00000004c0)=""/35, 0x23)
-getdents64(r0, &(0x7f0000000000)=""/111, 0x19)
-getdents(r0, 0x0, 0x2000)

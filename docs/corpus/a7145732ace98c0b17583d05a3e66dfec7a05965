@@ -1,2 +1,0 @@
-r0 = add_key(&(0x7f0000000400)='big_key\x00', &(0x7f0000000440)={'syz', 0x0}, &(0x7f0000000480)="c6", 0x1, 0xffffffffffffffff)
-keyctl$read(0xb, r0, &(0x7f0000000000), 0x0)

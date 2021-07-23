@@ -1,3 +1,0 @@
-r0 = syz_init_net_socket$x25(0x9, 0x5, 0x0)
-r1 = dup2(r0, r0)
-ioctl$SIOCX25SSUBSCRIP(r1, 0x89e1, &(0x7f0000000080)={'batadv_slave_0\x00'})

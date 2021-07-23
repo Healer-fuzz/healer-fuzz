@@ -1,2 +1,0 @@
-r0 = syz_open_dev$vivid(&(0x7f0000000040)='/dev/video#\x00', 0x2, 0x2)
-ioctl$VIDIOC_G_CTRL(r0, 0x80045643, &(0x7f0000000000))

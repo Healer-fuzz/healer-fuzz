@@ -1,3 +1,0 @@
-ioctl$PERF_EVENT_IOC_PERIOD(0xffffffffffffffff, 0x40082404, &(0x7f0000000000)=0x100)
-r0 = socket$inet(0x2, 0x3, 0x33)
-getsockopt$inet_mreqsrc(r0, 0x0, 0x53, &(0x7f0000000000)={@dev, @local, @broadcast}, &(0x7f0000000040)=0x28)

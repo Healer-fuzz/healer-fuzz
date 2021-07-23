@@ -1,2 +1,0 @@
-unshare(0x40020200)
-syz_init_net_socket$nl_generic(0x10, 0x3, 0x10)

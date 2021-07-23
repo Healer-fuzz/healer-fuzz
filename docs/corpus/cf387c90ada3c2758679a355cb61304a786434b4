@@ -1,2 +1,0 @@
-r0 = socket$inet6_icmp_raw(0xa, 0x3, 0x3a)
-setsockopt$inet6_mreq(r0, 0x29, 0x7, &(0x7f0000000140)={@rand_addr=' \x01\x00'}, 0x14)

@@ -1,2 +1,0 @@
-r0 = epoll_create1(0x0)
-fremovexattr(r0, &(0x7f0000000340)=@random={'btrfs.', 'system.posix_acl_access\x00'})

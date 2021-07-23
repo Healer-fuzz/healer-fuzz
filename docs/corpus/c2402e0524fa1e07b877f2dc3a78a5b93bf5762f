@@ -1,4 +1,0 @@
-r0 = openat$nullb(0xffffffffffffff9c, &(0x7f0000000080)='/dev/nullb0\x00', 0x40102, 0x0)
-openat$nullb(0xffffffffffffff9c, &(0x7f0000000000)='/dev/nullb0\x00', 0x101380, 0x0)
-writev(r0, &(0x7f0000000340)=[{&(0x7f00000001c0)='z', 0x1}], 0x1)
-ioctl$BLKZEROOUT(r0, 0x127f, &(0x7f0000000100)={0x0, 0x600})

@@ -1,3 +1,0 @@
-r0 = openat$apparmor_thread_exec(0xffffffffffffff9c, &(0x7f0000000240)='/proc/thread-self/attr/exec\x00', 0x2, 0x0)
-write$apparmor_exec(r0, &(0x7f0000000040)=ANY=[@ANYBLOB='exec :'], 0x9)
-clone(0x1100, 0x0, 0xfffffffffffffffe, 0x0, 0xffffffffffffffff)

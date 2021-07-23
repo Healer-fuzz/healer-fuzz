@@ -1,2 +1,0 @@
-r0 = syz_init_net_socket$rose(0xb, 0x5, 0x0)
-ioctl$SIOCRSACCEPT(r0, 0x89e3)

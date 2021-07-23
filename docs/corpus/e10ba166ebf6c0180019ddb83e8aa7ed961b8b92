@@ -1,2 +1,0 @@
-r0 = socket$inet_udp(0x2, 0x2, 0x0)
-syz_mount_image$omfs(&(0x7f0000000000)='omfs\x00', &(0x7f0000000080)='./file0\x00', 0x0, 0x0, &(0x7f00000004c0), 0x0, &(0x7f00000000c0)=ANY=[@ANYBLOB='uid=', @ANYRESOCT, @ANYRESDEC=r0])

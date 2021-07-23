@@ -1,4 +1,0 @@
-setresuid(0xee00, 0xee00, 0x0)
-r0 = getuid()
-r1 = add_key$keyring(&(0x7f0000000240)='keyring\x00', &(0x7f0000000280)={'syz', 0x3}, 0x0, 0x0, 0xffffffffffffffff)
-keyctl$chown(0x4, r1, r0, 0xffffffffffffffff)

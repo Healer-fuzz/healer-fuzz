@@ -1,6 +1,0 @@
-r0 = socket$packet(0x11, 0x3, 0x300)
-setsockopt$packet_int(r0, 0x107, 0xf, &(0x7f0000006ffc)=0x7b, 0x4)
-r1 = socket$packet(0x11, 0x2, 0x300)
-ioctl$sock_SIOCGIFINDEX(r1, 0x8933, &(0x7f0000000080)={'syz_tun\x00', <r2=>0x0})
-bind$packet(r0, &(0x7f0000000180)={0x11, 0x0, r2, 0x1, 0x0, 0x6, @dev}, 0x14)
-sendto$inet6(r0, &(0x7f0000000000)="05034a00eefe3e0000000200c52cf7c25975e605b02f80357f2b2ff0dac8897c6b11876d886b143a301817ccd51cc5471d130a6632a88161b6fd8f24286a57c3fe257c3314a3974bb654697f462f4c73", 0xff42, 0x0, 0x0, 0x0)

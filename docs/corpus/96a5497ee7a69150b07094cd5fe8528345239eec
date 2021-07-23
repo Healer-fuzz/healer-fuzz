@@ -1,2 +1,0 @@
-r0 = openat$cuse(0xffffffffffffff9c, &(0x7f0000000140)='/dev/cuse\x00', 0x2, 0x0)
-ioctl$FUSE_DEV_IOC_CLONE(r0, 0x8004e500, 0x0)

@@ -1,3 +1,0 @@
-clone(0x44048100, 0x0, 0x0, 0x0, 0x0)
-fork()
-openat$binder_debug(0xffffffffffffff9c, &(0x7f0000000280)='/sys/kernel/debug/binder/transaction_log\x00', 0x0, 0x0)

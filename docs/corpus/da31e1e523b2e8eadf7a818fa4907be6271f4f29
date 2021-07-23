@@ -1,2 +1,0 @@
-r0 = fsopen(&(0x7f0000000040)='bpf\x00', 0x0)
-fsconfig$FSCONFIG_SET_PATH(r0, 0x5, &(0x7f00000000c0)='\x00', &(0x7f0000000100)='./file0\x00', 0xffffffffffffff9c)

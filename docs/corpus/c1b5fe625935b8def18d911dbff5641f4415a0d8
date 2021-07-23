@@ -1,2 +1,0 @@
-r0 = openat$ppp(0xffffffffffffff9c, &(0x7f00000000c0)='/dev/ppp\x00', 0x0, 0x0)
-ioctl$PPPIOCATTACH(r0, 0x4004743d, &(0x7f0000000000)=0x2)

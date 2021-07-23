@@ -1,2 +1,0 @@
-r0 = add_key$keyring(&(0x7f0000000100)='keyring\x00', &(0x7f00000000c0)={'syz', 0x1}, 0x0, 0x0, 0xffffffffffffffff)
-add_key(&(0x7f0000000300)='pkcs7_test\x00', 0x0, &(0x7f00000001c0)="1080", 0x2, r0)

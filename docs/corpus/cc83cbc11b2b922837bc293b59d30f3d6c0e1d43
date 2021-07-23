@@ -1,5 +1,0 @@
-pipe(&(0x7f0000000040)={<r0=>0xffffffffffffffff, <r1=>0xffffffffffffffff})
-flock(r0, 0x5)
-flock(r1, 0x2)
-flock(r1, 0x1)
-flock(r0, 0x2)

@@ -1,2 +1,0 @@
-socketpair$nbd(0x1, 0x1, 0x0, &(0x7f0000001d00)={<r0=>0xffffffffffffffff})
-ioctl$sock_SIOCETHTOOL(r0, 0x8946, &(0x7f0000000080)={'ipvlan1\x00', &(0x7f0000000000)=@ethtool_eeprom={0x8}})

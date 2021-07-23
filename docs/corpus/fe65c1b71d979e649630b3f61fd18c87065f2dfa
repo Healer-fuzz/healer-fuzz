@@ -1,6 +1,0 @@
-r0 = openat$kvm(0xffffffffffffff9c, &(0x7f0000000000)='/dev/kvm\x00', 0x0, 0x0)
-r1 = socket$packet(0x11, 0x2, 0x300)
-r2 = dup(r1)
-ioctl$PERF_EVENT_IOC_ENABLE(r2, 0x8912, 0x400200)
-r3 = syz_init_net_socket$nfc_raw(0x27, 0x5, 0x0)
-dup2(r0, r3)

@@ -1,2 +1,0 @@
-r0 = socket$inet6_udp(0xa, 0x2, 0x0)
-getsockopt$IP6T_SO_GET_REVISION_MATCH(r0, 0x29, 0x44, &(0x7f0000009cc0)={'icmp6\x00'}, &(0x7f0000009d00)=0x1e)

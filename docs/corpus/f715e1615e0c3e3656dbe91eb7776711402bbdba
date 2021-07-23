@@ -1,2 +1,0 @@
-r0 = openat$sequencer(0xffffffffffffff9c, &(0x7f0000000080)='/dev/sequencer\x00', 0x82002, 0x0)
-write$sequencer(r0, &(0x7f0000000100)=[@s={0x5, @SEQ_MIDIPUTC=0xf6}], 0x4)

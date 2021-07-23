@@ -1,7 +1,0 @@
-r0 = openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
-mmap(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x1800003, 0x12, r0, 0x0)
-preadv(r0, &(0x7f0000000280), 0x18, 0xd9f, 0x0)
-r1 = syz_usb_connect(0x1, 0x2d, &(0x7f0000000000)=ANY=[@ANYBLOB="120100000fa98108cd060202da920000000109021b0001000000000904000001da40df0009058202"], 0x0)
-syz_usb_control_io$printer(r1, 0x0, 0x0)
-syz_usb_control_io$hid(r1, 0x0, 0x0)
-syz_usb_control_io$hid(r1, 0x0, 0x0)

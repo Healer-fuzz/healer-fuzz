@@ -1,2 +1,0 @@
-r0 = openat$sequencer(0xffffffffffffff9c, &(0x7f0000000040)='/dev/sequencer\x00', 0xa901, 0x0)
-ioctl$NBD_SET_SIZE(r0, 0x4004510d, 0x400000)

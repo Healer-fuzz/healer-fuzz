@@ -1,8 +1,0 @@
-r0 = openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
-mmap(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x1800007, 0x12, r0, 0x0)
-preadv(r0, &(0x7f0000000280), 0x1, 0x0, 0x0)
-r1 = socket$inet(0x2, 0x4000000000000001, 0x0)
-r2 = dup(r1)
-rt_sigaction(0xd, &(0x7f0000000040)={&(0x7f0000000000)="f346d37ff2f2438395ff1f965a00c4c1185c840561ee00007b7b01fa6f6aa1c463f962d60064660fd054060aa89ef37c6467f30f2a6cda00c4c1f91129", 0x35424e7abd7486b0, 0x0}, 0x0, 0x8, &(0x7f00000004c0))
-r3 = dup3(r1, r2, 0x0)
-write$P9_RSTATFS(r3, 0x0, 0x0)

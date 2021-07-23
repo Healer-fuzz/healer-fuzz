@@ -1,6 +1,0 @@
-r0 = openat$ppp(0xffffffffffffff9c, &(0x7f0000000300)='/dev/ppp\x00', 0x8000010b005, 0x0)
-r1 = dup2(r0, r0)
-ioctl$EVIOCGPROP(r1, 0xc004743e, &(0x7f0000000000)=""/246)
-ioctl$PPPIOCSMAXCID(r1, 0x40047451, &(0x7f00000013c0))
-ioctl$PPPIOCSFLAGS1(r0, 0x40047459, &(0x7f0000000140)=0x5c5064)
-pwritev(r1, &(0x7f0000000180)=[{&(0x7f0000000340)="00214900000000ffffffff0601000000000000000000", 0xad}], 0x1, 0x0, 0x0)

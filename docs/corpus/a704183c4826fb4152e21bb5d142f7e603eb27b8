@@ -1,5 +1,0 @@
-syz_mount_image$tmpfs(&(0x7f0000000000)='tmpfs\x00', &(0x7f0000000080)='./file0\x00', 0x0, 0x0, 0x0, 0x0, &(0x7f00000000c0)=ANY=[@ANYBLOB='size=7'])
-r0 = open(&(0x7f0000000100)='./file0\x00', 0x0, 0x0)
-fchdir(r0)
-r1 = creat(&(0x7f00000001c0)='./file0\x00', 0x0)
-write$P9_RREMOVE(r1, &(0x7f0000000280)={0xfffffffffffffcd2}, 0xff7f)

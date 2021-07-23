@@ -1,5 +1,0 @@
-r0 = socket$inet6_icmp_raw(0xa, 0x3, 0x3a)
-setsockopt$inet6_IPV6_HOPOPTS(r0, 0x29, 0x36, &(0x7f00000000c0)=ANY=[], 0x8)
-connect$inet6(r0, &(0x7f00000003c0)={0xa, 0x0, 0x0, @mcast2, 0x4}, 0x1c)
-setsockopt$SO_BINDTODEVICE(r0, 0x1, 0x19, &(0x7f0000000080)='bridge0\x00', 0x10)
-write(r0, &(0x7f00000000c0)="8f2a0a65bd8c00270304000e0580a7b6072e63e286a5cefe24876ece", 0x5ac)

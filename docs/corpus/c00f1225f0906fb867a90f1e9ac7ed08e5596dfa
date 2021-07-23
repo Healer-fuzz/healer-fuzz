@@ -1,3 +1,0 @@
-setreuid(0xffffffffffffffff, 0xee00)
-setfsuid(0x0)
-openat$cachefiles(0xffffffffffffff9c, &(0x7f0000000000)='/dev/cachefiles\x00', 0x0, 0x0)

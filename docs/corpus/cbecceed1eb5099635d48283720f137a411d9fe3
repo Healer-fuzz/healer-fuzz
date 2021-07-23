@@ -1,4 +1,0 @@
-r0 = openat$rfkill(0xffffffffffffff9c, &(0x7f0000000000)='/dev/rfkill\x00', 0x0, 0x0)
-r1 = openat$rfkill(0xffffffffffffff9c, &(0x7f0000000040)='/dev/rfkill\x00', 0x0, 0x0)
-ioctl$RFKILL_IOCTL_NOINPUT(r1, 0x5201)
-ioctl$RFKILL_IOCTL_NOINPUT(r0, 0x5201)

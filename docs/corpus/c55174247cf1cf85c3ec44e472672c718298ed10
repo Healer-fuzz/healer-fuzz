@@ -1,2 +1,0 @@
-socketpair$nbd(0x1, 0x1, 0x0, &(0x7f0000002900)={<r0=>0xffffffffffffffff})
-ioctl$sock_SIOCETHTOOL(r0, 0x8931, &(0x7f0000000040)={'bond0\x00', 0x0})

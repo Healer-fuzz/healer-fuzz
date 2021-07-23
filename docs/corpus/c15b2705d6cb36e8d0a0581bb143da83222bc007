@@ -1,3 +1,0 @@
-r0 = openat$qrtrtun(0xffffffffffffff9c, &(0x7f0000000000)='/dev/qrtr-tun\x00', 0x82)
-write$qrtrtun(r0, &(0x7f0000000000)="0121213998aaf000000000000000065219568600000000000000ff7ffeffffff", 0x20)
-read$qrtrtun(r0, 0x0, 0x0)

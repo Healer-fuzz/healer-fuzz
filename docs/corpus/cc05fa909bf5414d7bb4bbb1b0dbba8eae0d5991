@@ -1,8 +1,0 @@
-pipe(&(0x7f0000000080)={<r0=>0xffffffffffffffff, <r1=>0xffffffffffffffff})
-r2 = socket$inet_udp(0x2, 0x2, 0x0)
-sendmsg$key(0xffffffffffffffff, 0x0, 0x0)
-close(r2)
-socket$netlink(0x10, 0x3, 0x0)
-writev(r1, &(0x7f0000000040)=[{&(0x7f0000000140)="390000001100090468fe0700000000000700ff3f0800000045000e070000001419001a00", 0x24}], 0x1)
-write$binfmt_misc(r1, &(0x7f0000000080)=ANY=[], 0x15)
-splice(r0, 0x0, r2, 0x0, 0x19404, 0x0)

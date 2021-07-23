@@ -1,3 +1,0 @@
-mkdir(&(0x7f0000000000)='./file0\x00', 0x0)
-setxattr$incfs_metadata(&(0x7f00000000c0)='./file0\x00', &(0x7f0000000080)='user.incfs.metadata\x00', 0x0, 0x0, 0x0)
-llistxattr(&(0x7f0000000040)='./file0\x00', &(0x7f0000000100)=""/16, 0x10)

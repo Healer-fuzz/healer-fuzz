@@ -1,2 +1,0 @@
-r0 = socket$l2tp(0x2, 0x2, 0x73)
-ioctl$sock_SIOCETHTOOL(r0, 0x8946, &(0x7f0000001700)={'wg0\x00', &(0x7f00000016c0)=@ethtool_eee={0x44}})

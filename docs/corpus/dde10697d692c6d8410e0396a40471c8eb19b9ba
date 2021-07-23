@@ -1,2 +1,0 @@
-r0 = syz_init_net_socket$802154_dgram(0x24, 0x2, 0x0)
-bind$802154_dgram(r0, &(0x7f0000000000)={0x24, @long}, 0x14)

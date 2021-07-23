@@ -1,3 +1,0 @@
-creat(&(0x7f00000001c0)='./bus\x00', 0x0)
-setxattr$security_ima(&(0x7f0000000000)='./bus\x00', &(0x7f0000000040)='security.ima\x00', &(0x7f0000000080)=@md5={0x1, "c462efacb655ae5e3f9cef3549c32a12"}, 0x11, 0x0)
-openat$dir(0xffffff9c, &(0x7f0000000200)='./bus\x00', 0x0, 0x0)
