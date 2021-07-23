@@ -1,0 +1,2 @@
+[kvm_vm_ioctl_unregister_coalesced_mmio](https://lkml.org/lkml/2021/4/12/1986)
+[memory leak in kvm_io_bus_unregister_de](https://lkml.org/lkml/2021/4/12/1985)

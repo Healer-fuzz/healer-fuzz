@@ -6,7 +6,9 @@ This directory contains the result of 48h coverage comparision experiment.
 
 ## Coverage Comparison Experiment in 48 hours
 
-![merged](./merged.PNG)
+![linux-v5.11](./linux-v5.11.png)
+![linux-v5.4](./linux-v5.4.png)
+![linux-v4.19](./linux-v4.19.png)
 
 ## HEALER + Moonshine Seed
 
