@@ -1,0 +1,6 @@
+r0 = openat$adsp1(0xffffffffffffff9c, &(0x7f0000000080)='/dev/adsp1\x00', 0x10b282, 0x0)
+ioctl$SNDCTL_DSP_SPEED(r0, 0xc0045002, &(0x7f00000000c0))
+ioctl$SNDCTL_DSP_CHANNELS(r0, 0xc0045006, &(0x7f00000001c0)=0x20)
+ioctl$SNDCTL_DSP_SETFRAGMENT(r0, 0xc004500a, &(0x7f0000000040))
+r1 = socket$inet6_icmp_raw(0xa, 0x3, 0x3a)
+dup3(r1, r0, 0x0)

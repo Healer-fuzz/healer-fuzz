@@ -1,0 +1,2 @@
+r0 = socket$packet(0x11, 0x3, 0x300)
+setsockopt$packet_buf(r0, 0x107, 0x1, &(0x7f0000000000)="d239248de70853b66837f0fe8876619e", 0x10)

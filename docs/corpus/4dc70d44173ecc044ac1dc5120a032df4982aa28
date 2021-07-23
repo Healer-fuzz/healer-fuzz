@@ -1,0 +1,1 @@
+syz_mount_image$gfs2(&(0x7f0000002980)='gfs2\x00', &(0x7f00000029c0)='./file0\x00', 0x0, 0x0, &(0x7f0000000280), 0x0, &(0x7f0000000000)={[{@lockproto_nolock='lockproto=lock_nolock'}, {@locktable={'locktable', 0x3d, 'barrier'}}, {@hostdata={'hostdata', 0x3d, 'quota=account'}}, {@norgrplvb='norgrplvb'}, {@noquota='noquota'}]})

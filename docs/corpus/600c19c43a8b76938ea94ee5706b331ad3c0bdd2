@@ -1,0 +1,1 @@
+syz_mount_image$xfs(&(0x7f0000000000)='xfs\x00', &(0x7f0000000040)='./file0\x00', 0x0, 0x0, &(0x7f0000000400), 0x1000002, &(0x7f0000000480)={[{@uqnoenforce='uqnoenforce'}, {@logdev={'logdev', 0x3d, './file0'}}, {@allocsize={'allocsize', 0x3d, [0x31]}}, {@logdev={'logdev', 0x3d, './file0'}}, {@ikeep='ikeep'}, {@nobarrier='nobarrier'}]})

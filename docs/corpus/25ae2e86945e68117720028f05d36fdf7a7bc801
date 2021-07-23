@@ -1,0 +1,2 @@
+mknod(&(0x7f0000000100)='./file0\x00', 0x0, 0x0)
+setxattr$security_smack_transmute(&(0x7f0000000000)='./file0\x00', &(0x7f0000000040)='security.SMACK64TRANSMUTE\x00', &(0x7f0000000080)='TRUE', 0xfffffef1, 0x0)

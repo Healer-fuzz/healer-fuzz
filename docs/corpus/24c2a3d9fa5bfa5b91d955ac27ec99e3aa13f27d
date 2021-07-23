@@ -1,0 +1,7 @@
+syz_open_dev$hidraw(&(0x7f0000000800)='/dev/hidraw#\x00', 0x0, 0x0)
+r0 = syz_usb_connect$cdc_ncm(0x0, 0x6e, &(0x7f0000000000)=ANY=[@ANYBLOB="12010000020000403505a1a440b7aa24e80109025c000215000000090400000102090000052406000105240f00000d240f0300000080000000000006241a000000090581030002"], 0x0)
+syz_usb_disconnect(r0)
+r1 = syz_open_dev$char_usb(0xc, 0xb4, 0x0)
+write$char_usb(r1, 0x0, 0x0)
+write$char_usb(r1, 0x0, 0x0)
+syz_usb_disconnect(r0)

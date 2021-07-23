@@ -1,0 +1,4 @@
+socketpair$nbd(0x1, 0x1, 0x0, &(0x7f0000000000)={<r0=>0xffffffffffffffff, <r1=>0xffffffffffffffff})
+write$nbd(r1, &(0x7f0000000140), 0x10)
+write$nbd(r1, &(0x7f0000000080), 0x10)
+ioctl$sock_TIOCINQ(r0, 0x541b, &(0x7f0000000200))

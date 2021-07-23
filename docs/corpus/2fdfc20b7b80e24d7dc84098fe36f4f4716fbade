@@ -1,0 +1,3 @@
+r0 = syz_open_procfs(0xffffffffffffffff, &(0x7f0000000000)='net/tcp6\x00')
+read$alg(r0, &(0x7f0000000080)=""/58, 0x3a)
+read$alg(r0, &(0x7f00000000c0)=""/187, 0xbb)

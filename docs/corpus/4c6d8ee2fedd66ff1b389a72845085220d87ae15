@@ -1,0 +1,7 @@
+r0 = openat$uinput(0xffffffffffffff9c, &(0x7f00000000c0)='/dev/uinput\x00', 0x2, 0x0)
+write$uinput_user_dev(r0, &(0x7f0000000100)={'syz0\x00', {}, 0x7}, 0x45c)
+ioctl$UI_SET_FFBIT(r0, 0x4004556b, 0x61)
+ioctl$UI_DEV_SETUP(r0, 0x5501, 0x0)
+poll(&(0x7f0000000a80)=[{r0}], 0x1, 0x3f)
+write$input_event(r0, &(0x7f0000000000)={{0x77359400}, 0x15, 0x61}, 0xfea6)
+ioctl$F2FS_IOC_GET_PIN_FILE(0xffffffffffffffff, 0x8004f50e, 0x0)

@@ -1,0 +1,5 @@
+r0 = socket$inet6_sctp(0xa, 0x10000000005, 0x84)
+setsockopt$inet_sctp6_SCTP_SOCKOPT_CONNECTX(r0, 0x84, 0x6e, &(0x7f0000000000)=[@in6={0xa, 0x0, 0x0, @private1}], 0x1c)
+getsockopt$inet_sctp6_SCTP_GET_ASSOC_ID_LIST(r0, 0x84, 0x1d, &(0x7f0000000900)={0x1, [<r1=>0x0]}, &(0x7f0000000940)=0x8)
+getsockopt$inet_sctp6_SCTP_PR_ASSOC_STATUS(r0, 0x84, 0x74, &(0x7f0000000040)={<r2=>r1, 0x0, 0x10}, &(0x7f0000000080)=0x18)
+getsockopt$inet_sctp6_SCTP_GET_LOCAL_ADDRS(r0, 0x84, 0x6d, &(0x7f0000000240)={r2, 0x70, "8271c2781655f0ea566b5b21f319c9c9d8de179db7222298d81ac9f3d6cb835784d99abebf73cd58b8d496b948e1e1af5b66ba5b7a48a7c55f10e5997e1cd49f26f341c32cce560842f853053595c9e1771111b2b9ea7e099d9c66f22d802b90d049de690887cb0afbd1cba9225affd1"}, &(0x7f00000000c0)=0x78)

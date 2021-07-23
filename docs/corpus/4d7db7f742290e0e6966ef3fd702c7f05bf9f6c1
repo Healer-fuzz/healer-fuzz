@@ -1,0 +1,5 @@
+r0 = openat$vnet(0xffffffffffffff9c, &(0x7f0000000000)='/dev/vhost-net\x00', 0x2, 0x0)
+ioctl$VHOST_SET_OWNER(r0, 0xaf01, 0x0)
+r1 = eventfd(0x0)
+ioctl$VHOST_SET_VRING_ERR(r0, 0x4008af22, &(0x7f0000000040)={0x0, r1})
+ioctl$VHOST_NET_SET_BACKEND(r0, 0xaf02, 0x0)

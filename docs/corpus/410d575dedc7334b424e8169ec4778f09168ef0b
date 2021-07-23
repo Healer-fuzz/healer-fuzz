@@ -1,0 +1,5 @@
+r0 = socket$nl_generic(0x10, 0x3, 0x10)
+r1 = syz_genetlink_get_family_id$nl80211(&(0x7f0000000200)='nl80211\x00', 0xffffffffffffffff)
+r2 = socket$nl_generic(0x10, 0x3, 0x10)
+ioctl$sock_SIOCGIFINDEX_80211(r2, 0x8933, &(0x7f0000000740)={'wlan0\x00', <r3=>0x0})
+sendmsg$NL80211_CMD_TRIGGER_SCAN(r0, &(0x7f0000000140)={0x0, 0x0, &(0x7f0000000000)={&(0x7f00000000c0)=ANY=[@ANYBLOB='(\x00\x00\x00', @ANYRES16=r1, @ANYBLOB="b50400000000000000002100000008000300", @ANYRES32=r3, @ANYBLOB="0c002c80080000009909"], 0x7e}}, 0x0)

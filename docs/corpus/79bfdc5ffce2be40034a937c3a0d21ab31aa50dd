@@ -1,0 +1,2 @@
+r0 = socket$inet6_udplite(0xa, 0x2, 0x88)
+ioctl$ifreq_SIOCGIFINDEX_batadv_mesh(r0, 0x89a0, &(0x7f0000000140)={'batadv0\x00'})

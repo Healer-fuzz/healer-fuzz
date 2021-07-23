@@ -1,0 +1,2 @@
+r0 = openat$fb1(0xffffffffffffff9c, &(0x7f0000000100)='/dev/fb1\x00', 0x0, 0x0)
+read$fb(r0, 0x0, 0x0)

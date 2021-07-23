@@ -1,0 +1,2 @@
+r0 = syz_init_net_socket$x25(0x9, 0x5, 0x0)
+fsetxattr$security_capability(r0, &(0x7f0000000380)='security.capability\x00', &(0x7f00000004c0)=@v3, 0x18, 0x0)

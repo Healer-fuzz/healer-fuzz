@@ -1,0 +1,2 @@
+r0 = syz_usb_connect(0x0, 0x2d, &(0x7f0000000000)=ANY=[@ANYBLOB="12010000eb9832083a09202605470102030109021b0001000000000904"], 0x0)
+syz_usb_control_io$uac1(r0, 0x0, 0x0)

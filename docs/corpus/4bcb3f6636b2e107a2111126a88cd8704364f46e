@@ -1,0 +1,5 @@
+mkdir(&(0x7f0000000180)='./file0\x00', 0x0)
+mount(0x0, &(0x7f0000000080)='./file0\x00', &(0x7f0000000200)='ramfs\x00', 0x0, 0x0)
+r0 = open(&(0x7f0000000140)='./file0\x00', 0x0, 0x0)
+fchdir(r0)
+mknod$loop(&(0x7f0000000100)='./control\x00', 0x2000, 0x1)

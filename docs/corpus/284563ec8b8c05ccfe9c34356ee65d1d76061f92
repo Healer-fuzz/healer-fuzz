@@ -1,0 +1,2 @@
+r0 = openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x2200c0, 0x0)
+readlinkat(r0, &(0x7f0000002300)='\x00', &(0x7f0000002340)=""/55, 0x37)

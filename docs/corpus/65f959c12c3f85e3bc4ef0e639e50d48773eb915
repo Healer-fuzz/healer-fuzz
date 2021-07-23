@@ -1,0 +1,3 @@
+r0 = socket$inet6(0xa, 0x2, 0x0)
+bind$inet6(r0, &(0x7f0000000000)={0xa, 0xe22, 0x0, @empty}, 0x7d)
+syz_emit_ethernet(0xd2, &(0x7f0000000040)={@broadcast, @empty=[0x4], @void, {@ipv6={0x86dd, @udp={0x0, 0x6, "0489f1", 0x9c, 0x11, 0x0, @dev, @mcast2, {[], {0x0, 0xe22, 0x9c, 0x0, @wg=@initiation={0x1, 0x0, "48a0218b5e18924d1daa9268e74fedd2fba2a913d275e0564902d3f13a287ef9", "385d6bbffbfaf9543ba160c69403a425487d352c9ee7997a77002ae9c6e47b6d442f2f756a91993e9542e889e7cf7118", "add317350284d1cc5d8d00d6ce891743b9653014e80fb7f826a1bf30", {"97d800c897ed102d4aa3408bd03e6c77", "ca5e0ff0a96b6eefdd65b199f135c5e3"}}}}}}}}, 0x0)

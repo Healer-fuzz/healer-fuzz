@@ -1,0 +1,3 @@
+clone(0x80100900, 0x0, 0xfffffffffffffffe, 0x0, 0xffffffffffffffff)
+r0 = openat$dlm_control(0xffffffffffffff9c, &(0x7f0000000000)='/dev/dlm-control\x00', 0x3e, 0x0)
+write$nbd(r0, &(0x7f00000000c0)={0x6000000, 0x0, 0x0, 0x0, 0x4, "a309ff0f00005f56d3adff7f9d5e9a099cbab35a2fdbede5fbd0978b01ba590e94bb02f6b7807e5dadca0000150000000000000000000000002b7936e5d70a861b03cf1fdf10bab2752683e4f32e9c2dd3f889099c34b7a3"}, 0x68)

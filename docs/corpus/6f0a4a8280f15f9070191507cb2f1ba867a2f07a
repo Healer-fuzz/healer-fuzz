@@ -1,0 +1,3 @@
+clone(0x700, 0x0, 0xfffffffffffffffe, 0x0, 0xffffffffffffffff)
+pwritev(0xffffffffffffffff, &(0x7f0000000000)=[{&(0x7f0000000100)="36d05fc5d31f4a1500afb43ae621cfec646c11aaac3da05d620c742baa91d40f4b9fd540ab8f3b3abe9f7b983525148a8982fe9099b835291a4b6adc03dcfc46e588acc2da9f113f4f61923c82b57a907b12ec831dd8b119a56a66efcce1715eb024eaa9c773de8cfdb046cce9bd79b581a223", 0x73}], 0x1, 0x0, 0x0)
+add_key(&(0x7f0000000080)='dns_resolver\x00', &(0x7f00000000c0), &(0x7f0000000100), 0xfffff, 0xfffffffffffffffb)

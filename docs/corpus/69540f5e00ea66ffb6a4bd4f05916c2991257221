@@ -1,0 +1,6 @@
+r0 = openat$tun(0xffffffffffffff9c, &(0x7f0000000080)='/dev/net/tun\x00', 0x0, 0x0)
+r1 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000040)='cpuset.effective_cpus\x00', 0x275a, 0x0)
+writev(r1, &(0x7f00000001c0)=[{&(0x7f0000000400)="b19462c33f5d8115ec7c43e324cb91c04ab79a9d9abe98033e3295eebff7f4b93ac52a7368d1be44dc0e346c21e220fa44fde347ffb59892f2c7713ce44d0acec8d57d0ac439e24d4c7e6160356492dc21a4f94e67be791ec34221e762cd0f50ebc08b5a9a3d7b2c10a61673255ee1dd14e0bf57bf9afebd301941e2b3259c1506b98db698f5c9b319958d545d4e4d1db301dee1263e963665de6964774a1a8c82bda902ab3a57a6cb5fec6f469af8ca336c8e52ba6aae6eda763e8e5cca04f77089bb16d1cd0f75f6fe2a4f2f8f875d8b", 0xd1}], 0x1)
+mmap(&(0x7f0000000000/0x4000)=nil, 0x4000, 0x1, 0x10012, r1, 0x0)
+ioctl$TUNSETIFF(r0, 0x400454ca, &(0x7f00000000c0)={'macvlan1\x00'})
+ioctl$TUNSETIFF(r0, 0x400454ca, &(0x7f00000000c0)={'syzkaller1\x00'})

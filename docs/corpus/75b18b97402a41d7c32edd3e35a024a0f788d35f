@@ -1,0 +1,2 @@
+r0 = syz_open_dev$amidi(&(0x7f0000000080)='/dev/amidi#\x00', 0x2, 0x109301)
+ioctl$SNDRV_RAWMIDI_IOCTL_DRAIN(r0, 0x40045731, &(0x7f0000000040)=0x1)

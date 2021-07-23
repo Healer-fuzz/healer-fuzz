@@ -1,0 +1,1 @@
+bpf$BPF_PROG_ATTACH(0x8, &(0x7f0000000140)={@cgroup, 0xffffffffffffffff, 0x1a82d994f65e1969}, 0x14)

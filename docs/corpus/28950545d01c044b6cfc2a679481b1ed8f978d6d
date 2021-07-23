@@ -1,0 +1,4 @@
+pipe(&(0x7f0000000040)={0xffffffffffffffff, <r0=>0xffffffffffffffff})
+pipe(&(0x7f0000000040)={<r1=>0xffffffffffffffff})
+ioctl$int_in(r1, 0x5421, &(0x7f0000000000)=0x9)
+tee(r1, r0, 0x20, 0x0)

@@ -1,0 +1,5 @@
+creat(&(0x7f00000002c0)='./file0\x00', 0x0)
+clone(0x100, 0x0, 0xfffffffffffffffe, 0x0, 0xffffffffffffffff)
+pipe2$9p(&(0x7f0000000140)={<r0=>0xffffffffffffffff, <r1=>0xffffffffffffffff}, 0x0)
+mount$9p_fd(0x0, &(0x7f00000001c0)='./file0\x00', &(0x7f0000000280)='9p\x00', 0x0, &(0x7f0000000080)={'trans=fd,', {'rfdno', 0x3d, r0}, 0x2c, {'wfdno', 0x3d, r1}, 0x2c, {[{@cachetag={'cachetag', 0x3d, 'k:5\x9cb\xca\xe3\xfbFC\x8d\xe2o\x85\xea\x94\xa7\xefU\x88\xb6\xef\xf7z\x9ewl\xba:O\xd9zp}\x9d\x19@\x92P\xed\x8c\xbd'}}]}})
+socket$inet_udplite(0x2, 0x2, 0x88)

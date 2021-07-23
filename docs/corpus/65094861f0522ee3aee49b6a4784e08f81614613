@@ -1,0 +1,4 @@
+ioctl$sock_ipv6_tunnel_SIOCCHGTUNNEL(0xffffffffffffffff, 0x89f3, 0x0)
+sync()
+sync()
+getgid()

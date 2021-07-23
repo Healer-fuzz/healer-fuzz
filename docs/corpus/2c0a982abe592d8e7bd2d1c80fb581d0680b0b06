@@ -1,0 +1,1 @@
+ioctl$ifreq_SIOCGIFINDEX_batadv_mesh(0xffffffffffffffff, 0x8933, 0x0)

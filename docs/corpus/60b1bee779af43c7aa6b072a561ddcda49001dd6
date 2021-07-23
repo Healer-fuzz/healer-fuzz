@@ -1,0 +1,2 @@
+io_setup(0x2001, &(0x7f0000000080)=<r0=>0x0)
+io_destroy(r0)

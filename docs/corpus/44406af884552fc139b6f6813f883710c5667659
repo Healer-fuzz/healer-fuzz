@@ -1,0 +1,6 @@
+r0 = openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
+mmap(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x1800003, 0x12, r0, 0x0)
+preadv(r0, &(0x7f0000000280), 0x18, 0xd9f, 0x0)
+r1 = syz_usb_connect(0x0, 0x2d, &(0x7f0000000140)=ANY=[@ANYBLOB="1201000041435320410e5150e8d50000000109021b010100000000090401000186ee0d0009058217"], 0x0)
+syz_usb_control_io$hid(r1, 0x0, 0x0)
+syz_usb_ep_write$ath9k_ep1(r1, 0x82, 0x4, &(0x7f0000000040)=ANY=[@ANYBLOB="c9"])

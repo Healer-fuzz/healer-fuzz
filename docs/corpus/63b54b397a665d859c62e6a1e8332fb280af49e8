@@ -1,0 +1,7 @@
+pipe(&(0x7f0000000100)={<r0=>0xffffffffffffffff, <r1=>0xffffffffffffffff})
+vmsplice(r1, &(0x7f00000000c0)=[{&(0x7f0000000180)="77690addcfbe1fbb66ec", 0xff3b}], 0x1, 0x1)
+close(r1)
+r2 = socket(0x10, 0x3, 0x0)
+write(0xffffffffffffffff, &(0x7f0000000180)="1c0000004a005f0214f9f424000904000a", 0xfffffffffffffc70)
+read(r2, &(0x7f0000000000)=""/138, 0x8a)
+splice(r0, 0x0, r1, 0x0, 0xfffd, 0x0)

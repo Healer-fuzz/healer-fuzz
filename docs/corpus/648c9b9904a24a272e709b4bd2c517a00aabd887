@@ -1,0 +1,7 @@
+r0 = socket$nl_generic(0x10, 0x3, 0x10)
+r1 = socket$nl_generic(0x10, 0x3, 0x10)
+ioctl$sock_SIOCGIFINDEX_80211(r1, 0x8933, &(0x7f0000000dc0)={'wlan1\x00', <r2=>0x0})
+r3 = syz_genetlink_get_family_id$nl80211(&(0x7f0000001140)='nl80211\x00', 0xffffffffffffffff)
+sendmmsg(0xffffffffffffffff, &(0x7f0000008e00)=[{{0x0, 0x0, 0x0, 0x0, &(0x7f0000000200)=[{0x70, 0x0, 0x0, "d79178fcff12e8da6ef5cdfdceeb2e6e6d519375a286ea5ba2f1b87154bbb545d2a9cf0cfa748bd43491ba7243aa868b3ac5946e4cff32fd90a8fe0df725dcd8c8c37157016ca578d8f03b91b64ba295473dae1caa44879eebd9"}], 0x70}}], 0x1, 0x0)
+sendmsg$DEVLINK_CMD_SB_GET(0xffffffffffffffff, &(0x7f0000000340)={0x0, 0x0, &(0x7f00000001c0)={&(0x7f0000000180)={0x14, 0x0, 0x0, 0x0, 0x25dfdbfb}, 0x14}}, 0x0)
+sendmsg$NL80211_CMD_FRAME(r0, &(0x7f0000001280)={0x0, 0x0, &(0x7f0000001240)={&(0x7f0000000000)=ANY=[@ANYBLOB="48040000", @ANYRES16=r3, @ANYBLOB="010000000000000000003b00000008000300", @ANYRES32=r2, @ANYBLOB="2c04330050800000fffffffbffff080211000001505050505050"], 0x448}}, 0x0)

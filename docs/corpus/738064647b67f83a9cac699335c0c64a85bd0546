@@ -1,0 +1,4 @@
+r0 = memfd_create(&(0x7f0000000280)='X\xe6\xab\x00\x1e\x91~\xf4\x8cR\xf1\xcf\xd7Oi}-\x0f\xfa\xb6\x03\x00\x00\x00\x00\x00\x00\x00v4/\x81\x00\x00ignonneled\x00\x00\x18\x00\xc4\xb7l~\xf7\xc3\x8a\xdf\xa8KFF\xc3\xce\x95\x0f\x9cE\x88\xa1/\xc3\xe0\x827\xa0G\xa1\x0e\x8b\fe2\x89\xb3}\x17', 0x0)
+mmap(&(0x7f0000000000/0xaa2000)=nil, 0xaa2000, 0x5, 0x11, r0, 0x0)
+rt_sigaction(0x7, &(0x7f0000b4a000)={0xfffffffffffffffd, 0x1c000002, 0x0}, 0x0, 0x8, &(0x7f0000000040))
+syz_open_procfs(0xffffffffffffffff, &(0x7f0000000000)='map_files\x00')

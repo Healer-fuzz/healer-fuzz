@@ -1,0 +1,4 @@
+clone(0x700, 0x0, 0xfffffffffffffffe, 0x0, 0xffffffffffffffff)
+close(0xffffffffffffffff)
+sendmsg(0xffffffffffffffff, &(0x7f0000000600)={0x0, 0x0, &(0x7f0000000180)=[{&(0x7f0000000640)="39d5a6192125230fce520ce8489822ca086ac660c8fc9dd041ade1cf8663831461707716349b975838cb3a8ca389683466f79f617f597a33d9279a8547b199a451e57edcdb3d23", 0x47}], 0x1, 0x0, 0x0, 0xcbff}, 0x0)
+add_key(&(0x7f0000000080)='dns_resolver\x00', &(0x7f00000000c0), &(0x7f0000000100), 0xfffff, 0xfffffffffffffffb)

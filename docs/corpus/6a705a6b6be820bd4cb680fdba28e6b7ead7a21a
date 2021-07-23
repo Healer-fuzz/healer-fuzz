@@ -1,0 +1,7 @@
+r0 = eventfd(0x0)
+r1 = openat$kvm(0xffffffffffffff9c, &(0x7f0000000240)='/dev/kvm\x00', 0x0, 0x0)
+r2 = ioctl$KVM_CREATE_VM(r1, 0xae01, 0x0)
+r3 = openat$kvm(0xffffffffffffff9c, &(0x7f0000000040)='/dev/kvm\x00', 0x0, 0x0)
+r4 = ioctl$KVM_CREATE_VM(r3, 0xae01, 0x0)
+ioctl$KVM_HYPERV_EVENTFD(r2, 0x4018aebd, &(0x7f00000000c0)={0x0, r0})
+dup3(r4, r2, 0x0)

@@ -1,0 +1,4 @@
+r0 = socket$inet_udplite(0x2, 0x2, 0x88)
+r1 = fanotify_init(0x0, 0x0)
+r2 = fcntl$dupfd(r1, 0x0, r0)
+ioctl$sock_inet_udp_SIOCINQ(r2, 0x541b, &(0x7f0000000040))

@@ -1,0 +1,1 @@
+syz_mount_image$xfs(&(0x7f0000000100)='xfs\x00', &(0x7f0000000140)='./file0\x00', 0x0, 0x0, &(0x7f00000025c0), 0x0, &(0x7f00000026c0)=ANY=[@ANYBLOB='noikeep,inode64,inode32,swidth=0x0000000020000000,noalign'])

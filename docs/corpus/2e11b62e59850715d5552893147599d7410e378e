@@ -1,0 +1,2 @@
+pipe(&(0x7f0000000040)={<r0=>0xffffffffffffffff, <r1=>0xffffffffffffffff})
+tee(r0, r1, 0x8f72, 0x0)
