@@ -1,6 +1,6 @@
 FAULT_INJECTION: forcing a failure.
 name fail_usercopy, interval 1, probability 0, space 0, times 0
-CPU: 1 PID: 9161 Comm: syz-executor Not tainted 5.11.0+ #5
+CPU: 1 PID: 9161 Comm: executor Not tainted 5.11.0+ #5
 Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
 Call Trace:
  __dump_stack lib/dump_stack.c:79 [inline]

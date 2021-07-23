@@ -1,0 +1,122 @@
+[  256.583541][    C0] ==================================================================
+[  256.585083][    C0] BUG: KCSAN: data-race in e1000_clean / e1000_xmit_frame
+[  256.586370][    C0]
+[  256.586777][    C0] write to 0xffffc90000c81592 of 2 bytes by task 8373 on cpu 1:
+[  256.588402][    C0]  e1000_xmit_frame+0x1270/0x2900
+[  256.589275][    C0]  xmit_one+0xf9/0x2e0
+[  256.591176][    C0]  dev_hard_start_xmit+0x60/0x100
+[  256.592190][    C0]  sch_direct_xmit+0x170/0x730
+[  256.593359][    C0]  __qdisc_run+0x119/0x180
+[  256.594137][    C0]  __dev_queue_xmit+0xa55/0x1520
+[  256.595002][    C0]  dev_queue_xmit+0x13/0x20
+[  256.595793][    C0]  ip_finish_output2+0xb09/0xba0
+[  256.597615][    C0]  __ip_finish_output+0x2ce/0x430
+[  256.598599][    C0]  ip_finish_output+0x39/0x160
+[  256.599460][    C0]  ip_output+0xf6/0x1a0
+[  256.600192][    C0]  __ip_queue_xmit+0x9ca/0x9f0
+[  256.601017][    C0]  ip_queue_xmit+0x34/0x40
+[  256.601787][    C0]  __tcp_transmit_skb+0x12b6/0x18f0
+[  256.602762][    C0]  __tcp_send_ack+0x1e9/0x2e0
+[  256.603657][    C0]  tcp_send_ack+0x23/0x30
+[  256.604410][    C0]  tcp_cleanup_rbuf+0x1c4/0x310
+[  256.605224][    C0]  tcp_recvmsg_locked+0x1119/0x16f0
+[  256.606111][    C0]  tcp_recvmsg+0x145/0x430
+[  256.606854][    C0]  inet_recvmsg+0xa3/0x210
+[  256.607626][    C0]  sock_read_iter+0x19e/0x1e0
+[  256.613164][    C0]  vfs_read+0x552/0x5c0
+[  256.613930][    C0]  ksys_read+0xce/0x180
+[  256.614843][    C0]  __x64_sys_read+0x3e/0x50
+[  256.615606][    C0]  do_syscall_64+0x39/0x80
+[  256.619483][    C0]  entry_SYSCALL_64_after_hwframe+0x44/0xae
+[  256.620527][    C0]
+[  256.620947][    C0] read to 0xffffc90000c81592 of 2 bytes by interrupt on cpu 0:
+[  256.622243][    C0]  e1000_clean+0xb6/0x1f10
+[  256.625440][    C0]  __napi_poll+0x77/0x510
+[  256.626243][    C0]  net_rx_action+0x29f/0x670
+[  256.627037][    C0]  __do_softirq+0x13c/0x2c8
+[  256.627829][    C0]  asm_call_irq_on_stack+0xf/0x20
+[  256.628705][    C0]  do_softirq_own_stack+0x32/0x40
+[  256.632989][    C0]  __irq_exit_rcu+0xb4/0xc0
+[  256.633801][    C0]  common_interrupt+0xbd/0x140
+[  256.634633][    C0]  asm_common_interrupt+0x1e/0x40
+[  256.635499][    C0]  kcsan_setup_watchpoint+0x44e/0x490
+[  256.638796][    C0]  handle_mm_fault+0x2ac/0x17b0
+[  256.639806][    C0]  do_user_addr_fault+0x60c/0xc00
+[  256.640690][    C0]  exc_page_fault+0x94/0x290
+[  256.641476][    C0]  asm_exc_page_fault+0x1e/0x30
+[  256.642288][    C0]
+[  256.646109][    C0] Reported by Kernel Concurrency Sanitizer on:
+[  256.647175][    C0] CPU: 0 PID: 8407 Comm: executor Not tainted 5.11.0+ #5
+[  256.648438][    C0] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+[  256.652781][    C0] ==================================================================
+[  256.654115][    C0] Kernel panic - not syncing: panic_on_warn set ...
+[  256.655216][    C0] CPU: 0 PID: 8407 Comm: executor Not tainted 5.11.0+ #5
+[  256.659902][    C0] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+[  256.661944][    C0] Call Trace:
+[  256.662506][    C0]  <IRQ>
+[  256.666398][    C0]  dump_stack+0x137/0x194
+[  256.667170][    C0]  panic+0x1e8/0x5f5
+[  256.667843][    C0]  ? vprintk_emit+0x2fa/0x3e0
+[  256.668678][    C0]  kcsan_report+0x687/0x6a0
+[  256.672079][    C0]  ? kcsan_setup_watchpoint+0x423/0x490
+[  256.673060][    C0]  ? e1000_clean+0xb6/0x1f10
+[  256.673862][    C0]  ? __napi_poll+0x77/0x510
+[  256.674651][    C0]  ? net_rx_action+0x29f/0x670
+[  256.675481][    C0]  ? __do_softirq+0x13c/0x2c8
+[  256.679701][    C0]  ? asm_call_irq_on_stack+0xf/0x20
+[  256.680612][    C0]  ? do_softirq_own_stack+0x32/0x40
+[  256.681507][    C0]  ? __irq_exit_rcu+0xb4/0xc0
+[  256.682325][    C0]  ? common_interrupt+0xbd/0x140
+[  256.685500][    C0]  ? asm_common_interrupt+0x1e/0x40
+[  256.686433][    C0]  ? kcsan_setup_watchpoint+0x44e/0x490
+[  256.687411][    C0]  ? handle_mm_fault+0x2ac/0x17b0
+[  256.688298][    C0]  ? do_user_addr_fault+0x60c/0xc00
+[  256.689212][    C0]  ? exc_page_fault+0x94/0x290
+[  256.690053][    C0]  ? asm_exc_page_fault+0x1e/0x30
+[  256.690935][    C0]  ? irqtime_account_irq+0x2d/0xa0
+[  256.691848][    C0]  ? __irq_exit_rcu+0x3a/0xc0
+[  256.692679][    C0]  ? common_interrupt+0xbd/0x140
+[  256.693537][    C0]  kcsan_setup_watchpoint+0x423/0x490
+[  256.694480][    C0]  e1000_clean+0xb6/0x1f10
+[  256.695273][    C0]  ? activate_task+0x4e/0xc0
+[  256.696073][    C0]  ? try_to_wake_up+0x254/0x430
+[  256.696915][    C0]  ? __run_hrtimer+0x420/0x420
+[  256.697757][    C0]  ? ktime_get+0x1b0/0x1e0
+[  256.698526][    C0]  ? __list_add_valid+0x28/0x90
+[  256.699410][    C0]  __napi_poll+0x77/0x510
+[  256.700164][    C0]  net_rx_action+0x29f/0x670
+[  256.700964][    C0]  __do_softirq+0x13c/0x2c8
+[  256.701750][    C0]  asm_call_irq_on_stack+0xf/0x20
+[  256.702624][    C0]  </IRQ>
+[  256.703155][    C0]  do_softirq_own_stack+0x32/0x40
+[  256.704024][    C0]  __irq_exit_rcu+0xb4/0xc0
+[  256.704815][    C0]  common_interrupt+0xbd/0x140
+[  256.705643][    C0]  asm_common_interrupt+0x1e/0x40
+[  256.706551][    C0] RIP: 0010:kcsan_setup_watchpoint+0x44e/0x490
+[  256.707660][    C0] Code: 89 da 4c 8b 5c 24 08 49 c7 02 00 00 00 00 f0 48 ff 0d f6 be db 06 4d 85 db 74 0a 80 3d cc bc db 06 00 75 01 fb 4c 89 6c 24 48 <66> 90 ff 74 24 48 9d 48 83 c4 50 5b 41 5c 41 5d 41 5e 41 5f 5d c3
+[  256.711053][    C0] RSP: 0000:ffffc90002aafd10 EFLAGS: 00000246
+[  256.712081][    C0] RAX: 0000000000000000 RBX: 0000000000000000 RCX: 0011888046512228
+[  256.713457][    C0] RDX: 0000000000000000 RSI: 0000000000000000 RDI: 0000000000000000
+[  256.714781][    C0] RBP: 0000000000000000 R08: 0000000000000000 R09: 0000000000000000
+[  256.716108][    C0] R10: ffffffff88326ff8 R11: 0000000000000200 R12: 0000000000000013
+[  256.717426][    C0] R13: 0000000000000282 R14: ffff888046512228 R15: 0000000000000008
+[  256.718751][    C0]  handle_mm_fault+0x2ac/0x17b0
+[  256.719604][    C0]  ? vfs_write+0x55b/0x7c0
+[  256.720354][    C0]  ? vmacache_find+0x157/0x320
+[  256.721142][    C0]  do_user_addr_fault+0x60c/0xc00
+[  256.721961][    C0]  ? fpregs_assert_state_consistent+0x7d/0x90
+[  256.722980][    C0]  exc_page_fault+0x94/0x290
+[  256.723759][    C0]  ? asm_exc_page_fault+0x8/0x30
+[  256.724597][    C0]  asm_exc_page_fault+0x1e/0x30
+[  256.725417][    C0] RIP: 0033:0x4045f3
+[  256.726097][    C0] Code: 41 54 4c 8d 25 0b ba 0d 00 55 53 48 81 ec d8 10 00 00 64 48 8b 04 25 28 00 00 00 48 89 84 24 c8 10 00 00 31 c0 48 8d 44 24 28 <c7> 44 24 1c 00 00 00 00 48 89 44 24 10 80 3d a1 0d 2c 01 00 0f 84
+[  256.732153][    C0] RSP: 002b:00007ffee4a15f80 EFLAGS: 00010246
+[  256.733763][    C0] RAX: 00007ffee4a15fa8 RBX: 00000000000011b5 RCX: 0000000000418a07
+[  256.735137][    C0] RDX: 000000000000000c RSI: 00007ffee4a1706c RDI: 00007ffee4a170e0
+[  256.736446][    C0] RBP: 0000000000000bb8 R08: 0000000000000000 R09: 0000000000000000
+[  256.737867][    C0] R10: 0000000000000000 R11: 0000000000000000 R12: 00000000004dffdd
+[  256.739517][    C0] R13: 00007ffee4a170e0 R14: 0000000000000032 R15: 00007ffee4a170dc
+[  256.741453][    C0] Dumping ftrace buffer:
+[  256.742417][    C0]    (ftrace buffer empty)
+[  256.743412][    C0] Kernel Offset: disabled
+[  256.744435][    C0] Rebooting in 1 seconds..

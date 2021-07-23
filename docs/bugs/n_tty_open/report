@@ -1,0 +1,83 @@
+
+================================================================
+RAX: ffffffffffffffda RBX: 000000000059c080 RCX: 000000000041a204
+RDX: 0000000000000002 RSI: 00007f3a14cc5820 RDI: 00000000ffffff9c
+RBP: 00007f3a14cc5820 R08: 0000000000000000 R09: 000000000000000e
+R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000000002
+R13: 00007ffd67854d6f R14: 00007ffd67854f10 R15: 00007f3a14cc5dc0
+BUG: unable to handle page fault for address: ffff9d8941065050
+#PF: supervisor write access in kernel mode
+#PF: error_code(0x0002) - not-present page
+PGD 1810067 P4D 1810067 PUD 1915067 PMD 4902067 PTE 0
+Oops: 0002 [#1] SMP
+CPU: 0 PID: 6311 Comm: executor Not tainted 5.11.0-rc6+ #1
+Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS
+1.13.0-1ubuntu1.1 04/01/2014
+RIP: 0010:n_tty_open+0xbb/0x2d0 drivers/tty/n_tty.c:1925
+Code: 48 c7 c7 80 79 80 90 e8 53 a2 c4 fc 4d 8d 7c 24 50 4c 8b 30 8b
+02 89 45 cc 4d 85 ed 0f 85 90 01 00 00 4c 89 ff e8 55 a2 c4 fc <4c> 89
+30 4d 85 f6 0f 85 89 01 00 00 48 8b 45 b8 49 89 44 24 50 49
+RSP: 0018:ffff9589410635a8 EFLAGS: 00010286
+RAX: ffff9d8941065050 RBX: ffff935284a28a98 RCX: ffff9d8941065050
+RDX: ffffa58941065050 RSI: 0000000000000008 RDI: ffff958941065050
+RBP: ffff9589410635f8 R08: ffffdbfdc000000f R09: ffff9352fffd3000
+R10: 0000000088d5e5c3 R11: ffff958941067fff R12: ffff958941065000
+R13: 0000000000000000 R14: 0000000000000000 R15: ffff958941065050
+FS:  00007f3a14cc6700(0000) GS:ffff9352ffa00000(0000) knlGS:0000000000000000
+CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+CR2: ffff9d8941065050 CR3: 000000002e898003 CR4: 0000000000770ef0
+PKRU: 55555554
+Call Trace:
+ tty_ldisc_close drivers/tty/tty_ldisc.c:487 [inline]
+ tty_ldisc_setup+0x11d/0x600 drivers/tty/tty_ldisc.c:784
+ tty_init_dev+0x51d/0xaf0 drivers/tty/tty_io.c:3154
+ tty_open+0xf9f/0x1fd0 drivers/tty/tty_io.c:3588
+ chrdev_open+0xc14/0xd80 fs/stat.c:93
+ build_open_how fs/open.c:996 [inline]
+ do_dentry_open+0xf36/0x17b0 fs/open.c:1163
+ d_backing_inode ./include/linux/dcache.h:552 [inline]
+ vfs_open fs/open.c:940 [inline]
+ vfs_open+0xaf/0xe0 fs/open.c:956
+ fsnotify_name ./include/linux/fsnotify.h:33 [inline]
+ fsnotify_move ./include/linux/fsnotify.h:149 [inline]
+ path_openat+0x4d57/0x5e10 fs/namei.c:4580
+ do_filp_open+0x2b8/0x710 fs/namei.c:3495
+ do_sys_openat2+0x222/0x770 fs/open.c:1207
+ __se_sys_openat+0x24c/0x2b0
+ build_open_how fs/open.c:990 [inline]
+ do_sys_open fs/open.c:1202 [inline]
+ __do_sys_openat fs/open.c:1219 [inline]
+ __se_sys_openat fs/open.c:1214 [inline]
+ __x64_sys_openat+0x56/0x70 fs/open.c:1214
+ do_syscall_32_irqs_on arch/x86/entry/common.c:76 [inline]
+ do_syscall_64+0xa2/0x120 arch/x86/entry/common.c:94
+ entry_SYSCALL_64_after_hwframe+0x44/0xae
+RIP: 0033:0x41a204
+Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 86 f9 ff ff 44 8b 54 24 0c
+44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d
+00 f0 ff ff 77 32 44 89 c7 89 44 24 0c e8 b8 f9 ff ff 8b 44
+RSP: 002b:00007f3a14cc5780 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+RAX: ffffffffffffffda RBX: 000000000059c080 RCX: 000000000041a204
+RDX: 0000000000000002 RSI: 00007f3a14cc5820 RDI: 00000000ffffff9c
+RBP: 00007f3a14cc5820 R08: 0000000000000000 R09: 000000000000000e
+R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000000002
+R13: 00007ffd67854d6f R14: 00007ffd67854f10 R15: 00007f3a14cc5dc0
+Modules linked in:
+Dumping ftrace buffer:
+   (ftrace buffer empty)
+CR2: ffff9d8941065050
+---[ end trace 1057db73ffbbbc86 ]---
+RIP: 0010:n_tty_open+0xbb/0x2d0 drivers/tty/n_tty.c:1925
+Code: 48 c7 c7 80 79 80 90 e8 53 a2 c4 fc 4d 8d 7c 24 50 4c 8b 30 8b
+02 89 45 cc 4d 85 ed 0f 85 90 01 00 00 4c 89 ff e8 55 a2 c4 fc <4c> 89
+30 4d 85 f6 0f 85 89 01 00 00 48 8b 45 b8 49 89 44 24 50 49
+RSP: 0018:ffff9589410635a8 EFLAGS: 00010286
+RAX: ffff9d8941065050 RBX: ffff935284a28a98 RCX: ffff9d8941065050
+RDX: ffffa58941065050 RSI: 0000000000000008 RDI: ffff958941065050
+RBP: ffff9589410635f8 R08: ffffdbfdc000000f R09: ffff9352fffd3000
+R10: 0000000088d5e5c3 R11: ffff958941067fff R12: ffff958941065000
+R13: 0000000000000000 R14: 0000000000000000 R15: ffff958941065050
+FS:  00007f3a14cc6700(0000) GS:ffff9352ffa00000(0000) knlGS:0000000000000000
+CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+CR2: ffff9d8941065050 CR3: 000000002e898003 CR4: 0000000000770ef0
+PKRU: 55555554

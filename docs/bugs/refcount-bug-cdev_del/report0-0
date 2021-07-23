@@ -2,7 +2,7 @@
 refcount_t: underflow; use-after-free.
 WARNING: CPU: 1 PID: 8923 at lib/refcount.c:28 refcount_warn_saturate+0x1cf/0x210 -origin/lib/refcount.c:28
 Modules linked in:
-CPU: 1 PID: 8923 Comm: syz-executor Not tainted 5.12.0-rc5+ #8
+CPU: 1 PID: 8923 Comm: executor Not tainted .0-rc5+ #8
 Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.13.0-1ubuntu1.1 04/01/2014
 RIP: 0010:refcount_warn_saturate+0x1cf/0x210 -origin/lib/refcount.c:28
 Code: 4f ff ff ff e8 32 fa b5 fe 48 c7 c7 3d f8 f6 86 e8 d6 ab c6 fe c6 05 7c 34 67 04 01 48 c7 c7 68 f8 6d 86 31 c0 e8 81 2e 9d fe <0f> 0b e9 22 ff ff ff e8 05 fa b5 fe 48 c7 c7 3e f8 f6 86 e8 a9 ab

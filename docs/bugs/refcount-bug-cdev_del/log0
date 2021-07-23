@@ -1,6 +1,6 @@
 [   15.568240][ T8924] FAULT_INJECTION: forcing a failure.
 [   15.568240][ T8924] name failslab, interval 1, probability 0, space 0, times 1
-[   15.569204][ T8924] CPU: 1 PID: 8924 Comm: syz-executor Not tainted 5.12.0-rc5+ #8
+[   15.569204][ T8924] CPU: 1 PID: 8924 Comm: executor Not tainted 5.11.0-rc5+ #8
 [   15.569747][ T8924] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.13.0-1ubuntu1.1 04/01/2014
 [   15.571181][ T8924] Call Trace:
 [   15.571786][ T8924]  dump_stack+0x137/0x194
@@ -43,7 +43,7 @@
 [   15.626138][ T8923] refcount_t: underflow; use-after-free.
 [   15.626624][ T8923] WARNING: CPU: 1 PID: 8923 at lib/refcount.c:28 refcount_warn_saturate+0x1cf/0x210
 [   15.628287][ T8923] Modules linked in:
-[   15.628573][ T8923] CPU: 1 PID: 8923 Comm: syz-executor Not tainted 5.12.0-rc5+ #8
+[   15.628573][ T8923] CPU: 1 PID: 8923 Comm: executor Not tainted 5.11.0-rc5+ #8
 [   15.629132][ T8923] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.13.0-1ubuntu1.1 04/01/2014
 [   15.642824][ T8923] RIP: 0010:refcount_warn_saturate+0x1cf/0x210
 [   15.653516][ T8923] Code: 4f ff ff ff e8 32 fa b5 fe 48 c7 c7 3d f8 f6 86 e8 d6 ab c6 fe c6 05 7c 34 67 04 01 48 c7 c7 68 f8 6d 86 31 c0 e8 81 2e 9d fe <0f> 0b e9 22 ff ff ff e8 05 fa b5 fe 48 c7 c7 3e f8 f6 86 e8 a9 ab
@@ -83,7 +83,7 @@
 [   15.722672][ T8923] R10: 00007fffd6e9a620 R11: 0000000000000293 R12: 00000000005280c0
 [   15.723243][ T8923] R13: 00000000005a01a0 R14: 00000000005a01a8 R15: 0000000000003cc6
 [   15.723823][ T8923] Kernel panic - not syncing: panic_on_warn set ...
-[   15.724288][ T8923] CPU: 1 PID: 8923 Comm: syz-executor Not tainted 5.12.0-rc5+ #8
+[   15.724288][ T8923] CPU: 1 PID: 8923 Comm: executor Not tainted 5.11.0-rc5+ #8
 [   15.724848][ T8923] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.13.0-1ubuntu1.1 04/01/2014
 [   15.725565][ T8923] Call Trace:
 [   15.725799][ T8923]  dump_stack+0x137/0x194

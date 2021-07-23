@@ -1,6 +1,6 @@
 [ 1515.190527][ T7974] FAULT_INJECTION: forcing a failure.
 [ 1515.190527][ T7974] name failslab, interval 1, probability 0, space 0, times 0
-[ 1515.191859][ T7974] CPU: 1 PID: 7974 Comm: executor Not tainted 5.12.0-rc6+ #14
+[ 1515.191859][ T7974] CPU: 1 PID: 7974 Comm: executor Not tainted 5.11.0-rc6+ #14
 [ 1515.192480][ T7974] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.13.0-1ubuntu1.1 04/01/2014
 [ 1515.193262][ T7974] Call Trace:
 [ 1515.193499][ T7974]  dump_stack+0x104/0x14e
@@ -31,7 +31,7 @@
 [ 1515.229781][ T7974] R13: 00007fffc4b6b82f R14: 00007fffc4b6b9d0 R15: 00007ff1bb091dc0
 [ 1515.241604][ T7974] kvm: failed to shrink bus, removing it completely
 [ 1515.242779][ T7974] general protection fault, probably for non-canonical address 0xdead000000000100: 0000 [#1] PREEMPT SMP
-[ 1515.243451][ T7974] CPU: 3 PID: 7974 Comm: executor Not tainted 5.12.0-rc6+ #14
+[ 1515.243451][ T7974] CPU: 3 PID: 7974 Comm: executor Not tainted 5.11.0-rc6+ #14
 [ 1515.243960][ T7974] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.13.0-1ubuntu1.1 04/01/2014
 [ 1515.244635][ T7974] RIP: 0010:kvm_vm_ioctl_unregister_coalesced_mmio+0x88/0x1e0
 [ 1515.245155][ T7974] Code: 00 4c 89 74 24 18 4c 89 6c 24 20 48 8b 44 24 10 48 83 c0 08 48 89 44 24 28 48 89 5c 24 08 4c 89 24 24 4c 89 ff e8 d8 9f 49 00 <4d> 8b 37 48 89 df e8 3d 9b 49 00 8b 2b 49 8d 7f 2c e8 32 9b 49 00

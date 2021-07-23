@@ -1,0 +1,137 @@
+
+use-after-free Read in cma_cancel_operation
+==================================================================
+BUG: KASAN: use-after-free in __list_del_entry_valid+0xe0/0xf0
+lib/list_debug.c:51
+Read of size 8 at addr ffff88801da7d1e0 by task executor.1/11033
+
+CPU: 0 PID: 11033 Comm: executor.1 Not tainted 5.11.0-rc7+ #15
+Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS
+1.13.0-1ubuntu1.1 04/01/2014
+Call Trace:
+ __dump_stack lib/dump_stack.c:79 [inline]
+ dump_stack+0xfa/0x151 lib/dump_stack.c:120
+ print_address_description.constprop.0.cold+0x82/0x32c mm/kasan/report.c:232
+ __kasan_report mm/kasan/report.c:399 [inline]
+ kasan_report.cold+0x7c/0xd8 mm/kasan/report.c:416
+ __list_del_entry_valid+0xe0/0xf0 lib/list_debug.c:51
+ __list_del_entry include/linux/list.h:132 [inline]
+ list_del include/linux/list.h:146 [inline]
+ cma_cancel_listens drivers/infiniband/core/cma.c:1758 [inline]
+ cma_cancel_operation drivers/infiniband/core/cma.c:1786 [inline]
+ cma_cancel_operation+0x2bf/0xa00 drivers/infiniband/core/cma.c:1774
+ _destroy_id+0x24/0x870 drivers/infiniband/core/cma.c:1853
+ ucma_close_id+0x4c/0x90 drivers/infiniband/core/ucma.c:185
+ ucma_destroy_private_ctx+0x887/0xb00 drivers/infiniband/core/ucma.c:576
+ ucma_close+0x10a/0x180 drivers/infiniband/core/ucma.c:1797
+ __fput+0x288/0x920 fs/file_table.c:280
+ task_work_run+0xe0/0x1a0 kernel/task_work.c:140
+ exit_task_work include/linux/task_work.h:30 [inline]
+ do_exit+0xbf9/0x2e10 kernel/exit.c:825
+ do_group_exit+0x125/0x340 kernel/exit.c:922
+ get_signal+0x4d5/0x2570 kernel/signal.c:2781
+ arch_do_signal_or_restart+0x2e2/0x1e50 arch/x86/kernel/signal.c:789
+ handle_signal_work kernel/entry/common.c:147 [inline]
+ exit_to_user_mode_loop kernel/entry/common.c:171 [inline]
+ exit_to_user_mode_prepare+0x161/0x270 kernel/entry/common.c:208
+ __syscall_exit_to_user_mode_work kernel/entry/common.c:290 [inline]
+ syscall_exit_to_user_mode+0x19/0x50 kernel/entry/common.c:301
+ entry_SYSCALL_64_after_hwframe+0x44/0xae
+RIP: 0033:0x469c1d
+Code: Unable to access opcode bytes at RIP 0x469bf3.
+RSP: 002b:00007f1847648218 EFLAGS: 00000246 ORIG_RAX: 00000000000000ca
+RAX: 0000000000000001 RBX: 000000000057c008 RCX: 0000000000469c1d
+RDX: 00000000000f4240 RSI: 0000000000000081 RDI: 000000000057c014
+RBP: 000000000057c010 R08: 0000000000000016 R09: 0000000000000000
+R10: ffffffffffffffff R11: 0000000000000246 R12: 000000000057c014
+R13: 00007ffe31f70c4f R14: 00007ffe31f70df0 R15: 00007f1847648300
+
+Allocated by task 11019:
+ kasan_save_stack+0x1b/0x40 mm/kasan/common.c:38
+ kasan_set_track mm/kasan/common.c:46 [inline]
+ set_alloc_info mm/kasan/common.c:427 [inline]
+ ____kasan_kmalloc mm/kasan/common.c:506 [inline]
+ __kasan_kmalloc+0x7a/0x90 mm/kasan/common.c:515
+ kasan_kmalloc include/linux/kasan.h:233 [inline]
+ kmem_cache_alloc_trace+0x19f/0x350 mm/slub.c:2934
+ kmalloc include/linux/slab.h:554 [inline]
+ kzalloc include/linux/slab.h:684 [inline]
+ __rdma_create_id+0x5b/0x550 drivers/infiniband/core/cma.c:844
+ rdma_create_user_id+0x79/0xd0 drivers/infiniband/core/cma.c:897
+ ucma_create_id+0x162/0x370 drivers/infiniband/core/ucma.c:461
+ ucma_write+0x259/0x350 drivers/infiniband/core/ucma.c:1732
+ vfs_write+0x22a/0xa40 fs/read_write.c:603
+ ksys_write+0x1ee/0x250 fs/read_write.c:658
+ do_syscall_64+0x2d/0x70 arch/x86/entry/common.c:46
+ entry_SYSCALL_64_after_hwframe+0x44/0xae
+
+Freed by task 11027:
+ kasan_save_stack+0x1b/0x40 mm/kasan/common.c:38
+ kasan_set_track+0x1c/0x30 mm/kasan/common.c:46
+ kasan_set_free_info+0x20/0x30 mm/kasan/generic.c:357
+ ____kasan_slab_free mm/kasan/common.c:360 [inline]
+ ____kasan_slab_free mm/kasan/common.c:325 [inline]
+ __kasan_slab_free+0xdb/0x110 mm/kasan/common.c:367
+ kasan_slab_free include/linux/kasan.h:199 [inline]
+ slab_free_hook mm/slub.c:1562 [inline]
+ slab_free_freelist_hook mm/slub.c:1600 [inline]
+ slab_free mm/slub.c:3161 [inline]
+ kfree+0xf8/0x430 mm/slub.c:4213
+ ucma_close_id+0x4c/0x90 drivers/infiniband/core/ucma.c:185
+ ucma_destroy_private_ctx+0x887/0xb00 drivers/infiniband/core/ucma.c:576
+ ucma_close+0x10a/0x180 drivers/infiniband/core/ucma.c:1797
+ __fput+0x288/0x920 fs/file_table.c:280
+ task_work_run+0xe0/0x1a0 kernel/task_work.c:140
+ exit_task_work include/linux/task_work.h:30 [inline]
+ do_exit+0xbf9/0x2e10 kernel/exit.c:825
+ do_group_exit+0x125/0x340 kernel/exit.c:922
+ get_signal+0x4d5/0x2570 kernel/signal.c:2781
+ arch_do_signal_or_restart+0x2e2/0x1e50 arch/x86/kernel/signal.c:789
+ handle_signal_work kernel/entry/common.c:147 [inline]
+ exit_to_user_mode_loop kernel/entry/common.c:171 [inline]
+ exit_to_user_mode_prepare+0x161/0x270 kernel/entry/common.c:208
+ __syscall_exit_to_user_mode_work kernel/entry/common.c:290 [inline]
+ syscall_exit_to_user_mode+0x19/0x50 kernel/entry/common.c:301
+ ret_from_fork+0x15/0x30 arch/x86/entry/entry_64.S:287
+
+The buggy address belongs to the object at ffff88801da7d000
+ which belongs to the cache kmalloc-2k of size 2048
+The buggy address is located 480 bytes inside of
+ 2048-byte region [ffff88801da7d000, ffff88801da7d800)
+The buggy address belongs to the page:
+page:00000000d8c23c50 refcount:1 mapcount:0 mapping:0000000000000000
+index:0x0 pfn:0x1da78
+head:00000000d8c23c50 order:3 compound_mapcount:0 compound_pincount:0
+flags: 0xfff00000010200(slab|head)
+raw: 00fff00000010200 dead000000000100 dead000000000122 ffff88800fc42000
+raw: 0000000000000000 0000000000080008 00000001ffffffff 0000000000000000
+page dumped because: kasan: bad access detected
+
+Memory state around the buggy address:
+ ffff88801da7d080: fb fb fb fb fb fb fb fb fb fb fb fb fb fb fb fb
+ ffff88801da7d100: fb fb fb fb fb fb fb fb fb fb fb fb fb fb fb fb
+>ffff88801da7d180: fb fb fb fb fb fb fb fb fb fb fb fb fb fb fb fb
+                                                       ^
+ ffff88801da7d200: fb fb fb fb fb fb fb fb fb fb fb fb fb fb fb fb
+ ffff88801da7d280: fb fb fb fb fb fb fb fb fb fb fb fb fb fb fb fb
+
+The following reproduction program(Syzlang format) can trigger above crash:
+# {Threaded:true Collide:false Repeat:true RepeatTimes:0 Procs:2
+Slowdown:1 Sandbox:none Fault:false FaultCall:-1 FaultNth:0 Leak:false
+NetInjection:true NetDevices:true NetReset:true Cgroups:true
+BinfmtMisc:true CloseFDs:true KCSAN:false DevlinkPCI:true USB:true
+VhciInjection:true Wifi:true IEEE802154:true Sysctl:true
+UseTmpDir:true HandleSegv:true Repro:false Trace:false}
+
+r0 = openat$rdma_cm(0xffffffffffffff9c,
+&(0x7f0000000040)='/dev/infiniband/rdma_cm\x00', 0x2, 0x0)
+write$RDMA_USER_CM_CMD_CREATE_ID(r0, &(0x7f0000000300)={0x0, 0x18,
+0xfa00, {0x2, &(0x7f00000002c0)={<r1=>0x0}, 0x2, 0x4}}, 0x20)
+write$RDMA_USER_CM_CMD_RESOLVE_IP(r0, &(0x7f0000000380)={0x3, 0x40,
+0xfa00, {{0xa, 0x4e22, 0xcaa4d8d2aba4fcd8, @loopback, 0x1}, {0xa,
+0x4e20, 0x0, @private2, 0x1}, r1, 0x78fe24d7c8b32e4c}}, 0x48)
+write$RDMA_USER_CM_CMD_BIND_IP(r0, &(0x7f0000000000)={0x2, 0x28,
+0xfa00, {0x0, {0xa, 0x4e21, 0xbb6fb906443e717, @mcast2,
+0xb2c44fba8234f958}, r1}}, 0x30)
+write$RDMA_USER_CM_CMD_LISTEN(r0, &(0x7f0000000000)={0x7, 0x8, 0xfa00,
+{r1, 0x96677ad888e911ea}}, 0x10)

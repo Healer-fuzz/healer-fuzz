@@ -1,7 +1,7 @@
 ==================================================================
 BUG: KASAN: use-after-free in cdev_del+0x8b/0x90 -origin/fs/char_dev.c:596
-Read of size 4 at addr ffff888011e20864 by task syz-executor/8066
-CPU: 1 PID: 8066 Comm: syz-executor Not tainted 5.12.0-rc5+ #7
+Read of size 4 at addr ffff888011e20864 by task executor/8066
+CPU: 1 PID: 8066 Comm: executor Not tainted 5.11.0-rc5+ #7
 Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.13.0-1ubuntu1.1 04/01/2014
 Call Trace:
  __dump_stack -origin/lib/dump_stack.c:79 [inline]

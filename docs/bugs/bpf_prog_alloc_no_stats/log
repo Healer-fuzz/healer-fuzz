@@ -1,0 +1,111 @@
+[  820.459862] FAULT_INJECTION: forcing a failure.
+[  820.459862] name failslab, interval 1, probability 0, space 0, times 0
+[  820.460839] CPU: 3 PID: 17344 Comm: executor Not tainted 5.11-rc6+ #1
+[  820.461469] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.13.0-1ubuntu1.1 04/01/2014
+[  820.462269] Call Trace:
+[  820.462509]  dump_stack+0x1ff/0x275
+[  820.462876]  should_fail+0x8b0/0x9d0
+[  820.463326]  __should_failslab+0x1f4/0x290
+[  820.463745]  should_failslab+0x29/0x70
+[  820.464123]  __kmalloc+0xbc/0x560
+[  820.464482]  ? kcalloc+0x1e/0x30
+[  820.464803]  ? kmsan_get_metadata+0x11d/0x180
+[  820.465222]  kcalloc+0x1e/0x30
+[  820.465543]  kmsan_map_kernel_range_noflush+0xa7/0x230
+[  820.466038]  __vmalloc_node_range+0xad3/0x11a0
+[  820.466494]  __vmalloc+0x12f/0x140
+[  820.466857]  ? bpf_prog_alloc_no_stats+0xa6/0x6e0
+[  820.467296]  ? bpf_prog_alloc_no_stats+0xa6/0x6e0
+[  820.468253]  bpf_prog_alloc_no_stats+0xa6/0x6e0
+[  820.468721]  ? security_capable+0x1cb/0x220
+[  820.469297]  ? kmsan_get_metadata+0x11d/0x180
+[  820.469710]  bpf_prog_alloc+0x74/0x310
+[  820.470074]  ? kmsan_get_shadow_origin_ptr+0x84/0xb0
+[  820.470555]  __do_sys_bpf+0x11af3/0x17290
+[  820.471061]  ? __msan_instrument_asm_store+0x22/0x130
+[  820.472066]  ? vfs_write+0xe40/0x1700
+[  820.472574]  ? kmsan_get_metadata+0x11d/0x180
+[  820.473193]  ? kmsan_get_metadata+0x11d/0x180
+[  820.473744]  ? fput+0x52/0x270
+[  820.474112]  ? kmsan_get_metadata+0x11d/0x180
+[  820.474520]  ? kmsan_get_metadata+0x11d/0x180
+[  820.474928]  ? kmsan_get_shadow_origin_ptr+0x84/0xb0
+[  820.475382]  ? __msan_metadata_ptr_for_store_4+0x13/0x20
+[  820.475870]  __se_sys_bpf+0x8e/0xa0
+[  820.476210]  __x64_sys_bpf+0x4a/0x70
+[  820.476552]  do_syscall_64+0xa2/0x120
+[  820.476900]  entry_SYSCALL_64_after_hwframe+0x44/0xae
+[  820.477359] RIP: 0033:0x47338d
+[  820.477794] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 bc ff ff ff f7 d8 64 89 01 48
+[  820.479275] RSP: 002b:00007f7e3c38fc58 EFLAGS: 00000246 ORIG_RAX: 0000000000000141
+[  820.479964] RAX: ffffffffffffffda RBX: 000000000059c080 RCX: 000000000047338d
+[  820.480593] RDX: 0000000000000078 RSI: 0000000020000300 RDI: 0000000000000005
+[  820.481173] RBP: 00007f7e3c38fc90 R08: 0000000000000000 R09: 0000000000000000
+[  820.481820] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000004
+[  820.482824] R13: 00007ffed3a1dd6f R14: 00007ffed3a1df10 R15: 00007f7e3c38fdc0
+[  820.483877] BUG: unable to handle page fault for address: ffff91f2077ed028
+[  820.484424] #PF: supervisor write access in kernel mode
+[  820.484830] #PF: error_code(0x0002) - not-present page
+[  820.485228] PGD 1810067 P4D 1810067 PUD 1915067 PMD 3b907067 PTE 0
+[  820.485828] Oops: 0002 [#1] SMP
+[  820.486099] CPU: 3 PID: 17344 Comm: executor Not tainted 5.11-rc6+ #1
+[  820.486614] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.13.0-1ubuntu1.1 04/01/2014
+[  820.487333] RIP: 0010:bpf_prog_alloc_no_stats+0x251/0x6e0
+[  820.487891] Code: 45 b0 4c 8d 78 28 4d 8b a5 20 03 00 00 41 8b 85 a8 0f 00 00 89 45 c8 48 83 7d a8 00 0f 85 2e 03 00 00 4c 89 ff e8 4f 18 60 00 <4c> 89 20 4d 85 e4 0f 85 27 03 00 00 49 89 1f 4d 85 e4 74 0c 49 f7
+[  820.489293] RSP: 0018:ffff89f2077cfaa8 EFLAGS: 00010286
+[  820.489802] RAX: ffff91f2077ed028 RBX: 0000096680024de8 RCX: ffff91f2077ed028
+[  820.490397] RDX: ffff99f2077ed028 RSI: 0000000000000008 RDI: ffff89f2077ed028
+[  820.490977] RBP: ffff89f2077cfb28 R08: ffffd7eb8000000f R09: ffff888b7ffd3000
+[  820.491533] R10: 000000000000037a R11: 0000000000000000 R12: 0000000000000000
+[  820.492115] R13: ffff888b1465aad8 R14: 0000000004c30000 R15: ffff89f2077ed028
+[  820.492713] FS:  00007f7e3c390700(0000) GS:ffff888b7fd00000(0000) knlGS:0000000000000000
+[  820.493384] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  820.493871] CR2: ffff91f2077ed028 CR3: 0000000044802004 CR4: 0000000000770ee0
+[  820.494462] PKRU: 55555554
+[  820.494717] Call Trace:
+[  820.494945]  bpf_prog_alloc+0x74/0x310
+[  820.495304]  ? kmsan_get_shadow_origin_ptr+0x84/0xb0
+[  820.495764]  __do_sys_bpf+0x11af3/0x17290
+[  820.496121]  ? __msan_instrument_asm_store+0x22/0x130
+[  820.496577]  ? vfs_write+0xe40/0x1700
+[  820.496933]  ? kmsan_get_metadata+0x11d/0x180
+[  820.497362]  ? kmsan_get_metadata+0x11d/0x180
+[  820.497899]  ? fput+0x52/0x270
+[  820.498250]  ? kmsan_get_metadata+0x11d/0x180
+[  820.498658]  ? kmsan_get_metadata+0x11d/0x180
+[  820.499088]  ? kmsan_get_shadow_origin_ptr+0x84/0xb0
+[  820.499543]  ? __msan_metadata_ptr_for_store_4+0x13/0x20
+[  820.500122]  __se_sys_bpf+0x8e/0xa0
+[  820.500489]  __x64_sys_bpf+0x4a/0x70
+[  820.500880]  do_syscall_64+0xa2/0x120
+[  820.501279]  entry_SYSCALL_64_after_hwframe+0x44/0xae
+[  820.501737] RIP: 0033:0x47338d
+[  820.502038] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 bc ff ff ff f7 d8 64 89 01 48
+[  820.503517] RSP: 002b:00007f7e3c38fc58 EFLAGS: 00000246 ORIG_RAX: 0000000000000141
+[  820.504164] RAX: ffffffffffffffda RBX: 000000000059c080 RCX: 000000000047338d
+[  820.504718] RDX: 0000000000000078 RSI: 0000000020000300 RDI: 0000000000000005
+[  820.505313] RBP: 00007f7e3c38fc90 R08: 0000000000000000 R09: 0000000000000000
+[  820.505877] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000004
+[  820.506439] R13: 00007ffed3a1dd6f R14: 00007ffed3a1df10 R15: 00007f7e3c38fdc0
+[  820.507015] Modules linked in:
+[  820.507325] Dumping ftrace buffer:
+[  820.507743]    (ftrace buffer empty)
+[  820.508034] CR2: ffff91f2077ed028
+[  820.508334] ---[ end trace bc1de9e0e1b51e8c ]---
+[  820.508699] RIP: 0010:bpf_prog_alloc_no_stats+0x251/0x6e0
+[  820.509167] Code: 45 b0 4c 8d 78 28 4d 8b a5 20 03 00 00 41 8b 85 a8 0f 00 00 89 45 c8 48 83 7d a8 00 0f 85 2e 03 00 00 4c 89 ff e8 4f 18 60 00 <4c> 89 20 4d 85 e4 0f 85 27 03 00 00 49 89 1f 4d 85 e4 74 0c 49 f7
+[  820.510538] RSP: 0018:ffff89f2077cfaa8 EFLAGS: 00010286
+[  820.510983] RAX: ffff91f2077ed028 RBX: 0000096680024de8 RCX: ffff91f2077ed028
+[  820.511547] RDX: ffff99f2077ed028 RSI: 0000000000000008 RDI: ffff89f2077ed028
+[  820.512106] RBP: ffff89f2077cfb28 R08: ffffd7eb8000000f R09: ffff888b7ffd3000
+[  820.512663] R10: 000000000000037a R11: 0000000000000000 R12: 0000000000000000
+[  820.513206] R13: ffff888b1465aad8 R14: 0000000004c30000 R15: ffff89f2077ed028
+[  820.513723] FS:  00007f7e3c390700(0000) GS:ffff888b7fd00000(0000) knlGS:0000000000000000
+[  820.514334] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  820.514761] CR2: ffff91f2077ed028 CR3: 0000000044802004 CR4: 0000000000770ee0
+[  820.515266] PKRU: 55555554
+[  820.515484] Kernel panic - not syncing: Fatal exception
+[  820.516038] Dumping ftrace buffer:
+[  820.516329]    (ftrace buffer empty)
+[  820.516608] Kernel Offset: 0x7a00000 from 0xffffffff81000000 (relocation range: 0xffffffff80000000-0xffffffffbfffffff)
+[  820.517434] Rebooting in 1 seconds..

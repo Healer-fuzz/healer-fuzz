@@ -1,0 +1,141 @@
+
+FAULT INJECTION LOG:
+=====================================================
+FAULT_INJECTION: forcing a failure.
+name failslab, interval 1, probability 0, space 0, times 0
+CPU: 1 PID: 23380 Comm: executor Not tainted 5.11.0-rc6+ #2
+Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS
+rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+Call Trace:
+ dump_stack+0x1ff/0x275
+ should_fail+0x8b0/0x9d0
+ __should_failslab+0x1f4/0x290
+ should_failslab+0x29/0x70
+ __kmalloc+0xbc/0x560
+ ? bio_kmalloc+0xc4/0x310
+ ? kmsan_get_metadata+0x4f/0x180
+ bio_kmalloc+0xc4/0x310
+ ? kmsan_get_metadata+0x11d/0x180
+ blk_rq_map_kern+0xa05/0x1310
+ ? kmsan_get_shadow_origin_ptr+0x84/0xb0
+ ? kmsan_get_metadata+0x11d/0x180
+ ? kmsan_get_shadow_origin_ptr+0x84/0xb0
+ ? __msan_metadata_ptr_for_store_4+0x13/0x20
+ ? scsi_initialize_rq+0x94/0xe0
+ __scsi_execute+0x307/0xb10
+ sr_check_events+0x1f4/0x10b0
+ ? kmsan_internal_unpoison_shadow+0x42/0x70
+ ? kmsan_get_metadata+0x11d/0x180
+ cdrom_check_events+0xb7/0x240
+ ? kmsan_get_metadata+0x11d/0x180
+ sr_block_check_events+0x450/0x740
+ ? sr_block_compat_ioctl+0x410/0x410
+ disk_check_events+0x15b/0x860
+ ? kmsan_get_metadata+0x11d/0x180
+ ? kmsan_get_shadow_origin_ptr+0x84/0xb0
+ bdev_check_media_change+0x2f2/0x730
+ sr_block_open+0x3ee/0x870
+ ? sr_revalidate_disk+0x8e0/0x8e0
+ __blkdev_get+0x50e/0x12a0
+ ? kmsan_internal_set_origin+0x85/0xc0
+ ? kmsan_internal_unpoison_shadow+0x42/0x70
+ blkdev_get_by_dev+0x288/0xd40
+ ? kmsan_get_metadata+0x11d/0x180
+ blkdev_open+0x233/0x450
+ ? block_ioctl+0x1c0/0x1c0
+ do_dentry_open+0xf36/0x17b0
+ vfs_open+0xaf/0xe0
+ path_openat+0x4d57/0x5e10
+ ? kmsan_get_shadow_origin_ptr+0x84/0xb0
+ ? kmsan_get_shadow_origin_ptr+0x84/0xb0
+ ? __msan_metadata_ptr_for_load_4+0x10/0x20
+ ? slab_post_alloc_hook+0xdf/0xf90
+ ? kstrtoull+0x70e/0x7f0
+ ? kmsan_get_metadata+0x4f/0x180
+ do_filp_open+0x2b8/0x710
+ do_sys_openat2+0x222/0x770
+ ? kmsan_get_metadata+0x4f/0x180
+ ? kmsan_internal_set_origin+0x85/0xc0
+ ? kmsan_get_metadata+0x4f/0x180
+ __se_sys_openat+0x24c/0x2b0
+ __x64_sys_openat+0x56/0x70
+ do_syscall_64+0xa2/0x120
+ entry_SYSCALL_64_after_hwframe+0x44/0xae
+RIP: 0033:0x46a379
+Code: f7 d8 64 89 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 48 89 f8 48
+89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d
+01 f0 ff ff 73 01 c3 48 c7 c1 bc ff ff ff f7 d8 64 89 01 48
+RSP: 002b:00007fd6dde46c58 EFLAGS: 00000246 ORIG_RAX: 0000000000000101
+RAX: ffffffffffffffda RBX: 000000000078c080 RCX: 000000000046a379
+RDX: 0000000090000000 RSI: 0000000020000000 RDI: ffffffffffffff9c
+RBP: 00007fd6dde46c90 R08: 0000000000000000 R09: 0000000000000000
+R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000003
+R13: 0000000000000000 R14: 000000000078c080 R15: 00007ffdf27ef460
+
+KMSAN REPORT:
+BUG: KMSAN: uninit-value in sr_get_events drivers/scsi/sr.c:210 [inline]
+BUG: KMSAN: uninit-value in sr_check_events+0x2cc/0x10b0 drivers/scsi/sr.c:246
+CPU: 1 PID: 23380 Comm: syz-executor Not tainted 5.11.0-rc6+ #2
+Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS
+rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+Call Trace:
+ __dump_stack lib/dump_stack.c:79 [inline]
+ dump_stack+0x1ff/0x275 lib/dump_stack.c:120
+ kmsan_report+0xfb/0x1e0 mm/kmsan/kmsan_report.c:118
+ __msan_warning+0x5c/0xa0 mm/kmsan/kmsan_instr.c:197
+ sr_get_events drivers/scsi/sr.c:210 [inline]
+ sr_check_events+0x2cc/0x10b0 drivers/scsi/sr.c:246
+ cdrom_update_events drivers/cdrom/cdrom.c:1484 [inline]
+ cdrom_check_events+0xb7/0x240 drivers/cdrom/cdrom.c:1494
+ sr_block_check_events+0x450/0x740 drivers/scsi/sr.c:652
+ disk_check_events+0x15b/0x860 block/genhd.c:1715
+ disk_clear_events block/genhd.c:1648 [inline]
+ bdev_check_media_change+0x2f2/0x730 block/genhd.c:1679
+ sr_block_open+0x3ee/0x870 drivers/scsi/sr.c:528
+ __blkdev_get+0x50e/0x12a0 fs/block_dev.c:1306
+ blkdev_get_by_dev+0x288/0xd40 fs/block_dev.c:1458
+ blkdev_open+0x233/0x450 fs/block_dev.c:1555
+ do_dentry_open+0xf36/0x17b0 fs/open.c:826
+ vfs_open+0xaf/0xe0 fs/open.c:940
+ do_open fs/namei.c:3365 [inline]
+ path_openat+0x4d57/0x5e10 fs/namei.c:3498
+ do_filp_open+0x2b8/0x710 fs/namei.c:3525
+ do_sys_openat2+0x222/0x770 fs/open.c:1187
+ do_sys_open fs/open.c:1203 [inline]
+ __do_sys_openat fs/open.c:1219 [inline]
+ __se_sys_openat+0x24c/0x2b0 fs/open.c:1214
+ __x64_sys_openat+0x56/0x70 fs/open.c:1214
+ do_syscall_64+0xa2/0x120 arch/x86/entry/common.c:48
+ entry_SYSCALL_64_after_hwframe+0x44/0xae
+RIP: 0033:0x46a379
+Code: f7 d8 64 89 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 48 89 f8 48
+89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d
+01 f0 ff ff 73 01 c3 48 c7 c1 bc ff ff ff f7 d8 64 89 01 48
+RSP: 002b:00007fd6dde46c58 EFLAGS: 00000246 ORIG_RAX: 0000000000000101
+RAX: ffffffffffffffda RBX: 000000000078c080 RCX: 000000000046a379
+RDX: 0000000090000000 RSI: 0000000020000000 RDI: ffffffffffffff9c
+RBP: 00007fd6dde46c90 R08: 0000000000000000 R09: 0000000000000000
+R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000003
+R13: 0000000000000000 R14: 000000000078c080 R15: 00007ffdf27ef460
+Local variable ----sshdr.i@sr_check_events created at:
+ sr_get_events drivers/scsi/sr.c:205 [inline]
+ sr_check_events+0x153/0x10b0 drivers/scsi/sr.c:246
+ sr_get_events drivers/scsi/sr.c:205 [inline]
+ sr_check_events+0x153/0x10b0 drivers/scsi/sr.c:246
+
+The bug can be trigger by ONE SYSTEM CALL easily:
+# {Threaded:false Collide:false Repeat:true RepeatTimes:0 Procs:1
+Slowdown:1 Sandbox:none Fault:true FaultCall:0 FaultNth:3 Leak:false
+NetInjection:true NetDevices:true NetReset:true Cgroups:true
+BinfmtMisc:true CloseFDs:true KCSAN:false DevlinkPCI:true USB:true
+VhciInjection:true Wifi:true IEEE802154:true Sysctl:true
+UseTmpDir:true HandleSegv:true Repro:false Trace:false}
+
+openat$sr(0xffffffffffffff9c, &(0x7f0000000000)='/dev/sr0\x00', 0x90000000, 0x0)
+
+Using syz-execprog to execute the reproduction program directly:
+ ./syz-execprog  -repeat 0 -procs 1 -slowdown 1 -fault_call 0
+-fault_nth 3 -enable tun -enable netdev -enable resetnet -enable
+cgroups -enable binfmt-misc -enable close_fds -enable devlinkpci
+-enable usb -enable vhci -enable wifi -enable ieee802154 -enable
+sysctl repro.prog

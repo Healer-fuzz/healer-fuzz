@@ -1,0 +1,5 @@
+# {Threaded:false Collide:false Repeat:true RepeatTimes:0 Procs:1 Slowdown:1 Sandbox:none Fault:false FaultCall:-1 FaultNth:0 Leak:false NetInjection:true NetDevices:true NetReset:true Cgroups:true BinfmtMisc:true CloseFDs:true KCSAN:false DevlinkPCI:true USB:true VhciInjection:true Wifi:true IEEE802154:true Sysctl:true UseTmpDir:true HandleSegv:true Repro:false Trace:false}
+
+r0 = syz_io_uring_setup(0x308a, &(0x7f0000000000)={0x0, 0xadaa, 0x8, 0x2, 0x221}, &(0x7f0000003000/0x4000)=nil, &(0x7f0000003000/0x5000)=nil, &(0x7f0000000080)=<r1=>0x0, &(0x7f00000000c0)=<r2=>0x0)
+r3 = mmap$IORING_OFF_CQ_RING(&(0x7f00001bf000/0x1000)=nil, 0x1000, 0x204000002310040f, 0xdfa33665c8e08e92, r0, 0x8000000)
+syz_io_uring_submit(r3, r2, &(0x7f0000000100)=@IORING_OP_POLL_ADD={0x6, 0x1, 0x0, @fd_index=0x1, 0x0, 0x0, 0x0, {0x140800002000808}, 0x0, {0x0, r1}}, 0x72adbe88a21255e9)

@@ -1,0 +1,53 @@
+[  632.463187] loop1: detected capacity change from 0 to 264192
+[  632.640116] BUG: kernel NULL pointer dereference, address: 0000000000000060
+[  632.640873] #PF: supervisor write access in kernel mode
+[  632.643674] #PF: error_code(0x0002) - not-present page
+[  632.644870] PGD 1a5c7067 P4D 1a5c7067 PUD 14557067 PMD 0
+[  632.646191] Oops: 0002 [#1] SMP
+[  632.647717] CPU: 1 PID: 20269 Comm: iou-sqp-20261 Not tainted 5.11.0-rc6+ #1
+[  632.648381] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.13.0-1ubuntu1.1 04/01/2014
+[  632.651047] RIP: 0010:io_uring_cancel_sqpoll+0x1b5/0x460
+[  632.652753] Code: 8d 78 60 be 04 00 00 00 48 89 bd 78 ff ff ff e8 a1 23 c7 ff 4d 85 e4 0f 85 f0 01 00 00 4d 85 e4 0f 85 f8 01 00 00 48 8b 45 98 <f0> ff 40 60 48 8d 78 38 4c 89 23 44 89 ab 88 0c 00 00 48 c7 83 20
+[  632.660709] RSP: 0018:ffff988f43e17cd8 EFLAGS: 00010246
+[  632.661820] RAX: 0000000000000000 RBX: ffff89df8f0e8a98 RCX: ffff89df8f0e8000
+[  632.663209] RDX: 0000000000000000 RSI: 0000000000000004 RDI: 0000000000000060
+[  632.664717] RBP: ffff988f43e17d70 R08: fffff3860000000f R09: ffff89dffffd3000
+[  632.666121] R10: 00000000fb40adf7 R11: 0000000000000000 R12: 0000000000000000
+[  632.669158] R13: 0000000000000000 R14: ffff89dfaea2cf38 R15: ffff89df8f0e8000
+[  632.672430] FS:  00007f501fc44700(0000) GS:ffff89dfffb00000(0000) knlGS:0000000000000000
+[  632.674272] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  632.675476] CR2: 0000000000000060 CR3: 0000000003d12006 CR4: 0000000000770ee0
+[  632.676863] PKRU: 55555554
+[  632.677481] Call Trace:
+[  632.677982]  ? init_wait_entry+0x190/0x190
+[  632.678829]  io_sq_thread+0x21dc/0x24f0
+[  632.679765]  ? irqentry_exit+0x12/0x50
+[  632.682048]  ? sysvec_apic_timer_interrupt+0x86/0xf0
+[  632.684076]  ? kmsan_internal_set_origin+0x85/0xc0
+[  632.685138]  ? init_wait_entry+0x190/0x190
+[  632.685990]  ? kmsan_get_shadow_origin_ptr+0x84/0xb0
+[  632.686992]  ? schedule_tail+0x11a/0x180
+[  632.687870]  ? io_rsrc_put_work+0x780/0x780
+[  632.688728]  ret_from_fork+0x1f/0x30
+[  632.689986] Modules linked in:
+[  632.690670] Dumping ftrace buffer:
+[  632.691394]    (ftrace buffer empty)
+[  632.692145] CR2: 0000000000000060
+[  632.692862] ---[ end trace 06236d8ecfb7a73f ]---
+[  632.693780] RIP: 0010:io_uring_cancel_sqpoll+0x1b5/0x460
+[  632.694946] Code: 8d 78 60 be 04 00 00 00 48 89 bd 78 ff ff ff e8 a1 23 c7 ff 4d 85 e4 0f 85 f0 01 00 00 4d 85 e4 0f 85 f8 01 00 00 48 8b 45 98 <f0> ff 40 60 48 8d 78 38 4c 89 23 44 89 ab 88 0c 00 00 48 c7 83 20
+[  632.699971] RSP: 0018:ffff988f43e17cd8 EFLAGS: 00010246
+[  632.702099] RAX: 0000000000000000 RBX: ffff89df8f0e8a98 RCX: ffff89df8f0e8000
+[  632.705018] RDX: 0000000000000000 RSI: 0000000000000004 RDI: 0000000000000060
+[  632.707835] RBP: ffff988f43e17d70 R08: fffff3860000000f R09: ffff89dffffd3000
+[  632.709426] R10: 00000000fb40adf7 R11: 0000000000000000 R12: 0000000000000000
+[  632.714690] R13: 0000000000000000 R14: ffff89dfaea2cf38 R15: ffff89df8f0e8000
+[  632.716073] FS:  00007f501fc44700(0000) GS:ffff89dfffb00000(0000) knlGS:0000000000000000
+[  632.717984] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  632.719192] CR2: 0000000000000060 CR3: 0000000003d12006 CR4: 0000000000770ee0
+[  632.720587] PKRU: 55555554
+[  632.724164] Kernel panic - not syncing: Fatal exception
+[  632.725295] Dumping ftrace buffer:
+[  632.725965]    (ftrace buffer empty)
+[  632.726662] Kernel Offset: 0xcc00000 from 0xffffffff81000000 (relocation range: 0xffffffff80000000-0xffffffffbfffffff)
+[  632.728734] Rebooting in 1 seconds..

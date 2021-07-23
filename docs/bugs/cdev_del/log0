@@ -1,6 +1,6 @@
 [   40.502796][ T8050] FAULT_INJECTION: forcing a failure.
 [   40.502796][ T8050] name failslab, interval 1, probability 0, space 0, times 1
-[   40.504920][ T8050] CPU: 0 PID: 8050 Comm: syz-executor Not tainted 5.12.0-rc5+ #7
+[   40.504920][ T8050] CPU: 0 PID: 8050 Comm: executor Not tainted 5.11.0-rc5+ #7
 [   40.505636][ T8050] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.13.0-1ubuntu1.1 04/01/2014
 [   40.506590][ T8050] Call Trace:
 [   40.506991][ T8050]  dump_stack+0xfa/0x151
@@ -50,9 +50,9 @@
 [   40.527671][ T8050] R13: 00007fff86f0a5ef R14: 00007fff86f0a790 R15: 00007ff4d8e04dc0
 [   40.600569][ T8066] ==================================================================
 [   40.601343][ T8066] BUG: KASAN: use-after-free in cdev_del+0x8b/0x90
-[   40.602159][ T8066] Read of size 4 at addr ffff888011e20864 by task syz-executor/8066
+[   40.602159][ T8066] Read of size 4 at addr ffff888011e20864 by task executor/8066
 [   40.603721][ T8066] 
-[   40.604178][ T8066] CPU: 1 PID: 8066 Comm: syz-executor Not tainted 5.12.0-rc5+ #7
+[   40.604178][ T8066] CPU: 1 PID: 8066 Comm: executor Not tainted 5.11.0-rc5+ #7
 [   40.605622][ T8066] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.13.0-1ubuntu1.1 04/01/2014
 [   40.607594][ T8066] Call Trace:
 [   40.608108][ T8066]  dump_stack+0xfa/0x151
@@ -151,7 +151,7 @@
 [[0;32m  OK  [0m] Started Daily apt upgrade and clean activities.
 [   40.733835][   T30] Bluetooth: hci0: command 0x0409 tx timeout
 [   40.925690][ T8066] Kernel panic - not syncing: panic_on_warn set ...
-[   40.925702][ T8066] CPU: 0 PID: 8066 Comm: syz-executor Tainted: G    B             5.12.0-rc5+ #7
+[   40.925702][ T8066] CPU: 0 PID: 8066 Comm: executor Tainted: G    B             5.11.0-rc5+ #7
 [   40.925718][ T8066] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.13.0-1ubuntu1.1 04/01/2014
 [   40.925726][ T8066] Call Trace:
 [   40.925731][ T8066]  dump_stack+0xfa/0x151

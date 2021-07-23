@@ -3,7 +3,7 @@
 [  144.067273][ T7768] BUG: KASAN: use-after-free in __list_add_valid+0x93/0xa0
 [  144.068707][ T7768] Read of size 8 at addr ffff88801a69b1e0 by task executor.0/7768
 [  144.069818][ T7768] 
-[  144.070044][ T7768] CPU: 0 PID: 7768 Comm: executor.0 Not tainted 5.12.0-rc7+ #15
+[  144.070044][ T7768] CPU: 0 PID: 7768 Comm: executor.0 Not tainted 5.11.0-rc7+ #15
 [  144.071581][ T7768] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.13.0-1ubuntu1.1 04/01/2014
 [  144.072538][ T7768] Call Trace:
 [  144.072852][ T7768]  dump_stack+0xfa/0x151
@@ -98,7 +98,7 @@
 [  144.223726][ T7768] ==================================================================
 [  144.224509][ T7768] Disabling lock debugging due to kernel taint
 [  144.350201][ T7768] Kernel panic - not syncing: panic_on_warn set ...
-[  144.352105][ T7768] CPU: 0 PID: 7768 Comm: executor.0 Tainted: G    B             5.12.0-rc7+ #15
+[  144.352105][ T7768] CPU: 0 PID: 7768 Comm: executor.0 Tainted: G    B             5.11.0-rc7+ #15
 [  144.354692][ T7768] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.13.0-1ubuntu1.1 04/01/2014
 [  144.357446][ T7768] Call Trace:
 [  144.358344][ T7768]  dump_stack+0xfa/0x151

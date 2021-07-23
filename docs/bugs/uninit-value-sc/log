@@ -1,6 +1,6 @@
 [  639.613279] FAULT_INJECTION: forcing a failure.
 [  639.613279] name failslab, interval 1, probability 0, space 0, times 0
-[  639.614974] CPU: 1 PID: 23380 Comm: executor Not tainted 5.12.0-rc6+ #2
+[  639.614974] CPU: 1 PID: 23380 Comm: executor Not tainted 5.11.0-rc6+ #2
 [  639.615997] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
 [  639.617625] Call Trace:
 [  639.618007]  dump_stack+0x1ff/0x275
@@ -67,7 +67,7 @@
 [  639.661773] R13: 0000000000000000 R14: 000000000078c080 R15: 00007ffdf27ef460
 [  639.663360] =====================================================
 [  639.664183] BUG: KMSAN: uninit-value in sr_check_events+0x2cc/0x10b0
-[  639.665039] CPU: 1 PID: 23380 Comm: executor Not tainted 5.12.0-rc6+ #2
+[  639.665039] CPU: 1 PID: 23380 Comm: executor Not tainted 5.11.0-rc6+ #2
 [  639.665960] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
 [  639.667459] Call Trace:
 [  639.667798]  dump_stack+0x1ff/0x275
@@ -126,7 +126,7 @@
 [  639.703022] =====================================================
 [  639.703815] Disabling lock debugging due to kernel taint
 [  639.704594] Kernel panic - not syncing: panic_on_warn set ...
-[  639.705383] CPU: 1 PID: 23380 Comm: executor Tainted: G    B             5.12.0-rc6+ #2
+[  639.705383] CPU: 1 PID: 23380 Comm: executor Tainted: G    B             5.11.0-rc6+ #2
 [  639.706517] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
 [  639.708056] Call Trace:
 [  639.708409]  dump_stack+0x1ff/0x275

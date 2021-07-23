@@ -3,7 +3,7 @@
 [  542.049383][ T3941] #PF: error_code(0x0010) - not-present page
 [  542.050125][ T3941] PGD f250067 P4D f250067 PUD 143c2067 PMD 0 
 [  542.050883][ T3941] Oops: 0010 [#1] PREEMPT SMP
-[  542.051467][ T3941] CPU: 0 PID: 3941 Comm: kworker/0:3 Not tainted 5.12.0-rc6+ #7
+[  542.051467][ T3941] CPU: 0 PID: 3941 Comm: kworker/0:3 Not tainted 5.11.0-rc6+ #7
 [  542.052420][ T3941] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
 [  542.053939][ T3941] Workqueue: events l2cap_chan_timeout
 [  542.054611][ T3941] RIP: 0010:0x0

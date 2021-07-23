@@ -1,0 +1,108 @@
+ 1949.562007][ T3256] =====================================================
+[ 1949.562864][ T3256] BUG: KMSAN: uninit-value in kmsan_handle_dma+0x9f/0xb0
+[ 1949.563727][ T3256] CPU: 0 PID: 3256 Comm: kworker/0:1H Not tainted 5.6.0-rc7 #6
+[ 1949.564656][ T3256] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+[ 1949.566120][ T3256] Workqueue: kblockd blk_mq_run_work_fn
+[ 1949.566756][ T3256] Call Trace:
+[ 1949.567898][ T3256] dump_stack+0x1c9/0x220
+[ 1949.568431][ T3256] kmsan_report+0xf7/0x1e0
+[ 1949.568947][ T3256] kmsan_internal_check_memory+0x238/0x3d0
+[ 1949.569644][ T3256] kmsan_handle_dma+0x9f/0xb0
+[ 1949.570203][ T3256] kmsan_handle_dma_sg+0x35/0x50
+[ 1949.570801][ T3256] ata_qc_issue+0xc71/0x1570
+[ 1949.571359][ T3256] __ata_scsi_queuecmd+0xfb4/0xff0
+[ 1949.571964][ T3256] ? atapi_xlat+0xab0/0xab0
+[ 1949.572513][ T3256] ata_scsi_queuecmd+0x6dc/0x890
+[ 1949.573108][ T3256] ? ata_scsi_change_queue_depth+0xd0/0xd0
+[ 1949.573825][ T3256] scsi_queue_rq+0x419f/0x4cf0
+[ 1949.574404][ T3256] ? scsi_vpd_tpg_id+0x3e0/0x3e0
+[ 1949.574995][ T3256] blk_mq_dispatch_rq_list+0xf71/0x2850
+[ 1949.575635][ T3256] ? kmsan_get_shadow_origin_ptr+0x81/0xb0
+[ 1949.576306][ T3256] ? kmsan_get_metadata+0x11d/0x180
+[ 1949.576907][ T3256] ? kmsan_get_shadow_origin_ptr+0x81/0xb0
+[ 1949.577586][ T3256] ? __list_add_valid+0xb8/0x420
+[ 1949.578162][ T3256] blk_mq_sched_dispatch_requests+0xbe0/0x1840
+[ 1949.578882][ T3256] __blk_mq_run_hw_queue+0x171/0x3a0
+[ 1949.579495][ T3256] blk_mq_run_work_fn+0x7e/0xb0
+[ 1949.580058][ T3256] ? blk_mq_exit_hctx+0x670/0x670
+[ 1949.580642][ T3256] process_one_work+0x1545/0x1f30
+[ 1949.581234][ T3256] worker_thread+0xf13/0x2460
+[ 1949.581778][ T3256] ? kmsan_get_shadow_origin_ptr+0x81/0xb0
+[ 1949.582457][ T3256] kthread+0x4b5/0x4f0
+[ 1949.582928][ T3256] ? process_one_work+0x1f30/0x1f30
+[ 1949.583532][ T3256] ? kthread_blkcg+0xf0/0xf0
+[ 1949.584069][ T3256] ret_from_fork+0x35/0x40
+[ 1949.584584][ T3256] 
+[ 1949.584854][ T3256] Uninit was stored to memory at:
+[ 1949.585435][ T3256] kmsan_internal_chain_origin+0xad/0x130
+[ 1949.586093][ T3256] kmsan_memcpy_memmove_metadata+0x262/0x2d0
+[ 1949.586780][ T3256] kmsan_memcpy_metadata+0xb/0x10
+[ 1949.587364][ T3256] __msan_memcpy+0x43/0x50
+[ 1949.587876][ T3256] iov_iter_copy_from_user_atomic+0xb02/0x1510
+[ 1949.588584][ T3256] generic_perform_write+0x499/0x9a0
+[ 1949.589193][ T3256] ext4_buffered_write_iter+0x795/0xac0
+[ 1949.589831][ T3256] ext4_file_write_iter+0x1330/0x2c60
+[ 1949.590456][ T3256] __vfs_write+0xa5a/0xca0
+[ 1949.590967][ T3256] __kernel_write+0x208/0x5f0
+[ 1949.591507][ T3256] dump_emit+0x2ba/0x570
+[ 1949.591998][ T3256] writenote+0x30c/0x4c0
+[ 1949.592488][ T3256] elf_core_dump+0x6c49/0x8000
+[ 1949.593038][ T3256] do_coredump+0x3f74/0x56b0
+[ 1949.593568][ T3256] get_signal+0xb36/0x32e0
+[ 1949.594111][ T3256] do_signal+0x6f/0xe30
+[ 1949.594607][ T3256] prepare_exit_to_usermode+0x2f0/0x520
+[ 1949.595263][ T3256] swapgs_restore_regs_and_return_to_usermode+0x0/0x39
+[ 1949.596093][ T3256] 
+[ 1949.596382][ T3256] Uninit was created at:
+[ 1949.596873][ T3256] kmsan_internal_poison_shadow+0x66/0xd0
+[ 1949.597536][ T3256] kmsan_slab_alloc+0x8a/0xe0
+[ 1949.598075][ T3256] __kmalloc+0x2c1/0x450
+[ 1949.598566][ T3256] elf_core_dump+0x21dc/0x8000
+[ 1949.599117][ T3256] do_coredump+0x3f74/0x56b0
+[ 1949.599648][ T3256] get_signal+0xb36/0x32e0
+[ 1949.600160][ T3256] do_signal+0x6f/0xe30
+[ 1949.600646][ T3256] prepare_exit_to_usermode+0x2f0/0x520
+[ 1949.601286][ T3256] swapgs_restore_regs_and_return_to_usermode+0x0/0x39
+[ 1949.602069][ T3256] 
+[ 1949.602341][ T3256] Bytes 2600-2647 of 4096 are uninitialized
+[ 1949.603017][ T3256] Memory access of size 4096 starts at ffff999becb67000
+[ 1949.603843][ T3256] =====================================================
+[ 1949.604656][ T3256] Disabling lock debugging due to kernel taint
+[ 1949.605380][ T3256] Kernel panic - not syncing: panic_on_warn set ...
+[ 1949.606170][ T3256] CPU: 0 PID: 3256 Comm: kworker/0:1H Tainted: G B 5.6.0-rc7 #6
+[ 1949.607214][ T3256] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.0-59-gc9ba5276e321-prebuilt.qemu.org 04/01/2014
+[ 1949.608630][ T3256] Workqueue: kblockd blk_mq_run_work_fn
+[ 1949.609266][ T3256] Call Trace:
+[ 1949.609650][ T3256] dump_stack+0x1c9/0x220
+[ 1949.610155][ T3256] panic+0x3d5/0xc3e
+[ 1949.610629][ T3256] kmsan_report+0x1da/0x1e0
+[ 1949.611152][ T3256] kmsan_internal_check_memory+0x238/0x3d0
+[ 1949.611829][ T3256] kmsan_handle_dma+0x9f/0xb0
+[ 1949.612371][ T3256] kmsan_handle_dma_sg+0x35/0x50
+[ 1949.612941][ T3256] ata_qc_issue+0xc71/0x1570
+[ 1949.613482][ T3256] __ata_scsi_queuecmd+0xfb4/0xff0
+[ 1949.614079][ T3256] ? atapi_xlat+0xab0/0xab0
+[ 1949.614605][ T3256] ata_scsi_queuecmd+0x6dc/0x890
+[ 1949.615181][ T3256] ? ata_scsi_change_queue_depth+0xd0/0xd0
+[ 1949.615848][ T3256] scsi_queue_rq+0x419f/0x4cf0
+[ 1949.616410][ T3256] ? scsi_vpd_tpg_id+0x3e0/0x3e0
+[ 1949.616987][ T3256] blk_mq_dispatch_rq_list+0xf71/0x2850
+[ 1949.617626][ T3256] ? kmsan_get_shadow_origin_ptr+0x81/0xb0
+[ 1949.618296][ T3256] ? kmsan_get_metadata+0x11d/0x180
+[ 1949.618897][ T3256] ? kmsan_get_shadow_origin_ptr+0x81/0xb0
+[ 1949.619569][ T3256] ? __list_add_valid+0xb8/0x420
+[ 1949.620144][ T3256] blk_mq_sched_dispatch_requests+0xbe0/0x1840
+[ 1949.620866][ T3256] __blk_mq_run_hw_queue+0x171/0x3a0
+[ 1949.621480][ T3256] blk_mq_run_work_fn+0x7e/0xb0
+[ 1949.622043][ T3256] ? blk_mq_exit_hctx+0x670/0x670
+[ 1949.622622][ T3256] process_one_work+0x1545/0x1f30
+[ 1949.623213][ T3256] worker_thread+0xf13/0x2460
+[ 1949.623763][ T3256] ? kmsan_get_shadow_origin_ptr+0x81/0xb0
+[ 1949.624441][ T3256] kthread+0x4b5/0x4f0
+[ 1949.624911][ T3256] ? process_one_work+0x1f30/0x1f30
+[ 1949.625515][ T3256] ? kthread_blkcg+0xf0/0xf0
+[ 1949.626047][ T3256] ret_from_fork+0x35/0x40
+[ 1949.626750][ T3256] Dumping ftrace buffer:
+[ 1949.627294][ T3256] (ftrace buffer empty)
+[ 1949.627856][ T3256] Kernel Offset: 0x29800000 from 0xffffffff81000000 (relocation range: 0xffffffff80000000-0xffffffffbfffffff)
+[ 1949.629179][ T3256] Rebooting in 1 seconds.

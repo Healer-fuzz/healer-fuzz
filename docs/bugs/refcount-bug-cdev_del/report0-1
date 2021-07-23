@@ -1,5 +1,5 @@
 Modules linked in:
-CPU: 1 PID: 8923 Comm: syz-executor Not tainted 5.12.0-rc5+ #8
+CPU: 1 PID: 8923 Comm: executor Not tainted 5.11.0-rc5+ #8
 Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.13.0-1ubuntu1.1 04/01/2014
 RIP: 0010:refcount_warn_saturate+0x1cf/0x210 -origin/lib/refcount.c:28
 Code: 4f ff ff ff e8 32 fa b5 fe 48 c7 c7 3d f8 f6 86 e8 d6 ab c6 fe c6 05 7c 34 67 04 01 48 c7 c7 68 f8 6d 86 31 c0 e8 81 2e 9d fe <0f> 0b e9 22 ff ff ff e8 05 fa b5 fe 48 c7 c7 3e f8 f6 86 e8 a9 ab
@@ -47,7 +47,7 @@ RBP: 0000000000000004 R08: 0000000000000000 R09: 00000000005a0108
 R10: 00007fffd6e9a620 R11: 0000000000000293 R12: 00000000005280c0
 R13: 00000000005a01a0 R14: 00000000005a01a8 R15: 0000000000003cc6
 Kernel panic - not syncing: panic_on_warn set ...
-CPU: 1 PID: 8923 Comm: syz-executor Not tainted 5.12.0-rc5+ #8
+CPU: 1 PID: 8923 Comm: executor Not tainted 5.11.0-rc5+ #8
 Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.13.0-1ubuntu1.1 04/01/2014
 Call Trace:
  __dump_stack -origin/lib/dump_stack.c:79 [inline]

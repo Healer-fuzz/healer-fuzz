@@ -1,0 +1,124 @@
+[  151.409525] sp0: Synchronizing with TNC
+[  151.422373] loop5: detected capacity change from 0 to 264192
+[  151.487195] FAULT_INJECTION: forcing a failure.
+[  151.487195] name failslab, interval 1, probability 0, space 0, times 0
+[  151.490396] CPU: 0 PID: 9990 Comm: executor Not tainted 5.11.0 #1
+[  151.491666] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.13.0-1ubuntu1.1 04/01/2014
+[  151.492439] Call Trace:
+[  151.492674]  dump_stack+0x1ff/0x275
+[  151.493013]  should_fail+0x8b0/0x9d0
+[  151.493459]  __should_failslab+0x1f4/0x290
+[  151.493854]  should_failslab+0x29/0x70
+[  151.494250]  __kmalloc+0xbc/0x560
+[  151.494639]  ? kcalloc+0x1e/0x30
+[  151.495002]  kcalloc+0x1e/0x30
+[  151.495471]  kmsan_map_kernel_range_noflush+0xb2/0x230
+[  151.496234]  __vmalloc_node_range+0xad3/0x11a0
+[  151.497243]  vzalloc+0x117/0x130
+[  151.498193]  ? blk_add_partitions+0x271/0x20d0
+[  151.498847]  ? blk_add_partitions+0x271/0x20d0
+[  151.499247]  blk_add_partitions+0x271/0x20d0
+[  151.499696]  ? kmsan_get_shadow_origin_ptr+0x84/0xb0
+[  151.500584]  ? __msan_metadata_ptr_for_store_8+0x13/0x20
+[  151.501117]  ? disk_part_iter_exit+0x8a/0xe0
+[  151.501695]  ? kmsan_get_metadata+0x11d/0x180
+[  151.502200]  bdev_disk_changed+0x461/0x570
+[  151.502601]  loop_set_status+0x13a9/0x1660
+[  151.503013]  lo_ioctl+0x2189/0x3850
+[  151.503386]  ? kmsan_memcpy_memmove_metadata+0x112/0x290
+[  151.503886]  ? avc_has_extended_perms+0x15b4/0x1b30
+[  151.504387]  ? __msan_get_context_state+0x9/0x20
+[  151.504841]  ? blkdev_common_ioctl+0x1c67/0x3690
+[  151.505318]  ? kmsan_get_metadata+0x11d/0x180
+[  151.505676]  ? lo_release+0x330/0x330
+[  151.506019]  blkdev_ioctl+0xa10/0xdb0
+[  151.506742]  block_ioctl+0x163/0x1c0
+[  151.507385]  ? blkdev_iopoll+0x190/0x190
+[  151.507800]  __se_sys_ioctl+0x2c2/0x400
+[  151.508221]  ? kmsan_get_metadata+0x4f/0x180
+[  151.508647]  __x64_sys_ioctl+0x4a/0x70
+[  151.509013]  do_syscall_64+0xa2/0x120
+[  151.509408]  entry_SYSCALL_64_after_hwframe+0x44/0xae
+[  151.509845] RIP: 0033:0x47311b
+[  151.510120] Code: 0f 92 c0 84 c0 75 b0 49 8d 3c 1c e8 af 1d 04 00 85 c0 78 b1 48 83 c4 08 4c 89 e0 5b 41 5c c3 f3 0f 1e fa b8 10 00 00 00 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 bc ff ff ff f7 d8 64 89 01 48
+[  151.511630] RSP: 002b:00007f2c1751a9b8 EFLAGS: 00000202 ORIG_RAX: 0000000000000010
+[  151.512350] RAX: ffffffffffffffda RBX: 00007f2c1751ab80 RCX: 000000000047311b
+[  151.512973] RDX: 00007f2c1751aa90 RSI: 0000000000004c04 RDI: 0000000000000007
+[  151.513594] RBP: 00007f2c1751b6bc R08: 0000000000000000 R09: 0000000000000000
+[  151.514332] R10: 0000000000000000 R11: 0000000000000202 R12: 0000000000000000
+[  151.514948] R13: 00007f2c1751aa90 R14: 00007ffd7003bbc0 R15: 00007f2c1751adc0
+[  151.515860] BUG: unable to handle page fault for address: ffffb3888825d000
+[  151.516377] #PF: supervisor write access in kernel mode
+[  151.516774] #PF: error_code(0x0002) - not-present page
+[  151.517171] PGD 1810067 P4D 1810067 PUD 1915067 PMD 144fc067 PTE 0
+[  151.517642] Oops: 0002 [#1] SMP
+[  151.517899] CPU: 0 PID: 9990 Comm: executor Not tainted 5.11.0 #1
+[  151.518532] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.13.0-1ubuntu1.1 04/01/2014
+[  151.519183] RIP: 0010:memset_erms+0x9/0x10
+[  151.519490] Code: c1 e9 03 40 0f b6 f6 48 b8 01 01 01 01 01 01 01 01 48 0f af c6 f3 48 ab 89 d1 f3 aa 4c 89 c8 c3 90 49 89 f9 40 88 f0 48 89 d1 <f3> aa 4c 89 c8 c3 90 49 89 fa 40 0f b6 ce 48 b8 01 01 01 01 01 01
+[  151.520835] RSP: 0018:ffffab888819b788 EFLAGS: 00010086
+[  151.521269] RAX: ffffb3888825d000 RBX: 0000000000001000 RCX: 0000000000001000
+[  151.521772] RDX: 0000000000001000 RSI: 0000000000000000 RDI: ffffb3888825d000
+[  151.522289] RBP: ffffab888819b7b8 R08: fffffcd70000000f R09: ffffb3888825d000
+[  151.523057] R10: 0000000000000000 R11: 00000000ff000000 R12: 0000000000000000
+[  151.523620] R13: 0000000000008000 R14: 0000000000000000 R15: ffffab888825d000
+[  151.524221] FS:  00007f2c1751b700(0000) GS:ffff95d53fa00000(0000) knlGS:0000000000000000
+[  151.524846] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  151.525297] CR2: ffffb3888825d000 CR3: 0000000010bf1006 CR4: 0000000000770ef0
+[  151.527579] PKRU: 55555554
+[  151.527896] Call Trace:
+[  151.528306]  ? kmsan_internal_memset_shadow+0x4e/0xb0
+[  151.529086]  kmsan_internal_unpoison_shadow+0x1d/0x70
+[  151.530071]  __msan_memset+0x64/0xb0
+[  151.530570]  blk_add_partitions+0x854/0x20d0
+[  151.530906]  ? kmsan_get_shadow_origin_ptr+0x84/0xb0
+[  151.531303]  ? __msan_metadata_ptr_for_store_8+0x13/0x20
+[  151.531838]  ? disk_part_iter_exit+0x8a/0xe0
+[  151.532485]  ? kmsan_get_metadata+0x11d/0x180
+[  151.533382]  bdev_disk_changed+0x461/0x570
+[  151.534142]  loop_set_status+0x13a9/0x1660
+[  151.534959]  lo_ioctl+0x2189/0x3850
+[  151.535655]  ? kmsan_memcpy_memmove_metadata+0x112/0x290
+[  151.536730]  ? avc_has_extended_perms+0x15b4/0x1b30
+[  151.537717]  ? __msan_get_context_state+0x9/0x20
+[  151.538464]  ? blkdev_common_ioctl+0x1c67/0x3690
+[  151.539352]  ? kmsan_get_metadata+0x11d/0x180
+[  151.540193]  ? lo_release+0x330/0x330
+[  151.540853]  blkdev_ioctl+0xa10/0xdb0
+[  151.541521]  block_ioctl+0x163/0x1c0
+[  151.542235]  ? blkdev_iopoll+0x190/0x190
+[  151.542853]  __se_sys_ioctl+0x2c2/0x400
+[  151.543210]  ? kmsan_get_metadata+0x4f/0x180
+[  151.543706]  __x64_sys_ioctl+0x4a/0x70
+[  151.544505]  do_syscall_64+0xa2/0x120
+[  151.545264]  entry_SYSCALL_64_after_hwframe+0x44/0xae
+[  151.546024] RIP: 0033:0x47311b
+[  151.546287] Code: 0f 92 c0 84 c0 75 b0 49 8d 3c 1c e8 af 1d 04 00 85 c0 78 b1 48 83 c4 08 4c 89 e0 5b 41 5c c3 f3 0f 1e fa b8 10 00 00 00 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 bc ff ff ff f7 d8 64 89 01 48
+[  151.548834] RSP: 002b:00007f2c1751a9b8 EFLAGS: 00000202 ORIG_RAX: 0000000000000010
+[  151.550339] RAX: ffffffffffffffda RBX: 00007f2c1751ab80 RCX: 000000000047311b
+[  151.551751] RDX: 00007f2c1751aa90 RSI: 0000000000004c04 RDI: 0000000000000007
+[  151.552801] RBP: 00007f2c1751b6bc R08: 0000000000000000 R09: 0000000000000000
+[  151.553915] R10: 0000000000000000 R11: 0000000000000202 R12: 0000000000000000
+[  151.554415] R13: 00007f2c1751aa90 R14: 00007ffd7003bbc0 R15: 00007f2c1751adc0
+[  151.554913] Modules linked in:
+[  151.555156] Dumping ftrace buffer:
+[  151.555410]    (ftrace buffer empty)
+[  151.555663] CR2: ffffb3888825d000
+[  151.555914] ---[ end trace b11318950e5124cd ]---
+[  151.556246] RIP: 0010:memset_erms+0x9/0x10
+[  151.556562] Code: c1 e9 03 40 0f b6 f6 48 b8 01 01 01 01 01 01 01 01 48 0f af c6 f3 48 ab 89 d1 f3 aa 4c 89 c8 c3 90 49 89 f9 40 88 f0 48 89 d1 <f3> aa 4c 89 c8 c3 90 49 89 fa 40 0f b6 ce 48 b8 01 01 01 01 01 01
+[  151.557829] RSP: 0018:ffffab888819b788 EFLAGS: 00010086
+[  151.558185] RAX: ffffb3888825d000 RBX: 0000000000001000 RCX: 0000000000001000
+[  151.558708] RDX: 0000000000001000 RSI: 0000000000000000 RDI: ffffb3888825d000
+[  151.559297] RBP: ffffab888819b7b8 R08: fffffcd70000000f R09: ffffb3888825d000
+[  151.560614] R10: 0000000000000000 R11: 00000000ff000000 R12: 0000000000000000
+[  151.562721] R13: 0000000000008000 R14: 0000000000000000 R15: ffffab888825d000
+[  151.564003] FS:  00007f2c1751b700(0000) GS:ffff95d53fa00000(0000) knlGS:0000000000000000
+[  151.564623] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  151.565066] CR2: ffffb3888825d000 CR3: 0000000010bf1006 CR4: 0000000000770ef0
+[  151.565603] PKRU: 55555554
+[  151.565826] Kernel panic - not syncing: Fatal exception
+[  151.566807] Dumping ftrace buffer:
+[  151.567096]    (ftrace buffer empty)
+[  151.567381] Kernel Offset: 0x17c00000 from 0xffffffff81000000 (relocation range: 0xffffffff80000000-0xffffffffbfffffff)
+[  151.568266] Rebooting in 1 seconds..
