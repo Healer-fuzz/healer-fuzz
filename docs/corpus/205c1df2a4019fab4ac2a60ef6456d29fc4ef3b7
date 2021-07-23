@@ -1,0 +1,7 @@
+write(0xffffffffffffffff, &(0x7f00000000c0)="24000000200099f0003be90000ed190e02", 0x11)
+r0 = openat$tun(0xffffffffffffff9c, &(0x7f00000005c0)='/dev/net/tun\x00', 0x0, 0x0)
+ioctl$TUNSETIFF(r0, 0x400454ca, &(0x7f00000000c0)={'syzkaller1\x00'})
+r1 = socket$packet(0x11, 0x3, 0x300)
+ioctl$sock_SIOCGIFINDEX(r1, 0x8933, &(0x7f0000000040)={'syzkaller1\x00', <r2=>0x0})
+setsockopt$packet_add_memb(r1, 0x107, 0x1, &(0x7f0000000000)={r2, 0x1, 0x6, @link_local}, 0x10)
+close(r0)

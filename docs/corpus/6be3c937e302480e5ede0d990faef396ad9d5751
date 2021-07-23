@@ -1,0 +1,8 @@
+r0 = socket$inet_udplite(0x2, 0x2, 0x88)
+ioctl(r0, 0x80001000008912, &(0x7f0000000700)="0adc1f123c123f319bd070")
+r1 = openat$proc_capi20ncci(0xffffffffffffff9c, &(0x7f00000000c0)='/proc/capi/capi20ncci\x00', 0x0, 0x0)
+getsockopt$inet_sctp6_SCTP_PEER_ADDR_THLDS(0xffffffffffffff9c, 0x84, 0x1f, 0x0, &(0x7f0000000380))
+ioctl$RTC_VL_CLR(r1, 0x7014)
+setsockopt$inet_sctp_SCTP_PEER_ADDR_THLDS(r1, 0x84, 0x1f, &(0x7f00000003c0)={0x0, @in6={{0xa, 0x4e21, 0x0, @local, 0x9}}, 0x80000000}, 0x90)
+syz_execute_func(&(0x7f0000000180)="f2af91930f0124eda133fa20430fbafce842f66188d0d4430fc7f314c1ab5be2f9660f3a0fae5e090000ba44d8d1b63ac4817d73d74ec482310d46f449f216c863fa43c4c2750ade1bdbae95c4e1a05d6b06aa420f383c02c401405c6bfd499768d768f833fefbab6464660f38323c8f26dbc1a1fe5ff6f6df0804f4c4efa59c0f01c4288ba6452e000054c4431d5c")
+mlockall(0x1)

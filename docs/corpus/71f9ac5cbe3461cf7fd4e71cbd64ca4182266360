@@ -1,0 +1,3 @@
+syz_usb_connect(0x0, 0x24, &(0x7f0000000480)=ANY=[@ANYBLOB="12010000adf84e40ac0592021f3dffdd0001090212000100000000090400000003ab02"], 0x0)
+r0 = openat$mice(0xffffffffffffff9c, &(0x7f0000000000)='/dev/input/mice\x00', 0x0)
+close(r0)

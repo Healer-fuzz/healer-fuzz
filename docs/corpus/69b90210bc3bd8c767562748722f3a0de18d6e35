@@ -1,0 +1,5 @@
+mkdir(&(0x7f0000000280)='./file0\x00', 0x0)
+mount(0x0, &(0x7f0000000000)='./file0\x00', &(0x7f0000000140)='cpuset\x00', 0x0, 0x0)
+r0 = open(&(0x7f0000000080)='./file0\x00', 0x0, 0x0)
+r1 = openat$cgroup_int(r0, &(0x7f0000000040)='cpuset.memory_spread_slab\x00', 0x2, 0x0)
+sendfile(r1, r1, 0x0, 0x4)

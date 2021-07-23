@@ -1,0 +1,1 @@
+keyctl$KEYCTL_PKEY_VERIFY(0x1c, &(0x7f0000000f00), &(0x7f0000000f40)={'enc=', 'pkcs1', ' hash=', {'poly1305-generic\x00'}}, 0x0, 0x0)

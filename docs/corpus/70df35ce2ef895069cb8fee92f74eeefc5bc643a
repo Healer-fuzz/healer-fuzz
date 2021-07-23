@@ -1,0 +1,6 @@
+r0 = creat(&(0x7f0000000180)='./bus\x00', 0x0)
+r1 = open(&(0x7f0000000100)='./bus\x00', 0x0, 0x0)
+write$binfmt_misc(r0, &(0x7f0000000900)=ANY=[], 0x1)
+dup3(r1, r0, 0x0)
+setxattr$security_ima(&(0x7f0000000000)='./bus\x00', &(0x7f00000000c0)='security.ima\x00', &(0x7f0000000040)=@ng={0x4, 0x5}, 0x2, 0x0)
+finit_module(r1, 0x0, 0x0)

@@ -1,0 +1,2 @@
+vmsplice(0xffffffffffffffff, &(0x7f0000000980)=[{&(0x7f0000000080)="0e775553ace834", 0x7}], 0x1, 0x0)
+syz_mount_image$nfs(&(0x7f0000000840)='nfs\x00', &(0x7f0000000880)='./file0\x00', 0x0, 0xf489fbb9b5a753e1, 0x0, 0x0, &(0x7f0000000080)=ANY=[@ANYBLOB='port=+'])

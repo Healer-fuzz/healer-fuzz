@@ -1,0 +1,2 @@
+r0 = socket$nl_rdma(0x10, 0x3, 0x14)
+writev(r0, &(0x7f0000003ec0)=[{&(0x7f0000003dc0)="100000000d841f9ef803cfd1723dff53", 0x10}], 0x1)

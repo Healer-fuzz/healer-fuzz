@@ -1,0 +1,1 @@
+openat$rfkill(0xffffffffffffff9c, &(0x7f0000000140)='/dev/rfkill\x00', 0xc78d2b184d9eb02c, 0x0)

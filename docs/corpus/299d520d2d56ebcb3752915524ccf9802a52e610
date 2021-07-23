@@ -1,0 +1,4 @@
+socketpair$unix(0x1, 0x1, 0x0, &(0x7f0000000140)={<r0=>0xffffffffffffffff})
+r1 = socket$netlink(0x10, 0x3, 0x0)
+ioctl$sock_SIOCGIFINDEX(r0, 0x8933, &(0x7f0000000080)={'bridge_slave_0\x00', <r2=>0x0})
+sendmsg$nl_route(r1, &(0x7f00000000c0)={0x0, 0x0, &(0x7f0000000000)={&(0x7f0000000100)=ANY=[@ANYBLOB="280000001c00070f000000000000000007000000", @ANYRES32=r2, @ANYBLOB="80006c000a000200aa"], 0x28}}, 0x0)

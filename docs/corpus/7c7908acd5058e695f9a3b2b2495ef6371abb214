@@ -1,0 +1,2 @@
+r0 = add_key(&(0x7f0000001100)='user\x00', &(0x7f0000000000)={'syz', 0x1}, &(0x7f0000000080)="1f", 0x1, 0xfffffffffffffffb)
+keyctl$get_keyring_id(0x3, r0, 0x0)

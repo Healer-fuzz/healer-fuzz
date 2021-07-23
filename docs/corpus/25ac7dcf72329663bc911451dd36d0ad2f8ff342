@@ -1,0 +1,3 @@
+r0 = socket$inet_sctp(0x2, 0x1, 0x84)
+close_range(r0, 0xffffffffffffffff, 0x0)
+fsync(r0)

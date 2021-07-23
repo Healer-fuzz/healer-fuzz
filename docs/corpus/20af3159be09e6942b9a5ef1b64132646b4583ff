@@ -1,0 +1,4 @@
+keyctl$search(0xa, 0x0, &(0x7f0000000000)='blacklist\x00', &(0x7f0000000040)={'syz', 0x0}, 0xfffffffffffffffb)
+request_key(&(0x7f0000000140)='pkcs7_test\x00', &(0x7f0000000180)={'syz', 0x2}, &(0x7f0000000200)='\x81\x00', 0xfffffffffffffffd)
+r0 = add_key$fscrypt_v1(&(0x7f0000000400)='logon\x00', &(0x7f0000000440)={'fscrypt:', @desc4='85baa174f0cb1142'}, &(0x7f0000000480)={0x0, "7a55095c4a0612708f3a7a797ea75396610cad0d08e40461b7f339739a081c41351ba4f24ff2d10274abef6f467d420f6461bdd6a08bcc924f879df660e2913b", 0x1f}, 0x48, 0xfffffffffffffffb)
+keyctl$setperm(0x5, r0, 0x200000)

@@ -1,0 +1,2 @@
+add_key(&(0x7f00000000c0)='big_key\x00', &(0x7f0000000100)={'syz', 0x0}, &(0x7f0000000140)="83", 0x1, 0xfffffffffffffffe)
+add_key(&(0x7f00000000c0)='big_key\x00', &(0x7f0000000100)={'syz', 0x0}, &(0x7f0000000140)="83", 0x1, 0xfffffffffffffffe)

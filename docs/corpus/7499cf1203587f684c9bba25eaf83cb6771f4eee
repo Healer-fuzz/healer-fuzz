@@ -1,0 +1,1 @@
+seccomp$SECCOMP_SET_MODE_FILTER_LISTENER(0x1, 0x50fae6b1eedf20a, 0x0)

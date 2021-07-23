@@ -1,0 +1,2 @@
+r0 = syz_open_procfs(0x0, &(0x7f00000000c0)='net/snmp6\x00')
+preadv(r0, &(0x7f0000001400)=[{&(0x7f0000000280)=""/95, 0x5f}], 0x1, 0x7fff, 0x0)

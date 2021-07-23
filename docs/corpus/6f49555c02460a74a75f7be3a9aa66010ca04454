@@ -1,0 +1,2 @@
+r0 = syz_open_procfs(0x0, &(0x7f0000000080)='attr/exec\x00')
+utimensat(r0, 0x0, &(0x7f0000000040)={{}, {0x0, 0x3ffffffe}}, 0x0)

@@ -1,0 +1,4 @@
+r0 = openat$vga_arbiter(0xffffffffffffff9c, &(0x7f0000000240)='/dev/vga_arbiter\x00', 0x0, 0x0)
+r1 = syz_init_net_socket$802154_raw(0x24, 0x3, 0x0)
+r2 = dup3(r0, r1, 0x0)
+read(r2, 0x0, 0x0)

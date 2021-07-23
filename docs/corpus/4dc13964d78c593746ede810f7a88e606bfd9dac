@@ -1,0 +1,4 @@
+mkdir(&(0x7f0000000280)='./file0\x00', 0x0)
+pipe2$9p(&(0x7f00000001c0)={<r0=>0xffffffffffffffff}, 0x0)
+r1 = openat$vcsu(0xffffffffffffff9c, &(0x7f00000002c0)='/dev/vcsu\x00', 0x1, 0x0)
+mount$9p_fd(0x0, &(0x7f0000000040)='./file0\x00', &(0x7f0000000240)='9p\x00', 0x0, &(0x7f00000005c0)={'trans=fd,', {'rfdno', 0x3d, r0}, 0x2c, {'wfdno', 0x3d, r1}})

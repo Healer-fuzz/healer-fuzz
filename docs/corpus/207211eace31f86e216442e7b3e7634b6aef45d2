@@ -1,0 +1,6 @@
+r0 = socket$alg(0x26, 0x5, 0x0)
+bind$alg(r0, &(0x7f0000000000)={0x26, 'skcipher\x00', 0x0, 0x0, 'ecb(cast5)\x00'}, 0x58)
+setsockopt$ALG_SET_KEY(r0, 0x117, 0x1, &(0x7f00000001c0)="0a0775b005", 0x5)
+r1 = accept$alg(r0, 0x0, 0x0)
+sendmsg$sock(r1, &(0x7f0000000340)={0x0, 0x0, &(0x7f0000000180)=[{&(0x7f00000000c0)="46a4404b2e1795c8e29d63cac74f3e84358517429fe2b697b1bbae9afc660841b2dda50be886eaa59dcc46fc4d", 0x2d}, {&(0x7f0000000400)="d6", 0x1}, {&(0x7f00000005c0)="855d8a77141e3e7deb6cd01b8e90a0f05151a35c78bdc70018155a7536aec7ccc0c6dec7dbf5af12c86d50ff79d75f75cfe36be333d86ef7c28216ba72b993a8c0edbfae6d4465bb8eba9ce17d6ed61d05f0", 0x52}], 0x3}, 0x0)
+recvmmsg(r1, &(0x7f0000001200)=[{{0x0, 0x0, &(0x7f0000000b40)=[{&(0x7f0000000740)=""/201, 0xc9}], 0x1}}], 0x1, 0x0, 0x0)

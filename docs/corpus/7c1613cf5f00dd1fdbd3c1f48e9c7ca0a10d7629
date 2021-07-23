@@ -1,0 +1,2 @@
+r0 = syz_open_dev$dri(&(0x7f0000000040)='/dev/dri/card#\x00', 0x9831, 0x0)
+ioctl$DRM_IOCTL_SET_CLIENT_CAP(r0, 0x4010640d, &(0x7f0000000080)={0x5})

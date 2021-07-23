@@ -1,0 +1,5 @@
+r0 = syz_open_dev$sndctrl(&(0x7f0000006000)='/dev/snd/controlC#\x00', 0x0, 0x0)
+r1 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000080)='cgroup.controllers\x00', 0x275a, 0x0)
+write$binfmt_script(r1, &(0x7f00000000c0)=ANY=[], 0xfea7)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x1, 0x10012, r1, 0x0)
+ioctl$SNDRV_CTL_IOCTL_PCM_PREFER_SUBDEVICE(r0, 0x40045532, &(0x7f00000001c0))

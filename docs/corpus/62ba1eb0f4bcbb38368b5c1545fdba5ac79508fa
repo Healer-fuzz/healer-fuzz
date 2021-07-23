@@ -1,0 +1,5 @@
+creat(&(0x7f0000000000)='./file0\x00', 0x0)
+r0 = socket(0x2000000000000021, 0x2, 0x10000000000002)
+r1 = dup(r0)
+r2 = socket$inet6_sctp(0xa, 0x1, 0x84)
+mount$9p_fd(0x0, &(0x7f0000000300)='./file0\x00', &(0x7f0000000340)='9p\x00', 0x0, &(0x7f0000000040)={'trans=fd,', {'rfdno', 0x3d, r1}, 0x2c, {'wfdno', 0x3d, r2}})

@@ -1,0 +1,2 @@
+r0 = syz_open_dev$sndpcmp(&(0x7f0000000000)='/dev/snd/pcmC#D#p\x00', 0x0, 0x0)
+ioctl$SNDRV_PCM_IOCTL_SYNC_PTR(r0, 0xc1004110, &(0x7f0000000040)={0x0, "4ddab95644fdf492bd766ea1d25993f8d35993f8348cd7e1c6bb8b33f9df6ba3200828a86c094fc19110e233218b4eeede127c00"})

@@ -1,0 +1,4 @@
+syz_open_procfs$userns(0xffffffffffffffff, &(0x7f00000005c0)='ns/user\x00')
+fork()
+r0 = fork()
+process_vm_writev(r0, &(0x7f0000000400)=[{&(0x7f0000000000)=""/45, 0x2d}], 0x1, &(0x7f0000000780)=[{&(0x7f0000000480)=""/71, 0x47}], 0x1, 0x0)

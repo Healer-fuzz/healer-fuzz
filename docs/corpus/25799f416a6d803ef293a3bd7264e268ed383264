@@ -1,0 +1,7 @@
+syz_mount_image$msdos(&(0x7f00000002c0)='msdos\x00', &(0x7f00000003c0)='./file1\x00', 0xffffdfff, 0x1, &(0x7f0000000080)=[{&(0x7f00000000c0)="0400050900000000666174000404090a020002740ef8", 0x16}], 0x0, &(0x7f00000004c0)=ANY=[])
+r0 = openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
+mmap(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x1800003, 0x12, r0, 0x0)
+preadv(r0, &(0x7f0000000280), 0x18, 0xd9f, 0x0)
+chdir(&(0x7f0000000000)='./file1\x00')
+r1 = creat(&(0x7f0000000240)='./file0\x00', 0x0)
+fallocate(r1, 0x100000001, 0x0, 0x2811fdff)

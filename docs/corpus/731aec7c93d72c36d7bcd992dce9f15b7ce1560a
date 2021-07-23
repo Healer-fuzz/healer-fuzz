@@ -1,0 +1,3 @@
+r0 = add_key$keyring(&(0x7f0000000080)='keyring\x00', &(0x7f0000000400)={'syz', 0x1}, 0x0, 0x0, 0xfffffffffffffffe)
+keyctl$KEYCTL_RESTRICT_KEYRING(0x1d, r0, &(0x7f0000000100)='asymmetric\x00', &(0x7f0000000240)=@chain={'key_or_keyring:', 0x0, ':chain\x00'})
+keyctl$KEYCTL_RESTRICT_KEYRING(0x1d, r0, &(0x7f0000000100)='asymmetric\x00', &(0x7f0000000240)=@builtin='builtin_trusted\x00')

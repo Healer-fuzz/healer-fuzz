@@ -1,0 +1,5 @@
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f00000000c0)='cgroup.controllers\x00', 0x275a, 0x0)
+write$binfmt_script(r0, &(0x7f0000000040)=ANY=[], 0x6db6e559)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x1, 0x10012, r0, 0x0)
+r1 = socket$inet6_sctp(0xa, 0x10000000005, 0x84)
+getsockopt$inet_sctp6_SCTP_GET_ASSOC_ID_LIST(r1, 0x84, 0x1d, 0x0, &(0x7f0000000080))

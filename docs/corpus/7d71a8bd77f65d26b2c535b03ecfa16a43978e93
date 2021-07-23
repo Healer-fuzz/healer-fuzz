@@ -1,0 +1,2 @@
+r0 = inotify_init1(0x0)
+ioctl$INOTIFY_IOC_SETNEXTWD(r0, 0x40044900, 0x3e)

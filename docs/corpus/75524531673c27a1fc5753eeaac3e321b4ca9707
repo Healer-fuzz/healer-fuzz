@@ -1,0 +1,8 @@
+unshare(0x20000)
+mknod$loop(&(0x7f0000000040)='./file0\x00', 0x0, 0x0)
+r0 = openat$fuse(0xffffffffffffff9c, &(0x7f0000000000)='/dev/fuse\x00', 0x2, 0x0)
+mount$fuse(0x0, &(0x7f00000000c0)='./file0\x00', &(0x7f0000000080)='fuse\x00', 0x0, &(0x7f0000000380)=ANY=[@ANYBLOB='fd=', @ANYRESHEX=r0, @ANYBLOB=',rootmode=00000000000000000060000,user_id=', @ANYRESDEC=0x0, @ANYBLOB=',group_id=', @ANYRESDEC=0x0])
+r1 = openat$fuse(0xffffffffffffff9c, &(0x7f0000002080)='/dev/fuse\x00', 0x42, 0x0)
+mount$fuse(0x0, &(0x7f00000020c0)='./file0\x00', &(0x7f0000002100)='fuse\x00', 0x0, &(0x7f0000002140)=ANY=[@ANYBLOB='fd=', @ANYRESHEX=r1, @ANYBLOB=',rootmode=000000000100000,user_id=', @ANYRESDEC=0x0, @ANYBLOB=',group_id=', @ANYRESDEC=0x0])
+open$dir(&(0x7f0000000300)='./file0\x00', 0x0, 0x0)
+unlink(&(0x7f0000000340)='./file0\x00')

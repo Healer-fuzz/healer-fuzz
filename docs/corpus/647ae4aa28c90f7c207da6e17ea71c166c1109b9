@@ -1,0 +1,4 @@
+mkdirat$cgroup_root(0xffffffffffffff9c, &(0x7f0000000000)='./cgroup/syz0\x00', 0x1ff)
+r0 = openat$cgroup_root(0xffffffffffffff9c, &(0x7f0000000000), 0x200002, 0x0)
+r1 = openat$cgroup_int(r0, &(0x7f0000000100)='cgroup.max.descendants\x00', 0x2, 0x0)
+write$cgroup_int(r1, &(0x7f0000000040), 0x12)

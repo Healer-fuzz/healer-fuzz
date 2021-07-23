@@ -1,0 +1,1 @@
+syz_mount_image$xfs(&(0x7f0000000000)='xfs\x00', &(0x7f0000000040)='./file0\x00', 0x0, 0x0, &(0x7f0000000180), 0x0, &(0x7f0000000200)={[{@noikeep='noikeep'}, {@inode64='inode64'}, {@nolargeio='nolargeio'}]})

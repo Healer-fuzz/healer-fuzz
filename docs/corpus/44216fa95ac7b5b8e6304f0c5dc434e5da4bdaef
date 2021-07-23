@@ -1,0 +1,5 @@
+r0 = openat$kvm(0xffffffffffffff9c, &(0x7f0000000000)='/dev/kvm\x00', 0x0, 0x0)
+ioctl$KVM_GET_MSR_INDEX_LIST(r0, 0xc004ae02, &(0x7f0000000040))
+ioctl$KVM_GET_SUPPORTED_CPUID(r0, 0xc008ae05, &(0x7f0000000040)=""/208)
+r1 = openat$kvm(0xffffffffffffff9c, &(0x7f0000000000)='/dev/kvm\x00', 0x0, 0x0)
+ioctl$KVM_GET_SUPPORTED_CPUID(r1, 0xc008ae05, &(0x7f0000000140)=""/231)

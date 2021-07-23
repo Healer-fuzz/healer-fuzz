@@ -1,0 +1,8 @@
+pipe(&(0x7f0000000140)={<r0=>0xffffffffffffffff, <r1=>0xffffffffffffffff})
+vmsplice(r1, &(0x7f00000000c0)=[{&(0x7f0000000180)="77690addcfbe1fbb66ec", 0xff3b}], 0x1, 0x1)
+close(r1)
+r2 = socket$nl_route(0x10, 0x3, 0x0)
+ioctl$sock_SIOCGIFINDEX(r2, 0x8933, &(0x7f0000000000)={'bond_slave_1\x00', <r3=>0x0})
+sendmsg$nl_route(0xffffffffffffffff, &(0x7f0000000100)={0x0, 0x0, &(0x7f0000000080)={&(0x7f0000000180)=ANY=[@ANYBLOB="4400000010000100"/20, @ANYRES32=r3, @ANYBLOB="000020000000000024001200140001006272696467655f736c617665000000000c000500080005"], 0x3}}, 0x0)
+ptrace$setregs(0xffffffffffffffff, 0x0, 0x0, &(0x7f00000001c0)='\b')
+splice(r0, 0x0, r1, 0x0, 0x10000, 0x0)

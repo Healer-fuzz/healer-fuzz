@@ -1,0 +1,7 @@
+mkdir(&(0x7f00000001c0)='./file1\x00', 0x0)
+mkdir(&(0x7f00000002c0)='./bus\x00', 0x0)
+mkdir(&(0x7f0000000280)='./file0\x00', 0x0)
+mkdir(0x0, 0x0)
+mount$overlay(0x400000, &(0x7f0000000000)='./bus\x00', &(0x7f0000000440)='overlay\x00', 0x0, &(0x7f0000000400)=ANY=[@ANYBLOB='lowerdir=./bus,workdir=./file1,upperdir=./file0'])
+mkdir(&(0x7f0000000480)='./bus/file0\x00', 0x0)
+lremovexattr(&(0x7f0000000380)='./bus/file0\x00', &(0x7f00000004c0)=@known='trusted.overlay.upper\x00')

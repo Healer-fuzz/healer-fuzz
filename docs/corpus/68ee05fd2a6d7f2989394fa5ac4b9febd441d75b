@@ -1,0 +1,1 @@
+syz_usb_connect$hid(0x0, 0x3f, &(0x7f0000000040)=ANY=[@ANYBLOB="0b010000000c00086d0523c64001010203010902", @ANYRES64], 0xfffffffffffffffe)

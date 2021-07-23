@@ -1,0 +1,5 @@
+pipe(&(0x7f0000000100)={<r0=>0xffffffffffffffff, <r1=>0xffffffffffffffff})
+write(0xffffffffffffffff, &(0x7f0000000000)="240000001e005f0014f9f40700090400020000000100000000000000080001", 0x1f)
+write$binfmt_misc(r1, &(0x7f0000000000)=ANY=[], 0xfffffecc)
+r2 = socket$netlink(0x10, 0x3, 0x0)
+splice(r0, 0x0, r2, 0x0, 0xac95, 0x0)

@@ -1,0 +1,2 @@
+r0 = openat$vga_arbiter(0xffffffffffffff9c, &(0x7f0000000000)='/dev/vga_arbiter\x00', 0x103001, 0x0)
+write$snapshot(r0, &(0x7f0000000040)="7b7105efa06609f76beeb4a138a31180ebce804bec711350cbc09e3d9d404c568f9e66e92c53f9e784caf36e2ef942c2ddcf8f117fd11621d4dfbfd339ea41d2", 0x40)

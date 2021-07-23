@@ -1,0 +1,7 @@
+openat$cgroup_ro(0xffffffffffffffff, &(0x7f00000000c0)='cpuacct.usage_percpu_user\x00', 0x0, 0x0)
+r0 = openat$tun(0xffffffffffffff9c, &(0x7f0000000100)='/dev/net/tun\x00', 0x0, 0x0)
+r1 = openat$tun(0xffffffffffffff9c, &(0x7f0000000080)='/dev/net/tun\x00', 0x0, 0x0)
+ioctl$TUNSETIFF(r1, 0x400454ca, &(0x7f00000000c0)={'syzkaller1\x00'})
+ioctl$TUNATTACHFILTER(r1, 0x401054d5, &(0x7f0000000040)={0x1, &(0x7f0000000000)=[{0x6}]})
+socketpair(0x0, 0x0, 0x0, &(0x7f0000000000))
+ioctl$TUNSETIFF(r0, 0x400454ca, &(0x7f00000000c0)={'syzkaller1\x00'})

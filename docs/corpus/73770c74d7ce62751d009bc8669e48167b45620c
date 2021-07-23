@@ -1,0 +1,2 @@
+r0 = syz_open_dev$swradio(&(0x7f0000000080)='/dev/swradio#\x00', 0x1, 0x2)
+ioctl$VIDIOC_QUERYMENU(r0, 0xc02c5625, &(0x7f00000000c0)={0x98f907, 0x0, @name="04d434c5dde7a1494e7fc6763e3f460007482f5ab1c4a17c35366ec2353a416d"})

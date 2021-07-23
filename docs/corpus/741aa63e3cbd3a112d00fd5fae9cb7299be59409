@@ -1,0 +1,7 @@
+r0 = openat(0xffffffffffffffff, &(0x7f00000002c0)='/proc/self/exe\x00', 0x0, 0x0)
+mmap(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x1800003, 0x12, r0, 0x0)
+preadv(r0, &(0x7f0000000280), 0x18, 0xd9f, 0x0)
+r1 = memfd_create(&(0x7f0000000140)='sysr\x01\xdf;HX%\x8f\xdd\xff\xff\xffame\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x8f{\x85\x19\xe4\xf6n{B\x88\xd6\xacQ\xa9\a\xc9J\x1b\xefT\x9b\xd3\x9e\xe6YX\xb7<@\xdd\xab\x8c\xe5\x82o\xd1lyk\x11\x11\xa4\xff\x92\x04\x15R!\xa0\x17g\xb1\x91\xb6/\x8a\xb18\xa0\xbe\'\xa8$\x03\x9d\x93\xf9\x1a\\\xe2\xa1,\xbe\x01\x8a\xfe4\xa7\xc8\x9eP\xc2\x01\x10\"\x00\x00', 0x0)
+mmap(&(0x7f0000001000/0x4000)=nil, 0x4000, 0x0, 0x4000051, r1, 0x0)
+r2 = openat$rfkill(0xffffffffffffff9c, &(0x7f0000000040)='/dev/rfkill\x00', 0x40501, 0x0)
+writev(r2, &(0x7f0000000000)=[{&(0x7f0000000300)="02000000020219", 0x7}, {&(0x7f0000001480)="a349b1e15b38cc", 0x7}], 0x2)
