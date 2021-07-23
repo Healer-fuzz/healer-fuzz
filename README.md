@@ -1,7 +1,7 @@
 
 # Healer
 
-HEALER is a kernel fuzzer that improves fuzzing effectiveness by utilizing system call relation learning. 
+HEALER is a kernel fuzzer that improves fuzzing effectiveness by utilizing system call relation learning. 
 HEALER learns the influence relations between system calls by dynamically analyzing the minimized  test cases. 
 Then, HEALER utilizes the learned relations to guide input generation and mutation, which improves the quality 
 of test cases and the effectiveness of fuzzing. 
