@@ -15,3 +15,23 @@ Each directory here contains the complete crash information and reproducer progr
 ## Maintainer Response
 
 The [maintainer-response](./maintainer-response) directory contains the *responses* and *confirmations* from kernel subsystem maintainers.
+
+As we demonstrate below, we have actively communicate with the kernel maintainers, following figures are the conformance of the maintainers.
+
+<img src=./maintainer-response/merge/merge1.png width="900"/>
+<img src=./maintainer-response/merge/merge2.png width="900"/>
+<img src=./maintainer-response/merge/merge3.png width="900"/>
+<img src=./maintainer-response/merge/merge4.png width="900"/>
+<img src=./maintainer-response/merge/merge5.png width="900"/>
+<img src=./maintainer-response/merge/merge6.png width="900"/>
+<img src=./maintainer-response/merge/merge7.png width="900"/>
+<img src=./maintainer-response/merge/merge8.png width="900"/>
+<img src=./maintainer-response/merge/merge9.png width="900"/>
+
+Also, we worked actively with the maintainer to fix bugs that HEALER found, following are some of the correponding patches we contribute to the Linux community.
+
+<img src=./maintainer-response/merge/patch1.png width="900"/>
+<img src=./maintainer-response/merge/patch2.png width="900"/>
+<img src=./maintainer-response/merge/patch3.png width="900"/>
+<img src=./maintainer-response/merge/patch4.png width="900"/>
+<img src=./maintainer-response/merge/patch5.png width="900"/>
