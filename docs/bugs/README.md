@@ -28,7 +28,7 @@ As we demonstrate below, we have actively communicate with the kernel maintainer
 <img src=./maintainer-response/merge/merge8.png width="900"/>
 <img src=./maintainer-response/merge/merge9.png width="900"/>
 
-Also, we worked actively with the maintainer to fix bugs that HEALER found, following are some of the correponding patches we contribute to the Linux community.
+Also, we worked actively with the maintainer to fix bugs that HEALER found, following are some of the correponding patches to the bugs found by HEALER.
 
 <img src=./maintainer-response/merge/patch1.png width="900"/>
 <img src=./maintainer-response/merge/patch2.png width="900"/>
