@@ -1,9 +1,9 @@
 [package]
 name = "healer"
-version = "0.1.0"
-authors = ["Hao Sun <sunhao.th@gmail.com>"]
+version = "1.0.0"
+authors = ["healer"]
 edition = "2018"
-description = "Healer: kernel fuzzer inspired by Syzkaller."
+description = "Healer: relation learning guided kernel fuzzing"
 license = "Apache-2.0"
 
 [dependencies]

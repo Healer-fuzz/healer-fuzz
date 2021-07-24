@@ -4,7 +4,7 @@ use std::path::PathBuf;
 use structopt::StructOpt;
 
 #[derive(Debug, StructOpt)]
-#[structopt(name = "healer", about = "kernel fuzzer inspired by Syzkaller.")]
+#[structopt(name = "Healer", about = "Relation learning guilded kernel fuzzer")]
 struct Settings {
     /// Fuzzing target in Os/Arch format, e.g. linux/amd64, linux/arm64.
     #[structopt(short = "t", long)]
