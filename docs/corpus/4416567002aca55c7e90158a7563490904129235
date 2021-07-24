@@ -1,3 +1,0 @@
-r0 = socket$inet(0x2, 0x100000000003, 0x400000000001)
-setsockopt$inet_opts(r0, 0x0, 0x4, &(0x7f0000000080)="441f070300000000000074ed27c1b3fe76ce384b1a6a722a3beaf52671", 0x1d)
-getsockopt$inet_opts(r0, 0x0, 0x4, 0x0, &(0x7f00000013c0))

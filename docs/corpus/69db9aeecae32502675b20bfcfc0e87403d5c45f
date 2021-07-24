@@ -1,4 +1,0 @@
-mkdir(&(0x7f0000000000)='./file1\x00', 0x0)
-creat(&(0x7f0000000140)='./file1/file0\x00', 0x0)
-clone(0x100, 0x0, 0xfffffffffffffffe, 0x0, 0xffffffffffffffff)
-mount$overlay(0x0, &(0x7f0000000200)='./file1/file0\x00', &(0x7f0000000240)='overlay\x00', 0x0, &(0x7f0000000040)={[{@workdir={'workdir', 0x3d, './file1/file0'}}]})

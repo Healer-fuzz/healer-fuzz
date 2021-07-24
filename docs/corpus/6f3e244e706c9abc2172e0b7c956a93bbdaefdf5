@@ -1,3 +1,0 @@
-syz_mount_image$squashfs(0x0, &(0x7f0000001840)='./file0\x00', 0x0, 0x0, 0x0, 0x0, 0x0)
-setxattr$security_ima(&(0x7f0000000340)='./file0\x00', &(0x7f0000000380)='security.ima\x00', &(0x7f00000004c0)=@v2={0x0, 0x0, 0x0, 0x0, 0x3c, "d65fe9b06aecff6d761492f56425b24884a2a8c82a71fd831bd04979b355ff486243fc1cccb5797619e1a46b779ed7b66545ba2e32e3c0937babdc7b"}, 0x45, 0x0)
-setxattr$security_ima(&(0x7f0000000000)='./file0\x00', &(0x7f0000000040)='security.ima\x00', &(0x7f0000000080)=@sha1={0x1, "dd9f85972d807120d86e617153976d49ba8da3f0"}, 0x15, 0x1)

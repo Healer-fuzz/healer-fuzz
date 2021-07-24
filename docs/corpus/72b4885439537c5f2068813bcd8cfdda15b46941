@@ -1,4 +1,0 @@
-mkdirat(0xffffffffffffff9c, &(0x7f0000000000)='./file0\x00', 0x0)
-mount(0x0, &(0x7f0000000080)='./file0\x00', &(0x7f0000000180)='pstore\x00', 0x0, 0x0)
-syz_mount_image$fuse(&(0x7f0000000000)='fuse\x00', &(0x7f0000000040)='./file0\x00', 0x0, 0x0, 0x0, 0x1810461, &(0x7f0000001ac0)=ANY=[])
-syz_mount_image$fuse(&(0x7f0000000040)='fuse\x00', &(0x7f0000000200)='./file0\x00', 0x0, 0x0, 0x0, 0x280020, &(0x7f00000005c0)={{'fd'}, 0x2c, {'rootmode'}, 0x2c, {'user_id'}, 0x2c, {'group_id'}})

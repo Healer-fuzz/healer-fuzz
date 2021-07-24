@@ -1,3 +1,0 @@
-syz_open_procfs(0xffffffffffffffff, &(0x7f0000000080)='environ\x00')
-exit(0x0)
-syz_open_procfs(0x0, &(0x7f00000000c0)='fd/3\x00')

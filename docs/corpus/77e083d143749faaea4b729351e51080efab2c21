@@ -1,3 +1,0 @@
-r0 = openat$ptp0(0xffffffffffffff9c, &(0x7f0000000000)='/dev/ptp0\x00', 0x0, 0x0)
-r1 = fcntl$dupfd(r0, 0x0, r0)
-ioctl$PTP_PEROUT_REQUEST2(r1, 0x40043d04, 0x0)

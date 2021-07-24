@@ -1,3 +1,0 @@
-r0 = syz_open_dev$loop(&(0x7f00000001c0)='/dev/loop#\x00', 0x75f, 0x103382)
-ioctl$LOOP_SET_CAPACITY(r0, 0x4c07)
-ioctl$LOOP_SET_STATUS64(0xffffffffffffffff, 0x4c04, 0x0)

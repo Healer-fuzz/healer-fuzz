@@ -1,8 +1,0 @@
-syz_open_dev$sndpcmp(0x0, 0x0, 0x0)
-syz_execute_func(&(0x7f0000000240)="b0b691420d29d0d05a2eab5b4b4be2f926f2c6045905a0ed287fc100000000243a26430f381caad70000000f18c68f4808eebce000002000c46600a7c1c1ea01922626440fec380f0fab167311eca626400f0d1866410f51e4660f383ccd646736676666430fefb3000000000804f44eaf151a86a72e673e0facce48510000009664660fda364a22140000008f691801ae0c000000")
-r0 = socket$inet6(0xa, 0x5, 0x0)
-connect$inet6(r0, &(0x7f0000000000)={0xa, 0x0, 0x0, @initdev, 0x2}, 0x79)
-r1 = socket$inet_udplite(0x2, 0x2, 0x88)
-setsockopt$TIPC_GROUP_JOIN(0xffffffffffffffff, 0x10f, 0x87, 0x0, 0x0)
-ioctl(r1, 0x1000008912, &(0x7f0000000080)="0adc1f123c123f319bd070")
-ioctl$DRM_IOCTL_SET_VERSION(0xffffffffffffffff, 0xc0106407, 0x0)

@@ -1,6 +1,0 @@
-syz_mount_image$tmpfs(&(0x7f0000000040)='tmpfs\x00', &(0x7f0000000080)='./bus\x00', 0x0, 0x0, 0x0, 0x0, &(0x7f0000000400)=ANY=[@ANYBLOB='huge=within_size'])
-chdir(&(0x7f0000000380)='./bus\x00')
-r0 = open(&(0x7f0000002000)='./bus\x00', 0x141042, 0x0)
-ftruncate(r0, 0x2007fff)
-r1 = open(&(0x7f00000003c0)='./bus\x00', 0x20402, 0x0)
-write$binfmt_misc(r1, &(0x7f00000004c0)={'syz0'}, 0x4)

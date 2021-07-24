@@ -1,3 +1,0 @@
-r0 = fork()
-r1 = pidfd_open(r0, 0x0)
-waitid$P_PIDFD(0x3, r1, &(0x7f0000000000), 0x1000003, 0x0)

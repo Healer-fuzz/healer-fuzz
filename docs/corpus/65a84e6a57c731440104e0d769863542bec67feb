@@ -1,2 +1,0 @@
-r0 = socket$nl_generic(0x10, 0x3, 0x10)
-ioctl$sock_ifreq(r0, 0x89f0, &(0x7f0000000080)={'bridge0\x00', @ifru_data=&(0x7f0000000000)="08000000000000000cebba000000000001000000000000000100"})

@@ -1,2 +1,0 @@
-r0 = syz_open_dev$vivid(&(0x7f0000000040)='/dev/video#\x00', 0x0, 0x2)
-ioctl$VIDIOC_ENUMINPUT(r0, 0xc050561a, &(0x7f00000000c0)={0x2, "99570bfb3684f029cb62f559d2b68dd7dbd4a08f0fac1bc454242d4bfc5e8cdb"})

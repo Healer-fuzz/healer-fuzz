@@ -1,4 +1,0 @@
-r0 = syz_open_procfs(0x0, &(0x7f0000000500)='map_files\x00')
-fchdir(r0)
-socketpair$unix(0x1, 0x3, 0x0, &(0x7f00000000c0)={0x0, <r1=>0x0})
-sendmmsg(r1, &(0x7f0000008600)=[{{0x0, 0x0, &(0x7f0000003140)}}, {{&(0x7f00000072c0)=@un=@file={0x1, './file0/file0\x00'}, 0x51, &(0x7f0000007380), 0x0, &(0x7f0000000000)=[{0x48, 0x0, 0x0, "b2b6a77f06ddcb33a8fac63016b69944fbc6b2c7a0a923cbd4c6aeb00ae99a70317fb463bed350139e79abe8fa8aac7ffc7f613357ff62"}], 0x48}}], 0x2, 0x0)

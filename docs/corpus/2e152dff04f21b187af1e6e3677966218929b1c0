@@ -1,1 +1,0 @@
-syz_mount_image$udf(&(0x7f0000000000)='udf\x00', &(0x7f0000000040)='./file0\x00', 0x0, 0x0, &(0x7f0000000140), 0x0, &(0x7f0000000300)=ANY=[@ANYBLOB='iocharset=cp864,longad'])

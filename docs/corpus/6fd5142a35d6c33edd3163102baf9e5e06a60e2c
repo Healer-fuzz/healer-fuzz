@@ -1,2 +1,0 @@
-unshare(0x40080)
-unshare(0x80)

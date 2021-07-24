@@ -1,3 +1,0 @@
-fork()
-r0 = getpgrp(0x0)
-getpriority(0x1, r0)

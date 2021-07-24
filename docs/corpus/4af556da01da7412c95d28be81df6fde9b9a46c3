@@ -1,3 +1,0 @@
-syz_mount_image$vfat(&(0x7f0000000240)='vfat\x00', &(0x7f0000000100)='./file0\x00', 0x0, 0x2, &(0x7f0000000080)=[{&(0x7f0000000000)="eb3c906d6b66732e66617400028001000240000004f801", 0x17}, {0x0, 0x0, 0x600}], 0x0, &(0x7f0000000140))
-mkdir(&(0x7f0000000380)='./bus\x00', 0x0)
-mount$overlay(0x400000, &(0x7f0000000000)='./bus\x00', &(0x7f0000000440)='overlay\x00', 0x0, &(0x7f0000000340)=ANY=[@ANYBLOB='lowerdir=./bus,workdir=./file1,upperdir=./file0'])

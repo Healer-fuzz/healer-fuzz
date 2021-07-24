@@ -1,2 +1,0 @@
-r0 = syz_open_dev$midi(&(0x7f0000000000)='/dev/midi#\x00', 0x20, 0x0)
-ioctl$SNDRV_RAWMIDI_IOCTL_PARAMS(r0, 0xc030570a, 0x0)

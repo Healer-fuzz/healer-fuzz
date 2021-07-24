@@ -1,4 +1,0 @@
-r0 = timerfd_create(0x0, 0x0)
-r1 = epoll_create(0x5)
-epoll_ctl$EPOLL_CTL_ADD(r1, 0x1, r0, &(0x7f0000000080))
-ioctl$UI_SET_KEYBIT(r0, 0x40085400, 0x4001c1)

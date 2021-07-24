@@ -1,4 +1,0 @@
-r0 = creat(&(0x7f0000000440)='./file0\x00', 0x0)
-r1 = open(&(0x7f0000000200)='./file0\x00', 0x0, 0x0)
-ioctl$FS_IOC_SETFLAGS(r1, 0x40086602, &(0x7f00000001c0)=0xf0)
-ioctl$FS_IOC_SETFLAGS(r0, 0x40086602, &(0x7f0000000280))

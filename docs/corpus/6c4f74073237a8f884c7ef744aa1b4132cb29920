@@ -1,3 +1,0 @@
-r0 = openat$procfs(0xffffffffffffff9c, &(0x7f0000002d40)='/proc/cpuinfo\x00', 0x0, 0x0)
-r1 = socket$inet_icmp_raw(0x2, 0x3, 0x1)
-dup2(r1, r0)

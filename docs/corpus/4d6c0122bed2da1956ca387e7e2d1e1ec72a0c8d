@@ -1,1 +1,0 @@
-syz_mount_image$jfs(&(0x7f0000003340)='jfs\x00', &(0x7f0000003380)='./file0\x00', 0x0, 0x0, &(0x7f0000004680), 0x0, &(0x7f0000004740)={[{@discard_size={'discard'}}]})

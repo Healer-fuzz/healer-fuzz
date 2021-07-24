@@ -1,2 +1,0 @@
-keyctl$restrict_keyring(0x3, 0xfffffffffffffffc, 0x0, 0x0)
-request_key(&(0x7f0000000380)='cifs.idmap\x00', &(0x7f00000003c0)={'syz', 0x1}, &(0x7f0000000400)='%!\x00', 0x0)

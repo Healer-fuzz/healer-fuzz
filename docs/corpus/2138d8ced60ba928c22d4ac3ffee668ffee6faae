@@ -1,1 +1,0 @@
-syz_mount_image$vfat(&(0x7f0000000000)='vfat\x00', &(0x7f0000000040)='./file0\x00', 0x0, 0x0, &(0x7f00000000c0), 0x8000, &(0x7f0000002280)={[{@iocharset={'iocharset', 0x3d, 'ascii'}}, {@shortname_lower='shortname=lower'}], [{@fowner_eq={'fowner', 0x3d, 0xffffffffffffffff}}]})

@@ -1,4 +1,0 @@
-openat$cgroup_ro(0xffffffffffffffff, &(0x7f0000000000)='cpuacct.usage_percpu_sys\x00', 0x0, 0x0)
-r0 = openat$tun(0xffffffffffffff9c, &(0x7f00000000c0)='/dev/net/tun\x00', 0x0, 0x0)
-ioctl$TUNSETIFF(r0, 0x400454ca, &(0x7f0000000000))
-ioctl$TUNSETVNETLE(r0, 0x400454dc, &(0x7f0000000180))

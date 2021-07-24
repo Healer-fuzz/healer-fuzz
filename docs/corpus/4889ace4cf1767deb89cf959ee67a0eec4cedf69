@@ -1,4 +1,0 @@
-add_key$user(0x0, 0x0, &(0x7f0000000180)="7d81146ad1", 0x5, 0xfffffffffffffff9)
-r0 = add_key$user(&(0x7f0000000200)='user\x00', &(0x7f0000000300)={'syz', 0x0}, &(0x7f0000000240)="f5", 0x1, 0xfffffffffffffffe)
-r1 = add_key$user(&(0x7f00000003c0)='user\x00', &(0x7f0000000440)={'syz'}, &(0x7f00000000c0), 0xcd, 0xfffffffffffffffd)
-keyctl$dh_compute(0x17, &(0x7f0000000140)={r0, r1, r0}, &(0x7f00000000c0)=""/83, 0xfffffffffffffe4f, 0x0)

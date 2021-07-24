@@ -1,4 +1,0 @@
-seccomp$SECCOMP_SET_MODE_FILTER_LISTENER(0x1, 0x0, &(0x7f0000000400)={0x1, &(0x7f0000000080)=[{0x6, 0x0, 0x0, 0x7fffffff}]})
-r0 = creat(&(0x7f00000002c0)='./file0\x00', 0x0)
-fsetxattr$system_posix_acl(r0, &(0x7f0000000300)='system.posix_acl_access\x00', &(0x7f0000000100), 0x24, 0x0)
-fgetxattr(r0, &(0x7f0000000480)=@known='system.posix_acl_access\x00', 0x0, 0x0)

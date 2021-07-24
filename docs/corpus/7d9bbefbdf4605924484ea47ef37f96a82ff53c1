@@ -1,3 +1,0 @@
-creat(&(0x7f0000000400)='./bus\x00', 0x0)
-lsetxattr$security_ima(&(0x7f0000000000)='./bus\x00', &(0x7f0000000140)='security.ima\x00', &(0x7f0000000080)=ANY=[@ANYBLOB="01"], 0x2, 0x0)
-open(&(0x7f0000000200)='./bus\x00', 0x0, 0x0)

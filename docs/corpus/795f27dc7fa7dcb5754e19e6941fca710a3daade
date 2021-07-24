@@ -1,3 +1,0 @@
-syz_open_dev$vim2m(&(0x7f0000000040)='/dev/video#\x00', 0x0, 0x2)
-r0 = socket$inet_udplite(0x2, 0x2, 0x88)
-ioctl$sock_inet_udp_SIOCOUTQ(r0, 0x5411, &(0x7f0000000200))

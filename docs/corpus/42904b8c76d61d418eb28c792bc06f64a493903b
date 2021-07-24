@@ -1,5 +1,0 @@
-r0 = syz_open_dev$usbfs(&(0x7f0000001280)='/dev/bus/usb/00#/00#\x00', 0x200, 0x802)
-r1 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000040)='io.stat\x00', 0x275a, 0x0)
-write$cgroup_int(r1, &(0x7f0000000080), 0x12)
-mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x1, 0x12, r1, 0x0)
-ioctl$USBDEVFS_RELEASEINTERFACE(r0, 0x80045503, &(0x7f0000000340))

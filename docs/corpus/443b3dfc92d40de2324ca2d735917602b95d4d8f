@@ -1,2 +1,0 @@
-r0 = syz_open_dev$video(&(0x7f0000000580)='/dev/video#\x00', 0x3, 0x0)
-ioctl$VIDIOC_ENUMAUDIO(r0, 0xc0345641, &(0x7f0000000000)={0x0, "db48997ed51462be7b0aa24840fdd2f68595a6df5bdd0d56f947ae39f07c18ae"})

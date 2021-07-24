@@ -1,1 +1,0 @@
-syz_mount_image$hfs(&(0x7f0000001ac0)='hfs\x00', &(0x7f0000001b00)='./file0\x00', 0x0, 0x0, &(0x7f0000001d40), 0x0, &(0x7f0000001dc0)={[], [{@dont_hash='dont_hash'}]})

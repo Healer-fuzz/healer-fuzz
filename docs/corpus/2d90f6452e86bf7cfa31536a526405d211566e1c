@@ -1,2 +1,0 @@
-r0 = fork()
-sched_rr_get_interval(r0, &(0x7f0000000040))

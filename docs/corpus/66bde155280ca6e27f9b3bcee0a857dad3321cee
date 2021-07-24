@@ -1,4 +1,0 @@
-r0 = openat$ppp(0xffffffffffffff9c, &(0x7f0000000000)='/dev/ppp\x00', 0x101002, 0x0)
-ioctl$EVIOCGPROP(r0, 0xc004743e, &(0x7f0000000240)=""/237)
-ioctl$PPPIOCSFLAGS1(r0, 0x40047459, &(0x7f0000000040)=0x8d)
-pwritev(r0, &(0x7f00000000c0)=[{&(0x7f0000000080)="80fd0f969341", 0x6}], 0x1, 0x0, 0x0)

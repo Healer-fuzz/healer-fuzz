@@ -1,4 +1,0 @@
-r0 = openat$uinput(0xffffffffffffff9c, &(0x7f0000000040)='/dev/uinput\x00', 0x200000000801, 0x0)
-r1 = openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
-mmap(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x3000004, 0x12, r1, 0x0)
-write$uinput_user_dev(r0, &(0x7f0000000080)={'syz0\x00'}, 0x45c)

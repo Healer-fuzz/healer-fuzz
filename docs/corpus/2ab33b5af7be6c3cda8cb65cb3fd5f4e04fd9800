@@ -1,3 +1,0 @@
-r0 = socket$inet(0x2, 0x4000000000000001, 0x0)
-setsockopt$inet_tcp_TCP_CONGESTION(r0, 0x6, 0xd, &(0x7f0000000140)='cdg\x00', 0x4)
-close(r0)

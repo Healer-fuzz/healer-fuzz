@@ -1,3 +1,0 @@
-r0 = epoll_create1(0x0)
-r1 = openat$userio(0xffffffffffffff9c, &(0x7f0000000000)='/dev/userio\x00', 0x0, 0x0)
-epoll_ctl$EPOLL_CTL_ADD(r0, 0x1, r1, &(0x7f0000000080))

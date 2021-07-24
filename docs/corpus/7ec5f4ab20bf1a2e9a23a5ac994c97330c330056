@@ -1,3 +1,0 @@
-r0 = socket$packet(0x11, 0x3, 0x300)
-syz_genetlink_get_family_id$nl80211(&(0x7f0000000340)='nl80211\x00', 0xffffffffffffffff)
-ioctl$sock_SIOCADDRT(r0, 0x541b, &(0x7f0000000200)={0x0, @in={0x2, 0x0, @dev}, @nl, @vsock={0x28, 0x0, 0x0, @local}})

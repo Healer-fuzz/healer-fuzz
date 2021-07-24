@@ -1,6 +1,0 @@
-r0 = syz_open_procfs(0x0, &(0x7f0000000040))
-fcntl$notify(r0, 0x402, 0xb1c661d398500c73)
-fcntl$setownex(r0, 0xf, &(0x7f0000000080))
-syz_open_procfs(0x0, &(0x7f0000000040)='fd\x00')
-r1 = syz_open_procfs(0x0, &(0x7f0000000040))
-getdents64(r1, &(0x7f0000000080)=""/4096, 0x18)

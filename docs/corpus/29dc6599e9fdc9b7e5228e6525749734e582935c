@@ -1,2 +1,0 @@
-r0 = openat$dsp1(0xffffffffffffff9c, &(0x7f00000000c0)='/dev/dsp1\x00', 0x8f41, 0x18000000)
-ioctl$SNDCTL_DSP_GETISPACE(r0, 0x8010500d, &(0x7f0000000000))

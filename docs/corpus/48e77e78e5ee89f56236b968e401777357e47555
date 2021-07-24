@@ -1,5 +1,0 @@
-pipe(&(0x7f0000000140)={<r0=>0xffffffffffffffff, <r1=>0xffffffffffffffff})
-read$FUSE(r0, &(0x7f00000021c0)={0x2020}, 0x2020)
-read$FUSE(r0, &(0x7f0000004240)={0x2020}, 0x2020)
-write$FUSE_WRITE(r1, &(0x7f00000001c0)={0x18}, 0x18)
-write$FUSE_BMAP(r1, &(0x7f0000004200)={0x18}, 0x18)

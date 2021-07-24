@@ -1,3 +1,0 @@
-r0 = syz_open_dev$mouse(&(0x7f0000000080)='/dev/input/mouse#\x00', 0x0, 0x101042)
-read$FUSE(r0, 0x0, 0x0)
-write$FUSE_INIT(r0, &(0x7f00000021c0)={0x50}, 0x50)

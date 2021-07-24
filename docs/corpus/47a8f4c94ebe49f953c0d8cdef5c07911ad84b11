@@ -1,4 +1,0 @@
-r0 = memfd_create(&(0x7f0000000080)='prodM\xb0\xea\a\x84c\xaen/\xce\x17\xbb\xa61fode\xd0\x00\x00\x82\x97\x8at\xa24>X@<W\xc9\rq@\xf2\xe9[\x1bF\x8a<\x16\xaad\x05N\xa1\x84\xea#P\x04\xca\xe6h?;Y\xa7\x8f\xec\xb4\xf9\x17\xb7\x04w\xbe\x7f\xe8F\x15%', 0x6)
-mmap(&(0x7f0000000000/0x2000)=nil, 0x2000, 0x2000003, 0x5011, r0, 0x0)
-ioctl$sock_ipv6_tunnel_SIOCADDTUNNEL(0xffffffffffffffff, 0x89f1, &(0x7f0000000080)={'ip6tnl0\x00', &(0x7f0000000000)={'syztnl0\x00', 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, @initdev={0xfe, 0x88, [], 0x0, 0x0}, @empty}})
-fallocate(r0, 0x0, 0x0, 0x3fe)

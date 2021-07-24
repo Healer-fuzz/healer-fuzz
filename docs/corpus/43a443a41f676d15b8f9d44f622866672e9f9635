@@ -1,5 +1,0 @@
-r0 = syz_usb_connect(0x0, 0x36, &(0x7f0000000140)=ANY=[@ANYBLOB="1201000088b70f08070a78003ea7000000010902240001000000000904000002b042a30009058f03002100040009050d03"], 0x0)
-r1 = syz_open_dev$char_usb(0xc, 0xb4, 0x0)
-read$char_usb(r1, &(0x7f00000000c0)=""/57, 0x39)
-write$char_usb(r1, 0x0, 0x0)
-syz_usb_disconnect(r0)

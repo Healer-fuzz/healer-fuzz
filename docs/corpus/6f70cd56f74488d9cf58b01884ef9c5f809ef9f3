@@ -1,2 +1,0 @@
-r0 = openat$random(0xffffffffffffff9c, &(0x7f00000000c0)='/dev/urandom\x00', 0xc0041, 0x0)
-write$binfmt_script(r0, 0x0, 0x5c)

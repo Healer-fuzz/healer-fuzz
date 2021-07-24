@@ -1,6 +1,0 @@
-r0 = openat$ptmx(0xffffffffffffff9c, &(0x7f0000000180)='/dev/ptmx\x00', 0x2f606557d6081b8a, 0x0)
-ioctl$TCSETS(r0, 0x40045431, &(0x7f0000000440)={0x0, 0x0, 0x0, 0x0, 0x0, "80000002c76060e500"})
-write$binfmt_aout(r0, &(0x7f0000000040)=ANY=[@ANYBLOB="7bcb9e020000008c17000001000000768fd2625bc1dffb8d8a6363b056143a4ab61bee040913"], 0x8d)
-ioctl$TCSETA(r0, 0x5406, &(0x7f00000004c0)={0xfff9, 0x101, 0x0, 0x0, 0x0, "078cf0251c007000"})
-r1 = syz_open_pts(r0, 0x0)
-ioctl$TCSETSF(r1, 0x5412, &(0x7f0000000100)={0x0, 0x0, 0x0, 0x0, 0x0, "000000000000000000090010000000001000"})

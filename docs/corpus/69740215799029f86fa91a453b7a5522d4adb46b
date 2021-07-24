@@ -1,7 +1,0 @@
-r0 = epoll_create1(0x0)
-r1 = fcntl$dupfd(r0, 0x2, 0xffffffffffffffff)
-r2 = fanotify_init(0x0, 0x0)
-r3 = epoll_create1(0x0)
-r4 = fcntl$dupfd(r3, 0x2, 0xffffffffffffffff)
-fanotify_mark(r2, 0x11, 0x48000038, r4, 0x0)
-fanotify_mark(r2, 0x11, 0x48000038, r1, 0x0)

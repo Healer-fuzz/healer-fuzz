@@ -1,5 +1,0 @@
-r0 = socket(0x1000000010, 0x80002, 0x0)
-r1 = socket$netlink(0x10, 0x3, 0x0)
-ioctl$sock_SIOCGIFINDEX(r1, 0x8933, &(0x7f0000007980)={'bond_slave_1\x00', <r2=>0x0})
-sendmsg$nl_route_sched(0xffffffffffffffff, &(0x7f0000000200)={0x0, 0x0, &(0x7f0000000000)={&(0x7f0000000080)=ANY=[@ANYBLOB="240000005e000700000000000000000000810000", @ANYRES32=r2, @ANYRES64], 0x24}}, 0x0)
-sendmmsg$alg(r0, &(0x7f0000000200), 0x10efe10675dec16, 0x0)

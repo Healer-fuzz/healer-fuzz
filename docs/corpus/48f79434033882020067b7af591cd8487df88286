@@ -1,2 +1,0 @@
-r0 = syz_open_dev$vim2m(&(0x7f0000000ac0)='/dev/video#\x00', 0x9, 0x2)
-ioctl$vim2m_VIDIOC_S_CTRL(r0, 0xc008561c, &(0x7f0000000b00)={0x98f909})

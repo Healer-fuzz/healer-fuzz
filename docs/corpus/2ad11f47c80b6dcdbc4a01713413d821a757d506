@@ -1,5 +1,0 @@
-creat(&(0x7f0000000000)='./file0\x00', 0x0)
-r0 = openat$vhost_vsock(0xffffff9c, &(0x7f00000003c0)='/dev/vhost-vsock\x00', 0x2, 0x0)
-r1 = openat$full(0xffffff9c, &(0x7f0000000400)='/dev/full\x00', 0x0, 0x0)
-dup3(r0, r1, 0x0)
-mount$9p_fd(0x0, &(0x7f0000000480)='./file0\x00', &(0x7f00000004c0)='9p\x00', 0x0, &(0x7f0000000500)={'trans=fd,', {'rfdno', 0x3d, r1}, 0x2c, {'wfdno', 0x3d, r0}})

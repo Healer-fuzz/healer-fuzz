@@ -1,4 +1,0 @@
-openat$sequencer(0xffffffffffffff9c, &(0x7f0000001680)='/dev/sequencer\x00', 0x0, 0x0)
-r0 = openat$sequencer(0xffffffffffffff9c, &(0x7f0000000080)='/dev/sequencer\x00', 0x1, 0x0)
-r1 = socket$inet_udplite(0x2, 0x2, 0x88)
-dup2(r1, r0)

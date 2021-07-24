@@ -1,3 +1,0 @@
-pipe(&(0x7f0000000000)={<r0=>0xffffffffffffffff, <r1=>0xffffffffffffffff})
-readv(r0, &(0x7f0000000140)=[{&(0x7f0000000080)=""/152, 0x98}], 0x1)
-dup2(r0, r1)

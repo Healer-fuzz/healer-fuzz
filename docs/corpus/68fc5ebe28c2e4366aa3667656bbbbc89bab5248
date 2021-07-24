@@ -1,2 +1,0 @@
-r0 = openat$nullb(0xffffffffffffff9c, &(0x7f00000004c0)='/dev/nullb0\x00', 0x0, 0x0)
-ioctl$BLKREPORTZONE(r0, 0xc0101282, &(0x7f0000000500))

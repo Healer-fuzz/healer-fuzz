@@ -1,3 +1,0 @@
-r0 = openat$nvme_fabrics(0xffffffffffffff9c, &(0x7f0000000000)='/dev/nvme-fabrics\x00', 0x402, 0x0)
-write$sequencer(r0, 0x0, 0x0)
-read$sequencer(r0, &(0x7f00000004c0)=""/4, 0x4)

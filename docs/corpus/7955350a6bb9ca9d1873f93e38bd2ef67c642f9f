@@ -1,4 +1,0 @@
-r0 = syz_init_net_socket$nl_generic(0x10, 0x3, 0x10)
-r1 = syz_genetlink_get_family_id$netlbl_mgmt(&(0x7f0000000040)='NLBL_MGMT\x00', r0)
-r2 = syz_init_net_socket$nl_generic(0x10, 0x3, 0x10)
-sendmsg$NLBL_MGMT_C_ADD(r2, &(0x7f0000000740)={0x0, 0x0, &(0x7f0000000700)={&(0x7f0000000680)={0x40, r1, 0x101, 0x0, 0x0, {}, [@NLBL_MGMT_A_DOMAIN={0xe, 0x1, 'NLBL_MGMT\x00'}, @NLBL_MGMT_A_IPV6ADDR={0x14, 0x5, @private0}, @NLBL_MGMT_A_PROTOCOL={0x8}]}, 0x40}}, 0x0)

@@ -1,4 +1,0 @@
-ioctl$BTRFS_IOC_SET_FEATURES(0xffffffffffffffff, 0x40309439, &(0x7f0000000040)={0x0, 0x0, 0x15})
-r0 = openat$tun(0xffffffffffffff9c, &(0x7f0000000080)='/dev/net/tun\x00', 0x0, 0x0)
-ioctl$TUNSETIFF(r0, 0x400454ca, &(0x7f0000000040)={'syzkaller1\x00'})
-ioctl$TUNSETLINK(r0, 0x400454cd, 0x20)

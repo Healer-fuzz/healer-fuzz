@@ -1,3 +1,0 @@
-r0 = syz_open_procfs(0x0, &(0x7f0000000080)='task\x00')
-getdents(r0, &(0x7f0000000340)=""/136, 0x18)
-getdents(r0, &(0x7f0000000100)=""/64, 0x40)

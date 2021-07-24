@@ -1,2 +1,0 @@
-r0 = syz_open_procfs(0xffffffffffffffff, &(0x7f0000000040)='net/sockstat\x00')
-lseek(r0, 0x4, 0x0)

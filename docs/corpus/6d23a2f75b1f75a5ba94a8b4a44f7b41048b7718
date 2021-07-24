@@ -1,2 +1,0 @@
-r0 = syz_open_dev$tty20(0xc, 0x4, 0x0)
-ioctl$KDGKBMETA(r0, 0x4b62, &(0x7f0000000000))

@@ -1,4 +1,0 @@
-io_destroy(0x0)
-io_setup(0x4, &(0x7f0000000040)=<r0=>0x0)
-io_setup(0x2, &(0x7f00000001c0))
-io_destroy(r0)

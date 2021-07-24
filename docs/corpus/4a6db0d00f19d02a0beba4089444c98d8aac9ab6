@@ -1,1 +1,0 @@
-syz_mount_image$msdos(&(0x7f0000000000)='msdos\x00', &(0x7f00000003c0)='./file0\x00', 0x0, 0x2, &(0x7f0000000180)=[{&(0x7f0000000040)="eb3d90", 0x3}, {&(0x7f00000001c0)="02", 0xff53, 0x18}], 0x0, &(0x7f0000000340)={[{@fat=@dos1xfloppy='dos1xfloppy'}]})

@@ -1,1 +1,0 @@
-syz_mount_image$udf(&(0x7f0000000000)='udf\x00', &(0x7f0000000040)='./file0\x00', 0x0, 0x0, &(0x7f0000001480), 0x1000080, &(0x7f0000001580)={[{@novrs='novrs'}, {@longad='longad'}, {@dmode={'dmode'}}, {@gid_forget='gid=forget'}, {@uid_ignore='uid=ignore'}, {@unhide='unhide'}, {@partition={'partition'}}]})

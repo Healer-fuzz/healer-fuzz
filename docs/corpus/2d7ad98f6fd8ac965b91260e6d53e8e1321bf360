@@ -1,2 +1,0 @@
-r0 = syz_open_procfs(0x0, &(0x7f0000000000)='net/arp\x00')
-read$FUSE(r0, &(0x7f000000d880)={0x2020}, 0x2020)

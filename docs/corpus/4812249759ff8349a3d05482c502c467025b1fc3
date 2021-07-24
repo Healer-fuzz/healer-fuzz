@@ -1,2 +1,0 @@
-r0 = syz_open_dev$cec(&(0x7f0000000000)='/dev/cec#\x00', 0x1, 0x2)
-ioctl$VIDIOC_S_DV_TIMINGS(r0, 0x40026102, 0x0)

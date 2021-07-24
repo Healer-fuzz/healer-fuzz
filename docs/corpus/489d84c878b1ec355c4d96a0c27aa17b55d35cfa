@@ -1,3 +1,0 @@
-setresuid(0x0, 0xee01, 0xee01)
-r0 = geteuid()
-setfsuid(r0)

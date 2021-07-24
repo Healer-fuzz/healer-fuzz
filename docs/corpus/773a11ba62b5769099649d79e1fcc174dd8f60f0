@@ -1,3 +1,0 @@
-write$khugepaged_scan(0xffffffffffffffff, &(0x7f0000000000)='1000000\x00', 0x8)
-r0 = socket$inet_smc(0x2b, 0x1, 0x0)
-ioctl$sock_inet_tcp_SIOCOUTQNSD(r0, 0x894b, &(0x7f0000000040))

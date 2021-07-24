@@ -1,2 +1,0 @@
-r0 = syz_open_dev$ndb(&(0x7f0000000080)='/dev/nbd#\x00', 0x0, 0x0)
-ioctl$BLKPG(r0, 0x1269, &(0x7f0000000200)={0x1, 0x0, 0x11, &(0x7f0000000180)="ca653ed8bae08d518ffcea5c08b9eed98a"})

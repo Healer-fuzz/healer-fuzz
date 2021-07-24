@@ -1,2 +1,0 @@
-r0 = syz_open_dev$sndctrl(&(0x7f00000000c0)='/dev/snd/controlC#\x00', 0x0, 0x0)
-fcntl$setstatus(r0, 0x4, 0x2000)

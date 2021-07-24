@@ -1,2 +1,0 @@
-r0 = openat$capi20(0xffffffffffffff9c, &(0x7f0000002e80)='/dev/capi20\x00', 0x0, 0x0)
-read(r0, 0x0, 0x0)

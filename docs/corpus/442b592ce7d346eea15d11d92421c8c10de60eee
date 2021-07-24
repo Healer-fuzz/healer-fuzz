@@ -1,4 +1,0 @@
-r0 = syz_open_dev$sg(&(0x7f0000000180)='/dev/sg#\x00', 0x0, 0x0)
-r1 = dup2(r0, r0)
-ioctl$BLKTRACESETUP(r1, 0xc0481273, &(0x7f0000000000)={[], 0x0, 0x1fc0000, 0xa24})
-ioctl$BLKTRACESTART(r0, 0x1274, 0x0)

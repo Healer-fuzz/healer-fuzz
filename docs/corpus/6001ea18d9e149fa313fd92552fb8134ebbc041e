@@ -1,2 +1,0 @@
-r0 = openat$proc_capi20ncci(0xffffffffffffff9c, &(0x7f0000000100)='/proc/capi/capi20ncci\x00', 0x101000, 0x0)
-read$char_usb(r0, &(0x7f0000000140)=""/37, 0x25)

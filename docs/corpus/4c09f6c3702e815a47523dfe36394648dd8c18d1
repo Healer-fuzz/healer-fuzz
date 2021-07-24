@@ -1,2 +1,0 @@
-openat$proc_capi20ncci(0xffffffffffffff9c, &(0x7f0000004dc0)='/proc/capi/capi20ncci\x00', 0x0, 0x0)
-socketpair$unix(0x1, 0x1, 0x0, &(0x7f0000000080))

@@ -1,1 +1,0 @@
-syz_mount_image$jfs(&(0x7f0000002b00)='jfs\x00', &(0x7f0000002e00)='./file0\x00', 0x0, 0x0, &(0x7f0000004180), 0x0, &(0x7f0000004280)={[{@nointegrity='nointegrity'}, {@errors_continue='errors=continue'}, {@resize='resize'}]})

@@ -1,2 +1,0 @@
-r0 = syz_open_dev$usbfs(&(0x7f0000000140)='/dev/bus/usb/00#/00#\x00', 0x1ff, 0x40001)
-ioctl$USBDEVFS_RESETEP(r0, 0x80045503, 0xfffffffffffffffc)

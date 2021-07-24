@@ -1,8 +1,0 @@
-r0 = openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
-r1 = openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
-r2 = socket$inet_udplite(0x2, 0x2, 0x88)
-getsockopt$sock_cred(r2, 0x1, 0x11, &(0x7f0000000240)={0x0, <r3=>0x0}, &(0x7f0000000280)=0x5)
-setuid(r3)
-mmap(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x1800003, 0x12, r1, 0x0)
-preadv(r0, &(0x7f0000000280), 0x18, 0xd9f, 0x0)
-add_key$fscrypt_v1(&(0x7f0000000000)='logon\x00', &(0x7f0000000040)={'fscrypt:', @desc3='e8dab99234bb312e'}, &(0x7f0000000080)={0x0, "9418f5c3791e44161649acb40037803f3c5774a1760da34c8e17915853df396f1664956a1f615d71d2524fce012655909f1dd8722d9122b7bb23fbd9313488ce"}, 0x48, 0xfffffffffffffffd)

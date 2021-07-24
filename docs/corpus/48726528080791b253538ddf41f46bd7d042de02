@@ -1,1 +1,0 @@
-syz_mount_image$vfat(&(0x7f0000000040)='vfat\x00', &(0x7f0000000100)='./file0\x00', 0x0, 0x0, &(0x7f00000022c0), 0x0, &(0x7f0000002340)={[{@rodir='rodir'}, {@utf8no='utf8=0'}, {@fat=@dos1xfloppy='dos1xfloppy'}, {@utf8='utf8=1'}, {@numtail='nonumtail=0'}]})

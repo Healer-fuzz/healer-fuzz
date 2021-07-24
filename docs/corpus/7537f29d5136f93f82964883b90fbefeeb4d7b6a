@@ -1,2 +1,0 @@
-r0 = openat$vsock(0xffffffffffffff9c, &(0x7f0000000280)='/dev/vsock\x00', 0x0, 0x0)
-fsmount(r0, 0x0, 0xac)

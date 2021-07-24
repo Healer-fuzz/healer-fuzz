@@ -1,3 +1,0 @@
-r0 = syz_open_procfs(0xffffffffffffffff, &(0x7f0000000040)='net/fib_trie\x00')
-fcntl$setlease(r0, 0x400, 0x0)
-fcntl$getflags(r0, 0x401)

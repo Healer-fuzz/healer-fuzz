@@ -1,3 +1,0 @@
-r0 = syz_open_procfs(0x0, &(0x7f0000000000)='net/icmp\x00')
-read$FUSE(r0, &(0x7f0000000080)={0x2020}, 0x2020)
-read$FUSE(r0, 0x0, 0x0)

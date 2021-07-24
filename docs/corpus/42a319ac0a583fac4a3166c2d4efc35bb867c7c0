@@ -1,2 +1,0 @@
-r0 = openat$vmci(0xffffffffffffff9c, &(0x7f0000000080)='/dev/vmci\x00', 0x2, 0x0)
-flistxattr(r0, &(0x7f0000000000)=""/10, 0xa)

@@ -1,2 +1,0 @@
-r0 = syz_open_dev$ndb(&(0x7f0000000040)='/dev/nbd#\x00', 0x0, 0x0)
-ioctl$NBD_SET_SOCK(r0, 0x1277, 0xffffffffffffffff)

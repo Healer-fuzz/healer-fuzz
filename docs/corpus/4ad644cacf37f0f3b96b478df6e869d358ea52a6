@@ -1,2 +1,0 @@
-socketpair$unix(0x1, 0x2, 0x0, &(0x7f0000000000)={0xffffffffffffffff, <r0=>0xffffffffffffffff})
-ioctl$sock_ifreq(r0, 0x89a3, &(0x7f0000000080)={'bridge0\x00', @ifru_data=0x0})

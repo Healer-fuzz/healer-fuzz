@@ -1,1 +1,0 @@
-syz_mount_image$ntfs(&(0x7f0000000040)='ntfs\x00', &(0x7f00000000c0)='./file0\x00', 0x0, 0x0, &(0x7f0000000400), 0x0, &(0x7f0000000480)=ANY=[@ANYBLOB='errors=recover,case_sensitive=yes,mft_zone_multiplier=0x0000000000000000,errors=recover,disable_sparse=no,disable_sparse=yes,fmask=00000000000000000000000,uid='])

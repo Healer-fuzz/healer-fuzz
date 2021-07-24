@@ -1,8 +1,0 @@
-syz_init_net_socket$nl_generic(0x10, 0x3, 0x10)
-r0 = syz_init_net_socket$nl_generic(0x10, 0x3, 0x10)
-r1 = syz_init_net_socket$nl_generic(0x10, 0x3, 0x10)
-ioctl$sock_SIOCGIFINDEX_802154(r1, 0x8933, &(0x7f0000000140)={'wpan4\x00'})
-r2 = syz_genetlink_get_family_id$nbd(&(0x7f00000001c0)='nbd\x00', r0)
-sendmsg$NBD_CMD_STATUS(r1, &(0x7f0000000280)={0x0, 0x0, &(0x7f0000000240)={&(0x7f0000000200)=ANY=[@ANYBLOB=' \x00\x00\x00', @ANYRES16=r2, @ANYBLOB="11060000000000000000050000000d000600000000000000"], 0x20}}, 0x0)
-socketpair$nbd(0x1, 0x1, 0x0, &(0x7f0000000000)={<r3=>0xffffffffffffffff})
-ioctl$BLKALIGNOFF(r3, 0x127a, &(0x7f0000000080))

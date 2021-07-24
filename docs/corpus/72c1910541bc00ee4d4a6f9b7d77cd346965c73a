@@ -1,5 +1,0 @@
-r0 = socket$inet_tcp(0x2, 0x1, 0x0)
-setsockopt$inet_tcp_TCP_REPAIR(r0, 0x6, 0x13, &(0x7f0000000100)=0x1, 0x4)
-setsockopt$inet_tcp_TCP_MD5SIG(r0, 0x6, 0xe, &(0x7f0000000140)={@in={{0x2, 0x0, @empty}}, 0x0, 0x0, 0x37, 0x0, "efd7da7654bc0654908bca5b075139b70abba21c1e9f8448af569f245e5bec8c2832f24ef20eb6424ac593d8680fe9ae4add4059756145c3d673473858749a66631bb368d82f9e8042302f22aee87461"}, 0xd8)
-setsockopt$inet_tcp_TCP_MD5SIG(r0, 0x6, 0xe, &(0x7f0000000000)={@in={{0x2, 0x0, @empty}}, 0x0, 0x0, 0x0, 0x0, "f38a406dee8c8972a06f37980ec6747d3b1d6ba6a8979f50ae90f422772ebfa5959e387e64664045aad51aac507b34e9e98238b581e6755a74755c337957600894f027f38486d6deb9ec1334c1466840"}, 0xd8)
-connect$inet(r0, &(0x7f0000000380)={0x2, 0x0, @remote}, 0x10)

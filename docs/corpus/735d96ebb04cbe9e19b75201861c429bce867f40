@@ -1,8 +1,0 @@
-r0 = socket$inet(0x2, 0x4000000000000001, 0x0)
-setsockopt$inet_tcp_TCP_CONGESTION(r0, 0x6, 0xd, &(0x7f00000002c0)='dctcp\x00', 0x6)
-bind$inet(r0, &(0x7f0000000040)={0x2, 0x4e23, @broadcast}, 0x10)
-setsockopt$SO_ATTACH_FILTER(r0, 0x1, 0x1a, &(0x7f0000000480)={0x1, &(0x7f0000000400)=[{0x6, 0x0, 0x0, 0xe8}]}, 0x10)
-sendto$inet(r0, 0x0, 0x0, 0x200007fd, &(0x7f0000e68000)={0x2, 0x4e23, @local}, 0x10)
-sendto$inet(r0, &(0x7f0000000300)="0e8a5e88f0d826ad82ab6dde5efed943b9bd3e3f4077c68796905f6a04389d3afbc001ea9e97789d4a4fbf0ed4a42a8bdd56243b678bc0dfb2d60dd6427fd5b2651344343a50851e8eab1fe821868b507b7f748f29a3bdc19d8e142d963b2bc76aab45bcc2385859e1dcc408521954ea275326645835ecf31489df372d83ce5f4db31ea3d6740b8c5213d042cadd9358e745de9b292a1e5c57064bb7be9dd9ff66e7b03a9f9d1d1516a524dca820136326a0967722944008a79cdc590625bf2e02de262e3062864356", 0xc9, 0x0, 0x0, 0x0)
-setsockopt$inet_tcp_TCP_CONGESTION(r0, 0x6, 0xd, &(0x7f0000000000)='cubic\x00', 0x6)
-sendto$inet(r0, &(0x7f0000000140)='\f', 0x1, 0x11, 0x0, 0x0)

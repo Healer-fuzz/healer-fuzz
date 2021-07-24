@@ -1,7 +1,0 @@
-r0 = openat(0xffffffffffffff9c, &(0x7f000000c380)='./file0\x00', 0x40, 0x0)
-r1 = openat$fuse(0xffffffffffffff9c, &(0x7f0000002080)='/dev/fuse\x00', 0x42, 0x0)
-mount$fuse(0x0, &(0x7f00000020c0)='./file0\x00', &(0x7f0000002100)='fuse\x00', 0x0, &(0x7f0000002140)=ANY=[@ANYBLOB='fd=', @ANYRESHEX=r1, @ANYBLOB=',rootmode=00000000000000000100000,user_id=', @ANYRESDEC=0x0, @ANYBLOB=',group_id=', @ANYRESDEC=0x0])
-read$FUSE(r1, &(0x7f0000006380)={0x2020, 0x0, <r2=>0x0}, 0x2020)
-setxattr$trusted_overlay_origin(&(0x7f00000002c0)='./file0\x00', &(0x7f0000000300)='trusted.overlay.origin\x00', 0x0, 0x0, 0x0)
-write$FUSE_INIT(r1, &(0x7f0000000040)={0x50, 0x0, r2, {0x7, 0x1f}}, 0x50)
-dup3(r0, r1, 0x0)

@@ -1,5 +1,0 @@
-r0 = openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
-mmap(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x1800003, 0x12, r0, 0x0)
-preadv(r0, &(0x7f0000000280), 0x18, 0xd9f, 0x0)
-r1 = openat$dlm_control(0xffffffffffffff9c, &(0x7f0000000000)='/dev/dlm-control\x00', 0x3e, 0x0)
-write$nbd(r1, &(0x7f0000000580)={0x6000000, 0x0, 0x0, 0x0, 0x4, "a309ff0f00005f56d3adff7f9d5e9a099cbab35a2fdbede5fbd0978b01ba590e94bb02f6b7807e5dadca47306a5bc6c5e7be7805000000000000001500000000000000000000000023d70b463b42ec0893c5b323c67936e5"}, 0x68)

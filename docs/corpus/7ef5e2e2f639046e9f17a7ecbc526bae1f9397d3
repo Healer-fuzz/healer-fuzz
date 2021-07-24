@@ -1,1 +1,0 @@
-syz_mount_image$adfs(&(0x7f0000000040)='adfs\x00', &(0x7f00000000c0)='./file0\x00', 0x0, 0x0, &(0x7f0000001740), 0x0, &(0x7f0000000000)=ANY=[@ANYBLOB='uid=', @ANYRESDEC, @ANYRESDEC])

@@ -1,1 +1,0 @@
-syz_init_net_socket$nfc_raw(0x27, 0x0, 0xfffffffe)

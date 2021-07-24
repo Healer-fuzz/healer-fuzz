@@ -1,2 +1,0 @@
-r0 = syz_mount_image$msdos(&(0x7f00000000c0)='msdos\x00', &(0x7f0000000000)='./file0\x00', 0xffc00004, 0x2, &(0x7f0000000100)=[{&(0x7f0000000040)="040800090000ff01e66174000404090a0200027400f8", 0x16}, {&(0x7f00000004c0)="dbed7d4cac17", 0x6, 0x1f}], 0x0, &(0x7f0000000140)={[{@fat=@nfs_nostale_ro='nfs=nostale_ro'}]})
-open_by_handle_at(r0, &(0x7f0000000240)=ANY=[@ANYBLOB="1400000071"], 0x0)

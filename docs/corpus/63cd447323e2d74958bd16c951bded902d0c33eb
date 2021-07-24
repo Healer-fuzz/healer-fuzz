@@ -1,1 +1,0 @@
-syz_mount_image$hfs(&(0x7f00000002c0)='hfs\x00', &(0x7f0000000300)='./file0\x00', 0x0, 0x0, &(0x7f00000005c0), 0x0, &(0x7f0000000640)={[{@type={'type', 0x3d, "4cfec519"}}, {@umask={'umask', 0x3d, 0xae86}}, {@iocharset={'iocharset', 0x3d, 'macroman'}}, {@part={'part'}}, {@session={'session', 0x3d, 0xa99}}, {@iocharset={'iocharset', 0x3d, 'cp860'}}]})

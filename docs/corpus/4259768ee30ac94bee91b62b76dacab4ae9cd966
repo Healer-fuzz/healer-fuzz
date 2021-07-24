@@ -1,6 +1,0 @@
-mkdir(&(0x7f0000000000)='./file0\x00', 0x0)
-prctl$PR_SET_SECUREBITS(0x1c, 0x36)
-chmod(&(0x7f0000000180)='./file0\x00', 0x23f)
-mkdir(&(0x7f0000000040)='./file0/file1\x00', 0x0)
-setuid(0xee01)
-rmdir(&(0x7f0000000100)='./file0/file1\x00')

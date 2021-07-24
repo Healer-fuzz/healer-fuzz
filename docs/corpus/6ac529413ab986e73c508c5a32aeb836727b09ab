@@ -1,6 +1,0 @@
-mkdirat(0xffffffffffffff9c, &(0x7f0000000080)='./file0\x00', 0x0)
-mkdirat(0xffffffffffffff9c, &(0x7f0000000440)='./file1\x00', 0x0)
-r0 = openat$dir(0xffffffffffffff9c, &(0x7f0000000440)='.\x00', 0x0, 0x0)
-r1 = openat$dir(0xffffffffffffff9c, &(0x7f0000000180)='./file1\x00', 0x0, 0x0)
-mkdirat(r1, &(0x7f00000001c0)='./file1\x00', 0x0)
-renameat2(r0, &(0x7f0000000040)='./file0\x00', r0, &(0x7f0000000080)='./file1\x00', 0x4)

@@ -1,2 +1,0 @@
-r0 = socket$l2tp6(0xa, 0x2, 0x73)
-ioctl$sock_ifreq(r0, 0x89b0, &(0x7f0000000040)={'veth0\x00', @ifru_data=&(0x7f0000000000)="d042123f414d5e16ac383922f7739a843e3c39efe2af24a4d9ebc6061e87b518"})

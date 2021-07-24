@@ -1,3 +1,0 @@
-r0 = socket$inet6(0x10, 0x3, 0x0)
-sendmsg$nl_route_sched(0xffffffffffffffff, &(0x7f0000000200)={0x0, 0x0, &(0x7f00000000c0)={&(0x7f0000000000)=ANY=[@ANYBLOB='$\x00\x00\x00^\x00\a\x00'/20, @ANYRES32, @ANYBLOB='~'], 0x24}}, 0x0)
-sendto$inet6(r0, &(0x7f0000000000)='s', 0x10a73, 0x800, 0x0, 0x4b6ae4f95a5de35b)

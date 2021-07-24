@@ -1,1 +1,0 @@
-syz_open_dev$usbmon(&(0x7f0000000500)='/dev/usbmon#\x00', 0x0, 0x0)

@@ -1,3 +1,0 @@
-syz_mount_image$msdos(&(0x7f00000000c0)='msdos\x00', &(0x7f0000000000)='./file0\x00', 0xffc00007, 0x2, &(0x7f0000000240)=[{&(0x7f0000000040)="040800090000ff01e66174000404090a0200027400f8", 0x16}, {&(0x7f00000004c0)="dbed7d4cac17", 0x6, 0x1f}], 0x0, &(0x7f0000000100)={[{@fat=@check_relaxed='check=relaxed'}]})
-r0 = open(&(0x7f0000000380)='./file0\x00', 0x204942, 0x0)
-openat$cgroup_subtree(r0, &(0x7f0000000300)='cgroup.subtree_control\x00', 0x2, 0x0)

@@ -1,3 +1,0 @@
-r0 = epoll_create(0x2)
-r1 = openat$dlm_plock(0xffffffffffffff9c, &(0x7f0000000640)='/dev/dlm_plock\x00', 0x0, 0x0)
-epoll_ctl$EPOLL_CTL_ADD(r0, 0x1, r1, &(0x7f0000000140)={0x30000000})

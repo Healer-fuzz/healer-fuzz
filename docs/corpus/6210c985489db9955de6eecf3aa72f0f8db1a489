@@ -1,3 +1,0 @@
-r0 = syz_open_procfs(0x0, &(0x7f00000003c0))
-getdents64(r0, &(0x7f0000000140)=""/80, 0x50)
-getdents64(r0, &(0x7f0000000000)=""/236, 0xec)

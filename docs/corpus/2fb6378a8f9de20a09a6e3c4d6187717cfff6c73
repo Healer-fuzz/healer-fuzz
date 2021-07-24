@@ -1,4 +1,0 @@
-openat$null(0xffffffffffffff9c, &(0x7f0000000180)='/dev/null\x00', 0x0, 0x0)
-sendmsg$nl_route_sched(0xffffffffffffffff, &(0x7f0000000300)={0x0, 0x0, &(0x7f0000000000)={&(0x7f0000000140)=ANY=[@ANYBLOB="7400000030003deb0000000020f0ffffff000000600001005c0001000b000100706f6c6963650000480002803c0001"], 0x74}}, 0x0)
-r0 = socket(0x1000000010, 0x80002, 0x0)
-sendmmsg$alg(r0, &(0x7f0000000200), 0x10efe10675dec16, 0x0)

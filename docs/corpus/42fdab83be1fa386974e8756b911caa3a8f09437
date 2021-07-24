@@ -1,7 +1,0 @@
-openat$dlm_monitor(0xffffffffffffff9c, &(0x7f0000000040)='/dev/dlm-monitor\x00', 0x0, 0x0)
-socket$inet6(0xa, 0x40000080806, 0x0)
-socket$inet6(0xa, 0x6, 0x0)
-socketpair$unix(0x1, 0x5, 0x0, &(0x7f0000000200))
-socket$netlink(0x10, 0x3, 0x0)
-openat$snapshot(0xffffffffffffff9c, &(0x7f0000000240)='/dev/snapshot\x00', 0x0, 0x0)
-syz_execute_func(&(0x7f0000000000)="b1e491cd80696852ef695c00d946f91cc10f788e008000000fc4014c5868f4a95ff9c44149f2168f4808eebce00000802000c421fc51c1ea01ef0fae941b58996a370f186746660f3a208f09000000767c7cca4f7307da7307da0f0d18c401fe5ff6e3df646736676666430fefb3000000000804f4f30f1a1254111d54111d00")

@@ -1,2 +1,0 @@
-r0 = syz_open_dev$dmmidi(&(0x7f0000000000)='/dev/dmmidi#\x00', 0x6632, 0x101002)
-ioctl$SNDRV_RAWMIDI_IOCTL_STATUS32(r0, 0xc0245720, &(0x7f0000000140))

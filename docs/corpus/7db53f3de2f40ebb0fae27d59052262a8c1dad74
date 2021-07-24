@@ -1,3 +1,0 @@
-r0 = syz_open_dev$I2C(&(0x7f0000000000)='/dev/i2c-#\x00', 0x0, 0x0)
-ioctl$I2C_PEC(r0, 0x708, 0xc5e)
-ioctl$I2C_SMBUS(r0, 0x720, &(0x7f0000000080)={0x1, 0x0, 0x4, &(0x7f0000000040)={0x0, "ff54919e622b2163674537e6ffdbbfbd75d249c5287ca3ad8a724c83d7fb20de9a"}})

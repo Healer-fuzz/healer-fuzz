@@ -1,2 +1,0 @@
-r0 = openat$dlm_plock(0xffffffffffffff9c, &(0x7f00000003c0)='/dev/dlm_plock\x00', 0x0, 0x0)
-read(r0, &(0x7f00000000c0)=""/185, 0xb9)

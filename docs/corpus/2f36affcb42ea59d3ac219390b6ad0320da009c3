@@ -1,4 +1,0 @@
-r0 = socket$nl_generic(0x10, 0x3, 0x10)
-r1 = syz_genetlink_get_family_id$nl80211(&(0x7f0000000900)='nl80211\x00', 0xffffffffffffffff)
-ioctl$sock_SIOCGIFINDEX_80211(r0, 0x8933, &(0x7f0000000080)={'wlan1\x00', <r2=>0x0})
-sendmsg$NL80211_CMD_DEAUTHENTICATE(r0, &(0x7f0000002e80)={&(0x7f0000002d80), 0xc, &(0x7f0000002e40)={&(0x7f0000002dc0)={0x4c, r1, 0x1, 0x0, 0x0, {{}, {@val={0x8, 0x3, r2}, @void}}, [@NL80211_ATTR_SSID={0x1a, 0x34, @random="5fce8ac8f87914b18b411d553c5c657454ac25f1f4fa"}, @NL80211_ATTR_LOCAL_STATE_CHANGE={0x4}, @NL80211_ATTR_MAC={0xffffff77, 0x6, @from_mac=@device_b}, @NL80211_ATTR_LOCAL_STATE_CHANGE={0x4}]}, 0x4c}, 0x1, 0x0, 0x0, 0x85}, 0x10)

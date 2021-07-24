@@ -1,7 +1,0 @@
-r0 = memfd_create(&(0x7f0000000140)='\x103q}2\x9a\xce\xaf\x03\x86\xe7\xc0\x14\x8f\xf8\xd28\xf4\x1c\xc0\xf9\x05\x00\x00\x00i\xe4^\xd5\xfd\xa9\r\xac7A\x94\x03\xce\t\x00\x90k\xd6\x05\r\x84\x87\x1c\b\x8c`\xea\x13A\x90m\xb6&\xd0\x9daA\xc5\xb8_\xd4\x18,\f\xd4s\xb2\x99/\xc0\x9a\xe0O\xdb\xc0\x8b\x19\x17\xb7Rvd\xcb:\b', 0x0)
-ftruncate(r0, 0x80079a0)
-mmap(&(0x7f0000200000/0x400000)=nil, 0x400000, 0xa601, 0x2012, r0, 0x0)
-ioctl$F2FS_IOC_MOVE_RANGE(0xffffffffffffffff, 0xc020f509, 0x0)
-mprotect(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x2)
-prctl$PR_SET_MM(0x23, 0x4, &(0x7f0000ffa000/0x4000)=nil)
-perf_event_open(0x0, 0x0, 0xfffffdffffffffff, 0xffffffffffffffff, 0x0)

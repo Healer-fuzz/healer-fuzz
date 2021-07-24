@@ -1,2 +1,0 @@
-r0 = openat$userio(0xffffffffffffff9c, &(0x7f0000003340)='/dev/userio\x00', 0x141002, 0x0)
-write$USERIO_CMD_SET_PORT_TYPE(r0, &(0x7f0000003540)={0x7}, 0x2)

@@ -1,3 +1,0 @@
-r0 = eventfd2(0x7, 0x0)
-write$eventfd(r0, &(0x7f00000016c0)=0xfffffffffffffffd, 0x8)
-read$eventfd(r0, &(0x7f0000000080), 0x8)

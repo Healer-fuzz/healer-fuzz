@@ -1,1 +1,0 @@
-syz_mount_image$hfs(&(0x7f0000000000)='hfs\x00', &(0x7f0000000080)='./file0\x00', 0x0, 0x0, &(0x7f0000000280), 0x0, &(0x7f00000003c0)={[{@codepage={'codepage', 0x3d, 'cp1255'}}]})

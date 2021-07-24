@@ -1,1 +1,0 @@
-syz_mount_image$reiserfs(&(0x7f0000000000)='reiserfs\x00', &(0x7f0000000040)='./file0\x00', 0x0, 0x0, &(0x7f0000000240), 0x0, &(0x7f0000000300)=ANY=[@ANYBLOB='jqfmt=vfsv0,usrquota,grpquota,block-allocator=noborder,jqfmt=vfsold,data=writeback,commit=0'])

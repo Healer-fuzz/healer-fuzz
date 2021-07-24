@@ -1,1 +1,0 @@
-add_key(&(0x7f0000000040)='encrypted\x00', &(0x7f0000000080)={'syz', 0x3}, 0x0, 0x0, 0xfffffffffffffffd)

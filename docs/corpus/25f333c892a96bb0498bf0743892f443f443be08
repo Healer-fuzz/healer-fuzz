@@ -1,5 +1,0 @@
-r0 = add_key$keyring(&(0x7f0000000040)='keyring\x00', &(0x7f0000000080)={'syz', 0x0}, 0x0, 0x0, 0xffffffffffffffff)
-keyctl$restrict_keyring(0x1d, r0, &(0x7f0000000300)='asymmetric\x00', &(0x7f0000000340)='builtin_and_secondary_trusted\x00')
-r1 = add_key$keyring(&(0x7f0000000040)='keyring\x00', &(0x7f0000000080)={'syz', 0x2}, 0x0, 0x0, 0xffffffffffffffff)
-r2 = add_key$fscrypt_v1(&(0x7f0000002200)='logon\x00', &(0x7f0000002240)={'fscrypt:', @desc1='0000111122223333'}, &(0x7f0000002280)={0x0, "5a5208cf7e09c9d2f3d49bb70911b03f747099d08841c327ceb827c93d08fcbef247c69a2fda1c75205b58d669a1f9358209da5aaf6e5b3e809c4d81df0be2bb"}, 0x48, r1)
-keyctl$link(0x8, r2, r0)

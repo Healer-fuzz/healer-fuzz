@@ -1,3 +1,0 @@
-r0 = syz_open_procfs(0x0, &(0x7f0000000000)='net/dev_mcast\x00')
-read$FUSE(r0, &(0x7f0000005fc0)={0x2020}, 0x2020)
-read$FUSE(r0, &(0x7f0000000100)={0x2020}, 0x2020)

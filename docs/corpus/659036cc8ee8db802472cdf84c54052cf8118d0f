@@ -1,2 +1,0 @@
-r0 = openat$mice(0xffffffffffffff9c, &(0x7f0000000280)='/dev/input/mice\x00', 0x801)
-write$FUSE_POLL(r0, &(0x7f00000002c0)={0xfffffff3}, 0x18)

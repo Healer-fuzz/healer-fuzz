@@ -1,4 +1,0 @@
-ptrace$setopts(0xffffffffffffffff, 0x0, 0x0, 0x0)
-wait4(0x0, 0x0, 0x0, 0x0)
-r0 = memfd_create(&(0x7f0000000000)='\v\x8b\x8a\xa9\x9fca\x16\x11O\xdd\xdfk(F\x99\xdf\x92\xd5>oJ\x02u\x9b', 0x0)
-fremovexattr(r0, &(0x7f0000000180)=ANY=[@ANYBLOB='system.posix_acl_access&'])

@@ -1,1 +1,0 @@
-syz_mount_image$befs(&(0x7f00000036c0)='befs\x00', &(0x7f0000003700)='./file0\x00', 0x0, 0x0, &(0x7f00000038c0), 0x1018001, &(0x7f0000003940)={[], [{@smackfsdef={'smackfsdef', 0x3d, '[\xdaj#'}}]})

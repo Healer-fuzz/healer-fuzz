@@ -1,2 +1,0 @@
-r0 = openat$sequencer2(0xffffffffffffff9c, &(0x7f0000000040)='/dev/sequencer2\x00', 0x2502, 0x0)
-write$sequencer(r0, &(0x7f0000000080)=[@l={0x92, 0x0, 0xe0}], 0x8)

@@ -1,5 +1,0 @@
-unshare(0x8000400)
-mkdir(&(0x7f0000000140)='./file0\x00', 0x0)
-mount(0x0, &(0x7f00000000c0)='./file0\x00', &(0x7f0000000000)='mqueue\x00', 0x0, 0x0)
-exit(0x0)
-creat(&(0x7f0000000080)='./file0/bus\x00', 0x0)

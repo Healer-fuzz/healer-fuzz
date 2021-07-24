@@ -1,8 +1,0 @@
-mkdirat(0xffffffffffffff9c, &(0x7f0000000240)='./file0\x00', 0x0)
-mkdirat$cgroup_root(0xffffffffffffff9c, &(0x7f0000000000)='./cgroup.net/syz1\x00', 0x1ff)
-mount$fuse(0x20000000, &(0x7f0000000180)='./file0\x00', 0x0, 0x207a04, 0x0)
-chdir(&(0x7f0000000240)='./file0\x00')
-r0 = creat(&(0x7f0000000300)='./bus\x00', 0x0)
-write$FUSE_ATTR(r0, &(0x7f0000000180)={0x78}, 0xfce9)
-fcntl$setstatus(r0, 0x4, 0x6800)
-write$binfmt_elf64(r0, 0x0, 0x78)

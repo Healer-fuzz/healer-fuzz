@@ -1,7 +1,0 @@
-clone(0x20002044dfc, 0x0, 0xfffffffffffffffe, 0x0, 0xffffffffffffffff)
-exit_group(0x0)
-pipe(&(0x7f0000000040)={<r0=>0xffffffffffffffff, <r1=>0xffffffffffffffff})
-fcntl$setstatus(r0, 0x4, 0x2600)
-pipe(&(0x7f0000000200)={<r2=>0xffffffffffffffff, <r3=>0xffffffffffffffff})
-write(r3, &(0x7f0000000a00)="bd", 0x1)
-tee(r2, r1, 0x800000003, 0x0)

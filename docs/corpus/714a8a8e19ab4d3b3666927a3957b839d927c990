@@ -1,2 +1,0 @@
-r0 = getpid()
-prctl$PR_SET_PTRACER(0x18, r0)

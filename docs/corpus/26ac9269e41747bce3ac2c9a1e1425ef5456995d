@@ -1,4 +1,0 @@
-syz_mount_image$erofs(&(0x7f0000000000)='erofs\x00', &(0x7f0000000100)='./file0\x00', 0x0, 0x3, &(0x7f0000000140)=[{&(0x7f0000010000)="e2e1f5e09521e93c020000000c0024", 0xf, 0x400}, {&(0x7f00000000c0)="42bc989a9248", 0x6, 0x480}, {0x0, 0x0, 0x604952db}], 0x0, &(0x7f0000000040)={[{@user_xattr='user_xattr'}]})
-lstat(&(0x7f0000000440)='./file0\x00', 0x0)
-mount$tmpfs(0x0, &(0x7f0000000080)='./file0\x00', &(0x7f00000001c0)='tmpfs\x00', 0x4030, &(0x7f0000000200)={[{@huge_within_size='huge=within_size'}, {@uid={'uid'}}, {@huge_within_size='huge=within_size'}], [{@hash='hash'}, {@audit='audit'}, {@audit='audit'}]})
-lsetxattr$trusted_overlay_opaque(0x0, &(0x7f00000002c0)='trusted.overlay.opaque\x00', &(0x7f0000000300)='y\x00', 0x2, 0x1)

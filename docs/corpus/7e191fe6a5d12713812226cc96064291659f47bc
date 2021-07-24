@@ -1,2 +1,0 @@
-r0 = add_key$user(&(0x7f0000000180)='user\x00', &(0x7f00000001c0)={'syz', 0x1}, &(0x7f0000000200)="b2", 0x1, 0xffffffffffffffff)
-keyctl$read(0x1d, r0, &(0x7f0000000000)=""/252, 0xfc)

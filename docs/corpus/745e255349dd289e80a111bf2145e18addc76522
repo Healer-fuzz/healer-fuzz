@@ -1,3 +1,0 @@
-r0 = eventfd(0x0)
-read$eventfd(r0, &(0x7f0000000000), 0x8)
-write$eventfd(r0, &(0x7f0000000300)=0x9, 0x8)

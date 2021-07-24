@@ -1,7 +1,0 @@
-r0 = syz_usb_connect$printer(0x0, 0x36, &(0x7f0000000140)=ANY=[@ANYBLOB="1201000000000020f003176c400000000001090224000140002200090400001207010300090501020000000000090582020002"], 0x0)
-syz_usb_disconnect(r0)
-r1 = syz_usb_connect(0x0, 0x2d, &(0x7f0000000000)=ANY=[], 0x0)
-syz_usb_control_io$hid(r1, 0x0, 0x0)
-syz_usb_ep_write$ath9k_ep1(r1, 0x82, 0x38, &(0x7f0000000480)=ANY=[])
-r2 = syz_open_dev$char_usb(0xc, 0xb4, 0x0)
-read$char_usb(r2, 0x0, 0x0)

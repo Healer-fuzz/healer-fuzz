@@ -1,3 +1,0 @@
-r0 = syz_open_procfs(0xffffffffffffffff, &(0x7f0000000080)='mountinfo\x00')
-r1 = openat$tcp_mem(0xffffffffffffff9c, &(0x7f0000000000)='/proc/sys/net/ipv4/tcp_rmem\x00', 0x1, 0x0)
-sendfile(r1, r0, 0x0, 0x800000080004103)

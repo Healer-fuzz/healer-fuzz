@@ -1,1 +1,0 @@
-prctl$PR_GET_FPEMU(0x22, 0x0)

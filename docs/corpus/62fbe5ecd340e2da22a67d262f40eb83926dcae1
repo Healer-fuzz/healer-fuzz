@@ -1,2 +1,0 @@
-r0 = syz_open_dev$admmidi(&(0x7f0000000180)='/dev/admmidi#\x00', 0x200, 0x68043)
-ioctl$SNDRV_RAWMIDI_IOCTL_DROP(r0, 0x40045730, &(0x7f00000001c0))

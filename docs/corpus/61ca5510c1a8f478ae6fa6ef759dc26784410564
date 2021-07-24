@@ -1,6 +1,0 @@
-r0 = socket$nl_generic(0x10, 0x3, 0x10)
-r1 = socket$nl_generic(0x10, 0x3, 0x10)
-ioctl$sock_SIOCGIFINDEX_80211(r1, 0x8933, &(0x7f0000000dc0)={'wlan1\x00', <r2=>0x0})
-syz_mount_image$fuse(0x0, &(0x7f0000000440)='./file0\x00', 0x0, 0x0, 0x0, 0x0, &(0x7f0000000480)={{'fd'}, 0x2c, {'rootmode'}, 0x2c, {'user_id', 0x3d, 0xffffffffffffffff}, 0x2c, {'group_id', 0x3d, 0xffffffffffffffff}, 0x2c, {[{@blksize={'blksize'}}, {@allow_other='allow_other'}], [{@appraise='appraise'}]}})
-r3 = syz_genetlink_get_family_id$nl80211(&(0x7f0000001140)='nl80211\x00', 0xffffffffffffffff)
-sendmsg$NL80211_CMD_FRAME(r0, &(0x7f0000001280)={0x0, 0x0, &(0x7f0000001240)={&(0x7f0000000280)=ANY=[@ANYBLOB="48040000", @ANYRES16=r3, @ANYBLOB="010000000000001000003b00000008000300", @ANYRES32=r2, @ANYBLOB="2c04330050800000fffffffbffff080211000001505050505050"], 0x448}}, 0x0)

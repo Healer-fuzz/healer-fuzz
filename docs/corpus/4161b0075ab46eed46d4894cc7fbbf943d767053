@@ -1,6 +1,0 @@
-r0 = creat(&(0x7f0000000180)='./bus\x00', 0x0)
-r1 = open(&(0x7f0000000100)='./bus\x00', 0x0, 0x0)
-write$binfmt_elf64(r0, &(0x7f0000000080)=ANY=[], 0x12)
-lsetxattr$security_ima(&(0x7f0000000ac0)='./bus\x00', &(0x7f0000000c00)='security.ima\x00', &(0x7f0000000000)=@md5={0x1, '\x00\x00\x00\x00\x00\x00\x00\x00 \x00'}, 0x11, 0x0)
-dup3(r1, r0, 0x0)
-finit_module(r1, 0x0, 0x0)

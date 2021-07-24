@@ -1,8 +1,0 @@
-r0 = memfd_create(&(0x7f0000000280)=')\x8b\x8a\x16\x11\x92O\xd5 1\xc1\x8cN\xedH\xdd\xdfk\x81\xff\xff\xff\xff\xff\xff\xffJ\x02u\x9b\xafe\xac\xd0\xf8TU\xaf\xb6\xbc\xd2\xff\xabll\xca\xc7\x90\xce\xe7\xef\x98\xf28\x8a8\xfd\x8a\x06o\xf00\xcf^\xa8\xc6\xbd> zY3R\xceh\xec\x01b\xb4\x81}\xcb\f\x1a\xd9S*\xfb\xd7Eh5\xc8\x94\xcfeX0L\x1a\xb6\xbc\v\x02)^\a\xaf\xdb\xa6\xde\xad \xccN\xca\x05yy\xdb', 0x3)
-write$binfmt_misc(r0, &(0x7f00000000c0)=ANY=[], 0x4)
-r1 = openat(0xffffffffffffff9c, &(0x7f0000000000)='/proc/self/exe\x00', 0x0, 0x0)
-mmap(&(0x7f0000000000/0x800000)=nil, 0x800000, 0x1800003, 0x12, r1, 0x0)
-preadv(r1, &(0x7f0000000280), 0x18, 0xd9f, 0x0)
-fcntl$addseals(r0, 0x409, 0xc)
-fallocate(r0, 0x0, 0x0, 0x4)
-recvmmsg(0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0)

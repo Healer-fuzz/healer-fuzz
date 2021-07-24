@@ -1,3 +1,0 @@
-r0 = syz_init_net_socket$nl_generic(0x10, 0x3, 0x10)
-r1 = syz_genetlink_get_family_id$ieee802154(&(0x7f0000000100)='802.15.4 MAC\x00', r0)
-sendmsg$IEEE802154_LLSEC_SETPARAMS(r0, &(0x7f0000000580)={0x0, 0x0, &(0x7f0000000540)={&(0x7f00000004c0)={0x38, r1, 0x1, 0x0, 0x0, {}, [@IEEE802154_ATTR_LLSEC_KEY_MODE={0x5, 0x2b, 0x2}, @IEEE802154_ATTR_LLSEC_KEY_ID={0x5}, @IEEE802154_ATTR_LLSEC_KEY_SOURCE_SHORT={0x8}, @IEEE802154_ATTR_DEV_NAME={0xa, 0x1, 'wpan0\x00'}]}, 0x38}}, 0x0)

@@ -1,1 +1,0 @@
-syz_mount_image$hfs(&(0x7f0000000040)='hfs\x00', &(0x7f0000000080)='./file0\x00', 0x0, 0x0, &(0x7f0000000640), 0x0, &(0x7f00000007c0)={[{@uid={'uid'}}, {@creator={'creator', 0x3d, "120debd8"}}, {@part={'part', 0x3d, 0x100000000}}]})
