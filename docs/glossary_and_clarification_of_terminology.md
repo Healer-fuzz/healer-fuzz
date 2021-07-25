@@ -3,7 +3,7 @@
 ## “Deeper Information”
 Q: "does not contain any deeper information" What does "deeper information" mean?
 
-A: Sorry for the confusion. The deeper information here means implicit semantic information of syscalls. For instance, the fact that the execution of one syscall can influence another syscall’s execution path is a kind of deeper information, since it relies on hidden states that cannot be explicitly expressed by a syscall’s interface.
+A: Sorry for the confusion. The deeper information here means implicit semantic information of syscalls. For instance, the fact that the  execution of one syscall can influence another syscall’s execution path is a kind of deeper information, since it relies on hidden kernel states that cannot be explicitly expressed by a syscall’s interface. Influence relation between syscall *fcntl$ADDSEAL* and syscall *mmap* as shown in Figure 2 is an example.
 ## “Item in Choice-table”
 Q: each item in the choice-table cannot convey the influence relation" We don't know what is an item in a choice table, and don't really know what an influence relation is, so this is hard to fully understand.
 
@@ -11,14 +11,14 @@ A: Each item of the choice-table records the probability of a syscall being invo
 ## “Iteratively”
 Q: "which is refined iteratively and will be" What is meant by iteratively? Iteratively as what happens?
 
-A: HEALER performs online learning to refine the learned relations. However, new relations cannot be learned without test cases demonstrating interesting behaviors. Therefore, HEALER interleaves the learning and generation algorithms. It first constructs the initial relations by static analysis, then generates new syscall sequences by using the existing relations. Among all generated sequences, the interesting ones are discovered according to coverage. HEALER then learns new relations from the high-quality sequences. The generation and learning steps are invoked by turns -- thus “iteratively”.
+A: *iteratively* means HEALER constructs the relation table step by step during the fuzzing campaign. More specifically, HEALER performs online learning to refine the learned relations. However, new relations cannot be learned without test cases demonstrating interesting behaviors. Therefore, HEALER interleaves the learning and generation algorithms. It first constructs the initial relations by static analysis, then generates new syscall sequences by using the existing relations. Among all generated sequences, the interesting ones are discovered according to coverage. HEALER then learns new relations from the high-quality sequences. The generation and learning steps are invoked by turns -- thus “iteratively”.
 
 ## “Deeper Logic”
 Q: "the kernel’s deeper logic" Deeper than what? In general, it is not clear what "deep" means.
 
 A: Conventional syscall fuzzers only try to bypass shallow checks such as structural validation and semantic checks. However, since there is limited investigation towards generating correct syscall sequence, the execution of syscall sequence is likely to be stopped by deeper check logics, including the kernel-state dependent semantic checks.
 
-Different from conventional fuzzers, HEALER uses coverage to guide the generation part. With the learned relations, HEALER can reveal the semantics of a syscall. Therefore, it can trigger deeper logic instead of the checks focusing on shallow input conformity.
+Apart from using coverage to guide the generation part as conventional fuzzers, HEALER reveals the semantics of system calls by using learned relations. Therefore, it can trigger deeper logic instead of the checks focusing on shallow input conformity.
 
 ## “Essential Influence Relation”
 Q: What is the essential influence relation.
@@ -27,25 +27,25 @@ A: Sorry for the typo. Here “essential” means important. It has the same mea
 ## “Interesting Test Case”
 Q: "whenever an interesting test case is discovered" What is an "interesting test case"? Is this the same point that was previously made about new coverage?
 
-A: Yes, an interesting test case is a test case that covers new edges/blocks. In a fuzzing campaign, the exploration of program states is based on feedback of program behaviors, where coverage is one of the most used metrics. For example, if a program executes a previously-unknown code region (basic block) or demonstrates a new control-flow transfer (edge), then the fuzzer stores the input as an interesting test case for further mutation.
+A: Yes, an interesting test case is a test case that covers new edges/blocks. In a fuzzing campaign, the exploration of program states is based on feedback of program behaviors, where coverage is one of the most used metrics. For example, if a program executes a previously-unknown code region (basic block) or demonstrates a new control-flow transfer (edge), then the fuzzer stores the input as an interesting test case for further analysis and mutation. Fuzzer can obtain and derive more information of program behaviors by analyzing the saved input, e.g., learning relation between syscalls, as well as generating new test cases that have higher probability to trigger new execution paths by mutating test cases that cover new edges/blocks. Therefore, this kind of test case is called “interesting test case” 
 # Section 2 
 ## Seed Distillation of Moonshine
-Q: Could explain what is seed distillation.
+Q: Could explain what seed distillation is.
 
-A: Seed distillation is a mechanism for initial seed generation proposed by Moonshine. It uses static analysis to extract read-write dependence between syscalls. It then collects sequences of executed system calls during the execution of existing test cases. Finally, Moonshine distills the collected syscalls with obtained dependencies.
+A: Seed distillation is a mechanism for initial seed generation proposed by Moonshine. It uses static analysis to extract read-write dependence between syscalls. It then collects sequences of executed system calls during the execution of existing test cases. Finally, Moonshine distills the collected syscall sequences with obtained dependencies. Syscalls that do not have read-write dependencies with other calls in the sequence will be removed, which improve the quality of collected sequences. Call sequences distilled by the above process can be used as initial seeds for kernel Fuzzer.
 
-Different from Moonshine, HEALER learns the influence relations between syscalls with dynamic learning and guides the generation and mutation with learned relations.
+Different from Moonshine, HEALER learns the influence relations between syscalls with dynamic learning and guides the generation and mutation with learned relations during the whole fuzzing campaign.
 
 ## Purpose of Including QEMU
 
 Q: "combining AFL and QEMU’s full-system simulation." What is the purpose of including Qemu?
 
-A: The QEMU full system simulation is used to run the kernel because the kernel runs in privileged mode. Since an OS kernel interacts directly with the hardware, it is impossible to fuzz OS kernels as normal programs. Therefore, we simulate the hardware with QEMU and communicate with it via shared memory and virtualized network interface cards.
+A: The QEMU full system simulation is used to run the kernel because the kernel runs in privileged mode and manages the hardwares. Since an OS kernel interacts directly with the hardware, it is impossible to fuzz OS kernels as normal programs. Therefore, we simulate the hardware with QEMU and communicate with it via shared memory and virtualized network interface cards.
 
 ## Subject of “Guide”
 Q: "kernel to consume and guides" It is not clear what is the subject of "guides". Maybe it is "driver", but that is quite far away in the rather complicated sentence.
 
-A: The original sentence, subject of ‘kernel to consume and guide’ is the driver. We are sorry for the long and complicated original sentence (“Then, a fuzzing driver is utilized to decode the inputs generated by AFL for the kernel to consume and guides the fuzzing process.”). The sentence should be polished as:
+A: The original sentence, subject of ‘kernel to consume and guide’ is the driver. We are sorry for the long and complicated original sentence (“Then, a fuzzing driver is utilized to decode the inputs generated by AFL for the kernel to consume and guide the fuzzing process.”). The sentence should be polished as:
 
 “ To fuzz a kernel with AFL, the fuzzer injects an agent process to the guest virtual machine. The agent process communicates with the outside fuzzer, receives the message sent from the fuzzer, decodes them into a sequence of syscalls, and issues the syscalls to the kernel accordingly. Furthermore, it also performs bookkeeping functions to drive the fuzzing loop.”
 
@@ -53,14 +53,14 @@ We will further polish the paper by splitting the sentences for clarity.
 
 ## “Coverage-guided Kernel Fuzzers”
 
-Q: "Furthermore, some coverage-guided kernel fuzzers" So the previous specifically mentioned systems are not coverage guided?
+Q: "Furthermore, some coverage-guided kernel fuzzers" So the previously specifically mentioned systems are not coverage guided?
 
 A: Most fuzzers mentioned before "Furthermore, some coverage-guided kernel fuzzers" are coverage-guided, too. The use of “coverage-guided” is aimed at emphasizing the co-exist of generation and mutation of the mentioned fuzzers inside the sentence. Different from the aforementioned fuzzers using coverage to guide byte-level mutations, the fuzzers mentioned in this sentence generate a meaningful sequence of syscalls like what HEALER does.
 
 ## “Syzlang”
 Q: Syzlang supports system call specializations, which instantiates -> Syzlang supports system call specializations, which instantiate It is not really clear what is the importance of this information in the context of this paper.
 
-A: We mention Syzlang in this context because of the need for an explanation for the number of specialized syscalls. For generation-based fuzzer, the quality of the generation specification is crucial for the overall fuzzing performance. For the ease of specification building, Syzkaller introduces a domain-specific language, Syzlang. Since HEALER directly reuses Syzkalle’s specification, it is necessary to describe the usage of Syzlang in the paper.
+A: We mention Syzlang in this context because of the need for an explanation for the number of specialized syscalls. For generation-based fuzzer, the quality of the generation specification is crucial for the overall fuzzing performance. For the ease of specification building, Syzkaller introduces a domain-specific language, Syzlang. Since HEALER directly reuses Syzkalle’s specification, it is necessary to describe the usage of Syzlang in the paper. To explain why the number of specialized syscalls is more than the number of original syscalls in Linux, we give a brief introduction for syscall specialization, a language feature in Syzlang. 
 
 ## “Find More Kernel Bugs”
 Q: "its ability to find more kernel bugs" More than what?
@@ -82,7 +82,7 @@ A: Yes, syscalls from different modules may still have an influence on each othe
 ## Reserved
 Q: "The reason that 𝐶 𝑖 is reserved in the" What does "reserved" mean here?
 
-A: “reserved” here means not being deleted by the minimization algorithm.
+A: “reserved” here means not being deleted by the minimization algorithm. The original call sequences generated by fuzzer may contain redundant calls due to the randomness. Minimization algorithm will remove calls in a sequence that do not contribute to the new coverage and only keep the necessary calls. For instance, syscall *getpid* will be removed from call sequence [open, getpid, write], and syscall *open* will be reserved.
 # Section 4.1
 
 ## Comprehensiveness
@@ -97,7 +97,7 @@ A: No. Most modern kernels follow the hybrid design, where the performance-sensi
 ## Influence Relation at Beginning of Fuzzing
 Q: "At the beginning of the fuzzing process, the fuzzer may not be aware of all system call influence relations" Why would it be aware of any influence relations?
 
-A: The relation learning of HEALER contains two parts. First, before fuzzing starts, the static analysis of HEALER can learn the relations by performing static analysis on predefined syscall specifications from Syzkaller. Although the relations learned by static analysis are incomplete and may contain wrong entries, they still provide valuable initial fuzzing directions to bootstrap fuzzing.
+A: HEALER can be aware of influence relations at the beginning of a fuzzing campaign with the help of static analysis. Specifically, the relation learning of HEALER contains two parts. First, before fuzzing starts, the static analysis of HEALER can learn the relations by performing static analysis on predefined syscall specifications from Syzkaller. Although the relations learned by static analysis are incomplete and may contain wrong entries, they still provide valuable initial fuzzing directions to bootstrap fuzzing.
 
 ## The Referred Target of “its”
 
@@ -109,7 +109,7 @@ A: “its” refers to “system call sequences”. We are sorry that the origin
 ## Inheritance and Subtyping
 Q: What do inheritance and subtyping mean for C code? Perhaps more has to be explained about Syzlang?
 
-A: Thanks for the note. The context of the explanation of “inheritance” and “subtype” is Syzlang. In Syzlang, resources are assigned with types. For example, the action of opening a KVM device to setup virtualization returns a “KVM” type of resource. Since the KVM device is a subtype of file descriptor, syscalls accepting objects of “fd” type also accept KVM devices. With subtyping, Syzlang can automatically generate generic file descriptor syscalls such as “close” when a KVM device is opened.
+A: Thanks for the note. The context of the explanation of “inheritance” and “subtype” is Syzlang. In Syzlang, resources are assigned with types. For example, the action of opening a KVM device to setup virtualization returns a “KVM” type of resource. Since the KVM device is a subtype of file descriptor, syscalls accepting objects of “fd” type also accept KVM devices. With subtyping of Syzlang, fuzzer can automatically generate generic file descriptor syscalls such as “close” when a KVM device is opened.
 
 ## Resource Semantic
 Q: "contains resource semantics" What does it mean?
@@ -119,7 +119,8 @@ A: Many types of syscalls rely on an existing resource, such as an opened file, 
 ## Relation Between “fcntl$ADD_SEALS” and “memfd_create”
 
 Q: “How do we see that fcntl$ADD_SEALS from memfd_create?”
-A: The type of the first parameter of “fcntl$ADD_SEALS” is resource type, which is the same as the return type of syscall “memfd_create”. Therefore, we can infer that “memfd_create” can influence the execution path of “fcntl$ADD_SEALS”.
+
+A: We can derive the influence relation between syscall *fcntl$ADD_SEAL and syscall *memfd_create* with static analysis of relation learning. Specifically, the type of the first parameter of “fcntl$ADD_SEALS” is resource type, which is the same as the return type of syscall “memfd_create”. Using the rules of static analysis introduced in Section 4,, we can derive that syscall *memfd_create* can influence the execution path of syscall *fcntl$ADD_SEALS*.
 
 ##  “More” Relations or “More” Explicit?
 
@@ -135,11 +136,11 @@ A: Sorry for the confusion. Indeed, the coverage of each basic block or edge is 
 ##  How Reverse Order Help?
 Q: "triggered new coverage in reverse order (Lines 3-7). This ensures that the resulting subsequences are independent and non-repetitive." How is taking something in reverse order helpful?
 
-A: Suppose the coverage of syscall sequence [open, fcntl, write] is [cov0, cov1, cov2],  in which both cov1 and cov2 contain new covered branches/edges. With the normal order, [open, fcntl, write] would be minimized as [open fcntl] and [open, fcntl, write]. With reverse order, the result would be only [open, fcntl, write] (see Algorithm 1) and the shorter sequence [open, fcntl] will be skipped.
+A: Reverse order ensures that the minimization algorithm won’t produce redundant sequences. More specifically, suppose the coverage of syscall sequence [open, fcntl, write] is [cov0, cov1, cov2],  in which both cov1 and cov2 contain new covered branches/edges. With the normal order, [open, fcntl, write] would be minimized as [open fcntl] and [open, fcntl, write]. With reverse order, the result would be only [open, fcntl, write] (see Algorithm 1) and the shorter sequence [open, fcntl] will be skipped.
 ## What Does "minimized once" Mean? 
 Q: "p' is successfully minimized once" What does "minimized once" mean? Minimization should be idempotent. Once something is minimized, minimizing it again should give the same result.
 
-A: Suppose the coverage of syscall sequence [open, socket, read, listen] is [cov0, cov1, cov2, cov3], in which cov3 and cov2 contain new branches. After the first iteration of the minimization algorithm, [open, socket, read, listen] would be [open, socket, read], yielding [socket, listen], the sequence is said to be minimized once. After the next iteration of minimization, [open, socket, read] would be [open, socket], yielding [open, read]. The minimization would be finished in the next iteration since both cov0 and cov1 do not contain new coverage.
+A: MInimization algorithm uses multiple iterations to minimize the call sequence, “minimized once” is the intermediate result of one iteration. Specifically, suppose the coverage of syscall sequence [open, socket, read, listen] is [cov0, cov1, cov2, cov3], in which cov3 and cov2 contain new branches. According to the Algorithm 1, after the first iteration of the minimization algorithm, [open, socket, read, listen] would be [open, socket, read], yielding [socket, listen], the sequence is said to be minimized once. After the next iteration of minimization, [open, socket, read] would be [open, socket], yielding [open, read]. The minimization would be finished in the next iteration since both cov0 and cov1 do not contain new coverage.
 
 ## Non-consecutive Calls
 Q: "non-consecutive calls’ removals cannot demonstrate the influence of relations." Why not?
@@ -149,17 +150,17 @@ A: The reason is the intermediate calls in non-consecutive calls might influence
 ## Continuously in What Sense?
 Q: "HEALER can continuously refine the relation table," Continuously in what sense?
 
-A:  Continuously indicates the whole fuzzing process. The dynamic analysis of relation learning is invoked whenever new coverages are discovered. As a result, the new relations could be learned in the whole fuzzing process. In other words, HEALER could use the learned relations to guide the generation and mutation incessantly.
+A:  “continuously” indicates the whole fuzzing process. The dynamic analysis of relation learning is invoked whenever new coverages are discovered. As a result, the new relations could be learned in the whole fuzzing process. In other words, HEALER could use the learned relations to guide the generation and mutation incessantly.
 
 # Section 4.2 
 ## The additional uses of learned relations
 Q: "In HEALER, relations are mainly used to guide the mutation and generation of system call sequences." What else could they be used for? At this point in the paper, it would be better to focus on what you actually do. Other uses of the learned information could be in the conclusion/future work.
 
-A: These learned relations could also be used to help experts to correct and rich the specifications. With these specifications, other fuzzers could better test kernels. We will add these possible uses into the revision.
+A: Except for using relations to guide the generation and mutation, these learned relations could also be used to help experts to correct and enrich the specifications. With these specifications, other fuzzers could better test kernels. One can also use the learned relations to distill call sequences and provide high quality initial seed for fuzzer. We will add these possible uses into the revision.
 ## Preserved Call Sequences
 Q: "These are preserved because of their" Why would they not be preserved?
 
-A: HELER only preserves the system call sequences which cover new branches. Preserving these system call sequences helps to utilize the latest finds and expand the possibility to find new branches. For others, since they do not contribute to coverage, mutating them will cost lots of resources but gain less.
+A: HELER only preserves the system call sequences which cover new branches. Preserving these system call sequences helps to utilize the latest finds and expand the possibility to find new branches, thus improving the efficiency and bug discovery capability of fuzzer. For others, since they do not contribute to coverage, mutating them will cost lots of resources but gain less.
 
 ##  Specificity of Generation Process
 Q: "At the beginning of the generation process, HEALER mainly considers the producer and consumer of resource types based on the information provided by the Syzlang descriptions." Is what is described here specific to HEALER?
@@ -168,7 +169,6 @@ A: Sorry for the confusion. The process is common for most kernel fuzzers such a
 
 
 # Section 6
-
 ## Meaning of “Practical”
 Q: "A practical kernel fuzzer should be able to cover" What does "practical" mean here?
 
@@ -185,7 +185,7 @@ Q: RQ3 seems much more important than RQ1. It should be more clear that RQ3 also
 
 A:  In Section 6.3, we compare the bug discovery capability among HEALER, Syzkaller, and Moonshine. Syzkaller and Moonshine did *not* find any previously-unknown vulnerabilities. For previously-found vulnerabilities, Syzkaller found 135 while Moonshine found 162, 112 of which have been found by both tools.
 HEALER found 218 vulnerabilities, including 185 previously-found vulnerabilities and 33 previously-unknown vulnerabilities.
-Table 5 lists the new bugs exclusively detected by HEALER. All of them have been confirmed and fixed. See
+Table 5 lists the new bugs exclusively detected by HEALER. All of them have been confirmed and fixed. See [here](https://github.com/Healer-fuzz/healer-fuzz/tree/main/docs/bugs) for more detailed information.
 
 # Section 6.1
 ## Research Question 1
@@ -197,7 +197,7 @@ A: Yes, Section 6.1 compares the performance of HEALER to Syzkaller and Moonshin
 ##  Performance
 Q: "while comparing its performance" Performance in what sense?
 
-A: The performance indicates the coverage and the bug finding in 24-hour experiments.
+A: Sorry for the confusion. The performance here indicates the coverage and the bug finding capability in 24-hour experiments.
 
 # Section 6.2
 ## Relation between number of learned relations and Syzlang descriptions 
