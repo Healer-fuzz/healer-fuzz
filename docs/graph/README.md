@@ -18,10 +18,9 @@ As we can infer from the figure, all tested tools show significant growth in the
 
 In addition, we also performed 24-hour experiments to collect coverage data from HEALER + Moonshine Seeds (HEALER+).
 We sample fuzzer’s performance statistics each minute in the 24-hour. 
+In this supplementary experiment when enhanced with Moonshine’s distilled seeds, HEALER’s coverage improved by **5%** on average.
 
 <img src=./HEALER+Moonshine_seed.png width="300"/>
 
-From the above figure, we can see that HEALER has a better performance after augmentation with Moonshine's distillation seeds. In detail, HEALER has a sharper growth rate in the initial 4h and increases the coverage of HEALER by 5% on average during the 24h experiment. 
+From the above figure, we can see that HEALER has a better performance after augmentation with Moonshine's distillation seeds. In detail, HEALER has a sharper growth rate in the initial 4h and increases the coverage of HEALER by **5%** on average during the 24h experiment. 
 HEALER benefits from the enriched initial seeds, which accelerate subsequent iterations of the relation table. 
-In this supplementary experiment when enhanced with Moonshine’s distilled seeds (HEALER+), 
-HEALER’s coverage improved by **5%** on average.

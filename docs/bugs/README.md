@@ -30,7 +30,6 @@ As we demonstrate below, we have actively communicate with the kernel maintainer
 
 <img src=./maintainer-response/merge/merge7.png width="900"/>
 
-
 <img src=./maintainer-response/merge/merge3.png width="900"/>
 
 <img src=./maintainer-response/merge/merge9.png width="900"/>

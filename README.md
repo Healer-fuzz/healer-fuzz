@@ -117,10 +117,10 @@ OPTIONS:
     -o, --out-dir <out-dir>                  Output directory, contains queues, crashes, relations [default: ./output]
         --qemu-mem <qemu-mem>                Size of memory for each qemu in megabyte [default: 2048]
         --qemu-smp <qemu-smp>                Number of cpu cores for each qemu [default: 2]
-    -r, --relations <relations>              Specify the input relations, [default: 'out_dir/relations]
+    -r, --relations <relations>              Specify the relations, [default: 'out_dir/relations']
         --ssh-key <ssh-key>                  Path to ssh key used for login to test machine
         --ssh-user <ssh-user>                User name for login to test machine [default: root]
-    -d, --syz-bin-dir <syz-bin-dir>          Syzkaller binary file directory, syz-executor, syz-symbolize, syz-repro
+    -d, --bin-dir <syz-bin-dir>              Binary file directory, syz-executor, syz-symbolize, syz-repro
                                              should be provided [default: ./bin]
     -t, --target <target>                    Fuzzing target in Os/Arch format, e.g. linux/amd64, linux/arm64
         --white-list <white-list>            White list of crash title
