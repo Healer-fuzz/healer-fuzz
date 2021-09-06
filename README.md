@@ -1,6 +1,8 @@
 
 # Healer
 
+**NOTE! This repo is no longer _maintained_, check out the latest progress of Healer [here](https://github.com/SunHao-0/healer) please.**
+
 HEALER is a kernel fuzzer that improves fuzzing effectiveness by utilizing system call relation learning. 
 HEALER learns the influence relations between system calls by dynamically analyzing the minimized  test cases. 
 Then, HEALER utilizes the learned relations to guide input generation and mutation, which improves the quality 
